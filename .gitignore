@@ -153,3 +153,4 @@ static
 shoplokalt/settings.py
 .python-version
 .vscode/settings.json
+.vscode/launch.json
