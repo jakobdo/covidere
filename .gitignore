@@ -150,3 +150,6 @@ static
 !.vscode/extensions.json
 *.code-workspace
 
+shoplokalt/settings.py
+.python-version
+.vscode/settings.json
