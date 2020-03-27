@@ -1,0 +1,38 @@
+[
+    {
+        "model": "base.user", 
+        "pk": 1, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$nqIBQ4mt9NnM$6amkTtFGzjlY60agsGZqE/qSEgMR9M3UktxAwvmzx2A=", 
+            "last_login": "2020-03-27T13:43:32.225Z", 
+            "is_superuser": true, 
+            "username": "admin", 
+            "first_name": "", 
+            "last_name": "", 
+            "email": "j@kob.dk", 
+            "is_staff": true, 
+            "is_active": true, 
+            "date_joined": "2020-03-27T13:43:10.532Z", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    }, 
+    {
+        "model": "base.user", 
+        "pk": 2, 
+        "fields": {
+            "password": "pbkdf2_sha256$180000$NYtKBo1bFPck$dJ3K6GyIho2kP41nRcHPUB3qdvj5Oi9aJWXja8b7cV8=", 
+            "last_login": null, 
+            "is_superuser": false, 
+            "username": "demo", 
+            "first_name": "Demo", 
+            "last_name": "Bruger", 
+            "email": "demo@bruger.dk", 
+            "is_staff": false, 
+            "is_active": true, 
+            "date_joined": "2020-03-27T14:36:02Z", 
+            "groups": [], 
+            "user_permissions": []
+        }
+    }
+]

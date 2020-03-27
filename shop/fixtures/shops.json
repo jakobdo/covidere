@@ -1,0 +1,36 @@
+[
+  {
+    "model": "shop.Shop",
+    "pk": 1,
+    "fields": {
+      "name": "Butik 1",
+      "address": "Bygaden 1",
+      "zipcode": "1234",
+      "city": "Byen",
+      "email": "email@butik1.dk",
+      "homepage": "http://www.butik1.dk",
+      "phone": "21212121",
+      "mobilepay": "12121212",
+      "contact": "Sælger Helge",
+      "user": "1",
+      "active": true
+    }
+  },
+  {
+    "model": "shop.Shop",
+    "pk": 2,
+    "fields": {
+      "name": "Butik 2",
+      "address": "Bygaden 2",
+      "zipcode": "4321",
+      "city": "Byen",
+      "email": "email@butik2.dk",
+      "homepage": "http://www.butik2.dk",
+      "phone": "22222222",
+      "mobilepay": "12344321",
+      "contact": "Sælger Helle",
+      "user": "2",
+      "active": false
+    }
+  }
+]

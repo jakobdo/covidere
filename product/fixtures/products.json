@@ -1,0 +1,138 @@
+[
+    {
+        "model": "product.productsize",
+        "pk": 1,
+        "fields": {
+            "name": "Small"
+        }
+    },
+    {
+        "model": "product.productsize",
+        "pk": 2,
+        "fields": {
+            "name": "Medium"
+        }
+    },
+    {
+        "model": "product.productsize",
+        "pk": 3,
+        "fields": {
+            "name": "Large"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 1,
+        "fields": {
+            "name": "Hvid"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 2,
+        "fields": {
+            "name": "Grå"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 3,
+        "fields": {
+            "name": "Gul"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 4,
+        "fields": {
+            "name": "Orange"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 5,
+        "fields": {
+            "name": "Rød"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 6,
+        "fields": {
+            "name": "Grøn"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 7,
+        "fields": {
+            "name": "Brun"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 8,
+        "fields": {
+            "name": "Blå"
+        }
+    },
+    {
+        "model": "product.productcolor",
+        "pk": 9,
+        "fields": {
+            "name": "Sort"
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 1,
+        "fields": {
+            "shop": 1,
+            "name": "Produkt 1",
+            "description": "L\u00e6ngere produkt beskrivelse af produkt nummer 1",
+            "price": "99.95",
+            "active": true,
+            "delivery_days": 1,
+            "start_datetime": "2020-03-27T14:45:00Z",
+            "end_datetime": "2020-03-27T14:45:01Z",
+            "created": "2020-03-27T14:45:03.674Z",
+            "updated": "2020-03-27T14:56:23.889Z",
+            "size": [
+                1,
+                2
+            ],
+            "color": [
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 2,
+        "fields": {
+            "shop": 1,
+            "name": "Produkt 2",
+            "description": "L\u00e6ngere produkt beskrivelse af produkt nummer 2",
+            "price": "199.95",
+            "active": false,
+            "delivery_days": 2,
+            "start_datetime": "2020-03-27T14:45:00Z",
+            "end_datetime": "2020-03-27T14:45:01Z",
+            "created": "2020-03-27T14:45:03.674Z",
+            "updated": "2020-03-27T14:56:23.889Z",
+            "size": [
+                1,
+                2
+            ],
+            "color": [
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    }
+]

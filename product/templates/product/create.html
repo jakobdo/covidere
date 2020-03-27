@@ -2,9 +2,8 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<h1>Informationer</h1>
 <form method="post">{% csrf_token %}
     {{ form|crispy }}
-    <input type="submit" class="btn btn-primary" value="Gem">
+    <input type="submit" class="btn btn-primary" value="Opret">
 </form>
 {% endblock %}

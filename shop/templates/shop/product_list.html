@@ -2,11 +2,18 @@
 
 {% block content %}
 <h1>Produkter</h1>
-<ul>
-{% for article in object_list %}
-    <li>{{ article.name }}</li>
-{% empty %}
-    <li>Ingen produkter</li>
-{% endfor %}
-</ul>
+
+<a href="{% url 'shop_product_create' %}" class="btn btn-success">Tilføj produkt</a>
+
+<hr>
+
+<div class="list-group">
+    {% for product in object_list %}
+        <a href="{% url 'shop_product_update' pk=product.pk %}" class="list-group-item list-group-item-action">
+            {{ product.name }}
+        </a>
+    {% empty %}
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ingen produkter.</a>
+    {% endfor %}
+</div>
 {% endblock %}

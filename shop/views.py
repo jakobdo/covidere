@@ -2,15 +2,12 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
-from django.views.generic import DetailView, ListView, TemplateView, UpdateView
+from django.views.generic import (CreateView, DetailView, ListView,
+                                  TemplateView, UpdateView)
 
 from order.models import Order
 from product.models import Product
 from shop.models import Shop
-
-
-class ShopIndexView(LoginRequiredMixin, TemplateView):
-    template_name = 'shop/overview.html'
 
 
 class ShopUpdateView(UpdateView):
@@ -35,6 +32,7 @@ class ShopProductListView(LoginRequiredMixin, ListView):
         queryset = Product.objects.filter(shop=self.request.user.shop)
         return queryset
 
+
 class ShopOrderListView(LoginRequiredMixin, ListView):
     model = Order
     template_name = 'shop/order_list.html'
@@ -47,3 +45,25 @@ class ShopOrderListView(LoginRequiredMixin, ListView):
 class ShopOverviewView(LoginRequiredMixin, View):
     def get(self, request):
         return render(request, 'shop/overview.html')
+
+
+class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
+    model = Product
+    fields = ['name', 'description','price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    template_name = 'product/update.html'
+
+    def get_queryset(self):
+        queryset = Product.objects.filter(shop=self.request.user.shop)
+        return queryset
+
+
+class ShopProductCreateView(LoginRequiredMixin, CreateView):
+    model = Product
+    fields = ['name', 'description','price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    template_name = 'product/create.html'
+    success_url = reverse_lazy('shop_products')
+
+    def form_valid(self, form):
+        obj = form.save(commit=False)
+        obj.shop = self.request.user.shop
+        return super(ShopProductCreateView, self).form_valid(form)
