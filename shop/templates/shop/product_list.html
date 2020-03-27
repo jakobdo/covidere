@@ -1,0 +1,12 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+<h1>Produkter</h1>
+<ul>
+{% for article in object_list %}
+    <li>{{ article.name }}</li>
+{% empty %}
+    <li>Ingen produkter</li>
+{% endfor %}
+</ul>
+{% endblock %}

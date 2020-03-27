@@ -1,24 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'shop/base.html' %}
 
 {% block content %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{% url 'index' %}">Støt og køb lokalt i dag</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Butik</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Produkter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ordrer</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Ubehandlede ordrer
+      <span class="badge badge-primary badge-pill">10</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Aktive produkter
+      <span class="badge badge-primary badge-pill">2</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Produkter der snart bliver inaktive
+        <span class="badge badge-primary badge-pill">1</span>
+      </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Inaktive produkter
+      <span class="badge badge-primary badge-pill">3</span>
+    </li>
+  </ul>
 {% endblock %}
