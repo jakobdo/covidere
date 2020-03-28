@@ -1,0 +1,10330 @@
+[
+{
+    "model": "shop.zipcode",
+    "pk": 1,
+    "fields": {
+        "zipcode": 555,
+        "name": "Scanning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 2,
+    "fields": {
+        "zipcode": 783,
+        "name": "Facility"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 3,
+    "fields": {
+        "zipcode": 800,
+        "name": "H\u00f8je Taastrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 4,
+    "fields": {
+        "zipcode": 877,
+        "name": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 5,
+    "fields": {
+        "zipcode": 892,
+        "name": "Sj\u00e6lland USF P"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 6,
+    "fields": {
+        "zipcode": 893,
+        "name": "Sj\u00e6lland USF B"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 7,
+    "fields": {
+        "zipcode": 894,
+        "name": "Udbetaling"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 8,
+    "fields": {
+        "zipcode": 899,
+        "name": "Kommuneservice"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 9,
+    "fields": {
+        "zipcode": 900,
+        "name": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 10,
+    "fields": {
+        "zipcode": 910,
+        "name": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 11,
+    "fields": {
+        "zipcode": 913,
+        "name": "K\u00f8benhavns Pakkecenter"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 12,
+    "fields": {
+        "zipcode": 914,
+        "name": "K\u00f8benhavns Pakkecenter"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 13,
+    "fields": {
+        "zipcode": 917,
+        "name": "K\u00f8benhavns Pakkecenter"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 14,
+    "fields": {
+        "zipcode": 918,
+        "name": "K\u00f8benhavns Pakke BRC"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 15,
+    "fields": {
+        "zipcode": 919,
+        "name": "Returprint BRC"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 16,
+    "fields": {
+        "zipcode": 929,
+        "name": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 17,
+    "fields": {
+        "zipcode": 960,
+        "name": "Internationalt Postcenter"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 18,
+    "fields": {
+        "zipcode": 999,
+        "name": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 19,
+    "fields": {
+        "zipcode": 1001,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 20,
+    "fields": {
+        "zipcode": 1002,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 21,
+    "fields": {
+        "zipcode": 1003,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 22,
+    "fields": {
+        "zipcode": 1004,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 23,
+    "fields": {
+        "zipcode": 1005,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 24,
+    "fields": {
+        "zipcode": 1006,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 25,
+    "fields": {
+        "zipcode": 1007,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 26,
+    "fields": {
+        "zipcode": 1008,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 27,
+    "fields": {
+        "zipcode": 1009,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 28,
+    "fields": {
+        "zipcode": 1010,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 29,
+    "fields": {
+        "zipcode": 1011,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 30,
+    "fields": {
+        "zipcode": 1012,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 31,
+    "fields": {
+        "zipcode": 1013,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 32,
+    "fields": {
+        "zipcode": 1014,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 33,
+    "fields": {
+        "zipcode": 1015,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 34,
+    "fields": {
+        "zipcode": 1016,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 35,
+    "fields": {
+        "zipcode": 1017,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 36,
+    "fields": {
+        "zipcode": 1018,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 37,
+    "fields": {
+        "zipcode": 1019,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 38,
+    "fields": {
+        "zipcode": 1020,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 39,
+    "fields": {
+        "zipcode": 1021,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 40,
+    "fields": {
+        "zipcode": 1022,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 41,
+    "fields": {
+        "zipcode": 1023,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 42,
+    "fields": {
+        "zipcode": 1024,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 43,
+    "fields": {
+        "zipcode": 1025,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 44,
+    "fields": {
+        "zipcode": 1026,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 45,
+    "fields": {
+        "zipcode": 1045,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 46,
+    "fields": {
+        "zipcode": 1050,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 47,
+    "fields": {
+        "zipcode": 1051,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 48,
+    "fields": {
+        "zipcode": 1052,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 49,
+    "fields": {
+        "zipcode": 1053,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 50,
+    "fields": {
+        "zipcode": 1054,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 51,
+    "fields": {
+        "zipcode": 1055,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 52,
+    "fields": {
+        "zipcode": 1055,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 53,
+    "fields": {
+        "zipcode": 1056,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 54,
+    "fields": {
+        "zipcode": 1057,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 55,
+    "fields": {
+        "zipcode": 1058,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 56,
+    "fields": {
+        "zipcode": 1059,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 57,
+    "fields": {
+        "zipcode": 1060,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 58,
+    "fields": {
+        "zipcode": 1061,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 59,
+    "fields": {
+        "zipcode": 1062,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 60,
+    "fields": {
+        "zipcode": 1063,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 61,
+    "fields": {
+        "zipcode": 1064,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 62,
+    "fields": {
+        "zipcode": 1065,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 63,
+    "fields": {
+        "zipcode": 1066,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 64,
+    "fields": {
+        "zipcode": 1067,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 65,
+    "fields": {
+        "zipcode": 1068,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 66,
+    "fields": {
+        "zipcode": 1069,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 67,
+    "fields": {
+        "zipcode": 1070,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 68,
+    "fields": {
+        "zipcode": 1071,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 69,
+    "fields": {
+        "zipcode": 1072,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 70,
+    "fields": {
+        "zipcode": 1073,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 71,
+    "fields": {
+        "zipcode": 1074,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 72,
+    "fields": {
+        "zipcode": 1092,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 73,
+    "fields": {
+        "zipcode": 1093,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 74,
+    "fields": {
+        "zipcode": 1095,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 75,
+    "fields": {
+        "zipcode": 1098,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 76,
+    "fields": {
+        "zipcode": 1100,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 77,
+    "fields": {
+        "zipcode": 1101,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 78,
+    "fields": {
+        "zipcode": 1102,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 79,
+    "fields": {
+        "zipcode": 1103,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 80,
+    "fields": {
+        "zipcode": 1104,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 81,
+    "fields": {
+        "zipcode": 1105,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 82,
+    "fields": {
+        "zipcode": 1106,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 83,
+    "fields": {
+        "zipcode": 1107,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 84,
+    "fields": {
+        "zipcode": 1110,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 85,
+    "fields": {
+        "zipcode": 1111,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 86,
+    "fields": {
+        "zipcode": 1112,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 87,
+    "fields": {
+        "zipcode": 1113,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 88,
+    "fields": {
+        "zipcode": 1114,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 89,
+    "fields": {
+        "zipcode": 1115,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 90,
+    "fields": {
+        "zipcode": 1116,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 91,
+    "fields": {
+        "zipcode": 1117,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 92,
+    "fields": {
+        "zipcode": 1118,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 93,
+    "fields": {
+        "zipcode": 1119,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 94,
+    "fields": {
+        "zipcode": 1120,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 95,
+    "fields": {
+        "zipcode": 1121,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 96,
+    "fields": {
+        "zipcode": 1122,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 97,
+    "fields": {
+        "zipcode": 1123,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 98,
+    "fields": {
+        "zipcode": 1124,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 99,
+    "fields": {
+        "zipcode": 1125,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 100,
+    "fields": {
+        "zipcode": 1126,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 101,
+    "fields": {
+        "zipcode": 1127,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 102,
+    "fields": {
+        "zipcode": 1128,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 103,
+    "fields": {
+        "zipcode": 1129,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 104,
+    "fields": {
+        "zipcode": 1130,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 105,
+    "fields": {
+        "zipcode": 1131,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 106,
+    "fields": {
+        "zipcode": 1140,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 107,
+    "fields": {
+        "zipcode": 1147,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 108,
+    "fields": {
+        "zipcode": 1148,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 109,
+    "fields": {
+        "zipcode": 1150,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 110,
+    "fields": {
+        "zipcode": 1151,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 111,
+    "fields": {
+        "zipcode": 1152,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 112,
+    "fields": {
+        "zipcode": 1153,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 113,
+    "fields": {
+        "zipcode": 1154,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 114,
+    "fields": {
+        "zipcode": 1155,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 115,
+    "fields": {
+        "zipcode": 1156,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 116,
+    "fields": {
+        "zipcode": 1157,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 117,
+    "fields": {
+        "zipcode": 1158,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 118,
+    "fields": {
+        "zipcode": 1159,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 119,
+    "fields": {
+        "zipcode": 1160,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 120,
+    "fields": {
+        "zipcode": 1161,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 121,
+    "fields": {
+        "zipcode": 1162,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 122,
+    "fields": {
+        "zipcode": 1164,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 123,
+    "fields": {
+        "zipcode": 1165,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 124,
+    "fields": {
+        "zipcode": 1165,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 125,
+    "fields": {
+        "zipcode": 1166,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 126,
+    "fields": {
+        "zipcode": 1167,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 127,
+    "fields": {
+        "zipcode": 1168,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 128,
+    "fields": {
+        "zipcode": 1169,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 129,
+    "fields": {
+        "zipcode": 1170,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 130,
+    "fields": {
+        "zipcode": 1171,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 131,
+    "fields": {
+        "zipcode": 1172,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 132,
+    "fields": {
+        "zipcode": 1173,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 133,
+    "fields": {
+        "zipcode": 1174,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 134,
+    "fields": {
+        "zipcode": 1175,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 135,
+    "fields": {
+        "zipcode": 1200,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 136,
+    "fields": {
+        "zipcode": 1201,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 137,
+    "fields": {
+        "zipcode": 1202,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 138,
+    "fields": {
+        "zipcode": 1203,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 139,
+    "fields": {
+        "zipcode": 1204,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 140,
+    "fields": {
+        "zipcode": 1205,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 141,
+    "fields": {
+        "zipcode": 1206,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 142,
+    "fields": {
+        "zipcode": 1207,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 143,
+    "fields": {
+        "zipcode": 1208,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 144,
+    "fields": {
+        "zipcode": 1209,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 145,
+    "fields": {
+        "zipcode": 1210,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 146,
+    "fields": {
+        "zipcode": 1211,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 147,
+    "fields": {
+        "zipcode": 1212,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 148,
+    "fields": {
+        "zipcode": 1213,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 149,
+    "fields": {
+        "zipcode": 1214,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 150,
+    "fields": {
+        "zipcode": 1215,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 151,
+    "fields": {
+        "zipcode": 1216,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 152,
+    "fields": {
+        "zipcode": 1217,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 153,
+    "fields": {
+        "zipcode": 1218,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 154,
+    "fields": {
+        "zipcode": 1218,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 155,
+    "fields": {
+        "zipcode": 1218,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 156,
+    "fields": {
+        "zipcode": 1218,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 157,
+    "fields": {
+        "zipcode": 1218,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 158,
+    "fields": {
+        "zipcode": 1218,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 159,
+    "fields": {
+        "zipcode": 1219,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 160,
+    "fields": {
+        "zipcode": 1220,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 161,
+    "fields": {
+        "zipcode": 1221,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 162,
+    "fields": {
+        "zipcode": 1240,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 163,
+    "fields": {
+        "zipcode": 1250,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 164,
+    "fields": {
+        "zipcode": 1251,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 165,
+    "fields": {
+        "zipcode": 1252,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 166,
+    "fields": {
+        "zipcode": 1253,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 167,
+    "fields": {
+        "zipcode": 1254,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 168,
+    "fields": {
+        "zipcode": 1255,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 169,
+    "fields": {
+        "zipcode": 1256,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 170,
+    "fields": {
+        "zipcode": 1257,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 171,
+    "fields": {
+        "zipcode": 1259,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 172,
+    "fields": {
+        "zipcode": 1259,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 173,
+    "fields": {
+        "zipcode": 1260,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 174,
+    "fields": {
+        "zipcode": 1261,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 175,
+    "fields": {
+        "zipcode": 1263,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 176,
+    "fields": {
+        "zipcode": 1263,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 177,
+    "fields": {
+        "zipcode": 1264,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 178,
+    "fields": {
+        "zipcode": 1265,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 179,
+    "fields": {
+        "zipcode": 1266,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 180,
+    "fields": {
+        "zipcode": 1267,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 181,
+    "fields": {
+        "zipcode": 1268,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 182,
+    "fields": {
+        "zipcode": 1270,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 183,
+    "fields": {
+        "zipcode": 1271,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 184,
+    "fields": {
+        "zipcode": 1300,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 185,
+    "fields": {
+        "zipcode": 1301,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 186,
+    "fields": {
+        "zipcode": 1302,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 187,
+    "fields": {
+        "zipcode": 1303,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 188,
+    "fields": {
+        "zipcode": 1304,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 189,
+    "fields": {
+        "zipcode": 1306,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 190,
+    "fields": {
+        "zipcode": 1307,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 191,
+    "fields": {
+        "zipcode": 1307,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 192,
+    "fields": {
+        "zipcode": 1308,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 193,
+    "fields": {
+        "zipcode": 1309,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 194,
+    "fields": {
+        "zipcode": 1310,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 195,
+    "fields": {
+        "zipcode": 1311,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 196,
+    "fields": {
+        "zipcode": 1312,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 197,
+    "fields": {
+        "zipcode": 1313,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 198,
+    "fields": {
+        "zipcode": 1314,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 199,
+    "fields": {
+        "zipcode": 1315,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 200,
+    "fields": {
+        "zipcode": 1316,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 201,
+    "fields": {
+        "zipcode": 1317,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 202,
+    "fields": {
+        "zipcode": 1318,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 203,
+    "fields": {
+        "zipcode": 1319,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 204,
+    "fields": {
+        "zipcode": 1320,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 205,
+    "fields": {
+        "zipcode": 1321,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 206,
+    "fields": {
+        "zipcode": 1322,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 207,
+    "fields": {
+        "zipcode": 1323,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 208,
+    "fields": {
+        "zipcode": 1324,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 209,
+    "fields": {
+        "zipcode": 1325,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 210,
+    "fields": {
+        "zipcode": 1326,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 211,
+    "fields": {
+        "zipcode": 1327,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 212,
+    "fields": {
+        "zipcode": 1328,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 213,
+    "fields": {
+        "zipcode": 1329,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 214,
+    "fields": {
+        "zipcode": 1350,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 215,
+    "fields": {
+        "zipcode": 1352,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 216,
+    "fields": {
+        "zipcode": 1353,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 217,
+    "fields": {
+        "zipcode": 1354,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 218,
+    "fields": {
+        "zipcode": 1355,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 219,
+    "fields": {
+        "zipcode": 1356,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 220,
+    "fields": {
+        "zipcode": 1357,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 221,
+    "fields": {
+        "zipcode": 1358,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 222,
+    "fields": {
+        "zipcode": 1359,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 223,
+    "fields": {
+        "zipcode": 1359,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 224,
+    "fields": {
+        "zipcode": 1360,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 225,
+    "fields": {
+        "zipcode": 1361,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 226,
+    "fields": {
+        "zipcode": 1361,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 227,
+    "fields": {
+        "zipcode": 1362,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 228,
+    "fields": {
+        "zipcode": 1363,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 229,
+    "fields": {
+        "zipcode": 1364,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 230,
+    "fields": {
+        "zipcode": 1365,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 231,
+    "fields": {
+        "zipcode": 1366,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 232,
+    "fields": {
+        "zipcode": 1367,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 233,
+    "fields": {
+        "zipcode": 1368,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 234,
+    "fields": {
+        "zipcode": 1369,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 235,
+    "fields": {
+        "zipcode": 1370,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 236,
+    "fields": {
+        "zipcode": 1371,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 237,
+    "fields": {
+        "zipcode": 1400,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 238,
+    "fields": {
+        "zipcode": 1400,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 239,
+    "fields": {
+        "zipcode": 1401,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 240,
+    "fields": {
+        "zipcode": 1402,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 241,
+    "fields": {
+        "zipcode": 1402,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 242,
+    "fields": {
+        "zipcode": 1402,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 243,
+    "fields": {
+        "zipcode": 1402,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 244,
+    "fields": {
+        "zipcode": 1402,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 245,
+    "fields": {
+        "zipcode": 1403,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 246,
+    "fields": {
+        "zipcode": 1406,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 247,
+    "fields": {
+        "zipcode": 1407,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 248,
+    "fields": {
+        "zipcode": 1408,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 249,
+    "fields": {
+        "zipcode": 1409,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 250,
+    "fields": {
+        "zipcode": 1410,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 251,
+    "fields": {
+        "zipcode": 1411,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 252,
+    "fields": {
+        "zipcode": 1411,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 253,
+    "fields": {
+        "zipcode": 1412,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 254,
+    "fields": {
+        "zipcode": 1413,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 255,
+    "fields": {
+        "zipcode": 1414,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 256,
+    "fields": {
+        "zipcode": 1415,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 257,
+    "fields": {
+        "zipcode": 1416,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 258,
+    "fields": {
+        "zipcode": 1417,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 259,
+    "fields": {
+        "zipcode": 1418,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 260,
+    "fields": {
+        "zipcode": 1419,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 261,
+    "fields": {
+        "zipcode": 1420,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 262,
+    "fields": {
+        "zipcode": 1421,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 263,
+    "fields": {
+        "zipcode": 1422,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 264,
+    "fields": {
+        "zipcode": 1423,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 265,
+    "fields": {
+        "zipcode": 1424,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 266,
+    "fields": {
+        "zipcode": 1425,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 267,
+    "fields": {
+        "zipcode": 1426,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 268,
+    "fields": {
+        "zipcode": 1427,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 269,
+    "fields": {
+        "zipcode": 1428,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 270,
+    "fields": {
+        "zipcode": 1429,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 271,
+    "fields": {
+        "zipcode": 1430,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 272,
+    "fields": {
+        "zipcode": 1432,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 273,
+    "fields": {
+        "zipcode": 1432,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 274,
+    "fields": {
+        "zipcode": 1432,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 275,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 276,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 277,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 278,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 279,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 280,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 281,
+    "fields": {
+        "zipcode": 1433,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 282,
+    "fields": {
+        "zipcode": 1434,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 283,
+    "fields": {
+        "zipcode": 1434,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 284,
+    "fields": {
+        "zipcode": 1435,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 285,
+    "fields": {
+        "zipcode": 1436,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 286,
+    "fields": {
+        "zipcode": 1436,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 287,
+    "fields": {
+        "zipcode": 1436,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 288,
+    "fields": {
+        "zipcode": 1436,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 289,
+    "fields": {
+        "zipcode": 1436,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 290,
+    "fields": {
+        "zipcode": 1436,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 291,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 292,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 293,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 294,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 295,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 296,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 297,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 298,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 299,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 300,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 301,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 302,
+    "fields": {
+        "zipcode": 1437,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 303,
+    "fields": {
+        "zipcode": 1438,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 304,
+    "fields": {
+        "zipcode": 1438,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 305,
+    "fields": {
+        "zipcode": 1438,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 306,
+    "fields": {
+        "zipcode": 1438,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 307,
+    "fields": {
+        "zipcode": 1438,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 308,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 309,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 310,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 311,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 312,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 313,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 314,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 315,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 316,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 317,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 318,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 319,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 320,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 321,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 322,
+    "fields": {
+        "zipcode": 1439,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 323,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 324,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 325,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 326,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 327,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 328,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 329,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 330,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 331,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 332,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 333,
+    "fields": {
+        "zipcode": 1440,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 334,
+    "fields": {
+        "zipcode": 1441,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 335,
+    "fields": {
+        "zipcode": 1441,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 336,
+    "fields": {
+        "zipcode": 1441,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 337,
+    "fields": {
+        "zipcode": 1448,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 338,
+    "fields": {
+        "zipcode": 1450,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 339,
+    "fields": {
+        "zipcode": 1451,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 340,
+    "fields": {
+        "zipcode": 1452,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 341,
+    "fields": {
+        "zipcode": 1453,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 342,
+    "fields": {
+        "zipcode": 1454,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 343,
+    "fields": {
+        "zipcode": 1455,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 344,
+    "fields": {
+        "zipcode": 1456,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 345,
+    "fields": {
+        "zipcode": 1457,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 346,
+    "fields": {
+        "zipcode": 1458,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 347,
+    "fields": {
+        "zipcode": 1459,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 348,
+    "fields": {
+        "zipcode": 1460,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 349,
+    "fields": {
+        "zipcode": 1461,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 350,
+    "fields": {
+        "zipcode": 1462,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 351,
+    "fields": {
+        "zipcode": 1463,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 352,
+    "fields": {
+        "zipcode": 1464,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 353,
+    "fields": {
+        "zipcode": 1465,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 354,
+    "fields": {
+        "zipcode": 1466,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 355,
+    "fields": {
+        "zipcode": 1467,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 356,
+    "fields": {
+        "zipcode": 1468,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 357,
+    "fields": {
+        "zipcode": 1470,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 358,
+    "fields": {
+        "zipcode": 1471,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 359,
+    "fields": {
+        "zipcode": 1472,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 360,
+    "fields": {
+        "zipcode": 1473,
+        "name": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 361,
+    "fields": {
+        "zipcode": 1500,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 362,
+    "fields": {
+        "zipcode": 1501,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 363,
+    "fields": {
+        "zipcode": 1502,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 364,
+    "fields": {
+        "zipcode": 1503,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 365,
+    "fields": {
+        "zipcode": 1504,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 366,
+    "fields": {
+        "zipcode": 1505,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 367,
+    "fields": {
+        "zipcode": 1506,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 368,
+    "fields": {
+        "zipcode": 1507,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 369,
+    "fields": {
+        "zipcode": 1508,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 370,
+    "fields": {
+        "zipcode": 1509,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 371,
+    "fields": {
+        "zipcode": 1510,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 372,
+    "fields": {
+        "zipcode": 1512,
+        "name": "Returpost"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 373,
+    "fields": {
+        "zipcode": 1513,
+        "name": "Flytninger og Nejtak"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 374,
+    "fields": {
+        "zipcode": 1532,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 375,
+    "fields": {
+        "zipcode": 1533,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 376,
+    "fields": {
+        "zipcode": 1550,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 377,
+    "fields": {
+        "zipcode": 1550,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 378,
+    "fields": {
+        "zipcode": 1551,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 379,
+    "fields": {
+        "zipcode": 1552,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 380,
+    "fields": {
+        "zipcode": 1553,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 381,
+    "fields": {
+        "zipcode": 1553,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 382,
+    "fields": {
+        "zipcode": 1554,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 383,
+    "fields": {
+        "zipcode": 1555,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 384,
+    "fields": {
+        "zipcode": 1556,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 385,
+    "fields": {
+        "zipcode": 1557,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 386,
+    "fields": {
+        "zipcode": 1558,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 387,
+    "fields": {
+        "zipcode": 1559,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 388,
+    "fields": {
+        "zipcode": 1560,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 389,
+    "fields": {
+        "zipcode": 1561,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 390,
+    "fields": {
+        "zipcode": 1561,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 391,
+    "fields": {
+        "zipcode": 1562,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 392,
+    "fields": {
+        "zipcode": 1563,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 393,
+    "fields": {
+        "zipcode": 1564,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 394,
+    "fields": {
+        "zipcode": 1567,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 395,
+    "fields": {
+        "zipcode": 1568,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 396,
+    "fields": {
+        "zipcode": 1569,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 397,
+    "fields": {
+        "zipcode": 1570,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 398,
+    "fields": {
+        "zipcode": 1570,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 399,
+    "fields": {
+        "zipcode": 1571,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 400,
+    "fields": {
+        "zipcode": 1572,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 401,
+    "fields": {
+        "zipcode": 1573,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 402,
+    "fields": {
+        "zipcode": 1574,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 403,
+    "fields": {
+        "zipcode": 1575,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 404,
+    "fields": {
+        "zipcode": 1576,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 405,
+    "fields": {
+        "zipcode": 1577,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 406,
+    "fields": {
+        "zipcode": 1577,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 407,
+    "fields": {
+        "zipcode": 1577,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 408,
+    "fields": {
+        "zipcode": 1592,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 409,
+    "fields": {
+        "zipcode": 1599,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 410,
+    "fields": {
+        "zipcode": 1600,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 411,
+    "fields": {
+        "zipcode": 1601,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 412,
+    "fields": {
+        "zipcode": 1602,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 413,
+    "fields": {
+        "zipcode": 1603,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 414,
+    "fields": {
+        "zipcode": 1604,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 415,
+    "fields": {
+        "zipcode": 1605,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 416,
+    "fields": {
+        "zipcode": 1606,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 417,
+    "fields": {
+        "zipcode": 1607,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 418,
+    "fields": {
+        "zipcode": 1608,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 419,
+    "fields": {
+        "zipcode": 1609,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 420,
+    "fields": {
+        "zipcode": 1610,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 421,
+    "fields": {
+        "zipcode": 1611,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 422,
+    "fields": {
+        "zipcode": 1612,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 423,
+    "fields": {
+        "zipcode": 1613,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 424,
+    "fields": {
+        "zipcode": 1614,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 425,
+    "fields": {
+        "zipcode": 1615,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 426,
+    "fields": {
+        "zipcode": 1616,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 427,
+    "fields": {
+        "zipcode": 1617,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 428,
+    "fields": {
+        "zipcode": 1618,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 429,
+    "fields": {
+        "zipcode": 1619,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 430,
+    "fields": {
+        "zipcode": 1620,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 431,
+    "fields": {
+        "zipcode": 1620,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 432,
+    "fields": {
+        "zipcode": 1621,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 433,
+    "fields": {
+        "zipcode": 1622,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 434,
+    "fields": {
+        "zipcode": 1623,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 435,
+    "fields": {
+        "zipcode": 1624,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 436,
+    "fields": {
+        "zipcode": 1630,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 437,
+    "fields": {
+        "zipcode": 1631,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 438,
+    "fields": {
+        "zipcode": 1632,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 439,
+    "fields": {
+        "zipcode": 1633,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 440,
+    "fields": {
+        "zipcode": 1634,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 441,
+    "fields": {
+        "zipcode": 1635,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 442,
+    "fields": {
+        "zipcode": 1650,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 443,
+    "fields": {
+        "zipcode": 1651,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 444,
+    "fields": {
+        "zipcode": 1652,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 445,
+    "fields": {
+        "zipcode": 1653,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 446,
+    "fields": {
+        "zipcode": 1654,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 447,
+    "fields": {
+        "zipcode": 1655,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 448,
+    "fields": {
+        "zipcode": 1656,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 449,
+    "fields": {
+        "zipcode": 1657,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 450,
+    "fields": {
+        "zipcode": 1658,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 451,
+    "fields": {
+        "zipcode": 1659,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 452,
+    "fields": {
+        "zipcode": 1660,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 453,
+    "fields": {
+        "zipcode": 1660,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 454,
+    "fields": {
+        "zipcode": 1661,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 455,
+    "fields": {
+        "zipcode": 1662,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 456,
+    "fields": {
+        "zipcode": 1663,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 457,
+    "fields": {
+        "zipcode": 1664,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 458,
+    "fields": {
+        "zipcode": 1665,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 459,
+    "fields": {
+        "zipcode": 1666,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 460,
+    "fields": {
+        "zipcode": 1667,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 461,
+    "fields": {
+        "zipcode": 1668,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 462,
+    "fields": {
+        "zipcode": 1669,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 463,
+    "fields": {
+        "zipcode": 1670,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 464,
+    "fields": {
+        "zipcode": 1671,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 465,
+    "fields": {
+        "zipcode": 1671,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 466,
+    "fields": {
+        "zipcode": 1672,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 467,
+    "fields": {
+        "zipcode": 1673,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 468,
+    "fields": {
+        "zipcode": 1674,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 469,
+    "fields": {
+        "zipcode": 1675,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 470,
+    "fields": {
+        "zipcode": 1676,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 471,
+    "fields": {
+        "zipcode": 1677,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 472,
+    "fields": {
+        "zipcode": 1699,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 473,
+    "fields": {
+        "zipcode": 1700,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 474,
+    "fields": {
+        "zipcode": 1701,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 475,
+    "fields": {
+        "zipcode": 1702,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 476,
+    "fields": {
+        "zipcode": 1703,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 477,
+    "fields": {
+        "zipcode": 1704,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 478,
+    "fields": {
+        "zipcode": 1705,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 479,
+    "fields": {
+        "zipcode": 1706,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 480,
+    "fields": {
+        "zipcode": 1707,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 481,
+    "fields": {
+        "zipcode": 1708,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 482,
+    "fields": {
+        "zipcode": 1709,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 483,
+    "fields": {
+        "zipcode": 1710,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 484,
+    "fields": {
+        "zipcode": 1711,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 485,
+    "fields": {
+        "zipcode": 1711,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 486,
+    "fields": {
+        "zipcode": 1712,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 487,
+    "fields": {
+        "zipcode": 1714,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 488,
+    "fields": {
+        "zipcode": 1715,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 489,
+    "fields": {
+        "zipcode": 1716,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 490,
+    "fields": {
+        "zipcode": 1717,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 491,
+    "fields": {
+        "zipcode": 1718,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 492,
+    "fields": {
+        "zipcode": 1719,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 493,
+    "fields": {
+        "zipcode": 1720,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 494,
+    "fields": {
+        "zipcode": 1721,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 495,
+    "fields": {
+        "zipcode": 1722,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 496,
+    "fields": {
+        "zipcode": 1723,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 497,
+    "fields": {
+        "zipcode": 1724,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 498,
+    "fields": {
+        "zipcode": 1725,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 499,
+    "fields": {
+        "zipcode": 1726,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 500,
+    "fields": {
+        "zipcode": 1727,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 501,
+    "fields": {
+        "zipcode": 1728,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 502,
+    "fields": {
+        "zipcode": 1729,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 503,
+    "fields": {
+        "zipcode": 1730,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 504,
+    "fields": {
+        "zipcode": 1731,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 505,
+    "fields": {
+        "zipcode": 1732,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 506,
+    "fields": {
+        "zipcode": 1733,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 507,
+    "fields": {
+        "zipcode": 1734,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 508,
+    "fields": {
+        "zipcode": 1735,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 509,
+    "fields": {
+        "zipcode": 1736,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 510,
+    "fields": {
+        "zipcode": 1737,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 511,
+    "fields": {
+        "zipcode": 1738,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 512,
+    "fields": {
+        "zipcode": 1739,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 513,
+    "fields": {
+        "zipcode": 1749,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 514,
+    "fields": {
+        "zipcode": 1750,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 515,
+    "fields": {
+        "zipcode": 1751,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 516,
+    "fields": {
+        "zipcode": 1752,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 517,
+    "fields": {
+        "zipcode": 1753,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 518,
+    "fields": {
+        "zipcode": 1754,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 519,
+    "fields": {
+        "zipcode": 1755,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 520,
+    "fields": {
+        "zipcode": 1756,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 521,
+    "fields": {
+        "zipcode": 1757,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 522,
+    "fields": {
+        "zipcode": 1758,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 523,
+    "fields": {
+        "zipcode": 1759,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 524,
+    "fields": {
+        "zipcode": 1760,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 525,
+    "fields": {
+        "zipcode": 1761,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 526,
+    "fields": {
+        "zipcode": 1762,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 527,
+    "fields": {
+        "zipcode": 1763,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 528,
+    "fields": {
+        "zipcode": 1764,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 529,
+    "fields": {
+        "zipcode": 1765,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 530,
+    "fields": {
+        "zipcode": 1766,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 531,
+    "fields": {
+        "zipcode": 1770,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 532,
+    "fields": {
+        "zipcode": 1771,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 533,
+    "fields": {
+        "zipcode": 1772,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 534,
+    "fields": {
+        "zipcode": 1773,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 535,
+    "fields": {
+        "zipcode": 1774,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 536,
+    "fields": {
+        "zipcode": 1775,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 537,
+    "fields": {
+        "zipcode": 1777,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 538,
+    "fields": {
+        "zipcode": 1780,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 539,
+    "fields": {
+        "zipcode": 1782,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 540,
+    "fields": {
+        "zipcode": 1785,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 541,
+    "fields": {
+        "zipcode": 1786,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 542,
+    "fields": {
+        "zipcode": 1787,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 543,
+    "fields": {
+        "zipcode": 1790,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 544,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 545,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 546,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 547,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 548,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 549,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 550,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 551,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 552,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 553,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 554,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 555,
+    "fields": {
+        "zipcode": 1799,
+        "name": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 556,
+    "fields": {
+        "zipcode": 1800,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 557,
+    "fields": {
+        "zipcode": 1801,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 558,
+    "fields": {
+        "zipcode": 1802,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 559,
+    "fields": {
+        "zipcode": 1803,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 560,
+    "fields": {
+        "zipcode": 1804,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 561,
+    "fields": {
+        "zipcode": 1805,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 562,
+    "fields": {
+        "zipcode": 1806,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 563,
+    "fields": {
+        "zipcode": 1807,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 564,
+    "fields": {
+        "zipcode": 1808,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 565,
+    "fields": {
+        "zipcode": 1809,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 566,
+    "fields": {
+        "zipcode": 1810,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 567,
+    "fields": {
+        "zipcode": 1811,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 568,
+    "fields": {
+        "zipcode": 1812,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 569,
+    "fields": {
+        "zipcode": 1813,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 570,
+    "fields": {
+        "zipcode": 1814,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 571,
+    "fields": {
+        "zipcode": 1815,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 572,
+    "fields": {
+        "zipcode": 1816,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 573,
+    "fields": {
+        "zipcode": 1817,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 574,
+    "fields": {
+        "zipcode": 1818,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 575,
+    "fields": {
+        "zipcode": 1819,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 576,
+    "fields": {
+        "zipcode": 1820,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 577,
+    "fields": {
+        "zipcode": 1822,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 578,
+    "fields": {
+        "zipcode": 1823,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 579,
+    "fields": {
+        "zipcode": 1824,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 580,
+    "fields": {
+        "zipcode": 1825,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 581,
+    "fields": {
+        "zipcode": 1826,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 582,
+    "fields": {
+        "zipcode": 1827,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 583,
+    "fields": {
+        "zipcode": 1828,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 584,
+    "fields": {
+        "zipcode": 1829,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 585,
+    "fields": {
+        "zipcode": 1835,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 586,
+    "fields": {
+        "zipcode": 1850,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 587,
+    "fields": {
+        "zipcode": 1851,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 588,
+    "fields": {
+        "zipcode": 1852,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 589,
+    "fields": {
+        "zipcode": 1853,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 590,
+    "fields": {
+        "zipcode": 1854,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 591,
+    "fields": {
+        "zipcode": 1855,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 592,
+    "fields": {
+        "zipcode": 1856,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 593,
+    "fields": {
+        "zipcode": 1857,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 594,
+    "fields": {
+        "zipcode": 1860,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 595,
+    "fields": {
+        "zipcode": 1861,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 596,
+    "fields": {
+        "zipcode": 1862,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 597,
+    "fields": {
+        "zipcode": 1863,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 598,
+    "fields": {
+        "zipcode": 1864,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 599,
+    "fields": {
+        "zipcode": 1865,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 600,
+    "fields": {
+        "zipcode": 1866,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 601,
+    "fields": {
+        "zipcode": 1867,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 602,
+    "fields": {
+        "zipcode": 1868,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 603,
+    "fields": {
+        "zipcode": 1870,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 604,
+    "fields": {
+        "zipcode": 1871,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 605,
+    "fields": {
+        "zipcode": 1872,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 606,
+    "fields": {
+        "zipcode": 1873,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 607,
+    "fields": {
+        "zipcode": 1874,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 608,
+    "fields": {
+        "zipcode": 1875,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 609,
+    "fields": {
+        "zipcode": 1876,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 610,
+    "fields": {
+        "zipcode": 1877,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 611,
+    "fields": {
+        "zipcode": 1878,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 612,
+    "fields": {
+        "zipcode": 1879,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 613,
+    "fields": {
+        "zipcode": 1900,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 614,
+    "fields": {
+        "zipcode": 1901,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 615,
+    "fields": {
+        "zipcode": 1902,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 616,
+    "fields": {
+        "zipcode": 1903,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 617,
+    "fields": {
+        "zipcode": 1904,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 618,
+    "fields": {
+        "zipcode": 1905,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 619,
+    "fields": {
+        "zipcode": 1906,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 620,
+    "fields": {
+        "zipcode": 1908,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 621,
+    "fields": {
+        "zipcode": 1909,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 622,
+    "fields": {
+        "zipcode": 1910,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 623,
+    "fields": {
+        "zipcode": 1911,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 624,
+    "fields": {
+        "zipcode": 1912,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 625,
+    "fields": {
+        "zipcode": 1913,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 626,
+    "fields": {
+        "zipcode": 1914,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 627,
+    "fields": {
+        "zipcode": 1915,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 628,
+    "fields": {
+        "zipcode": 1916,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 629,
+    "fields": {
+        "zipcode": 1917,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 630,
+    "fields": {
+        "zipcode": 1920,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 631,
+    "fields": {
+        "zipcode": 1921,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 632,
+    "fields": {
+        "zipcode": 1922,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 633,
+    "fields": {
+        "zipcode": 1923,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 634,
+    "fields": {
+        "zipcode": 1924,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 635,
+    "fields": {
+        "zipcode": 1925,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 636,
+    "fields": {
+        "zipcode": 1926,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 637,
+    "fields": {
+        "zipcode": 1927,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 638,
+    "fields": {
+        "zipcode": 1928,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 639,
+    "fields": {
+        "zipcode": 1931,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 640,
+    "fields": {
+        "zipcode": 1950,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 641,
+    "fields": {
+        "zipcode": 1951,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 642,
+    "fields": {
+        "zipcode": 1952,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 643,
+    "fields": {
+        "zipcode": 1953,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 644,
+    "fields": {
+        "zipcode": 1954,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 645,
+    "fields": {
+        "zipcode": 1955,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 646,
+    "fields": {
+        "zipcode": 1956,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 647,
+    "fields": {
+        "zipcode": 1957,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 648,
+    "fields": {
+        "zipcode": 1958,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 649,
+    "fields": {
+        "zipcode": 1959,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 650,
+    "fields": {
+        "zipcode": 1960,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 651,
+    "fields": {
+        "zipcode": 1961,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 652,
+    "fields": {
+        "zipcode": 1962,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 653,
+    "fields": {
+        "zipcode": 1963,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 654,
+    "fields": {
+        "zipcode": 1964,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 655,
+    "fields": {
+        "zipcode": 1965,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 656,
+    "fields": {
+        "zipcode": 1966,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 657,
+    "fields": {
+        "zipcode": 1967,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 658,
+    "fields": {
+        "zipcode": 1970,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 659,
+    "fields": {
+        "zipcode": 1971,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 660,
+    "fields": {
+        "zipcode": 1972,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 661,
+    "fields": {
+        "zipcode": 1973,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 662,
+    "fields": {
+        "zipcode": 1974,
+        "name": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 663,
+    "fields": {
+        "zipcode": 2000,
+        "name": "Frederiksberg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 664,
+    "fields": {
+        "zipcode": 2100,
+        "name": "K\u00f8benhavn \u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 665,
+    "fields": {
+        "zipcode": 2150,
+        "name": "Nordhavn"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 666,
+    "fields": {
+        "zipcode": 2200,
+        "name": "K\u00f8benhavn N"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 667,
+    "fields": {
+        "zipcode": 2300,
+        "name": "K\u00f8benhavn S"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 668,
+    "fields": {
+        "zipcode": 2400,
+        "name": "K\u00f8benhavn NV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 669,
+    "fields": {
+        "zipcode": 2412,
+        "name": "Gr\u00f8nland"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 670,
+    "fields": {
+        "zipcode": 2450,
+        "name": "K\u00f8benhavn SV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 671,
+    "fields": {
+        "zipcode": 2500,
+        "name": "Valby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 672,
+    "fields": {
+        "zipcode": 2600,
+        "name": "Glostrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 673,
+    "fields": {
+        "zipcode": 2605,
+        "name": "Br\u00f8ndby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 674,
+    "fields": {
+        "zipcode": 2610,
+        "name": "R\u00f8dovre"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 675,
+    "fields": {
+        "zipcode": 2620,
+        "name": "Albertslund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 676,
+    "fields": {
+        "zipcode": 2625,
+        "name": "Vallensb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 677,
+    "fields": {
+        "zipcode": 2630,
+        "name": "Taastrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 678,
+    "fields": {
+        "zipcode": 2635,
+        "name": "Ish\u00f8j"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 679,
+    "fields": {
+        "zipcode": 2640,
+        "name": "Hedehusene"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 680,
+    "fields": {
+        "zipcode": 2650,
+        "name": "Hvidovre"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 681,
+    "fields": {
+        "zipcode": 2660,
+        "name": "Br\u00f8ndby Strand"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 682,
+    "fields": {
+        "zipcode": 2665,
+        "name": "Vallensb\u00e6k Strand"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 683,
+    "fields": {
+        "zipcode": 2670,
+        "name": "Greve"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 684,
+    "fields": {
+        "zipcode": 2680,
+        "name": "Solr\u00f8d Strand"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 685,
+    "fields": {
+        "zipcode": 2690,
+        "name": "Karlslunde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 686,
+    "fields": {
+        "zipcode": 2700,
+        "name": "Br\u00f8nsh\u00f8j"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 687,
+    "fields": {
+        "zipcode": 2720,
+        "name": "Vanl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 688,
+    "fields": {
+        "zipcode": 2730,
+        "name": "Herlev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 689,
+    "fields": {
+        "zipcode": 2740,
+        "name": "Skovlunde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 690,
+    "fields": {
+        "zipcode": 2750,
+        "name": "Ballerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 691,
+    "fields": {
+        "zipcode": 2760,
+        "name": "M\u00e5l\u00f8v"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 692,
+    "fields": {
+        "zipcode": 2765,
+        "name": "Sm\u00f8rum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 693,
+    "fields": {
+        "zipcode": 2770,
+        "name": "Kastrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 694,
+    "fields": {
+        "zipcode": 2791,
+        "name": "Drag\u00f8r"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 695,
+    "fields": {
+        "zipcode": 2800,
+        "name": "Kongens Lyngby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 696,
+    "fields": {
+        "zipcode": 2820,
+        "name": "Gentofte"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 697,
+    "fields": {
+        "zipcode": 2830,
+        "name": "Virum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 698,
+    "fields": {
+        "zipcode": 2840,
+        "name": "Holte"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 699,
+    "fields": {
+        "zipcode": 2850,
+        "name": "N\u00e6rum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 700,
+    "fields": {
+        "zipcode": 2860,
+        "name": "S\u00f8borg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 701,
+    "fields": {
+        "zipcode": 2870,
+        "name": "Dysseg\u00e5rd"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 702,
+    "fields": {
+        "zipcode": 2880,
+        "name": "Bagsv\u00e6rd"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 703,
+    "fields": {
+        "zipcode": 2900,
+        "name": "Hellerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 704,
+    "fields": {
+        "zipcode": 2920,
+        "name": "Charlottenlund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 705,
+    "fields": {
+        "zipcode": 2930,
+        "name": "Klampenborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 706,
+    "fields": {
+        "zipcode": 2942,
+        "name": "Skodsborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 707,
+    "fields": {
+        "zipcode": 2950,
+        "name": "Vedb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 708,
+    "fields": {
+        "zipcode": 2960,
+        "name": "Rungsted Kyst"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 709,
+    "fields": {
+        "zipcode": 2970,
+        "name": "H\u00f8rsholm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 710,
+    "fields": {
+        "zipcode": 2980,
+        "name": "Kokkedal"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 711,
+    "fields": {
+        "zipcode": 2990,
+        "name": "Niv\u00e5"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 712,
+    "fields": {
+        "zipcode": 3000,
+        "name": "Helsing\u00f8r"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 713,
+    "fields": {
+        "zipcode": 3050,
+        "name": "Humleb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 714,
+    "fields": {
+        "zipcode": 3060,
+        "name": "Esperg\u00e6rde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 715,
+    "fields": {
+        "zipcode": 3070,
+        "name": "Snekkersten"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 716,
+    "fields": {
+        "zipcode": 3080,
+        "name": "Tik\u00f8b"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 717,
+    "fields": {
+        "zipcode": 3100,
+        "name": "Hornb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 718,
+    "fields": {
+        "zipcode": 3120,
+        "name": "Dronningm\u00f8lle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 719,
+    "fields": {
+        "zipcode": 3140,
+        "name": "\u00c5lsg\u00e5rde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 720,
+    "fields": {
+        "zipcode": 3150,
+        "name": "Helleb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 721,
+    "fields": {
+        "zipcode": 3200,
+        "name": "Helsinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 722,
+    "fields": {
+        "zipcode": 3210,
+        "name": "Vejby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 723,
+    "fields": {
+        "zipcode": 3220,
+        "name": "Tisvildeleje"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 724,
+    "fields": {
+        "zipcode": 3230,
+        "name": "Gr\u00e6sted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 725,
+    "fields": {
+        "zipcode": 3250,
+        "name": "Gilleleje"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 726,
+    "fields": {
+        "zipcode": 3300,
+        "name": "Frederiksv\u00e6rk"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 727,
+    "fields": {
+        "zipcode": 3310,
+        "name": "\u00d8lsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 728,
+    "fields": {
+        "zipcode": 3320,
+        "name": "Sk\u00e6vinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 729,
+    "fields": {
+        "zipcode": 3330,
+        "name": "G\u00f8rl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 730,
+    "fields": {
+        "zipcode": 3360,
+        "name": "Liseleje"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 731,
+    "fields": {
+        "zipcode": 3370,
+        "name": "Melby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 732,
+    "fields": {
+        "zipcode": 3390,
+        "name": "Hundested"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 733,
+    "fields": {
+        "zipcode": 3400,
+        "name": "Hiller\u00f8d"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 734,
+    "fields": {
+        "zipcode": 3450,
+        "name": "Aller\u00f8d"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 735,
+    "fields": {
+        "zipcode": 3460,
+        "name": "Birker\u00f8d"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 736,
+    "fields": {
+        "zipcode": 3480,
+        "name": "Fredensborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 737,
+    "fields": {
+        "zipcode": 3490,
+        "name": "Kvistg\u00e5rd"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 738,
+    "fields": {
+        "zipcode": 3500,
+        "name": "V\u00e6rl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 739,
+    "fields": {
+        "zipcode": 3520,
+        "name": "Farum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 740,
+    "fields": {
+        "zipcode": 3540,
+        "name": "Lynge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 741,
+    "fields": {
+        "zipcode": 3550,
+        "name": "Slangerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 742,
+    "fields": {
+        "zipcode": 3600,
+        "name": "Frederikssund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 743,
+    "fields": {
+        "zipcode": 3630,
+        "name": "J\u00e6gerspris"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 744,
+    "fields": {
+        "zipcode": 3650,
+        "name": "\u00d8lstykke"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 745,
+    "fields": {
+        "zipcode": 3660,
+        "name": "Stenl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 746,
+    "fields": {
+        "zipcode": 3670,
+        "name": "Veks\u00f8 Sj\u00e6lland"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 747,
+    "fields": {
+        "zipcode": 3700,
+        "name": "R\u00f8nne"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 748,
+    "fields": {
+        "zipcode": 3720,
+        "name": "Aakirkeby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 749,
+    "fields": {
+        "zipcode": 3730,
+        "name": "Nex\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 750,
+    "fields": {
+        "zipcode": 3740,
+        "name": "Svaneke"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 751,
+    "fields": {
+        "zipcode": 3751,
+        "name": "\u00d8stermarie"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 752,
+    "fields": {
+        "zipcode": 3760,
+        "name": "Gudhjem"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 753,
+    "fields": {
+        "zipcode": 3770,
+        "name": "Allinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 754,
+    "fields": {
+        "zipcode": 3782,
+        "name": "Klemensker"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 755,
+    "fields": {
+        "zipcode": 3790,
+        "name": "Hasle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 756,
+    "fields": {
+        "zipcode": 4000,
+        "name": "Roskilde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 757,
+    "fields": {
+        "zipcode": 4030,
+        "name": "Tune"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 758,
+    "fields": {
+        "zipcode": 4040,
+        "name": "Jyllinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 759,
+    "fields": {
+        "zipcode": 4050,
+        "name": "Skibby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 760,
+    "fields": {
+        "zipcode": 4060,
+        "name": "Kirke S\u00e5by"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 761,
+    "fields": {
+        "zipcode": 4070,
+        "name": "Kirke Hyllinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 762,
+    "fields": {
+        "zipcode": 4100,
+        "name": "Ringsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 763,
+    "fields": {
+        "zipcode": 4129,
+        "name": "Ringsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 764,
+    "fields": {
+        "zipcode": 4130,
+        "name": "Viby Sj\u00e6lland"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 765,
+    "fields": {
+        "zipcode": 4140,
+        "name": "Borup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 766,
+    "fields": {
+        "zipcode": 4160,
+        "name": "Herlufmagle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 767,
+    "fields": {
+        "zipcode": 4171,
+        "name": "Glums\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 768,
+    "fields": {
+        "zipcode": 4173,
+        "name": "Fjenneslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 769,
+    "fields": {
+        "zipcode": 4174,
+        "name": "Jystrup Midtsj"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 770,
+    "fields": {
+        "zipcode": 4180,
+        "name": "Sor\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 771,
+    "fields": {
+        "zipcode": 4190,
+        "name": "Munke Bjergby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 772,
+    "fields": {
+        "zipcode": 4200,
+        "name": "Slagelse"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 773,
+    "fields": {
+        "zipcode": 4220,
+        "name": "Kors\u00f8r"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 774,
+    "fields": {
+        "zipcode": 4230,
+        "name": "Sk\u00e6lsk\u00f8r"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 775,
+    "fields": {
+        "zipcode": 4241,
+        "name": "Vemmelev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 776,
+    "fields": {
+        "zipcode": 4242,
+        "name": "Boeslunde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 777,
+    "fields": {
+        "zipcode": 4243,
+        "name": "Rude"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 778,
+    "fields": {
+        "zipcode": 4244,
+        "name": "Agers\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 779,
+    "fields": {
+        "zipcode": 4245,
+        "name": "Om\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 780,
+    "fields": {
+        "zipcode": 4250,
+        "name": "Fuglebjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 781,
+    "fields": {
+        "zipcode": 4261,
+        "name": "Dalmose"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 782,
+    "fields": {
+        "zipcode": 4262,
+        "name": "Sandved"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 783,
+    "fields": {
+        "zipcode": 4270,
+        "name": "H\u00f8ng"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 784,
+    "fields": {
+        "zipcode": 4281,
+        "name": "G\u00f8rlev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 785,
+    "fields": {
+        "zipcode": 4291,
+        "name": "Ruds Vedby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 786,
+    "fields": {
+        "zipcode": 4293,
+        "name": "Dianalund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 787,
+    "fields": {
+        "zipcode": 4295,
+        "name": "Stenlille"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 788,
+    "fields": {
+        "zipcode": 4296,
+        "name": "Nyrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 789,
+    "fields": {
+        "zipcode": 4300,
+        "name": "Holb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 790,
+    "fields": {
+        "zipcode": 4305,
+        "name": "Or\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 791,
+    "fields": {
+        "zipcode": 4320,
+        "name": "Lejre"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 792,
+    "fields": {
+        "zipcode": 4330,
+        "name": "Hvals\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 793,
+    "fields": {
+        "zipcode": 4340,
+        "name": "T\u00f8ll\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 794,
+    "fields": {
+        "zipcode": 4350,
+        "name": "Ugerl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 795,
+    "fields": {
+        "zipcode": 4360,
+        "name": "Kirke Eskilstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 796,
+    "fields": {
+        "zipcode": 4370,
+        "name": "Store Merl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 797,
+    "fields": {
+        "zipcode": 4390,
+        "name": "Vipper\u00f8d"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 798,
+    "fields": {
+        "zipcode": 4400,
+        "name": "Kalundborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 799,
+    "fields": {
+        "zipcode": 4420,
+        "name": "Regstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 800,
+    "fields": {
+        "zipcode": 4440,
+        "name": "M\u00f8rk\u00f8v"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 801,
+    "fields": {
+        "zipcode": 4450,
+        "name": "Jyderup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 802,
+    "fields": {
+        "zipcode": 4460,
+        "name": "Snertinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 803,
+    "fields": {
+        "zipcode": 4470,
+        "name": "Sveb\u00f8lle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 804,
+    "fields": {
+        "zipcode": 4480,
+        "name": "Store Fuglede"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 805,
+    "fields": {
+        "zipcode": 4490,
+        "name": "Jerslev Sj\u00e6lland"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 806,
+    "fields": {
+        "zipcode": 4500,
+        "name": "Nyk\u00f8bing Sj"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 807,
+    "fields": {
+        "zipcode": 4520,
+        "name": "Svinninge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 808,
+    "fields": {
+        "zipcode": 4532,
+        "name": "Gislinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 809,
+    "fields": {
+        "zipcode": 4534,
+        "name": "H\u00f8rve"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 810,
+    "fields": {
+        "zipcode": 4540,
+        "name": "F\u00e5revejle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 811,
+    "fields": {
+        "zipcode": 4550,
+        "name": "Asn\u00e6s"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 812,
+    "fields": {
+        "zipcode": 4560,
+        "name": "Vig"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 813,
+    "fields": {
+        "zipcode": 4571,
+        "name": "Grevinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 814,
+    "fields": {
+        "zipcode": 4572,
+        "name": "N\u00f8rre Asmindrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 815,
+    "fields": {
+        "zipcode": 4573,
+        "name": "H\u00f8jby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 816,
+    "fields": {
+        "zipcode": 4581,
+        "name": "R\u00f8rvig"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 817,
+    "fields": {
+        "zipcode": 4583,
+        "name": "Sj\u00e6llands Odde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 818,
+    "fields": {
+        "zipcode": 4591,
+        "name": "F\u00f8llenslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 819,
+    "fields": {
+        "zipcode": 4592,
+        "name": "Sejer\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 820,
+    "fields": {
+        "zipcode": 4593,
+        "name": "Eskebjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 821,
+    "fields": {
+        "zipcode": 4600,
+        "name": "K\u00f8ge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 822,
+    "fields": {
+        "zipcode": 4621,
+        "name": "Gadstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 823,
+    "fields": {
+        "zipcode": 4622,
+        "name": "Havdrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 824,
+    "fields": {
+        "zipcode": 4623,
+        "name": "Lille Skensved"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 825,
+    "fields": {
+        "zipcode": 4632,
+        "name": "Bj\u00e6verskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 826,
+    "fields": {
+        "zipcode": 4640,
+        "name": "Faxe"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 827,
+    "fields": {
+        "zipcode": 4652,
+        "name": "H\u00e5rlev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 828,
+    "fields": {
+        "zipcode": 4653,
+        "name": "Karise"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 829,
+    "fields": {
+        "zipcode": 4654,
+        "name": "Faxe Ladeplads"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 830,
+    "fields": {
+        "zipcode": 4660,
+        "name": "Store Heddinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 831,
+    "fields": {
+        "zipcode": 4671,
+        "name": "Str\u00f8by"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 832,
+    "fields": {
+        "zipcode": 4672,
+        "name": "Klippinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 833,
+    "fields": {
+        "zipcode": 4673,
+        "name": "R\u00f8dvig Stevns"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 834,
+    "fields": {
+        "zipcode": 4681,
+        "name": "Herf\u00f8lge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 835,
+    "fields": {
+        "zipcode": 4682,
+        "name": "Tureby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 836,
+    "fields": {
+        "zipcode": 4683,
+        "name": "R\u00f8nnede"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 837,
+    "fields": {
+        "zipcode": 4684,
+        "name": "Holmegaard"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 838,
+    "fields": {
+        "zipcode": 4690,
+        "name": "Haslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 839,
+    "fields": {
+        "zipcode": 4700,
+        "name": "N\u00e6stved"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 840,
+    "fields": {
+        "zipcode": 4720,
+        "name": "Pr\u00e6st\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 841,
+    "fields": {
+        "zipcode": 4733,
+        "name": "Tappern\u00f8je"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 842,
+    "fields": {
+        "zipcode": 4735,
+        "name": "Mern"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 843,
+    "fields": {
+        "zipcode": 4736,
+        "name": "Karreb\u00e6ksminde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 844,
+    "fields": {
+        "zipcode": 4750,
+        "name": "Lundby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 845,
+    "fields": {
+        "zipcode": 4760,
+        "name": "Vordingborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 846,
+    "fields": {
+        "zipcode": 4771,
+        "name": "Kalvehave"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 847,
+    "fields": {
+        "zipcode": 4772,
+        "name": "Langeb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 848,
+    "fields": {
+        "zipcode": 4773,
+        "name": "Stensved"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 849,
+    "fields": {
+        "zipcode": 4780,
+        "name": "Stege"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 850,
+    "fields": {
+        "zipcode": 4791,
+        "name": "Borre"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 851,
+    "fields": {
+        "zipcode": 4792,
+        "name": "Askeby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 852,
+    "fields": {
+        "zipcode": 4793,
+        "name": "Bog\u00f8 By"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 853,
+    "fields": {
+        "zipcode": 4800,
+        "name": "Nyk\u00f8bing F"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 854,
+    "fields": {
+        "zipcode": 4840,
+        "name": "N\u00f8rre Alslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 855,
+    "fields": {
+        "zipcode": 4850,
+        "name": "Stubbek\u00f8bing"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 856,
+    "fields": {
+        "zipcode": 4862,
+        "name": "Guldborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 857,
+    "fields": {
+        "zipcode": 4863,
+        "name": "Eskilstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 858,
+    "fields": {
+        "zipcode": 4871,
+        "name": "Horbelev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 859,
+    "fields": {
+        "zipcode": 4872,
+        "name": "Idestrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 860,
+    "fields": {
+        "zipcode": 4873,
+        "name": "V\u00e6ggerl\u00f8se"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 861,
+    "fields": {
+        "zipcode": 4874,
+        "name": "Gedser"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 862,
+    "fields": {
+        "zipcode": 4880,
+        "name": "Nysted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 863,
+    "fields": {
+        "zipcode": 4891,
+        "name": "Toreby L"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 864,
+    "fields": {
+        "zipcode": 4892,
+        "name": "Kettinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 865,
+    "fields": {
+        "zipcode": 4894,
+        "name": "\u00d8ster Ulslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 866,
+    "fields": {
+        "zipcode": 4895,
+        "name": "Errindlev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 867,
+    "fields": {
+        "zipcode": 4900,
+        "name": "Nakskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 868,
+    "fields": {
+        "zipcode": 4912,
+        "name": "Harpelunde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 869,
+    "fields": {
+        "zipcode": 4913,
+        "name": "Horslunde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 870,
+    "fields": {
+        "zipcode": 4920,
+        "name": "S\u00f8llested"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 871,
+    "fields": {
+        "zipcode": 4930,
+        "name": "Maribo"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 872,
+    "fields": {
+        "zipcode": 4941,
+        "name": "Bandholm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 873,
+    "fields": {
+        "zipcode": 4942,
+        "name": "Ask\u00f8 og Lille\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 874,
+    "fields": {
+        "zipcode": 4943,
+        "name": "Torrig L"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 875,
+    "fields": {
+        "zipcode": 4944,
+        "name": "Fej\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 876,
+    "fields": {
+        "zipcode": 4945,
+        "name": "Fem\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 877,
+    "fields": {
+        "zipcode": 4951,
+        "name": "N\u00f8rreballe"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 878,
+    "fields": {
+        "zipcode": 4952,
+        "name": "Stokkemarke"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 879,
+    "fields": {
+        "zipcode": 4953,
+        "name": "Vesterborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 880,
+    "fields": {
+        "zipcode": 4960,
+        "name": "Holeby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 881,
+    "fields": {
+        "zipcode": 4970,
+        "name": "R\u00f8dby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 882,
+    "fields": {
+        "zipcode": 4983,
+        "name": "Dannemare"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 883,
+    "fields": {
+        "zipcode": 4990,
+        "name": "Saksk\u00f8bing"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 884,
+    "fields": {
+        "zipcode": 4992,
+        "name": "Midtsj\u00e6lland USF P"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 885,
+    "fields": {
+        "zipcode": 5000,
+        "name": "Odense C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 886,
+    "fields": {
+        "zipcode": 5029,
+        "name": "Odense C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 887,
+    "fields": {
+        "zipcode": 5100,
+        "name": "Odense C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 888,
+    "fields": {
+        "zipcode": 5200,
+        "name": "Odense V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 889,
+    "fields": {
+        "zipcode": 5210,
+        "name": "Odense NV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 890,
+    "fields": {
+        "zipcode": 5220,
+        "name": "Odense S\u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 891,
+    "fields": {
+        "zipcode": 5230,
+        "name": "Odense M"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 892,
+    "fields": {
+        "zipcode": 5240,
+        "name": "Odense N\u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 893,
+    "fields": {
+        "zipcode": 5250,
+        "name": "Odense SV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 894,
+    "fields": {
+        "zipcode": 5260,
+        "name": "Odense S"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 895,
+    "fields": {
+        "zipcode": 5270,
+        "name": "Odense N"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 896,
+    "fields": {
+        "zipcode": 5290,
+        "name": "Marslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 897,
+    "fields": {
+        "zipcode": 5300,
+        "name": "Kerteminde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 898,
+    "fields": {
+        "zipcode": 5320,
+        "name": "Agedrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 899,
+    "fields": {
+        "zipcode": 5330,
+        "name": "Munkebo"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 900,
+    "fields": {
+        "zipcode": 5350,
+        "name": "Rynkeby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 901,
+    "fields": {
+        "zipcode": 5370,
+        "name": "Mesinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 902,
+    "fields": {
+        "zipcode": 5380,
+        "name": "Dalby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 903,
+    "fields": {
+        "zipcode": 5390,
+        "name": "Martofte"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 904,
+    "fields": {
+        "zipcode": 5400,
+        "name": "Bogense"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 905,
+    "fields": {
+        "zipcode": 5450,
+        "name": "Otterup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 906,
+    "fields": {
+        "zipcode": 5462,
+        "name": "Morud"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 907,
+    "fields": {
+        "zipcode": 5463,
+        "name": "Harndrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 908,
+    "fields": {
+        "zipcode": 5464,
+        "name": "Brenderup Fyn"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 909,
+    "fields": {
+        "zipcode": 5466,
+        "name": "Asperup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 910,
+    "fields": {
+        "zipcode": 5471,
+        "name": "S\u00f8nders\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 911,
+    "fields": {
+        "zipcode": 5474,
+        "name": "Veflinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 912,
+    "fields": {
+        "zipcode": 5485,
+        "name": "Skamby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 913,
+    "fields": {
+        "zipcode": 5491,
+        "name": "Blommenslyst"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 914,
+    "fields": {
+        "zipcode": 5492,
+        "name": "Vissenbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 915,
+    "fields": {
+        "zipcode": 5500,
+        "name": "Middelfart"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 916,
+    "fields": {
+        "zipcode": 5540,
+        "name": "Ullerslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 917,
+    "fields": {
+        "zipcode": 5550,
+        "name": "Langeskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 918,
+    "fields": {
+        "zipcode": 5560,
+        "name": "Aarup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 919,
+    "fields": {
+        "zipcode": 5580,
+        "name": "N\u00f8rre Aaby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 920,
+    "fields": {
+        "zipcode": 5591,
+        "name": "Gelsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 921,
+    "fields": {
+        "zipcode": 5592,
+        "name": "Ejby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 922,
+    "fields": {
+        "zipcode": 5600,
+        "name": "Faaborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 923,
+    "fields": {
+        "zipcode": 5601,
+        "name": "Ly\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 924,
+    "fields": {
+        "zipcode": 5602,
+        "name": "Avernak\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 925,
+    "fields": {
+        "zipcode": 5603,
+        "name": "Bj\u00f8rn\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 926,
+    "fields": {
+        "zipcode": 5610,
+        "name": "Assens"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 927,
+    "fields": {
+        "zipcode": 5620,
+        "name": "Glamsbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 928,
+    "fields": {
+        "zipcode": 5631,
+        "name": "Ebberup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 929,
+    "fields": {
+        "zipcode": 5642,
+        "name": "Millinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 930,
+    "fields": {
+        "zipcode": 5672,
+        "name": "Broby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 931,
+    "fields": {
+        "zipcode": 5683,
+        "name": "Haarby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 932,
+    "fields": {
+        "zipcode": 5690,
+        "name": "Tommerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 933,
+    "fields": {
+        "zipcode": 5700,
+        "name": "Svendborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 934,
+    "fields": {
+        "zipcode": 5750,
+        "name": "Ringe"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 935,
+    "fields": {
+        "zipcode": 5762,
+        "name": "Vester Skerninge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 936,
+    "fields": {
+        "zipcode": 5771,
+        "name": "Stenstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 937,
+    "fields": {
+        "zipcode": 5772,
+        "name": "Kv\u00e6rndrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 938,
+    "fields": {
+        "zipcode": 5792,
+        "name": "\u00c5rslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 939,
+    "fields": {
+        "zipcode": 5800,
+        "name": "Nyborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 940,
+    "fields": {
+        "zipcode": 5853,
+        "name": "\u00d8rb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 941,
+    "fields": {
+        "zipcode": 5854,
+        "name": "Gislev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 942,
+    "fields": {
+        "zipcode": 5856,
+        "name": "Ryslinge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 943,
+    "fields": {
+        "zipcode": 5863,
+        "name": "Ferritslev Fyn"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 944,
+    "fields": {
+        "zipcode": 5871,
+        "name": "Fr\u00f8rup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 945,
+    "fields": {
+        "zipcode": 5874,
+        "name": "Hesselager"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 946,
+    "fields": {
+        "zipcode": 5881,
+        "name": "Sk\u00e5rup Fyn"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 947,
+    "fields": {
+        "zipcode": 5882,
+        "name": "Vejstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 948,
+    "fields": {
+        "zipcode": 5883,
+        "name": "Oure"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 949,
+    "fields": {
+        "zipcode": 5884,
+        "name": "Gudme"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 950,
+    "fields": {
+        "zipcode": 5892,
+        "name": "Gudbjerg Sydfyn"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 951,
+    "fields": {
+        "zipcode": 5900,
+        "name": "Rudk\u00f8bing"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 952,
+    "fields": {
+        "zipcode": 5932,
+        "name": "Humble"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 953,
+    "fields": {
+        "zipcode": 5935,
+        "name": "Bagenkop"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 954,
+    "fields": {
+        "zipcode": 5943,
+        "name": "Stryn\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 955,
+    "fields": {
+        "zipcode": 5953,
+        "name": "Tranek\u00e6r"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 956,
+    "fields": {
+        "zipcode": 5960,
+        "name": "Marstal"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 957,
+    "fields": {
+        "zipcode": 5965,
+        "name": "Birkholm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 958,
+    "fields": {
+        "zipcode": 5970,
+        "name": "\u00c6r\u00f8sk\u00f8bing"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 959,
+    "fields": {
+        "zipcode": 5985,
+        "name": "S\u00f8by \u00c6r\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 960,
+    "fields": {
+        "zipcode": 6000,
+        "name": "Kolding"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 961,
+    "fields": {
+        "zipcode": 6040,
+        "name": "Egtved"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 962,
+    "fields": {
+        "zipcode": 6051,
+        "name": "Almind"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 963,
+    "fields": {
+        "zipcode": 6052,
+        "name": "Viuf"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 964,
+    "fields": {
+        "zipcode": 6064,
+        "name": "Jordrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 965,
+    "fields": {
+        "zipcode": 6070,
+        "name": "Christiansfeld"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 966,
+    "fields": {
+        "zipcode": 6091,
+        "name": "Bjert"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 967,
+    "fields": {
+        "zipcode": 6092,
+        "name": "S\u00f8nder Stenderup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 968,
+    "fields": {
+        "zipcode": 6093,
+        "name": "Sj\u00f8lund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 969,
+    "fields": {
+        "zipcode": 6094,
+        "name": "Hejls"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 970,
+    "fields": {
+        "zipcode": 6100,
+        "name": "Haderslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 971,
+    "fields": {
+        "zipcode": 6200,
+        "name": "Aabenraa"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 972,
+    "fields": {
+        "zipcode": 6210,
+        "name": "Bars\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 973,
+    "fields": {
+        "zipcode": 6230,
+        "name": "R\u00f8dekro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 974,
+    "fields": {
+        "zipcode": 6240,
+        "name": "L\u00f8gumkloster"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 975,
+    "fields": {
+        "zipcode": 6261,
+        "name": "Bredebro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 976,
+    "fields": {
+        "zipcode": 6270,
+        "name": "T\u00f8nder"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 977,
+    "fields": {
+        "zipcode": 6280,
+        "name": "H\u00f8jer"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 978,
+    "fields": {
+        "zipcode": 6300,
+        "name": "Gr\u00e5sten"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 979,
+    "fields": {
+        "zipcode": 6310,
+        "name": "Broager"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 980,
+    "fields": {
+        "zipcode": 6320,
+        "name": "Egernsund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 981,
+    "fields": {
+        "zipcode": 6330,
+        "name": "Padborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 982,
+    "fields": {
+        "zipcode": 6340,
+        "name": "Krus\u00e5"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 983,
+    "fields": {
+        "zipcode": 6360,
+        "name": "Tinglev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 984,
+    "fields": {
+        "zipcode": 6372,
+        "name": "Bylderup-Bov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 985,
+    "fields": {
+        "zipcode": 6392,
+        "name": "Bolderslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 986,
+    "fields": {
+        "zipcode": 6400,
+        "name": "S\u00f8nderborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 987,
+    "fields": {
+        "zipcode": 6430,
+        "name": "Nordborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 988,
+    "fields": {
+        "zipcode": 6440,
+        "name": "Augustenborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 989,
+    "fields": {
+        "zipcode": 6470,
+        "name": "Sydals"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 990,
+    "fields": {
+        "zipcode": 6500,
+        "name": "Vojens"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 991,
+    "fields": {
+        "zipcode": 6510,
+        "name": "Gram"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 992,
+    "fields": {
+        "zipcode": 6520,
+        "name": "Toftlund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 993,
+    "fields": {
+        "zipcode": 6534,
+        "name": "Agerskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 994,
+    "fields": {
+        "zipcode": 6535,
+        "name": "Branderup J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 995,
+    "fields": {
+        "zipcode": 6541,
+        "name": "Bevtoft"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 996,
+    "fields": {
+        "zipcode": 6560,
+        "name": "Sommersted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 997,
+    "fields": {
+        "zipcode": 6580,
+        "name": "Vamdrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 998,
+    "fields": {
+        "zipcode": 6600,
+        "name": "Vejen"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 999,
+    "fields": {
+        "zipcode": 6621,
+        "name": "Gesten"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1000,
+    "fields": {
+        "zipcode": 6622,
+        "name": "B\u00e6kke"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1001,
+    "fields": {
+        "zipcode": 6623,
+        "name": "Vorbasse"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1002,
+    "fields": {
+        "zipcode": 6630,
+        "name": "R\u00f8dding"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1003,
+    "fields": {
+        "zipcode": 6640,
+        "name": "Lunderskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1004,
+    "fields": {
+        "zipcode": 6650,
+        "name": "Br\u00f8rup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1005,
+    "fields": {
+        "zipcode": 6660,
+        "name": "Lintrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1006,
+    "fields": {
+        "zipcode": 6670,
+        "name": "Holsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1007,
+    "fields": {
+        "zipcode": 6682,
+        "name": "Hovborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1008,
+    "fields": {
+        "zipcode": 6683,
+        "name": "F\u00f8vling"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1009,
+    "fields": {
+        "zipcode": 6690,
+        "name": "G\u00f8rding"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1010,
+    "fields": {
+        "zipcode": 6700,
+        "name": "Esbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1011,
+    "fields": {
+        "zipcode": 6701,
+        "name": "Esbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1012,
+    "fields": {
+        "zipcode": 6705,
+        "name": "Esbjerg \u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1013,
+    "fields": {
+        "zipcode": 6710,
+        "name": "Esbjerg V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1014,
+    "fields": {
+        "zipcode": 6715,
+        "name": "Esbjerg N"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1015,
+    "fields": {
+        "zipcode": 6720,
+        "name": "Fan\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1016,
+    "fields": {
+        "zipcode": 6731,
+        "name": "Tj\u00e6reborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1017,
+    "fields": {
+        "zipcode": 6740,
+        "name": "Bramming"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1018,
+    "fields": {
+        "zipcode": 6752,
+        "name": "Glejbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1019,
+    "fields": {
+        "zipcode": 6753,
+        "name": "Agerb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1020,
+    "fields": {
+        "zipcode": 6760,
+        "name": "Ribe"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1021,
+    "fields": {
+        "zipcode": 6771,
+        "name": "Gredstedbro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1022,
+    "fields": {
+        "zipcode": 6780,
+        "name": "Sk\u00e6rb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1023,
+    "fields": {
+        "zipcode": 6792,
+        "name": "R\u00f8m\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1024,
+    "fields": {
+        "zipcode": 6800,
+        "name": "Varde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1025,
+    "fields": {
+        "zipcode": 6818,
+        "name": "\u00c5rre"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1026,
+    "fields": {
+        "zipcode": 6823,
+        "name": "Ansager"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1027,
+    "fields": {
+        "zipcode": 6830,
+        "name": "N\u00f8rre Nebel"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1028,
+    "fields": {
+        "zipcode": 6840,
+        "name": "Oksb\u00f8l"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1029,
+    "fields": {
+        "zipcode": 6851,
+        "name": "Janderup Vestj"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1030,
+    "fields": {
+        "zipcode": 6852,
+        "name": "Billum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1031,
+    "fields": {
+        "zipcode": 6853,
+        "name": "Vejers Strand"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1032,
+    "fields": {
+        "zipcode": 6854,
+        "name": "Henne"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1033,
+    "fields": {
+        "zipcode": 6855,
+        "name": "Outrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1034,
+    "fields": {
+        "zipcode": 6857,
+        "name": "Bl\u00e5vand"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1035,
+    "fields": {
+        "zipcode": 6862,
+        "name": "Tistrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1036,
+    "fields": {
+        "zipcode": 6870,
+        "name": "\u00d8lgod"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1037,
+    "fields": {
+        "zipcode": 6880,
+        "name": "Tarm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1038,
+    "fields": {
+        "zipcode": 6893,
+        "name": "Hemmet"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1039,
+    "fields": {
+        "zipcode": 6900,
+        "name": "Skjern"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1040,
+    "fields": {
+        "zipcode": 6920,
+        "name": "Videb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1041,
+    "fields": {
+        "zipcode": 6933,
+        "name": "Kib\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1042,
+    "fields": {
+        "zipcode": 6940,
+        "name": "Lem St"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1043,
+    "fields": {
+        "zipcode": 6950,
+        "name": "Ringk\u00f8bing"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1044,
+    "fields": {
+        "zipcode": 6960,
+        "name": "Hvide Sande"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1045,
+    "fields": {
+        "zipcode": 6971,
+        "name": "Spjald"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1046,
+    "fields": {
+        "zipcode": 6973,
+        "name": "\u00d8rnh\u00f8j"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1047,
+    "fields": {
+        "zipcode": 6980,
+        "name": "Tim"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1048,
+    "fields": {
+        "zipcode": 6990,
+        "name": "Ulfborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1049,
+    "fields": {
+        "zipcode": 7000,
+        "name": "Fredericia"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1050,
+    "fields": {
+        "zipcode": 7007,
+        "name": "Fredericia"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1051,
+    "fields": {
+        "zipcode": 7017,
+        "name": "Taulov Pakkecenter"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1052,
+    "fields": {
+        "zipcode": 7018,
+        "name": "Pakker TLP"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1053,
+    "fields": {
+        "zipcode": 7029,
+        "name": "Fredericia"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1054,
+    "fields": {
+        "zipcode": 7080,
+        "name": "B\u00f8rkop"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1055,
+    "fields": {
+        "zipcode": 7100,
+        "name": "Vejle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1056,
+    "fields": {
+        "zipcode": 7120,
+        "name": "Vejle \u00d8st"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1057,
+    "fields": {
+        "zipcode": 7130,
+        "name": "Juelsminde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1058,
+    "fields": {
+        "zipcode": 7140,
+        "name": "Stouby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1059,
+    "fields": {
+        "zipcode": 7150,
+        "name": "Barrit"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1060,
+    "fields": {
+        "zipcode": 7160,
+        "name": "T\u00f8rring"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1061,
+    "fields": {
+        "zipcode": 7171,
+        "name": "Uldum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1062,
+    "fields": {
+        "zipcode": 7173,
+        "name": "Vonge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1063,
+    "fields": {
+        "zipcode": 7182,
+        "name": "Bredsten"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1064,
+    "fields": {
+        "zipcode": 7183,
+        "name": "Randb\u00f8l"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1065,
+    "fields": {
+        "zipcode": 7184,
+        "name": "Vandel"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1066,
+    "fields": {
+        "zipcode": 7190,
+        "name": "Billund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1067,
+    "fields": {
+        "zipcode": 7200,
+        "name": "Grindsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1068,
+    "fields": {
+        "zipcode": 7250,
+        "name": "Hejnsvig"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1069,
+    "fields": {
+        "zipcode": 7260,
+        "name": "S\u00f8nder Omme"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1070,
+    "fields": {
+        "zipcode": 7270,
+        "name": "Stakroge"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1071,
+    "fields": {
+        "zipcode": 7280,
+        "name": "S\u00f8nder Felding"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1072,
+    "fields": {
+        "zipcode": 7300,
+        "name": "Jelling"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1073,
+    "fields": {
+        "zipcode": 7321,
+        "name": "Gadbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1074,
+    "fields": {
+        "zipcode": 7323,
+        "name": "Give"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1075,
+    "fields": {
+        "zipcode": 7330,
+        "name": "Brande"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1076,
+    "fields": {
+        "zipcode": 7361,
+        "name": "Ejstrupholm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1077,
+    "fields": {
+        "zipcode": 7362,
+        "name": "Hampen"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1078,
+    "fields": {
+        "zipcode": 7400,
+        "name": "Herning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1079,
+    "fields": {
+        "zipcode": 7429,
+        "name": "Herning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1080,
+    "fields": {
+        "zipcode": 7430,
+        "name": "Ikast"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1081,
+    "fields": {
+        "zipcode": 7441,
+        "name": "Bording"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1082,
+    "fields": {
+        "zipcode": 7442,
+        "name": "Engesvang"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1083,
+    "fields": {
+        "zipcode": 7451,
+        "name": "Sunds"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1084,
+    "fields": {
+        "zipcode": 7470,
+        "name": "Karup J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1085,
+    "fields": {
+        "zipcode": 7480,
+        "name": "Vildbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1086,
+    "fields": {
+        "zipcode": 7490,
+        "name": "Aulum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1087,
+    "fields": {
+        "zipcode": 7500,
+        "name": "Holstebro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1088,
+    "fields": {
+        "zipcode": 7540,
+        "name": "Haderup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1089,
+    "fields": {
+        "zipcode": 7550,
+        "name": "S\u00f8rvad"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1090,
+    "fields": {
+        "zipcode": 7560,
+        "name": "Hjerm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1091,
+    "fields": {
+        "zipcode": 7570,
+        "name": "Vemb"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1092,
+    "fields": {
+        "zipcode": 7600,
+        "name": "Struer"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1093,
+    "fields": {
+        "zipcode": 7620,
+        "name": "Lemvig"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1094,
+    "fields": {
+        "zipcode": 7650,
+        "name": "B\u00f8vlingbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1095,
+    "fields": {
+        "zipcode": 7660,
+        "name": "B\u00e6kmarksbro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1096,
+    "fields": {
+        "zipcode": 7673,
+        "name": "Harbo\u00f8re"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1097,
+    "fields": {
+        "zipcode": 7680,
+        "name": "Thybor\u00f8n"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1098,
+    "fields": {
+        "zipcode": 7700,
+        "name": "Thisted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1099,
+    "fields": {
+        "zipcode": 7730,
+        "name": "Hanstholm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1100,
+    "fields": {
+        "zipcode": 7741,
+        "name": "Fr\u00f8strup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1101,
+    "fields": {
+        "zipcode": 7742,
+        "name": "Vesl\u00f8s"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1102,
+    "fields": {
+        "zipcode": 7752,
+        "name": "Snedsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1103,
+    "fields": {
+        "zipcode": 7755,
+        "name": "Bedsted Thy"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1104,
+    "fields": {
+        "zipcode": 7760,
+        "name": "Hurup Thy"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1105,
+    "fields": {
+        "zipcode": 7770,
+        "name": "Vestervig"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1106,
+    "fields": {
+        "zipcode": 7790,
+        "name": "Thyholm"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1107,
+    "fields": {
+        "zipcode": 7800,
+        "name": "Skive"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1108,
+    "fields": {
+        "zipcode": 7830,
+        "name": "Vinderup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1109,
+    "fields": {
+        "zipcode": 7840,
+        "name": "H\u00f8jslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1110,
+    "fields": {
+        "zipcode": 7850,
+        "name": "Stoholm Jyll"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1111,
+    "fields": {
+        "zipcode": 7860,
+        "name": "Sp\u00f8ttrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1112,
+    "fields": {
+        "zipcode": 7870,
+        "name": "Roslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1113,
+    "fields": {
+        "zipcode": 7884,
+        "name": "Fur"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1114,
+    "fields": {
+        "zipcode": 7900,
+        "name": "Nyk\u00f8bing M"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1115,
+    "fields": {
+        "zipcode": 7950,
+        "name": "Erslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1116,
+    "fields": {
+        "zipcode": 7960,
+        "name": "Karby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1117,
+    "fields": {
+        "zipcode": 7970,
+        "name": "Redsted M"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1118,
+    "fields": {
+        "zipcode": 7980,
+        "name": "Vils"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1119,
+    "fields": {
+        "zipcode": 7990,
+        "name": "\u00d8ster Assels"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1120,
+    "fields": {
+        "zipcode": 7992,
+        "name": "Sydjylland/Fyn USF P"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1121,
+    "fields": {
+        "zipcode": 7993,
+        "name": "Sydjylland/Fyn USF B"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1122,
+    "fields": {
+        "zipcode": 7996,
+        "name": "Fakturaservice"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1123,
+    "fields": {
+        "zipcode": 7997,
+        "name": "Fakturascanning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1124,
+    "fields": {
+        "zipcode": 7998,
+        "name": "Statsservice"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1125,
+    "fields": {
+        "zipcode": 7999,
+        "name": "Kommunepost"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1126,
+    "fields": {
+        "zipcode": 8000,
+        "name": "Aarhus C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1127,
+    "fields": {
+        "zipcode": 8100,
+        "name": "Aarhus C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1128,
+    "fields": {
+        "zipcode": 8200,
+        "name": "Aarhus N"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1129,
+    "fields": {
+        "zipcode": 8210,
+        "name": "Aarhus V"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1130,
+    "fields": {
+        "zipcode": 8220,
+        "name": "Brabrand"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1131,
+    "fields": {
+        "zipcode": 8229,
+        "name": "Risskov \u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1132,
+    "fields": {
+        "zipcode": 8230,
+        "name": "\u00c5byh\u00f8j"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1133,
+    "fields": {
+        "zipcode": 8240,
+        "name": "Risskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1134,
+    "fields": {
+        "zipcode": 8245,
+        "name": "Risskov \u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1135,
+    "fields": {
+        "zipcode": 8250,
+        "name": "Eg\u00e5"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1136,
+    "fields": {
+        "zipcode": 8260,
+        "name": "Viby J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1137,
+    "fields": {
+        "zipcode": 8270,
+        "name": "H\u00f8jbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1138,
+    "fields": {
+        "zipcode": 8300,
+        "name": "Odder"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1139,
+    "fields": {
+        "zipcode": 8305,
+        "name": "Sams\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1140,
+    "fields": {
+        "zipcode": 8310,
+        "name": "Tranbjerg J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1141,
+    "fields": {
+        "zipcode": 8320,
+        "name": "M\u00e5rslet"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1142,
+    "fields": {
+        "zipcode": 8330,
+        "name": "Beder"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1143,
+    "fields": {
+        "zipcode": 8340,
+        "name": "Malling"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1144,
+    "fields": {
+        "zipcode": 8350,
+        "name": "Hundslund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1145,
+    "fields": {
+        "zipcode": 8355,
+        "name": "Solbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1146,
+    "fields": {
+        "zipcode": 8361,
+        "name": "Hasselager"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1147,
+    "fields": {
+        "zipcode": 8362,
+        "name": "H\u00f8rning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1148,
+    "fields": {
+        "zipcode": 8370,
+        "name": "Hadsten"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1149,
+    "fields": {
+        "zipcode": 8380,
+        "name": "Trige"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1150,
+    "fields": {
+        "zipcode": 8381,
+        "name": "Tilst"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1151,
+    "fields": {
+        "zipcode": 8382,
+        "name": "Hinnerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1152,
+    "fields": {
+        "zipcode": 8400,
+        "name": "Ebeltoft"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1153,
+    "fields": {
+        "zipcode": 8410,
+        "name": "R\u00f8nde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1154,
+    "fields": {
+        "zipcode": 8420,
+        "name": "Knebel"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1155,
+    "fields": {
+        "zipcode": 8444,
+        "name": "Balle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1156,
+    "fields": {
+        "zipcode": 8450,
+        "name": "Hammel"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1157,
+    "fields": {
+        "zipcode": 8462,
+        "name": "Harlev J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1158,
+    "fields": {
+        "zipcode": 8464,
+        "name": "Galten"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1159,
+    "fields": {
+        "zipcode": 8471,
+        "name": "Sabro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1160,
+    "fields": {
+        "zipcode": 8472,
+        "name": "Sporup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1161,
+    "fields": {
+        "zipcode": 8500,
+        "name": "Grenaa"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1162,
+    "fields": {
+        "zipcode": 8520,
+        "name": "Lystrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1163,
+    "fields": {
+        "zipcode": 8530,
+        "name": "Hjortsh\u00f8j"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1164,
+    "fields": {
+        "zipcode": 8541,
+        "name": "Sk\u00f8dstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1165,
+    "fields": {
+        "zipcode": 8543,
+        "name": "Hornslet"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1166,
+    "fields": {
+        "zipcode": 8544,
+        "name": "M\u00f8rke"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1167,
+    "fields": {
+        "zipcode": 8550,
+        "name": "Ryomg\u00e5rd"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1168,
+    "fields": {
+        "zipcode": 8560,
+        "name": "Kolind"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1169,
+    "fields": {
+        "zipcode": 8570,
+        "name": "Trustrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1170,
+    "fields": {
+        "zipcode": 8581,
+        "name": "Nimtofte"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1171,
+    "fields": {
+        "zipcode": 8585,
+        "name": "Glesborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1172,
+    "fields": {
+        "zipcode": 8586,
+        "name": "\u00d8rum Djurs"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1173,
+    "fields": {
+        "zipcode": 8592,
+        "name": "Anholt"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1174,
+    "fields": {
+        "zipcode": 8600,
+        "name": "Silkeborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1175,
+    "fields": {
+        "zipcode": 8620,
+        "name": "Kjellerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1176,
+    "fields": {
+        "zipcode": 8632,
+        "name": "Lemming"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1177,
+    "fields": {
+        "zipcode": 8641,
+        "name": "Sorring"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1178,
+    "fields": {
+        "zipcode": 8643,
+        "name": "Ans By"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1179,
+    "fields": {
+        "zipcode": 8653,
+        "name": "Them"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1180,
+    "fields": {
+        "zipcode": 8654,
+        "name": "Bryrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1181,
+    "fields": {
+        "zipcode": 8660,
+        "name": "Skanderborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1182,
+    "fields": {
+        "zipcode": 8670,
+        "name": "L\u00e5sby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1183,
+    "fields": {
+        "zipcode": 8680,
+        "name": "Ry"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1184,
+    "fields": {
+        "zipcode": 8700,
+        "name": "Horsens"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1185,
+    "fields": {
+        "zipcode": 8721,
+        "name": "Daug\u00e5rd"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1186,
+    "fields": {
+        "zipcode": 8722,
+        "name": "Hedensted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1187,
+    "fields": {
+        "zipcode": 8723,
+        "name": "L\u00f8sning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1188,
+    "fields": {
+        "zipcode": 8732,
+        "name": "Hovedg\u00e5rd"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1189,
+    "fields": {
+        "zipcode": 8740,
+        "name": "Br\u00e6dstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1190,
+    "fields": {
+        "zipcode": 8751,
+        "name": "Gedved"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1191,
+    "fields": {
+        "zipcode": 8752,
+        "name": "\u00d8stbirk"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1192,
+    "fields": {
+        "zipcode": 8762,
+        "name": "Flemming"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1193,
+    "fields": {
+        "zipcode": 8763,
+        "name": "Rask M\u00f8lle"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1194,
+    "fields": {
+        "zipcode": 8765,
+        "name": "Klovborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1195,
+    "fields": {
+        "zipcode": 8766,
+        "name": "N\u00f8rre Snede"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1196,
+    "fields": {
+        "zipcode": 8781,
+        "name": "Stenderup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1197,
+    "fields": {
+        "zipcode": 8783,
+        "name": "Hornsyld"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1198,
+    "fields": {
+        "zipcode": 8789,
+        "name": "Endelave"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1199,
+    "fields": {
+        "zipcode": 8799,
+        "name": "Tun\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1200,
+    "fields": {
+        "zipcode": 8800,
+        "name": "Viborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1201,
+    "fields": {
+        "zipcode": 8830,
+        "name": "Tjele"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1202,
+    "fields": {
+        "zipcode": 8831,
+        "name": "L\u00f8gstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1203,
+    "fields": {
+        "zipcode": 8832,
+        "name": "Skals"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1204,
+    "fields": {
+        "zipcode": 8840,
+        "name": "R\u00f8dk\u00e6rsbro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1205,
+    "fields": {
+        "zipcode": 8850,
+        "name": "Bjerringbro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1206,
+    "fields": {
+        "zipcode": 8860,
+        "name": "Ulstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1207,
+    "fields": {
+        "zipcode": 8870,
+        "name": "Lang\u00e5"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1208,
+    "fields": {
+        "zipcode": 8881,
+        "name": "Thors\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1209,
+    "fields": {
+        "zipcode": 8882,
+        "name": "F\u00e5rvang"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1210,
+    "fields": {
+        "zipcode": 8883,
+        "name": "Gjern"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1211,
+    "fields": {
+        "zipcode": 8900,
+        "name": "Randers C"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1212,
+    "fields": {
+        "zipcode": 8920,
+        "name": "Randers NV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1213,
+    "fields": {
+        "zipcode": 8930,
+        "name": "Randers N\u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1214,
+    "fields": {
+        "zipcode": 8940,
+        "name": "Randers SV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1215,
+    "fields": {
+        "zipcode": 8950,
+        "name": "\u00d8rsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1216,
+    "fields": {
+        "zipcode": 8960,
+        "name": "Randers S\u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1217,
+    "fields": {
+        "zipcode": 8961,
+        "name": "Alling\u00e5bro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1218,
+    "fields": {
+        "zipcode": 8963,
+        "name": "Auning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1219,
+    "fields": {
+        "zipcode": 8970,
+        "name": "Havndal"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1220,
+    "fields": {
+        "zipcode": 8981,
+        "name": "Spentrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1221,
+    "fields": {
+        "zipcode": 8983,
+        "name": "Gjerlev J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1222,
+    "fields": {
+        "zipcode": 8990,
+        "name": "F\u00e5rup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1223,
+    "fields": {
+        "zipcode": 9000,
+        "name": "Aalborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1224,
+    "fields": {
+        "zipcode": 9029,
+        "name": "Aalborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1225,
+    "fields": {
+        "zipcode": 9100,
+        "name": "Aalborg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1226,
+    "fields": {
+        "zipcode": 9200,
+        "name": "Aalborg SV"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1227,
+    "fields": {
+        "zipcode": 9210,
+        "name": "Aalborg S\u00d8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1228,
+    "fields": {
+        "zipcode": 9220,
+        "name": "Aalborg \u00d8st"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1229,
+    "fields": {
+        "zipcode": 9230,
+        "name": "Svenstrup J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1230,
+    "fields": {
+        "zipcode": 9240,
+        "name": "Nibe"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1231,
+    "fields": {
+        "zipcode": 9260,
+        "name": "Gistrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1232,
+    "fields": {
+        "zipcode": 9270,
+        "name": "Klarup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1233,
+    "fields": {
+        "zipcode": 9280,
+        "name": "Storvorde"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1234,
+    "fields": {
+        "zipcode": 9293,
+        "name": "Kongerslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1235,
+    "fields": {
+        "zipcode": 9300,
+        "name": "S\u00e6by"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1236,
+    "fields": {
+        "zipcode": 9310,
+        "name": "Vodskov"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1237,
+    "fields": {
+        "zipcode": 9320,
+        "name": "Hjallerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1238,
+    "fields": {
+        "zipcode": 9330,
+        "name": "Dronninglund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1239,
+    "fields": {
+        "zipcode": 9340,
+        "name": "Asaa"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1240,
+    "fields": {
+        "zipcode": 9352,
+        "name": "Dybvad"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1241,
+    "fields": {
+        "zipcode": 9362,
+        "name": "Gandrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1242,
+    "fields": {
+        "zipcode": 9370,
+        "name": "Hals"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1243,
+    "fields": {
+        "zipcode": 9380,
+        "name": "Vestbjerg"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1244,
+    "fields": {
+        "zipcode": 9381,
+        "name": "Sulsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1245,
+    "fields": {
+        "zipcode": 9382,
+        "name": "Tylstrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1246,
+    "fields": {
+        "zipcode": 9400,
+        "name": "N\u00f8rresundby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1247,
+    "fields": {
+        "zipcode": 9430,
+        "name": "Vadum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1248,
+    "fields": {
+        "zipcode": 9440,
+        "name": "Aabybro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1249,
+    "fields": {
+        "zipcode": 9460,
+        "name": "Brovst"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1250,
+    "fields": {
+        "zipcode": 9480,
+        "name": "L\u00f8kken"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1251,
+    "fields": {
+        "zipcode": 9490,
+        "name": "Pandrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1252,
+    "fields": {
+        "zipcode": 9492,
+        "name": "Blokhus"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1253,
+    "fields": {
+        "zipcode": 9493,
+        "name": "Saltum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1254,
+    "fields": {
+        "zipcode": 9500,
+        "name": "Hobro"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1255,
+    "fields": {
+        "zipcode": 9510,
+        "name": "Arden"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1256,
+    "fields": {
+        "zipcode": 9520,
+        "name": "Sk\u00f8rping"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1257,
+    "fields": {
+        "zipcode": 9530,
+        "name": "St\u00f8vring"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1258,
+    "fields": {
+        "zipcode": 9541,
+        "name": "Suldrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1259,
+    "fields": {
+        "zipcode": 9550,
+        "name": "Mariager"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1260,
+    "fields": {
+        "zipcode": 9560,
+        "name": "Hadsund"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1261,
+    "fields": {
+        "zipcode": 9574,
+        "name": "B\u00e6lum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1262,
+    "fields": {
+        "zipcode": 9575,
+        "name": "Terndrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1263,
+    "fields": {
+        "zipcode": 9600,
+        "name": "Aars"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1264,
+    "fields": {
+        "zipcode": 9610,
+        "name": "N\u00f8rager"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1265,
+    "fields": {
+        "zipcode": 9620,
+        "name": "Aalestrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1266,
+    "fields": {
+        "zipcode": 9631,
+        "name": "Gedsted"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1267,
+    "fields": {
+        "zipcode": 9632,
+        "name": "M\u00f8ldrup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1268,
+    "fields": {
+        "zipcode": 9640,
+        "name": "Fars\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1269,
+    "fields": {
+        "zipcode": 9670,
+        "name": "L\u00f8gst\u00f8r"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1270,
+    "fields": {
+        "zipcode": 9681,
+        "name": "Ranum"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1271,
+    "fields": {
+        "zipcode": 9690,
+        "name": "Fjerritslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1272,
+    "fields": {
+        "zipcode": 9700,
+        "name": "Br\u00f8nderslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1273,
+    "fields": {
+        "zipcode": 9740,
+        "name": "Jerslev J"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1274,
+    "fields": {
+        "zipcode": 9750,
+        "name": "\u00d8stervr\u00e5"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1275,
+    "fields": {
+        "zipcode": 9760,
+        "name": "Vr\u00e5"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1276,
+    "fields": {
+        "zipcode": 9800,
+        "name": "Hj\u00f8rring"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1277,
+    "fields": {
+        "zipcode": 9830,
+        "name": "T\u00e5rs"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1278,
+    "fields": {
+        "zipcode": 9850,
+        "name": "Hirtshals"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1279,
+    "fields": {
+        "zipcode": 9870,
+        "name": "Sindal"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1280,
+    "fields": {
+        "zipcode": 9881,
+        "name": "Bindslev"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1281,
+    "fields": {
+        "zipcode": 9900,
+        "name": "Frederikshavn"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1282,
+    "fields": {
+        "zipcode": 9940,
+        "name": "L\u00e6s\u00f8"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1283,
+    "fields": {
+        "zipcode": 9970,
+        "name": "Strandby"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1284,
+    "fields": {
+        "zipcode": 9981,
+        "name": "Jerup"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1285,
+    "fields": {
+        "zipcode": 9982,
+        "name": "\u00c5lb\u00e6k"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1286,
+    "fields": {
+        "zipcode": 9990,
+        "name": "Skagen"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1287,
+    "fields": {
+        "zipcode": 9992,
+        "name": "Jylland USF P"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1288,
+    "fields": {
+        "zipcode": 9993,
+        "name": "Jylland USF B"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1289,
+    "fields": {
+        "zipcode": 9996,
+        "name": "Fakturaservice"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1290,
+    "fields": {
+        "zipcode": 9997,
+        "name": "Fakturascanning"
+    }
+},
+{
+    "model": "shop.zipcode",
+    "pk": 1291,
+    "fields": {
+        "zipcode": 9998,
+        "name": "Borgerservice"
+    }
+}
+]

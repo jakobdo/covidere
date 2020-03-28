@@ -5,7 +5,7 @@
     "fields": {
       "name": "Butik 1",
       "address": "Bygaden 1",
-      "zipcode": "1234",
+      "zipcode": "845",
       "city": "Byen",
       "email": "email@butik1.dk",
       "homepage": "http://www.butik1.dk",
@@ -22,7 +22,7 @@
     "fields": {
       "name": "Butik 2",
       "address": "Bygaden 2",
-      "zipcode": "4321",
+      "zipcode": "821",
       "city": "Byen",
       "email": "email@butik2.dk",
       "homepage": "http://www.butik2.dk",

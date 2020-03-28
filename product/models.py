@@ -21,6 +21,7 @@ class Product(models.Model):
     # Price on sale
     # Regular price
     price = models.DecimalField(max_digits=10, decimal_places=2)
+    on_sale = models.BooleanField(default=False)
     size = models.ManyToManyField(ProductSize, blank=True)
     color = models.ManyToManyField(ProductColor, blank=True)
 
@@ -38,4 +39,4 @@ class Product(models.Model):
 
 class ProductImage(models.Model):
     image = models.ImageField(upload_to='images/%Y/%m/%d/')
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="images")
