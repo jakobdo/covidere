@@ -2,3 +2,4 @@ ipython
 Django
 pillow
 django-crispy-forms
+django-debug-toolbar

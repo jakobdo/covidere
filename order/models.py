@@ -20,3 +20,4 @@ class OrderItem(models.Model):
     color = models.ForeignKey('product.ProductColor', blank=True, null=True, on_delete=models.CASCADE)
     size = models.ForeignKey('product.ProductSize', blank=True, null=True, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    count = models.PositiveIntegerField(default=1)

@@ -1,21 +1,37 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div>Støt og køb lokalt i dag</div>
+<div>Støt og køb lokalt i dag - Indkøbskurv: {{ request.session.basket|length }}</div>
 <hr>
 <div class="row row-cols-1 row-cols-md-3">
     {% for product in object_list %}
         <div class="col mb-4">
-            <div class="card">
-                <img src="{{ product.images.first.image.url }}" class="card-img-top" alt="Billede af et produkt">
-                <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">{{ product.description }}</p>
+            <form method="post" action="{% url 'add_basket' %}">{% csrf_token %}
+                <input type="hidden" name="product" value="{{ product.pk }}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">{{ product.description }}</p>
+                    </div>
+                    {% if product.size %}
+                        <select class="form-control" name="size">
+                        {% for size in product.size.all %}
+                            <option value={{ size.pk }}>{{ size.name }}</option>
+                        {% endfor %}
+                        </select>
+                    {% endif %}
+                    {% if product.color %}
+                        <select class="form-control" name="color">
+                        {% for color in product.color.all %}
+                            <option value={{ color.pk }}>{{ color.name }}</option>
+                        {% endfor %}
+                        </select>
+                    {% endif %}
+                    <div class="card-footer text-muted">
+                        <button type="submit" class="btn btn-link">Køb</button>
+                    </div>
                 </div>
-                <div class="card-footer text-muted">
-                    <a href="#" class="card-link">Køb</a>
-                </div>
-            </div>
+            </form>
         </div>
     {% empty %}
         <li>Ingen produkter endnu!</li>

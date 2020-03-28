@@ -16,5 +16,5 @@ class IndexView(ListView):
             queryset
             .filter(active=True)
             .filter(start_datetime__lte=now, end_datetime__gte=now)
-        )
+        ).prefetch_related("size").prefetch_related("color")
         return queryset

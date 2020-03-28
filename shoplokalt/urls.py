@@ -22,6 +22,14 @@ from base.views import IndexView
 
 urlpatterns = [
     path('', IndexView.as_view(), name="index"),
+    path('basket/', include('basket.urls')),
+    path('order/', include('order.urls')),
     path('shop/', include('shop.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
