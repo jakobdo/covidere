@@ -79,22 +79,59 @@ class BasketIndexView(TemplateView):
         return context
 
 
-class BacketRemoveView(View):
+class BasketUpdateView(View):
     def post(self, request, *args, **kwargs):
-        product = kwargs.get('product')
-        try:
-            color = int(request.POST.get('color'))
-        except:
-            color = None
-        try:
-            size = int(request.POST.get('size'))
-        except:
-            size = None
-        basket = self.request.session.get('basket', [])
-        for i in range(len(basket)):
-            if basket[i]['product'] == product and basket[i]['color'] == color and basket[i]['size'] == size:
-                del basket[i] 
-                break
-        self.request.session['basket'] = basket
-        self.request.session.modified = True
+        action = request.POST.get('action')
+        if action == 'update' or action == 'order':
+            basket = request.session.get('basket', [])
+            # Loop count elements and update session
+            for item in request.POST:
+                if item.startswith('count_'):
+                    parts = item.split("_")[1:]
+                    product = int(parts[0])
+                    try:
+                        color = int(parts[1])
+                    except:
+                        color = None
+                    try:
+                        size = int(parts[2])
+                    except:
+                        size = None
+                    
+                    for i in range(len(basket)):
+                        if basket[i]['product'] == product and basket[i]['color'] == color and basket[i]['size'] == size:
+                            try:
+                                count = int(request.POST.get(item))
+                            except:
+                                count = 0
+                            if count > 0:
+                                basket[i]['count'] = count
+                            else:
+                                del basket[i] 
+                            break
+            request.session['basket'] = basket
+            request.session.modified = True
+
+            # TODO - Redirect to ORDER FORM
+            if action == 'order':
+                return redirect(reverse('order'))
+
+        elif action.startswith('remove_'):
+            parts = action.split("_")[1:]
+            product = int(parts[0])
+            try:
+                color = int(parts[1])
+            except:
+                color = None
+            try:
+                size = int(parts[2])
+            except:
+                size = None
+            basket = request.session.get('basket', [])
+            for i in range(len(basket)):
+                if basket[i]['product'] == product and basket[i]['color'] == color and basket[i]['size'] == size:
+                    del basket[i] 
+                    break
+            request.session['basket'] = basket
+            request.session.modified = True
         return redirect(reverse('basket_index'))

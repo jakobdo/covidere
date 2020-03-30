@@ -2,6 +2,7 @@
 
 {% block content %}
 <h1>Indkøbskurv</h1>
+<form method="post" action="{% url 'basket_update' %}">{% csrf_token %}
 <table class="table">
     <thead>
       <tr>
@@ -22,18 +23,17 @@
                 <th>{{ item.shop }}</th>
                 <td>{{ item.color }}</td>
                 <td>{{ item.size }}</td>
-                <td><input type="number" name="count_{{item.product_id}}_{{item.color}}_{{item.size}}" class="form-control" value="{{ item.count }}"></td>
+                <td><input type="number" name="count_{{item.product_id}}_{{item.color_id}}_{{item.size_id}}" class="form-control update-count" value="{{ item.count }}"></td>
                 <td>{{ item.price }}</td>
                 <td>{{ item.subtotal }}</td>
                 <td>
-                    <form method="post" action="{% url 'basket_remove' product=item.product_id %}">{% csrf_token %}
-                        <input type="hidden" name="color" value="{{item.color_id}}">
-                        <input type="hidden" name="size" value="{{item.size_id}}">
-                        <button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button>
-                    </form>
+                    <button type="submit" class="btn btn-link" name="action" value="remove_{{item.product_id}}_{{item.color_id}}_{{item.size_id}}"><i class="far fa-trash-alt"></i></button>
                 </td>
               </tr>
         {% endfor %}
     </tbody>
 </table>
+<button type="submit" class="btn btn-secondary" name="action" value="update">Opdater</button>
+<button type="submit" class="btn btn-primary" name="action" value="order">Bestil</button>
+</form>
 {% endblock %}
