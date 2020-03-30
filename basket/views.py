@@ -57,10 +57,12 @@ class BasketIndexView(TemplateView):
         colors = {c.id: c.name for c in ProductColor.objects.filter(pk__in=[item.get('color') for item in basket])}
 
         new_basket = []
+        total = 0
 
         for item in basket:
             count = item.get('count')
             price = products.get(item.get('product')).price
+            subtotal = count * price
             new_item = dict(
                 product_id=item.get('product'),
                 product=products.get(item.get('product')).name,
@@ -71,10 +73,12 @@ class BasketIndexView(TemplateView):
                 color=colors.get(item.get('color')),
                 count=count,
                 price=price,
-                subtotal=count * price
+                subtotal=subtotal
             )
             new_basket.append(new_item)
+            total += subtotal
         context['basket'] = new_basket
+        context['total'] = total
 
         return context
 

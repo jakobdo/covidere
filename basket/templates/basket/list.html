@@ -32,6 +32,12 @@
               </tr>
         {% endfor %}
     </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="6">Total</th><td>{{ total }}</td>
+        </tr>
+        
+    </tfoot>
 </table>
 <button type="submit" class="btn btn-secondary" name="action" value="update">Opdater</button>
 <button type="submit" class="btn btn-primary" name="action" value="order">Bestil</button>
