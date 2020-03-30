@@ -1,3 +1,39 @@
-{% for item in basket %}
-    <p>{{ item.product }}</p>
-{% endfor %}
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Indkøbskurv</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Produkt</th>
+        <th scope="col">Butik</th>
+        <th scope="col">Farve</th>
+        <th scope="col">Størrelse</th>
+        <th scope="col">Antal</th>
+        <th scope="col">Pris</th>
+        <th scope="col">Subtotal</th>
+        <th scope="col">Slet</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for item in basket %}
+            <tr>
+                <th>{{ item.product }}</th>
+                <th>{{ item.shop }}</th>
+                <td>{{ item.color }}</td>
+                <td>{{ item.size }}</td>
+                <td><input type="number" name="count_{{item.product_id}}_{{item.color}}_{{item.size}}" class="form-control" value="{{ item.count }}"></td>
+                <td>{{ item.price }}</td>
+                <td>{{ item.subtotal }}</td>
+                <td>
+                    <form method="post" action="{% url 'basket_remove' product=item.product_id %}">{% csrf_token %}
+                        <input type="hidden" name="color" value="{{item.color_id}}">
+                        <input type="hidden" name="size" value="{{item.size_id}}">
+                        <button type="submit" class="btn btn-link"><i class="far fa-trash-alt"></i></button>
+                    </form>
+                </td>
+              </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
