@@ -1,18 +1,25 @@
 from django.db import models
 
 
-class OrderStatus(models.Model):
-    name = models.CharField(max_length=100)
-
-
 class Order(models.Model):
+    ORDERED = 1
+    ACCEPTED = 2
+    SENT = 3
+    REJECTED = 4
+    
+    ORDER_STATUS_CHOICES = [
+        (ORDERED, 'Bestilt'),
+        (ACCEPTED, 'Accepteret'),
+        (SENT, 'Afsendt'),
+        (REJECTED, 'Afvist'),
+    ]
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
     zipcode = models.CharField(max_length=10)
     city = models.CharField(max_length=100)
     email = models.EmailField()
     mobile = models.CharField(max_length=20)
-    status = models.ForeignKey(OrderStatus, on_delete=models.CASCADE)
+    status = models.IntegerField(choices=ORDER_STATUS_CHOICES, default=ORDERED)
 
 
 class OrderItem(models.Model):
