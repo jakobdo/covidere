@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div>Støt og køb lokalt i dag - Indkøbskurv: {{ request.session.basket|length }}</div>
-<hr>
 <div class="row row-cols-1 row-cols-md-3">
     {% for product in object_list %}
         <div class="col mb-4">
@@ -28,7 +26,7 @@
                         </select>
                     {% endif %}
                     <div class="card-footer text-muted">
-                        <button type="submit" class="btn btn-link">Køb</button>
+                        <button type="submit" class="btn btn-link"><i class="fas fa-plus-circle"></i> Køb</button>
                     </div>
                 </div>
             </form>

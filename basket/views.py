@@ -119,7 +119,9 @@ class BasketUpdateView(View):
             # TODO - Redirect to ORDER FORM
             if action == 'order':
                 return redirect(reverse('order'))
-
+        elif action == 'clear':
+            request.session['basket'] = []
+            request.session.modified = True
         elif action.startswith('remove_'):
             parts = action.split("_")[1:]
             product = int(parts[0])
