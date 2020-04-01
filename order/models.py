@@ -28,3 +28,4 @@ class OrderItem(models.Model):
     size = models.ForeignKey('product.ProductSize', blank=True, null=True, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     count = models.PositiveIntegerField(default=1)
+    price = models.DecimalField(max_digits=10, decimal_places=2)

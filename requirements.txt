@@ -3,3 +3,4 @@ Django
 pillow
 django-crispy-forms
 django-debug-toolbar
+pylint-django
