@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
@@ -10,18 +11,15 @@ from product.models import Product
 from shop.models import Shop
 
 
-class ShopUpdateView(UpdateView):
+class ShopUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Shop
     fields = ['name', 'address', 'zipcode', 'city', 'email', 'homepage', 'phone', 'mobilepay', 'contact']
     template_name = 'shop/update.html'
-    success_url = reverse_lazy('shop_updated')
+    success_url = reverse_lazy('shop_update')
+    success_message = "Information updated!"
 
     def get_object(self, queryset=None):
         return self.request.user.shop
-
-
-class ShopUpdatedView(LoginRequiredMixin, TemplateView):
-    template_name = 'shop/updated.html'
 
 
 class ShopProductListView(LoginRequiredMixin, ListView):

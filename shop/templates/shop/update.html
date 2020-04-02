@@ -1,10 +1,10 @@
 {% extends 'shop/base.html' %}
-{% load crispy_forms_tags %}
+{% load crispy_forms_tags i18n %}
 
 {% block content %}
-<h1>Informationer</h1>
+<h1>{% trans "Information" %}</h1>
 <form method="post">{% csrf_token %}
     {{ form|crispy }}
-    <input type="submit" class="btn btn-primary" value="Gem">
+    <button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
 </form>
 {% endblock %}

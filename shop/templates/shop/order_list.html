@@ -1,7 +1,9 @@
 {% extends 'shop/base.html' %}
 
+{% load i18n %}
+
 {% block content %}
-<h1>Ordrer</h1>
+<h1>{% trans "Orders" %}</h1>
 
 <div class="list-group">
     {% for order in object_list %}
@@ -9,7 +11,7 @@
             {{ order.pk }}
         </a>
     {% empty %}
-        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ingen produkter.</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No orders." %}</a>
     {% endfor %}
 </div>
 {% endblock %}

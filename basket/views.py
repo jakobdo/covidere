@@ -131,7 +131,7 @@ class BasketUpdateView(View):
         elif action == 'clear':
             request.session['basket'] = []
             request.session.modified = True
-            messages.add_message(self.request, messages.INFO, gettext('Basket emptied'))
+            messages.add_message(self.request, messages.INFO, gettext('Basket cleared'))
         elif action.startswith('remove_'):
             parts = action.split("_")[1:]
             product = int(parts[0])

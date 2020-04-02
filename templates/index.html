@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
 <div class="row row-cols-1 row-cols-md-3">
     {% for product in object_list %}
@@ -26,13 +28,13 @@
                         </select>
                     {% endif %}
                     <div class="card-footer text-muted">
-                        <button type="submit" class="btn btn-link"><i class="fas fa-plus-circle"></i> Køb</button>
+                        <button type="submit" class="btn btn-link"><i class="fas fa-plus-circle"></i> {% trans "Buy" %}</button>
                     </div>
                 </div>
             </form>
         </div>
     {% empty %}
-        <li>Ingen produkter endnu!</li>
+        <li>{% trans "No products yet." %}</li>
     {% endfor %}
 </div>
 {% endblock %}

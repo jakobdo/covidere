@@ -1,9 +1,9 @@
 {% extends 'shop/base.html' %}
-{% load crispy_forms_tags %}
+{% load crispy_forms_tags i18n %}
 
 {% block content %}
 <form method="post">{% csrf_token %}
     {{ form|crispy }}
-    <input type="submit" class="btn btn-primary" value="Opret">
+    <button type="submit" class="btn btn-primary">{% trans "Create" %}</button>
 </form>
 {% endblock %}

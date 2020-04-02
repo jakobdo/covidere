@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% block content %}
-<h1>Indkøbskurv</h1>
+<h1>{% trans "Basket" %}</h1>
 <form method="post" action="{% url 'basket_update' %}">{% csrf_token %}
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">Produkt</th>
-        <th scope="col">Butik</th>
-        <th scope="col">Farve</th>
-        <th scope="col">Størrelse</th>
-        <th scope="col">Antal</th>
-        <th scope="col">Pris</th>
-        <th scope="col">Subtotal</th>
-        <th scope="col">Slet</th>
+        <th scope="col">{% trans "Product" %}</th>
+        <th scope="col">{% trans "Shop" %}</th>
+        <th scope="col">{% trans "Color" %}</th>
+        <th scope="col">{% trans "Size" %}</th>
+        <th scope="col">{% trans "Count" %}</th>
+        <th scope="col">{% trans "Price" %}</th>
+        <th scope="col">{% trans "Subtotal" %}</th>
+        <th scope="col">{% trans "Delete" %}</th>
       </tr>
     </thead>
     <tbody>
@@ -34,13 +36,13 @@
     </tbody>
     <tfoot>
         <tr>
-            <th colspan="6">Total</th><td>{{ total }}</td>
+            <th colspan="6">{% trans "Total" %}</th><td>{{ total }}</td>
         </tr>
         
     </tfoot>
 </table>
-<button type="submit" class="btn btn-secondary" name="action" value="update"><i class="fas fa-sync"></i> Opdater</button>
-<button type="submit" class="btn btn-danger" name="action" value="clear"><i class="far fa-trash-alt"></i> Tøm kurven</button>
-<button type="submit" class="btn btn-primary" name="action" value="order"><i class="fas fa-shopping-cart"></i> Bestil</button>
+<button type="submit" class="btn btn-secondary" name="action" value="update"><i class="fas fa-sync"></i> {% trans "Update" %}</button>
+<button type="submit" class="btn btn-danger" name="action" value="clear"><i class="far fa-trash-alt"></i> {% trans "Clear basket" %}</button>
+<button type="submit" class="btn btn-primary" name="action" value="order"><i class="fas fa-shopping-cart"></i> {% trans "Order" %}</button>
 </form>
 {% endblock %}

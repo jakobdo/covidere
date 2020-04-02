@@ -1,7 +1,9 @@
 {% extends 'shop/base.html' %}
 
+{% load i18n %}
+
 {% block content %}
-<div class="alert alert-success" role="alert">
-    Opdatering udført!
-</div>
+    <div class="alert alert-success" role="alert">
+        {% trans "Information updated!" %}
+    </div>
 {% endblock %}

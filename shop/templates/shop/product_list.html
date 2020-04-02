@@ -1,9 +1,11 @@
 {% extends 'shop/base.html' %}
 
-{% block content %}
-<h1>Produkter</h1>
+{% load i18n %}
 
-<a href="{% url 'shop_product_create' %}" class="btn btn-success">Tilføj produkt</a>
+{% block content %}
+<h1>{% trans "Products" %}</h1>
+
+<a href="{% url 'shop_product_create' %}" class="btn btn-success">{% trans "Add product" %}</a>
 
 <hr>
 
@@ -13,7 +15,7 @@
             {{ product.name }}
         </a>
     {% empty %}
-        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ingen produkter.</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No products created or active yet." %}</a>
     {% endfor %}
 </div>
 {% endblock %}
