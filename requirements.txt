@@ -4,3 +4,4 @@ pillow
 django-crispy-forms
 django-debug-toolbar
 pylint-django
+django-extensions

@@ -1,0 +1,15 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+<h1>Ordrer</h1>
+
+<div class="list-group">
+    {% for order in object_list %}
+        <a href="{% url 'show_order_detail' pk=order.pk %}" class="list-group-item list-group-item-action">
+            {{ order.pk }}
+        </a>
+    {% empty %}
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ingen produkter.</a>
+    {% endfor %}
+</div>
+{% endblock %}

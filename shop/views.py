@@ -38,8 +38,12 @@ class ShopOrderListView(LoginRequiredMixin, ListView):
     template_name = 'shop/order_list.html'
 
     def get_queryset(self):
-        queryset = Order.objects.filter(shop=self.request.user.shop)
+        queryset = Order.objects.filter(items__product__shop=self.request.user.shop).distinct()
         return queryset
+
+class ShopOrderDetailView(LoginRequiredMixin, DetailView):
+    model = Order
+    template_name = 'shop/order_detail.html'
 
 
 class ShopOverviewView(LoginRequiredMixin, View):
