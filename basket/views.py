@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.utils.translation import gettext
 from django.views import View
@@ -15,11 +15,15 @@ class Basket:
     """
     def __init__(self, session):
         self.session = session
-    
+
     def add(self, product, color, size):
         # Add or update item
         basket = self.session.setdefault('basket', [])
-        item = next((item for item in basket if (item['product'] == product and item['color'] == color and item['size'] == size)), None)
+        item = next((item for item in basket if (
+            item['product'] == product and
+            item['color'] == color and
+            item['size'] == size
+        )), None)
         if item:
             item['count'] += 1
         else:
@@ -55,13 +59,19 @@ class BasketIndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(BasketIndexView, self).get_context_data(**kwargs)
         basket = self.request.session.get('basket', [])
-        
+
         # Load products
-        products = {p.id: p for p in Product.objects.filter(pk__in=[item.get('product') for item in basket]).select_related('shop')}
+        products = {p.id: p for p in Product.objects.filter(
+            pk__in=[item.get('product') for item in basket]
+        ).select_related('shop')}
         # Load sizes
-        sizes = {s.id: s.name for s in ProductSize.objects.filter(pk__in=[item.get('size') for item in basket])}
+        sizes = {s.id: s.name for s in ProductSize.objects.filter(
+            pk__in=[item.get('size') for item in basket]
+        )}
         # Load colors
-        colors = {c.id: c.name for c in ProductColor.objects.filter(pk__in=[item.get('color') for item in basket])}
+        colors = {c.id: c.name for c in ProductColor.objects.filter(
+            pk__in=[item.get('color') for item in basket]
+        )}
 
         new_basket = []
         total = 0
@@ -91,7 +101,7 @@ class BasketIndexView(TemplateView):
 
 
 class BasketUpdateView(View):
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         action = request.POST.get('action')
         if action == 'update' or action == 'order':
             basket = request.session.get('basket', [])
@@ -102,18 +112,18 @@ class BasketUpdateView(View):
                     product = int(parts[0])
                     try:
                         color = int(parts[1])
-                    except:
+                    except (TypeError, ValueError):
                         color = None
                     try:
                         size = int(parts[2])
-                    except:
+                    except (TypeError, ValueError):
                         size = None
-                    
+
                     for i in range(len(basket)):
                         if basket[i]['product'] == product and basket[i]['color'] == color and basket[i]['size'] == size:
                             try:
                                 count = int(request.POST.get(item))
-                            except:
+                            except (TypeError, ValueError):
                                 count = 0
                             if count > 0:
                                 basket[i]['count'] = count
@@ -123,7 +133,6 @@ class BasketUpdateView(View):
             request.session['basket'] = basket
             request.session.modified = True
 
-            # TODO - Redirect to ORDER FORM
             if action == 'order':
                 return redirect(reverse('order'))
             else:
@@ -137,11 +146,11 @@ class BasketUpdateView(View):
             product = int(parts[0])
             try:
                 color = int(parts[1])
-            except:
+            except (TypeError, ValueError):
                 color = None
             try:
                 size = int(parts[2])
-            except:
+            except (TypeError, ValueError):
                 size = None
             basket = request.session.get('basket', [])
             for i in range(len(basket)):

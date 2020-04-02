@@ -21,7 +21,7 @@
         "model": "base.user",
         "pk": 2,
         "fields": {
-            "password": "pbkdf2_sha256$180000$qAYCU7QC1q6u$e8KBPNC4G8WCVtY50HhhwKAzb5Gs+DF93+FGuKxdJCw=",
+            "password": "pbkdf2_sha256$180000$PITvV4hMIEtf$aPisKZPkbf2521Y/Pcsfz3/Mlpud0Twpl8AVtfAPCi0=",
             "last_login": "2020-03-27T18:16:45.266Z",
             "is_superuser": false,
             "username": "demo",

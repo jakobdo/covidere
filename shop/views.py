@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import (CreateView, DetailView, ListView,
-                                  TemplateView, UpdateView)
+                                  UpdateView)
 
 from order.models import Order
 from product.models import Product
@@ -12,6 +12,9 @@ from shop.models import Shop
 
 
 class ShopUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    Shop Update View, handle view and update shop objects. Will only allow update of users own shop for now
+    """
     model = Shop
     fields = ['name', 'address', 'zipcode', 'city', 'email', 'homepage', 'phone', 'mobilepay', 'contact']
     template_name = 'shop/update.html'
@@ -23,6 +26,9 @@ class ShopUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
 
 class ShopProductListView(LoginRequiredMixin, ListView):
+    """
+    Shop Product List View. Will list all products related to a single shop. Based on current user.
+    """
     model = Product
     template_name = 'shop/product_list.html'
 
@@ -32,6 +38,11 @@ class ShopProductListView(LoginRequiredMixin, ListView):
 
 
 class ShopOrderListView(LoginRequiredMixin, ListView):
+    """
+    Shop Order List View. Will list all orders related to a shop. 
+    For now based on current user. 
+    Orders can contains products from other shops.
+    """
     model = Order
     template_name = 'shop/order_list.html'
 

@@ -3,12 +3,18 @@ from django.utils.translation import gettext_lazy
 
 
 class ProductSize(models.Model):
+    """
+    Product Size model
+    """
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
 
 class ProductColor(models.Model):
+    """
+    Product Color model
+    """
     name = models.CharField(max_length=100)
 
     def __str__(self):
@@ -16,14 +22,14 @@ class ProductColor(models.Model):
 
 
 class Product(models.Model):
+    """
+    Product model
+    """
     shop = models.ForeignKey('shop.Shop', on_delete=models.CASCADE)
     name = models.CharField(gettext_lazy('name'), max_length=100)
     description = models.TextField(gettext_lazy('description'))
-    # TODO
-    # Price on sale
-    # Regular price
     price = models.DecimalField(gettext_lazy('price'), max_digits=10, decimal_places=2)
-    on_sale = models.BooleanField(gettext_lazy('on sale'), default=False)
+    on_sale = models.DecimalField(gettext_lazy('price'), max_digits=10, decimal_places=2, blank=True, null=True)
     size = models.ManyToManyField(ProductSize, blank=True)
     color = models.ManyToManyField(ProductColor, blank=True)
 
@@ -37,9 +43,12 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-    
+
 
 class ProductImage(models.Model):
+    """
+    Product Image model
+    """
     image = models.ImageField(gettext_lazy('image'), upload_to='images/%Y/%m/%d/')
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="images")
     created = models.DateTimeField(auto_now_add=True)

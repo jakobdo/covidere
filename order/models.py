@@ -7,7 +7,7 @@ class Order(models.Model):
     ACCEPTED = 2
     SENT = 3
     REJECTED = 4
-    
+
     ORDER_STATUS_CHOICES = [
         (ORDERED, gettext_lazy('Ordered')),
         (ACCEPTED, gettext_lazy('Accepted')),
@@ -20,7 +20,11 @@ class Order(models.Model):
     city = models.CharField(gettext_lazy('city'), max_length=100)
     email = models.EmailField(gettext_lazy('email'))
     mobile = models.CharField(gettext_lazy('mobile'), max_length=20)
-    status = models.IntegerField(gettext_lazy('status'), choices=ORDER_STATUS_CHOICES, default=ORDERED)
+    status = models.IntegerField(
+        gettext_lazy('status'), 
+        choices=ORDER_STATUS_CHOICES, 
+        default=ORDERED
+    )
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

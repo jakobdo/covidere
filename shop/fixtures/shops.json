@@ -13,7 +13,9 @@
       "mobilepay": "12121212",
       "contact": "Sælger Helge",
       "user": "1",
-      "active": true
+      "active": true,
+      "created": "2020-03-27T14:45:03.674Z",
+      "updated": "2020-03-27T14:56:23.889Z"
     }
   },
   {
@@ -30,7 +32,9 @@
       "mobilepay": "12344321",
       "contact": "Sælger Helle",
       "user": "2",
-      "active": false
+      "active": true,
+      "created": "2020-03-27T14:45:03.674Z",
+      "updated": "2020-03-27T14:56:23.889Z"
     }
   }
 ]
