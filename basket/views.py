@@ -1,5 +1,7 @@
+from django.contrib import messages
 from django.shortcuts import redirect, render
 from django.urls import reverse, reverse_lazy
+from django.utils.translation import gettext
 from django.views import View
 from django.views.generic import FormView, TemplateView
 
@@ -8,6 +10,9 @@ from product.models import Product, ProductColor, ProductSize
 
 
 class Basket:
+    """
+    Small basket helper to add item to basket
+    """
     def __init__(self, session):
         self.session = session
     
@@ -26,6 +31,7 @@ class Basket:
             ))
         return basket
 
+
 class BasketAddView(FormView):
     template_name = 'basket/add.html'
     form_class = BasketAddForm
@@ -39,6 +45,7 @@ class BasketAddView(FormView):
             form.cleaned_data.get('size'),
         )
         self.request.session.modified = True
+        messages.add_message(self.request, messages.INFO, gettext('Product added to basket'))
         return super().form_valid(form)
 
 
@@ -119,9 +126,12 @@ class BasketUpdateView(View):
             # TODO - Redirect to ORDER FORM
             if action == 'order':
                 return redirect(reverse('order'))
+            else:
+                messages.add_message(self.request, messages.INFO, gettext('Basket updated'))
         elif action == 'clear':
             request.session['basket'] = []
             request.session.modified = True
+            messages.add_message(self.request, messages.INFO, gettext('Basket emptied'))
         elif action.startswith('remove_'):
             parts = action.split("_")[1:]
             product = int(parts[0])
@@ -136,7 +146,8 @@ class BasketUpdateView(View):
             basket = request.session.get('basket', [])
             for i in range(len(basket)):
                 if basket[i]['product'] == product and basket[i]['color'] == color and basket[i]['size'] == size:
-                    del basket[i] 
+                    del basket[i]
+                    messages.add_message(self.request, messages.INFO, gettext('Product removed from basket'))
                     break
             request.session['basket'] = basket
             request.session.modified = True

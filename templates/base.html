@@ -12,6 +12,22 @@
     <script src="https://kit.fontawesome.com/1df090f8a6.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    {% if messages %}
+        <div aria-live="polite" aria-atomic="true">
+            {% for message in messages %}
+                <div class="toast" style="position: absolute; top: 1em; right: 1em; z-index: 1;" data-delay="3000">
+                    <div class="toast-header">
+                        <strong class="mr-auto">Information</strong>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body">{{ message }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
     {% block navbar %}
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container">
@@ -44,5 +60,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('.toast').toast('show');
+        });
+    </script>
   </body>
 </html>
