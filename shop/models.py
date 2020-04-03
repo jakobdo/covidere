@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.utils.http import urlencode
 from django.utils.translation import gettext_lazy
 
 
@@ -33,3 +34,12 @@ class Shop(models.Model):
 
     def __str__(self):
         return self.name
+
+    def location(self):
+        """
+        Helper to provide the urlencoded information for a shop to google maps
+        """
+        data = dict(
+            query=f"{self.name} {self.address} {self.zipcode} {self.city}"
+        )
+        return urlencode(data)

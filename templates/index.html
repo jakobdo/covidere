@@ -30,10 +30,13 @@
                                 </select>
                             </div>
                         {% endif %}
-                        <address>
-                        <strong>{{ product.shop }}</strong><br>
-                        {{ product.shop.address }}<br>
-                        {{ product.shop.zipcode }} {{ product.shop.city }}
+                        <address class="d-flex flex-row align-items-center">
+                            <a target="_blank" href="https://www.google.com/maps/search/?api=1&{{ product.shop.location }}"><i class="fas fa-map-marked-alt"></i></a>
+                            <div class="pl-2">
+                                <strong>{{ product.shop }}</strong><br>
+                                {{ product.shop.address }}<br>
+                                {{ product.shop.zipcode }} {{ product.shop.city }}
+                            </div>
                         </address>
                     </div>
                     <div class="card-footer text-muted">
