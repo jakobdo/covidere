@@ -1,6 +1,6 @@
-from django.shortcuts import render
 from django.views.generic import ListView
 from django.utils import timezone
+from django.db.models import Q
 
 from product.models import Product
 
@@ -23,6 +23,9 @@ class IndexView(ListView):
             .prefetch_related("shop")
             .order_by('?')  # TODO - Queries may be expensive and slow
         )
+        query = self.request.GET.get('q')
+        if query:
+            queryset = queryset.filter(Q(name__icontains=query) | Q(description__icontains=query))
         return queryset
 
 
