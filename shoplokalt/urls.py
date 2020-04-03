@@ -18,10 +18,11 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from base.views import IndexView
+from product.views import IndexView
 
 urlpatterns = [
     path('', IndexView.as_view(), name="index"),
+    path('products/', include('product.urls')),
     path('basket/', include('basket.urls')),
     path('order/', include('order.urls')),
     path('shop/', include('shop.urls')),

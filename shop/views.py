@@ -62,7 +62,7 @@ class ShopOverviewView(LoginRequiredMixin, View):
 
 class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
-    fields = ['name', 'description','price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    fields = ['name', 'description', 'price', 'on_sale', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
     template_name = 'product/update.html'
     success_url = reverse_lazy('shop_products')
 
@@ -73,7 +73,7 @@ class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
 
 class ShopProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
-    fields = ['name', 'description','price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    fields = ['name', 'description','price', 'on_sale', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
     template_name = 'product/create.html'
     success_url = reverse_lazy('shop_products')
 
