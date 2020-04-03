@@ -94,7 +94,7 @@ class BasketIndexView(TemplateView):
             )
             new_basket.append(new_item)
             total += subtotal
-        context['basket'] = new_basket
+        context['basket'] = sorted(new_basket, key=lambda item: item['shop'])
         context['total'] = total
 
         return context

@@ -8,8 +8,7 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">{% trans "Product" %}</th>
-        <th scope="col">{% trans "Shop" %}</th>
+        <th scope="col">{% trans "Name" %}</th>
         <th scope="col">{% trans "Color" %}</th>
         <th scope="col">{% trans "Size" %}</th>
         <th scope="col">{% trans "Count" %}</th>
@@ -20,9 +19,14 @@
     </thead>
     <tbody>
         {% for item in basket %}
+            {% ifchanged %}
+                <tr>
+                    <th>{{ item.shop }}</th>
+                    <td colspan="6">&nbsp;</td>
+                </tr>
+            {% endifchanged %}
             <tr>
-                <th>{{ item.product }}</th>
-                <th>{{ item.shop }}</th>
+                <th>&middot;&nbsp;{{ item.product }}</th>
                 <td>{{ item.color }}</td>
                 <td>{{ item.size }}</td>
                 <td><input type="number" name="count_{{item.product_id}}_{{item.color_id}}_{{item.size_id}}" class="form-control update-count" value="{{ item.count }}"></td>
@@ -36,7 +40,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <th colspan="6">{% trans "Total" %}</th><td>{{ total }}</td>
+            <th colspan="5">{% trans "Total" %}</th><td>{{ total }}</td><td>&nbsp;</td>
         </tr>
         
     </tfoot>
