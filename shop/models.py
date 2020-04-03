@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.utils.http import urlencode
+from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
 
 
@@ -43,3 +44,9 @@ class Shop(models.Model):
             query=f"{self.name} {self.address} {self.zipcode} {self.city}"
         )
         return urlencode(data)
+    
+    def slug(self):
+        """
+        Will convert shop.name to a slug
+        """
+        return slugify(f"{self.name} {self.pk}")

@@ -1,8 +1,10 @@
-from django.views.generic import ListView
-from django.utils import timezone
 from django.db.models import Q
+from django.shortcuts import get_object_or_404
+from django.utils import timezone
+from django.views.generic import ListView
 
 from product.models import Product
+from shop.models import Shop
 
 
 class IndexView(ListView):
@@ -23,6 +25,10 @@ class IndexView(ListView):
             .prefetch_related("shop")
             .order_by('?')  # TODO - Queries may be expensive and slow
         )
+        shop_pk = self.kwargs.get('pk')
+        if shop_pk:
+            shop = get_object_or_404(Shop, pk=shop_pk, active=True)
+            queryset = queryset.filter(shop=shop)
         query = self.request.GET.get('q')
         if query:
             queryset = queryset.filter(Q(name__icontains=query) | Q(description__icontains=query))
