@@ -5,3 +5,4 @@ django-crispy-forms
 django-debug-toolbar
 pylint-django
 django-extensions
+django-sendgrid-v5

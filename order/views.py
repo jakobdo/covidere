@@ -1,6 +1,8 @@
+from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
+from django.utils.translation import gettext
 from django.views.generic import CreateView, TemplateView
 
 from order.forms import OrderForm
@@ -61,6 +63,14 @@ class OrderCreateView(CreateView):
 
         # Clear session
         del self.request.session['basket']
+
+        send_mail(
+            gettext('Order confirmation'),
+            'Here is the message.',
+            'noreply@byportal.dk',
+            ['jakobdo@gmail.com'],
+            fail_silently=False,
+        )
         return HttpResponseRedirect(self.get_success_url())
 
 
