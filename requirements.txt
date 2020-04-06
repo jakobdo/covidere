@@ -6,3 +6,5 @@ django-debug-toolbar
 pylint-django
 django-extensions
 django-sendgrid-v5
+psycopg2
+gunicorn
