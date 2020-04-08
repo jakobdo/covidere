@@ -10,6 +10,7 @@ from django.views.generic import (CreateView, DetailView, ListView,
 
 from order.models import Order
 from product.models import Product
+from shop.forms import ShopProductForm
 from shop.models import Shop
 
 
@@ -133,9 +134,15 @@ class ShopOverviewView(LoginRequiredMixin, TemplateView):
 
 class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
-    fields = ['name', 'description', 'image', 'price', 'offer_price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    #fields = ['name', 'description', 'image', 'price', 'offer_price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    form_class = ShopProductForm
     template_name = 'product/update.html'
     success_url = reverse_lazy('shop_products')
+
+    def get_form_kwargs(self):
+        kw = super(ShopProductUpdateView, self).get_form_kwargs()
+        kw['request'] = self.request
+        return kw
 
     def get_queryset(self):
         queryset = Product.objects.filter(shop=self.request.user.shop)
@@ -144,9 +151,14 @@ class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
 
 class ShopProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
-    fields = ['name', 'description', 'image', 'price', 'offer_price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    form_class = ShopProductForm
     template_name = 'product/create.html'
     success_url = reverse_lazy('shop_products')
+
+    def get_form_kwargs(self):
+        kw = super(ShopProductCreateView, self).get_form_kwargs()
+        kw['request'] = self.request
+        return kw
 
     def form_valid(self, form):
         obj = form.save(commit=False)
