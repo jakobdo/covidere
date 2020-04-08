@@ -17,7 +17,7 @@ class ShopRegisterForm(forms.ModelForm):
         'password_mismatch': gettext_lazy('The two password fields didn’t match.'),
     }
 
-    username = forms.EmailField()
+    username = forms.EmailField(label=gettext_lazy("User email"),)
     password1 = forms.CharField(
         label=gettext_lazy("Password"),
         strip=False,

@@ -1,7 +1,9 @@
-{% autoescape off %}
-Hi {{ user.username }},
-
-Please click on the link below to confirm your registration:
-
-http://{{ domain }}{% url 'user_activate' uidb64=uid token=token %}
-{% endautoescape %}
+{% load i18n %}
+<html>
+<head></head>
+<body>
+{% trans 'Hi' %} {{ user.username }},<br>
+{% blocktrans %}Please click on the link below to confirm your registration:{% endblocktrans %}<br>
+<a href="http://{{ domain }}{% url 'user_activate' uidb64=uid token=token %}">{% trans 'Click to activate' %}</a>
+</body>
+</html>

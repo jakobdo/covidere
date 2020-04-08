@@ -95,7 +95,8 @@ class ShopRegisterView(CreateView):
             'uid': urlsafe_base64_encode(force_bytes(user.pk)),
             'token': account_activation_token.make_token(user),
         })
-        user.email_user(subject, message)
+        # TODO - Should also include readable plain text message
+        user.email_user(subject, message='', html_message=message)
         return super().form_valid(form)
 
 
