@@ -155,3 +155,6 @@ shoplokalt/settings.py
 .vscode/settings.json
 .vscode/launch.json
 images/*
+
+/.vs/*
+/env-ByPortal/*
