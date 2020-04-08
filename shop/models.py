@@ -24,7 +24,7 @@ class Shop(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
-    active = models.BooleanField(gettext_lazy("active"), default=True)
+    active = models.BooleanField(gettext_lazy("active"), default=False)
     delivery_postcode = models.ManyToManyField(Postcode, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

@@ -121,6 +121,7 @@ class ShopOverviewView(LoginRequiredMixin, TemplateView):
         now = timezone.now()
         in_a_week = now + datetime.timedelta(days=7)
 
+        context['shop'] = shop
         context['counts'] = dict(
             new_orders=Order.objects.filter(items__product__shop=shop, status=Order.ORDERED).distinct().count(),
             active_products=Product.objects.filter(shop=shop, active=True, start_datetime__lte=now, end_datetime__gte=now).count(),

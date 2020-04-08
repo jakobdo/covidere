@@ -4,6 +4,12 @@
 
 {% block content %}
   <h1>{% trans "Overview" %}</h1>
+
+  {% if not shop.active %}
+    <div class="alert alert-info" role="alert">
+      {% trans "Your shop is not activated yet" %}
+    </div>
+  {% endif %}
   <div class="list-group">
     <a href="{% url 'shop_new_orders' %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
       {% trans "New orders" %}
