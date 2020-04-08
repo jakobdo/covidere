@@ -1,10 +1,12 @@
+import datetime
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import render
+from django.db.models import Q
 from django.urls import reverse_lazy
-from django.views import View
+from django.utils import timezone
 from django.views.generic import (CreateView, DetailView, ListView,
-                                  UpdateView)
+                                  TemplateView, UpdateView)
 
 from order.models import Order
 from product.models import Product
@@ -23,6 +25,45 @@ class ShopUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
 
     def get_object(self, queryset=None):
         return self.request.user.shop
+
+
+class ShopProductActiveListView(LoginRequiredMixin, ListView):
+    """
+    Shop Product List View. Will list all products related to a single shop. Based on current user.
+    """
+    model = Product
+    template_name = 'shop/active_product_list.html'
+
+    def get_queryset(self):
+        now = timezone.now()
+        queryset = Product.objects.filter(shop=self.request.user.shop, active=True, start_datetime__lte=now, end_datetime__gte=now)
+        return queryset
+
+
+class ShopProductInactiveListView(LoginRequiredMixin, ListView):
+    """
+    Shop Product List View. Will list all products related to a single shop. Based on current user.
+    """
+    model = Product
+    template_name = 'shop/inactive_product_list.html'
+
+    def get_queryset(self):
+        now = timezone.now()
+        queryset = Product.objects.filter(Q(start_datetime__gte=now) | Q(end_datetime__lte=now) | Q(active=False), shop=self.request.user.shop)
+        return queryset
+
+
+class ShopProductExpiringListView(LoginRequiredMixin, ListView):
+    """
+    Shop Product List View. Will list all products related to a single shop. Based on current user.
+    """
+    model = Product
+    template_name = 'shop/expiring_product_list.html'
+
+    def get_queryset(self):
+        now = timezone.now()
+        queryset = Product.objects.filter(Q(start_datetime__gte=now) | Q(end_datetime__lte=now) | Q(active=False), shop=self.request.user.shop)
+        return queryset
 
 
 class ShopProductListView(LoginRequiredMixin, ListView):
@@ -50,19 +91,48 @@ class ShopOrderListView(LoginRequiredMixin, ListView):
         queryset = Order.objects.filter(items__product__shop=self.request.user.shop).distinct()
         return queryset
 
+
+class ShopNewOrderListView(LoginRequiredMixin, ListView):
+    """
+    Shop Order List View. Will list all new orders related to a shop. 
+    For now based on current user. 
+    Orders can contains products from other shops.
+    """
+    model = Order
+    template_name = 'shop/order_list.html'
+
+    def get_queryset(self):
+        queryset = Order.objects.filter(items__product__shop=self.request.user.shop, status=Order.ORDERED).distinct()
+        return queryset
+
+
 class ShopOrderDetailView(LoginRequiredMixin, DetailView):
     model = Order
     template_name = 'shop/order_detail.html'
 
 
-class ShopOverviewView(LoginRequiredMixin, View):
-    def get(self, request):
-        return render(request, 'shop/overview.html')
+class ShopOverviewView(LoginRequiredMixin, TemplateView):
+    template_name = 'shop/overview.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        shop = self.request.user.shop
+
+        now = timezone.now()
+        in_a_week = now + datetime.timedelta(days=7)
+
+        context['counts'] = dict(
+            new_orders=Order.objects.filter(items__product__shop=shop, status=Order.ORDERED).distinct().count(),
+            active_products=Product.objects.filter(shop=shop, active=True, start_datetime__lte=now, end_datetime__gte=now).count(),
+            expiring_products=Product.objects.filter(shop=shop, active=True, start_datetime__lte=now, end_datetime__gte=now, end_datetime__lte=in_a_week).count(),
+            inactive_products=Product.objects.filter(Q(start_datetime__gte=now) | Q(end_datetime__lte=now) | Q(active=False), shop=shop).count(),
+        )
+        return context
 
 
 class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
-    fields = ['name', 'description', 'price', 'on_sale', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    fields = ['name', 'description', 'image', 'price', 'offer_price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
     template_name = 'product/update.html'
     success_url = reverse_lazy('shop_products')
 
@@ -73,7 +143,7 @@ class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
 
 class ShopProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
-    fields = ['name', 'description','price', 'on_sale', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+    fields = ['name', 'description', 'image', 'price', 'offer_price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
     template_name = 'product/create.html'
     success_url = reverse_lazy('shop_products')
 

@@ -3,23 +3,23 @@
 {% load i18n %}
 
 {% block content %}
-<h1>{% trans "Overview" %}</h1>
-<ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      Ubehandlede ordrer - TODO!!!! FIX NU!!!
-      <span class="badge badge-primary badge-pill">10</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      Aktive produkter
-      <span class="badge badge-primary badge-pill">2</span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Produkter der snart bliver inaktive
-        <span class="badge badge-primary badge-pill">1</span>
-      </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      Inaktive produkter
-      <span class="badge badge-primary badge-pill">3</span>
-    </li>
-  </ul>
+  <h1>{% trans "Overview" %}</h1>
+  <div class="list-group">
+    <a href="{% url 'shop_new_orders' %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+      {% trans "New orders" %}
+      <span class="badge badge-primary badge-pill">{{ counts.new_orders }}</span>
+    </a>
+    <a href="{% url 'shop_active_products' %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+      {% trans "Active products" %}
+      <span class="badge badge-primary badge-pill">{{ counts.active_products }}</span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+      {% trans "Products that will become inactive within 7 days" %}
+      <span class="badge badge-primary badge-pill">{{ counts.expiring_products }}</span>
+    </a>
+    <a href="{% url 'shop_inactive_products' %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+      {% trans "Inactive products" %}
+      <span class="badge badge-primary badge-pill">{{ counts.inactive_products }}</span>
+    </a>
+  </div>
 {% endblock %}

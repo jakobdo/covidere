@@ -1,0 +1,10330 @@
+[
+{
+    "model": "shop.postcode",
+    "pk": 1,
+    "fields": {
+        "postcode": 555,
+        "city": "Scanning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 2,
+    "fields": {
+        "postcode": 783,
+        "city": "Facility"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 3,
+    "fields": {
+        "postcode": 800,
+        "city": "H\u00f8je Taastrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 4,
+    "fields": {
+        "postcode": 877,
+        "city": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 5,
+    "fields": {
+        "postcode": 892,
+        "city": "Sj\u00e6lland USF P"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 6,
+    "fields": {
+        "postcode": 893,
+        "city": "Sj\u00e6lland USF B"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 7,
+    "fields": {
+        "postcode": 894,
+        "city": "Udbetaling"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 8,
+    "fields": {
+        "postcode": 899,
+        "city": "Kommuneservice"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 9,
+    "fields": {
+        "postcode": 900,
+        "city": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 10,
+    "fields": {
+        "postcode": 910,
+        "city": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 11,
+    "fields": {
+        "postcode": 913,
+        "city": "K\u00f8benhavns Pakkecenter"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 12,
+    "fields": {
+        "postcode": 914,
+        "city": "K\u00f8benhavns Pakkecenter"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 13,
+    "fields": {
+        "postcode": 917,
+        "city": "K\u00f8benhavns Pakkecenter"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 14,
+    "fields": {
+        "postcode": 918,
+        "city": "K\u00f8benhavns Pakke BRC"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 15,
+    "fields": {
+        "postcode": 919,
+        "city": "Returprint BRC"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 16,
+    "fields": {
+        "postcode": 929,
+        "city": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 17,
+    "fields": {
+        "postcode": 960,
+        "city": "Internationalt Postcenter"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 18,
+    "fields": {
+        "postcode": 999,
+        "city": "K\u00f8benhavn C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 19,
+    "fields": {
+        "postcode": 1001,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 20,
+    "fields": {
+        "postcode": 1002,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 21,
+    "fields": {
+        "postcode": 1003,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 22,
+    "fields": {
+        "postcode": 1004,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 23,
+    "fields": {
+        "postcode": 1005,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 24,
+    "fields": {
+        "postcode": 1006,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 25,
+    "fields": {
+        "postcode": 1007,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 26,
+    "fields": {
+        "postcode": 1008,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 27,
+    "fields": {
+        "postcode": 1009,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 28,
+    "fields": {
+        "postcode": 1010,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 29,
+    "fields": {
+        "postcode": 1011,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 30,
+    "fields": {
+        "postcode": 1012,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 31,
+    "fields": {
+        "postcode": 1013,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 32,
+    "fields": {
+        "postcode": 1014,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 33,
+    "fields": {
+        "postcode": 1015,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 34,
+    "fields": {
+        "postcode": 1016,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 35,
+    "fields": {
+        "postcode": 1017,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 36,
+    "fields": {
+        "postcode": 1018,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 37,
+    "fields": {
+        "postcode": 1019,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 38,
+    "fields": {
+        "postcode": 1020,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 39,
+    "fields": {
+        "postcode": 1021,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 40,
+    "fields": {
+        "postcode": 1022,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 41,
+    "fields": {
+        "postcode": 1023,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 42,
+    "fields": {
+        "postcode": 1024,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 43,
+    "fields": {
+        "postcode": 1025,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 44,
+    "fields": {
+        "postcode": 1026,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 45,
+    "fields": {
+        "postcode": 1045,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 46,
+    "fields": {
+        "postcode": 1050,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 47,
+    "fields": {
+        "postcode": 1051,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 48,
+    "fields": {
+        "postcode": 1052,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 49,
+    "fields": {
+        "postcode": 1053,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 50,
+    "fields": {
+        "postcode": 1054,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 51,
+    "fields": {
+        "postcode": 1055,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 52,
+    "fields": {
+        "postcode": 1055,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 53,
+    "fields": {
+        "postcode": 1056,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 54,
+    "fields": {
+        "postcode": 1057,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 55,
+    "fields": {
+        "postcode": 1058,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 56,
+    "fields": {
+        "postcode": 1059,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 57,
+    "fields": {
+        "postcode": 1060,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 58,
+    "fields": {
+        "postcode": 1061,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 59,
+    "fields": {
+        "postcode": 1062,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 60,
+    "fields": {
+        "postcode": 1063,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 61,
+    "fields": {
+        "postcode": 1064,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 62,
+    "fields": {
+        "postcode": 1065,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 63,
+    "fields": {
+        "postcode": 1066,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 64,
+    "fields": {
+        "postcode": 1067,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 65,
+    "fields": {
+        "postcode": 1068,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 66,
+    "fields": {
+        "postcode": 1069,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 67,
+    "fields": {
+        "postcode": 1070,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 68,
+    "fields": {
+        "postcode": 1071,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 69,
+    "fields": {
+        "postcode": 1072,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 70,
+    "fields": {
+        "postcode": 1073,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 71,
+    "fields": {
+        "postcode": 1074,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 72,
+    "fields": {
+        "postcode": 1092,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 73,
+    "fields": {
+        "postcode": 1093,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 74,
+    "fields": {
+        "postcode": 1095,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 75,
+    "fields": {
+        "postcode": 1098,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 76,
+    "fields": {
+        "postcode": 1100,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 77,
+    "fields": {
+        "postcode": 1101,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 78,
+    "fields": {
+        "postcode": 1102,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 79,
+    "fields": {
+        "postcode": 1103,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 80,
+    "fields": {
+        "postcode": 1104,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 81,
+    "fields": {
+        "postcode": 1105,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 82,
+    "fields": {
+        "postcode": 1106,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 83,
+    "fields": {
+        "postcode": 1107,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 84,
+    "fields": {
+        "postcode": 1110,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 85,
+    "fields": {
+        "postcode": 1111,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 86,
+    "fields": {
+        "postcode": 1112,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 87,
+    "fields": {
+        "postcode": 1113,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 88,
+    "fields": {
+        "postcode": 1114,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 89,
+    "fields": {
+        "postcode": 1115,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 90,
+    "fields": {
+        "postcode": 1116,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 91,
+    "fields": {
+        "postcode": 1117,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 92,
+    "fields": {
+        "postcode": 1118,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 93,
+    "fields": {
+        "postcode": 1119,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 94,
+    "fields": {
+        "postcode": 1120,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 95,
+    "fields": {
+        "postcode": 1121,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 96,
+    "fields": {
+        "postcode": 1122,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 97,
+    "fields": {
+        "postcode": 1123,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 98,
+    "fields": {
+        "postcode": 1124,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 99,
+    "fields": {
+        "postcode": 1125,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 100,
+    "fields": {
+        "postcode": 1126,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 101,
+    "fields": {
+        "postcode": 1127,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 102,
+    "fields": {
+        "postcode": 1128,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 103,
+    "fields": {
+        "postcode": 1129,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 104,
+    "fields": {
+        "postcode": 1130,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 105,
+    "fields": {
+        "postcode": 1131,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 106,
+    "fields": {
+        "postcode": 1140,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 107,
+    "fields": {
+        "postcode": 1147,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 108,
+    "fields": {
+        "postcode": 1148,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 109,
+    "fields": {
+        "postcode": 1150,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 110,
+    "fields": {
+        "postcode": 1151,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 111,
+    "fields": {
+        "postcode": 1152,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 112,
+    "fields": {
+        "postcode": 1153,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 113,
+    "fields": {
+        "postcode": 1154,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 114,
+    "fields": {
+        "postcode": 1155,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 115,
+    "fields": {
+        "postcode": 1156,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 116,
+    "fields": {
+        "postcode": 1157,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 117,
+    "fields": {
+        "postcode": 1158,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 118,
+    "fields": {
+        "postcode": 1159,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 119,
+    "fields": {
+        "postcode": 1160,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 120,
+    "fields": {
+        "postcode": 1161,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 121,
+    "fields": {
+        "postcode": 1162,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 122,
+    "fields": {
+        "postcode": 1164,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 123,
+    "fields": {
+        "postcode": 1165,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 124,
+    "fields": {
+        "postcode": 1165,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 125,
+    "fields": {
+        "postcode": 1166,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 126,
+    "fields": {
+        "postcode": 1167,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 127,
+    "fields": {
+        "postcode": 1168,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 128,
+    "fields": {
+        "postcode": 1169,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 129,
+    "fields": {
+        "postcode": 1170,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 130,
+    "fields": {
+        "postcode": 1171,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 131,
+    "fields": {
+        "postcode": 1172,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 132,
+    "fields": {
+        "postcode": 1173,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 133,
+    "fields": {
+        "postcode": 1174,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 134,
+    "fields": {
+        "postcode": 1175,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 135,
+    "fields": {
+        "postcode": 1200,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 136,
+    "fields": {
+        "postcode": 1201,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 137,
+    "fields": {
+        "postcode": 1202,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 138,
+    "fields": {
+        "postcode": 1203,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 139,
+    "fields": {
+        "postcode": 1204,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 140,
+    "fields": {
+        "postcode": 1205,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 141,
+    "fields": {
+        "postcode": 1206,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 142,
+    "fields": {
+        "postcode": 1207,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 143,
+    "fields": {
+        "postcode": 1208,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 144,
+    "fields": {
+        "postcode": 1209,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 145,
+    "fields": {
+        "postcode": 1210,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 146,
+    "fields": {
+        "postcode": 1211,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 147,
+    "fields": {
+        "postcode": 1212,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 148,
+    "fields": {
+        "postcode": 1213,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 149,
+    "fields": {
+        "postcode": 1214,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 150,
+    "fields": {
+        "postcode": 1215,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 151,
+    "fields": {
+        "postcode": 1216,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 152,
+    "fields": {
+        "postcode": 1217,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 153,
+    "fields": {
+        "postcode": 1218,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 154,
+    "fields": {
+        "postcode": 1218,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 155,
+    "fields": {
+        "postcode": 1218,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 156,
+    "fields": {
+        "postcode": 1218,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 157,
+    "fields": {
+        "postcode": 1218,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 158,
+    "fields": {
+        "postcode": 1218,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 159,
+    "fields": {
+        "postcode": 1219,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 160,
+    "fields": {
+        "postcode": 1220,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 161,
+    "fields": {
+        "postcode": 1221,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 162,
+    "fields": {
+        "postcode": 1240,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 163,
+    "fields": {
+        "postcode": 1250,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 164,
+    "fields": {
+        "postcode": 1251,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 165,
+    "fields": {
+        "postcode": 1252,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 166,
+    "fields": {
+        "postcode": 1253,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 167,
+    "fields": {
+        "postcode": 1254,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 168,
+    "fields": {
+        "postcode": 1255,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 169,
+    "fields": {
+        "postcode": 1256,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 170,
+    "fields": {
+        "postcode": 1257,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 171,
+    "fields": {
+        "postcode": 1259,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 172,
+    "fields": {
+        "postcode": 1259,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 173,
+    "fields": {
+        "postcode": 1260,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 174,
+    "fields": {
+        "postcode": 1261,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 175,
+    "fields": {
+        "postcode": 1263,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 176,
+    "fields": {
+        "postcode": 1263,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 177,
+    "fields": {
+        "postcode": 1264,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 178,
+    "fields": {
+        "postcode": 1265,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 179,
+    "fields": {
+        "postcode": 1266,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 180,
+    "fields": {
+        "postcode": 1267,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 181,
+    "fields": {
+        "postcode": 1268,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 182,
+    "fields": {
+        "postcode": 1270,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 183,
+    "fields": {
+        "postcode": 1271,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 184,
+    "fields": {
+        "postcode": 1300,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 185,
+    "fields": {
+        "postcode": 1301,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 186,
+    "fields": {
+        "postcode": 1302,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 187,
+    "fields": {
+        "postcode": 1303,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 188,
+    "fields": {
+        "postcode": 1304,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 189,
+    "fields": {
+        "postcode": 1306,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 190,
+    "fields": {
+        "postcode": 1307,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 191,
+    "fields": {
+        "postcode": 1307,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 192,
+    "fields": {
+        "postcode": 1308,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 193,
+    "fields": {
+        "postcode": 1309,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 194,
+    "fields": {
+        "postcode": 1310,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 195,
+    "fields": {
+        "postcode": 1311,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 196,
+    "fields": {
+        "postcode": 1312,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 197,
+    "fields": {
+        "postcode": 1313,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 198,
+    "fields": {
+        "postcode": 1314,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 199,
+    "fields": {
+        "postcode": 1315,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 200,
+    "fields": {
+        "postcode": 1316,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 201,
+    "fields": {
+        "postcode": 1317,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 202,
+    "fields": {
+        "postcode": 1318,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 203,
+    "fields": {
+        "postcode": 1319,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 204,
+    "fields": {
+        "postcode": 1320,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 205,
+    "fields": {
+        "postcode": 1321,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 206,
+    "fields": {
+        "postcode": 1322,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 207,
+    "fields": {
+        "postcode": 1323,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 208,
+    "fields": {
+        "postcode": 1324,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 209,
+    "fields": {
+        "postcode": 1325,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 210,
+    "fields": {
+        "postcode": 1326,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 211,
+    "fields": {
+        "postcode": 1327,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 212,
+    "fields": {
+        "postcode": 1328,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 213,
+    "fields": {
+        "postcode": 1329,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 214,
+    "fields": {
+        "postcode": 1350,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 215,
+    "fields": {
+        "postcode": 1352,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 216,
+    "fields": {
+        "postcode": 1353,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 217,
+    "fields": {
+        "postcode": 1354,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 218,
+    "fields": {
+        "postcode": 1355,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 219,
+    "fields": {
+        "postcode": 1356,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 220,
+    "fields": {
+        "postcode": 1357,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 221,
+    "fields": {
+        "postcode": 1358,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 222,
+    "fields": {
+        "postcode": 1359,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 223,
+    "fields": {
+        "postcode": 1359,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 224,
+    "fields": {
+        "postcode": 1360,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 225,
+    "fields": {
+        "postcode": 1361,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 226,
+    "fields": {
+        "postcode": 1361,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 227,
+    "fields": {
+        "postcode": 1362,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 228,
+    "fields": {
+        "postcode": 1363,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 229,
+    "fields": {
+        "postcode": 1364,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 230,
+    "fields": {
+        "postcode": 1365,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 231,
+    "fields": {
+        "postcode": 1366,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 232,
+    "fields": {
+        "postcode": 1367,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 233,
+    "fields": {
+        "postcode": 1368,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 234,
+    "fields": {
+        "postcode": 1369,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 235,
+    "fields": {
+        "postcode": 1370,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 236,
+    "fields": {
+        "postcode": 1371,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 237,
+    "fields": {
+        "postcode": 1400,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 238,
+    "fields": {
+        "postcode": 1400,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 239,
+    "fields": {
+        "postcode": 1401,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 240,
+    "fields": {
+        "postcode": 1402,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 241,
+    "fields": {
+        "postcode": 1402,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 242,
+    "fields": {
+        "postcode": 1402,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 243,
+    "fields": {
+        "postcode": 1402,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 244,
+    "fields": {
+        "postcode": 1402,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 245,
+    "fields": {
+        "postcode": 1403,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 246,
+    "fields": {
+        "postcode": 1406,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 247,
+    "fields": {
+        "postcode": 1407,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 248,
+    "fields": {
+        "postcode": 1408,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 249,
+    "fields": {
+        "postcode": 1409,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 250,
+    "fields": {
+        "postcode": 1410,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 251,
+    "fields": {
+        "postcode": 1411,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 252,
+    "fields": {
+        "postcode": 1411,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 253,
+    "fields": {
+        "postcode": 1412,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 254,
+    "fields": {
+        "postcode": 1413,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 255,
+    "fields": {
+        "postcode": 1414,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 256,
+    "fields": {
+        "postcode": 1415,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 257,
+    "fields": {
+        "postcode": 1416,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 258,
+    "fields": {
+        "postcode": 1417,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 259,
+    "fields": {
+        "postcode": 1418,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 260,
+    "fields": {
+        "postcode": 1419,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 261,
+    "fields": {
+        "postcode": 1420,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 262,
+    "fields": {
+        "postcode": 1421,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 263,
+    "fields": {
+        "postcode": 1422,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 264,
+    "fields": {
+        "postcode": 1423,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 265,
+    "fields": {
+        "postcode": 1424,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 266,
+    "fields": {
+        "postcode": 1425,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 267,
+    "fields": {
+        "postcode": 1426,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 268,
+    "fields": {
+        "postcode": 1427,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 269,
+    "fields": {
+        "postcode": 1428,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 270,
+    "fields": {
+        "postcode": 1429,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 271,
+    "fields": {
+        "postcode": 1430,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 272,
+    "fields": {
+        "postcode": 1432,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 273,
+    "fields": {
+        "postcode": 1432,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 274,
+    "fields": {
+        "postcode": 1432,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 275,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 276,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 277,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 278,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 279,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 280,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 281,
+    "fields": {
+        "postcode": 1433,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 282,
+    "fields": {
+        "postcode": 1434,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 283,
+    "fields": {
+        "postcode": 1434,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 284,
+    "fields": {
+        "postcode": 1435,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 285,
+    "fields": {
+        "postcode": 1436,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 286,
+    "fields": {
+        "postcode": 1436,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 287,
+    "fields": {
+        "postcode": 1436,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 288,
+    "fields": {
+        "postcode": 1436,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 289,
+    "fields": {
+        "postcode": 1436,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 290,
+    "fields": {
+        "postcode": 1436,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 291,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 292,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 293,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 294,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 295,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 296,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 297,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 298,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 299,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 300,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 301,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 302,
+    "fields": {
+        "postcode": 1437,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 303,
+    "fields": {
+        "postcode": 1438,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 304,
+    "fields": {
+        "postcode": 1438,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 305,
+    "fields": {
+        "postcode": 1438,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 306,
+    "fields": {
+        "postcode": 1438,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 307,
+    "fields": {
+        "postcode": 1438,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 308,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 309,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 310,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 311,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 312,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 313,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 314,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 315,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 316,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 317,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 318,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 319,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 320,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 321,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 322,
+    "fields": {
+        "postcode": 1439,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 323,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 324,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 325,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 326,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 327,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 328,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 329,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 330,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 331,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 332,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 333,
+    "fields": {
+        "postcode": 1440,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 334,
+    "fields": {
+        "postcode": 1441,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 335,
+    "fields": {
+        "postcode": 1441,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 336,
+    "fields": {
+        "postcode": 1441,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 337,
+    "fields": {
+        "postcode": 1448,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 338,
+    "fields": {
+        "postcode": 1450,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 339,
+    "fields": {
+        "postcode": 1451,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 340,
+    "fields": {
+        "postcode": 1452,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 341,
+    "fields": {
+        "postcode": 1453,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 342,
+    "fields": {
+        "postcode": 1454,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 343,
+    "fields": {
+        "postcode": 1455,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 344,
+    "fields": {
+        "postcode": 1456,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 345,
+    "fields": {
+        "postcode": 1457,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 346,
+    "fields": {
+        "postcode": 1458,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 347,
+    "fields": {
+        "postcode": 1459,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 348,
+    "fields": {
+        "postcode": 1460,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 349,
+    "fields": {
+        "postcode": 1461,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 350,
+    "fields": {
+        "postcode": 1462,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 351,
+    "fields": {
+        "postcode": 1463,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 352,
+    "fields": {
+        "postcode": 1464,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 353,
+    "fields": {
+        "postcode": 1465,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 354,
+    "fields": {
+        "postcode": 1466,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 355,
+    "fields": {
+        "postcode": 1467,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 356,
+    "fields": {
+        "postcode": 1468,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 357,
+    "fields": {
+        "postcode": 1470,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 358,
+    "fields": {
+        "postcode": 1471,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 359,
+    "fields": {
+        "postcode": 1472,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 360,
+    "fields": {
+        "postcode": 1473,
+        "city": "K\u00f8benhavn K"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 361,
+    "fields": {
+        "postcode": 1500,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 362,
+    "fields": {
+        "postcode": 1501,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 363,
+    "fields": {
+        "postcode": 1502,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 364,
+    "fields": {
+        "postcode": 1503,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 365,
+    "fields": {
+        "postcode": 1504,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 366,
+    "fields": {
+        "postcode": 1505,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 367,
+    "fields": {
+        "postcode": 1506,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 368,
+    "fields": {
+        "postcode": 1507,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 369,
+    "fields": {
+        "postcode": 1508,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 370,
+    "fields": {
+        "postcode": 1509,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 371,
+    "fields": {
+        "postcode": 1510,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 372,
+    "fields": {
+        "postcode": 1512,
+        "city": "Returpost"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 373,
+    "fields": {
+        "postcode": 1513,
+        "city": "Flytninger og Nejtak"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 374,
+    "fields": {
+        "postcode": 1532,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 375,
+    "fields": {
+        "postcode": 1533,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 376,
+    "fields": {
+        "postcode": 1550,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 377,
+    "fields": {
+        "postcode": 1550,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 378,
+    "fields": {
+        "postcode": 1551,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 379,
+    "fields": {
+        "postcode": 1552,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 380,
+    "fields": {
+        "postcode": 1553,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 381,
+    "fields": {
+        "postcode": 1553,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 382,
+    "fields": {
+        "postcode": 1554,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 383,
+    "fields": {
+        "postcode": 1555,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 384,
+    "fields": {
+        "postcode": 1556,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 385,
+    "fields": {
+        "postcode": 1557,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 386,
+    "fields": {
+        "postcode": 1558,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 387,
+    "fields": {
+        "postcode": 1559,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 388,
+    "fields": {
+        "postcode": 1560,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 389,
+    "fields": {
+        "postcode": 1561,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 390,
+    "fields": {
+        "postcode": 1561,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 391,
+    "fields": {
+        "postcode": 1562,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 392,
+    "fields": {
+        "postcode": 1563,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 393,
+    "fields": {
+        "postcode": 1564,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 394,
+    "fields": {
+        "postcode": 1567,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 395,
+    "fields": {
+        "postcode": 1568,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 396,
+    "fields": {
+        "postcode": 1569,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 397,
+    "fields": {
+        "postcode": 1570,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 398,
+    "fields": {
+        "postcode": 1570,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 399,
+    "fields": {
+        "postcode": 1571,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 400,
+    "fields": {
+        "postcode": 1572,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 401,
+    "fields": {
+        "postcode": 1573,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 402,
+    "fields": {
+        "postcode": 1574,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 403,
+    "fields": {
+        "postcode": 1575,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 404,
+    "fields": {
+        "postcode": 1576,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 405,
+    "fields": {
+        "postcode": 1577,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 406,
+    "fields": {
+        "postcode": 1577,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 407,
+    "fields": {
+        "postcode": 1577,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 408,
+    "fields": {
+        "postcode": 1592,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 409,
+    "fields": {
+        "postcode": 1599,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 410,
+    "fields": {
+        "postcode": 1600,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 411,
+    "fields": {
+        "postcode": 1601,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 412,
+    "fields": {
+        "postcode": 1602,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 413,
+    "fields": {
+        "postcode": 1603,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 414,
+    "fields": {
+        "postcode": 1604,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 415,
+    "fields": {
+        "postcode": 1605,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 416,
+    "fields": {
+        "postcode": 1606,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 417,
+    "fields": {
+        "postcode": 1607,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 418,
+    "fields": {
+        "postcode": 1608,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 419,
+    "fields": {
+        "postcode": 1609,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 420,
+    "fields": {
+        "postcode": 1610,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 421,
+    "fields": {
+        "postcode": 1611,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 422,
+    "fields": {
+        "postcode": 1612,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 423,
+    "fields": {
+        "postcode": 1613,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 424,
+    "fields": {
+        "postcode": 1614,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 425,
+    "fields": {
+        "postcode": 1615,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 426,
+    "fields": {
+        "postcode": 1616,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 427,
+    "fields": {
+        "postcode": 1617,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 428,
+    "fields": {
+        "postcode": 1618,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 429,
+    "fields": {
+        "postcode": 1619,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 430,
+    "fields": {
+        "postcode": 1620,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 431,
+    "fields": {
+        "postcode": 1620,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 432,
+    "fields": {
+        "postcode": 1621,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 433,
+    "fields": {
+        "postcode": 1622,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 434,
+    "fields": {
+        "postcode": 1623,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 435,
+    "fields": {
+        "postcode": 1624,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 436,
+    "fields": {
+        "postcode": 1630,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 437,
+    "fields": {
+        "postcode": 1631,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 438,
+    "fields": {
+        "postcode": 1632,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 439,
+    "fields": {
+        "postcode": 1633,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 440,
+    "fields": {
+        "postcode": 1634,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 441,
+    "fields": {
+        "postcode": 1635,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 442,
+    "fields": {
+        "postcode": 1650,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 443,
+    "fields": {
+        "postcode": 1651,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 444,
+    "fields": {
+        "postcode": 1652,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 445,
+    "fields": {
+        "postcode": 1653,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 446,
+    "fields": {
+        "postcode": 1654,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 447,
+    "fields": {
+        "postcode": 1655,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 448,
+    "fields": {
+        "postcode": 1656,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 449,
+    "fields": {
+        "postcode": 1657,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 450,
+    "fields": {
+        "postcode": 1658,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 451,
+    "fields": {
+        "postcode": 1659,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 452,
+    "fields": {
+        "postcode": 1660,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 453,
+    "fields": {
+        "postcode": 1660,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 454,
+    "fields": {
+        "postcode": 1661,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 455,
+    "fields": {
+        "postcode": 1662,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 456,
+    "fields": {
+        "postcode": 1663,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 457,
+    "fields": {
+        "postcode": 1664,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 458,
+    "fields": {
+        "postcode": 1665,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 459,
+    "fields": {
+        "postcode": 1666,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 460,
+    "fields": {
+        "postcode": 1667,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 461,
+    "fields": {
+        "postcode": 1668,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 462,
+    "fields": {
+        "postcode": 1669,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 463,
+    "fields": {
+        "postcode": 1670,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 464,
+    "fields": {
+        "postcode": 1671,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 465,
+    "fields": {
+        "postcode": 1671,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 466,
+    "fields": {
+        "postcode": 1672,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 467,
+    "fields": {
+        "postcode": 1673,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 468,
+    "fields": {
+        "postcode": 1674,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 469,
+    "fields": {
+        "postcode": 1675,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 470,
+    "fields": {
+        "postcode": 1676,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 471,
+    "fields": {
+        "postcode": 1677,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 472,
+    "fields": {
+        "postcode": 1699,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 473,
+    "fields": {
+        "postcode": 1700,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 474,
+    "fields": {
+        "postcode": 1701,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 475,
+    "fields": {
+        "postcode": 1702,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 476,
+    "fields": {
+        "postcode": 1703,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 477,
+    "fields": {
+        "postcode": 1704,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 478,
+    "fields": {
+        "postcode": 1705,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 479,
+    "fields": {
+        "postcode": 1706,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 480,
+    "fields": {
+        "postcode": 1707,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 481,
+    "fields": {
+        "postcode": 1708,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 482,
+    "fields": {
+        "postcode": 1709,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 483,
+    "fields": {
+        "postcode": 1710,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 484,
+    "fields": {
+        "postcode": 1711,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 485,
+    "fields": {
+        "postcode": 1711,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 486,
+    "fields": {
+        "postcode": 1712,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 487,
+    "fields": {
+        "postcode": 1714,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 488,
+    "fields": {
+        "postcode": 1715,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 489,
+    "fields": {
+        "postcode": 1716,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 490,
+    "fields": {
+        "postcode": 1717,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 491,
+    "fields": {
+        "postcode": 1718,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 492,
+    "fields": {
+        "postcode": 1719,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 493,
+    "fields": {
+        "postcode": 1720,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 494,
+    "fields": {
+        "postcode": 1721,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 495,
+    "fields": {
+        "postcode": 1722,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 496,
+    "fields": {
+        "postcode": 1723,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 497,
+    "fields": {
+        "postcode": 1724,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 498,
+    "fields": {
+        "postcode": 1725,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 499,
+    "fields": {
+        "postcode": 1726,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 500,
+    "fields": {
+        "postcode": 1727,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 501,
+    "fields": {
+        "postcode": 1728,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 502,
+    "fields": {
+        "postcode": 1729,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 503,
+    "fields": {
+        "postcode": 1730,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 504,
+    "fields": {
+        "postcode": 1731,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 505,
+    "fields": {
+        "postcode": 1732,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 506,
+    "fields": {
+        "postcode": 1733,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 507,
+    "fields": {
+        "postcode": 1734,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 508,
+    "fields": {
+        "postcode": 1735,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 509,
+    "fields": {
+        "postcode": 1736,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 510,
+    "fields": {
+        "postcode": 1737,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 511,
+    "fields": {
+        "postcode": 1738,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 512,
+    "fields": {
+        "postcode": 1739,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 513,
+    "fields": {
+        "postcode": 1749,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 514,
+    "fields": {
+        "postcode": 1750,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 515,
+    "fields": {
+        "postcode": 1751,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 516,
+    "fields": {
+        "postcode": 1752,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 517,
+    "fields": {
+        "postcode": 1753,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 518,
+    "fields": {
+        "postcode": 1754,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 519,
+    "fields": {
+        "postcode": 1755,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 520,
+    "fields": {
+        "postcode": 1756,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 521,
+    "fields": {
+        "postcode": 1757,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 522,
+    "fields": {
+        "postcode": 1758,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 523,
+    "fields": {
+        "postcode": 1759,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 524,
+    "fields": {
+        "postcode": 1760,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 525,
+    "fields": {
+        "postcode": 1761,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 526,
+    "fields": {
+        "postcode": 1762,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 527,
+    "fields": {
+        "postcode": 1763,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 528,
+    "fields": {
+        "postcode": 1764,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 529,
+    "fields": {
+        "postcode": 1765,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 530,
+    "fields": {
+        "postcode": 1766,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 531,
+    "fields": {
+        "postcode": 1770,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 532,
+    "fields": {
+        "postcode": 1771,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 533,
+    "fields": {
+        "postcode": 1772,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 534,
+    "fields": {
+        "postcode": 1773,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 535,
+    "fields": {
+        "postcode": 1774,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 536,
+    "fields": {
+        "postcode": 1775,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 537,
+    "fields": {
+        "postcode": 1777,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 538,
+    "fields": {
+        "postcode": 1780,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 539,
+    "fields": {
+        "postcode": 1782,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 540,
+    "fields": {
+        "postcode": 1785,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 541,
+    "fields": {
+        "postcode": 1786,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 542,
+    "fields": {
+        "postcode": 1787,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 543,
+    "fields": {
+        "postcode": 1790,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 544,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 545,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 546,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 547,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 548,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 549,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 550,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 551,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 552,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 553,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 554,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 555,
+    "fields": {
+        "postcode": 1799,
+        "city": "K\u00f8benhavn V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 556,
+    "fields": {
+        "postcode": 1800,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 557,
+    "fields": {
+        "postcode": 1801,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 558,
+    "fields": {
+        "postcode": 1802,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 559,
+    "fields": {
+        "postcode": 1803,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 560,
+    "fields": {
+        "postcode": 1804,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 561,
+    "fields": {
+        "postcode": 1805,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 562,
+    "fields": {
+        "postcode": 1806,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 563,
+    "fields": {
+        "postcode": 1807,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 564,
+    "fields": {
+        "postcode": 1808,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 565,
+    "fields": {
+        "postcode": 1809,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 566,
+    "fields": {
+        "postcode": 1810,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 567,
+    "fields": {
+        "postcode": 1811,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 568,
+    "fields": {
+        "postcode": 1812,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 569,
+    "fields": {
+        "postcode": 1813,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 570,
+    "fields": {
+        "postcode": 1814,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 571,
+    "fields": {
+        "postcode": 1815,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 572,
+    "fields": {
+        "postcode": 1816,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 573,
+    "fields": {
+        "postcode": 1817,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 574,
+    "fields": {
+        "postcode": 1818,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 575,
+    "fields": {
+        "postcode": 1819,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 576,
+    "fields": {
+        "postcode": 1820,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 577,
+    "fields": {
+        "postcode": 1822,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 578,
+    "fields": {
+        "postcode": 1823,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 579,
+    "fields": {
+        "postcode": 1824,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 580,
+    "fields": {
+        "postcode": 1825,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 581,
+    "fields": {
+        "postcode": 1826,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 582,
+    "fields": {
+        "postcode": 1827,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 583,
+    "fields": {
+        "postcode": 1828,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 584,
+    "fields": {
+        "postcode": 1829,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 585,
+    "fields": {
+        "postcode": 1835,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 586,
+    "fields": {
+        "postcode": 1850,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 587,
+    "fields": {
+        "postcode": 1851,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 588,
+    "fields": {
+        "postcode": 1852,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 589,
+    "fields": {
+        "postcode": 1853,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 590,
+    "fields": {
+        "postcode": 1854,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 591,
+    "fields": {
+        "postcode": 1855,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 592,
+    "fields": {
+        "postcode": 1856,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 593,
+    "fields": {
+        "postcode": 1857,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 594,
+    "fields": {
+        "postcode": 1860,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 595,
+    "fields": {
+        "postcode": 1861,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 596,
+    "fields": {
+        "postcode": 1862,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 597,
+    "fields": {
+        "postcode": 1863,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 598,
+    "fields": {
+        "postcode": 1864,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 599,
+    "fields": {
+        "postcode": 1865,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 600,
+    "fields": {
+        "postcode": 1866,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 601,
+    "fields": {
+        "postcode": 1867,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 602,
+    "fields": {
+        "postcode": 1868,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 603,
+    "fields": {
+        "postcode": 1870,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 604,
+    "fields": {
+        "postcode": 1871,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 605,
+    "fields": {
+        "postcode": 1872,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 606,
+    "fields": {
+        "postcode": 1873,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 607,
+    "fields": {
+        "postcode": 1874,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 608,
+    "fields": {
+        "postcode": 1875,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 609,
+    "fields": {
+        "postcode": 1876,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 610,
+    "fields": {
+        "postcode": 1877,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 611,
+    "fields": {
+        "postcode": 1878,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 612,
+    "fields": {
+        "postcode": 1879,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 613,
+    "fields": {
+        "postcode": 1900,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 614,
+    "fields": {
+        "postcode": 1901,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 615,
+    "fields": {
+        "postcode": 1902,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 616,
+    "fields": {
+        "postcode": 1903,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 617,
+    "fields": {
+        "postcode": 1904,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 618,
+    "fields": {
+        "postcode": 1905,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 619,
+    "fields": {
+        "postcode": 1906,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 620,
+    "fields": {
+        "postcode": 1908,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 621,
+    "fields": {
+        "postcode": 1909,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 622,
+    "fields": {
+        "postcode": 1910,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 623,
+    "fields": {
+        "postcode": 1911,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 624,
+    "fields": {
+        "postcode": 1912,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 625,
+    "fields": {
+        "postcode": 1913,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 626,
+    "fields": {
+        "postcode": 1914,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 627,
+    "fields": {
+        "postcode": 1915,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 628,
+    "fields": {
+        "postcode": 1916,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 629,
+    "fields": {
+        "postcode": 1917,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 630,
+    "fields": {
+        "postcode": 1920,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 631,
+    "fields": {
+        "postcode": 1921,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 632,
+    "fields": {
+        "postcode": 1922,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 633,
+    "fields": {
+        "postcode": 1923,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 634,
+    "fields": {
+        "postcode": 1924,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 635,
+    "fields": {
+        "postcode": 1925,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 636,
+    "fields": {
+        "postcode": 1926,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 637,
+    "fields": {
+        "postcode": 1927,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 638,
+    "fields": {
+        "postcode": 1928,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 639,
+    "fields": {
+        "postcode": 1931,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 640,
+    "fields": {
+        "postcode": 1950,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 641,
+    "fields": {
+        "postcode": 1951,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 642,
+    "fields": {
+        "postcode": 1952,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 643,
+    "fields": {
+        "postcode": 1953,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 644,
+    "fields": {
+        "postcode": 1954,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 645,
+    "fields": {
+        "postcode": 1955,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 646,
+    "fields": {
+        "postcode": 1956,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 647,
+    "fields": {
+        "postcode": 1957,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 648,
+    "fields": {
+        "postcode": 1958,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 649,
+    "fields": {
+        "postcode": 1959,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 650,
+    "fields": {
+        "postcode": 1960,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 651,
+    "fields": {
+        "postcode": 1961,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 652,
+    "fields": {
+        "postcode": 1962,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 653,
+    "fields": {
+        "postcode": 1963,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 654,
+    "fields": {
+        "postcode": 1964,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 655,
+    "fields": {
+        "postcode": 1965,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 656,
+    "fields": {
+        "postcode": 1966,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 657,
+    "fields": {
+        "postcode": 1967,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 658,
+    "fields": {
+        "postcode": 1970,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 659,
+    "fields": {
+        "postcode": 1971,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 660,
+    "fields": {
+        "postcode": 1972,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 661,
+    "fields": {
+        "postcode": 1973,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 662,
+    "fields": {
+        "postcode": 1974,
+        "city": "Frederiksberg C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 663,
+    "fields": {
+        "postcode": 2000,
+        "city": "Frederiksberg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 664,
+    "fields": {
+        "postcode": 2100,
+        "city": "K\u00f8benhavn \u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 665,
+    "fields": {
+        "postcode": 2150,
+        "city": "Nordhavn"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 666,
+    "fields": {
+        "postcode": 2200,
+        "city": "K\u00f8benhavn N"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 667,
+    "fields": {
+        "postcode": 2300,
+        "city": "K\u00f8benhavn S"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 668,
+    "fields": {
+        "postcode": 2400,
+        "city": "K\u00f8benhavn NV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 669,
+    "fields": {
+        "postcode": 2412,
+        "city": "Gr\u00f8nland"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 670,
+    "fields": {
+        "postcode": 2450,
+        "city": "K\u00f8benhavn SV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 671,
+    "fields": {
+        "postcode": 2500,
+        "city": "Valby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 672,
+    "fields": {
+        "postcode": 2600,
+        "city": "Glostrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 673,
+    "fields": {
+        "postcode": 2605,
+        "city": "Br\u00f8ndby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 674,
+    "fields": {
+        "postcode": 2610,
+        "city": "R\u00f8dovre"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 675,
+    "fields": {
+        "postcode": 2620,
+        "city": "Albertslund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 676,
+    "fields": {
+        "postcode": 2625,
+        "city": "Vallensb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 677,
+    "fields": {
+        "postcode": 2630,
+        "city": "Taastrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 678,
+    "fields": {
+        "postcode": 2635,
+        "city": "Ish\u00f8j"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 679,
+    "fields": {
+        "postcode": 2640,
+        "city": "Hedehusene"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 680,
+    "fields": {
+        "postcode": 2650,
+        "city": "Hvidovre"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 681,
+    "fields": {
+        "postcode": 2660,
+        "city": "Br\u00f8ndby Strand"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 682,
+    "fields": {
+        "postcode": 2665,
+        "city": "Vallensb\u00e6k Strand"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 683,
+    "fields": {
+        "postcode": 2670,
+        "city": "Greve"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 684,
+    "fields": {
+        "postcode": 2680,
+        "city": "Solr\u00f8d Strand"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 685,
+    "fields": {
+        "postcode": 2690,
+        "city": "Karlslunde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 686,
+    "fields": {
+        "postcode": 2700,
+        "city": "Br\u00f8nsh\u00f8j"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 687,
+    "fields": {
+        "postcode": 2720,
+        "city": "Vanl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 688,
+    "fields": {
+        "postcode": 2730,
+        "city": "Herlev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 689,
+    "fields": {
+        "postcode": 2740,
+        "city": "Skovlunde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 690,
+    "fields": {
+        "postcode": 2750,
+        "city": "Ballerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 691,
+    "fields": {
+        "postcode": 2760,
+        "city": "M\u00e5l\u00f8v"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 692,
+    "fields": {
+        "postcode": 2765,
+        "city": "Sm\u00f8rum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 693,
+    "fields": {
+        "postcode": 2770,
+        "city": "Kastrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 694,
+    "fields": {
+        "postcode": 2791,
+        "city": "Drag\u00f8r"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 695,
+    "fields": {
+        "postcode": 2800,
+        "city": "Kongens Lyngby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 696,
+    "fields": {
+        "postcode": 2820,
+        "city": "Gentofte"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 697,
+    "fields": {
+        "postcode": 2830,
+        "city": "Virum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 698,
+    "fields": {
+        "postcode": 2840,
+        "city": "Holte"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 699,
+    "fields": {
+        "postcode": 2850,
+        "city": "N\u00e6rum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 700,
+    "fields": {
+        "postcode": 2860,
+        "city": "S\u00f8borg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 701,
+    "fields": {
+        "postcode": 2870,
+        "city": "Dysseg\u00e5rd"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 702,
+    "fields": {
+        "postcode": 2880,
+        "city": "Bagsv\u00e6rd"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 703,
+    "fields": {
+        "postcode": 2900,
+        "city": "Hellerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 704,
+    "fields": {
+        "postcode": 2920,
+        "city": "Charlottenlund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 705,
+    "fields": {
+        "postcode": 2930,
+        "city": "Klampenborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 706,
+    "fields": {
+        "postcode": 2942,
+        "city": "Skodsborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 707,
+    "fields": {
+        "postcode": 2950,
+        "city": "Vedb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 708,
+    "fields": {
+        "postcode": 2960,
+        "city": "Rungsted Kyst"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 709,
+    "fields": {
+        "postcode": 2970,
+        "city": "H\u00f8rsholm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 710,
+    "fields": {
+        "postcode": 2980,
+        "city": "Kokkedal"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 711,
+    "fields": {
+        "postcode": 2990,
+        "city": "Niv\u00e5"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 712,
+    "fields": {
+        "postcode": 3000,
+        "city": "Helsing\u00f8r"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 713,
+    "fields": {
+        "postcode": 3050,
+        "city": "Humleb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 714,
+    "fields": {
+        "postcode": 3060,
+        "city": "Esperg\u00e6rde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 715,
+    "fields": {
+        "postcode": 3070,
+        "city": "Snekkersten"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 716,
+    "fields": {
+        "postcode": 3080,
+        "city": "Tik\u00f8b"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 717,
+    "fields": {
+        "postcode": 3100,
+        "city": "Hornb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 718,
+    "fields": {
+        "postcode": 3120,
+        "city": "Dronningm\u00f8lle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 719,
+    "fields": {
+        "postcode": 3140,
+        "city": "\u00c5lsg\u00e5rde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 720,
+    "fields": {
+        "postcode": 3150,
+        "city": "Helleb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 721,
+    "fields": {
+        "postcode": 3200,
+        "city": "Helsinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 722,
+    "fields": {
+        "postcode": 3210,
+        "city": "Vejby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 723,
+    "fields": {
+        "postcode": 3220,
+        "city": "Tisvildeleje"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 724,
+    "fields": {
+        "postcode": 3230,
+        "city": "Gr\u00e6sted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 725,
+    "fields": {
+        "postcode": 3250,
+        "city": "Gilleleje"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 726,
+    "fields": {
+        "postcode": 3300,
+        "city": "Frederiksv\u00e6rk"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 727,
+    "fields": {
+        "postcode": 3310,
+        "city": "\u00d8lsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 728,
+    "fields": {
+        "postcode": 3320,
+        "city": "Sk\u00e6vinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 729,
+    "fields": {
+        "postcode": 3330,
+        "city": "G\u00f8rl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 730,
+    "fields": {
+        "postcode": 3360,
+        "city": "Liseleje"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 731,
+    "fields": {
+        "postcode": 3370,
+        "city": "Melby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 732,
+    "fields": {
+        "postcode": 3390,
+        "city": "Hundested"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 733,
+    "fields": {
+        "postcode": 3400,
+        "city": "Hiller\u00f8d"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 734,
+    "fields": {
+        "postcode": 3450,
+        "city": "Aller\u00f8d"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 735,
+    "fields": {
+        "postcode": 3460,
+        "city": "Birker\u00f8d"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 736,
+    "fields": {
+        "postcode": 3480,
+        "city": "Fredensborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 737,
+    "fields": {
+        "postcode": 3490,
+        "city": "Kvistg\u00e5rd"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 738,
+    "fields": {
+        "postcode": 3500,
+        "city": "V\u00e6rl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 739,
+    "fields": {
+        "postcode": 3520,
+        "city": "Farum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 740,
+    "fields": {
+        "postcode": 3540,
+        "city": "Lynge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 741,
+    "fields": {
+        "postcode": 3550,
+        "city": "Slangerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 742,
+    "fields": {
+        "postcode": 3600,
+        "city": "Frederikssund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 743,
+    "fields": {
+        "postcode": 3630,
+        "city": "J\u00e6gerspris"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 744,
+    "fields": {
+        "postcode": 3650,
+        "city": "\u00d8lstykke"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 745,
+    "fields": {
+        "postcode": 3660,
+        "city": "Stenl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 746,
+    "fields": {
+        "postcode": 3670,
+        "city": "Veks\u00f8 Sj\u00e6lland"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 747,
+    "fields": {
+        "postcode": 3700,
+        "city": "R\u00f8nne"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 748,
+    "fields": {
+        "postcode": 3720,
+        "city": "Aakirkeby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 749,
+    "fields": {
+        "postcode": 3730,
+        "city": "Nex\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 750,
+    "fields": {
+        "postcode": 3740,
+        "city": "Svaneke"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 751,
+    "fields": {
+        "postcode": 3751,
+        "city": "\u00d8stermarie"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 752,
+    "fields": {
+        "postcode": 3760,
+        "city": "Gudhjem"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 753,
+    "fields": {
+        "postcode": 3770,
+        "city": "Allinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 754,
+    "fields": {
+        "postcode": 3782,
+        "city": "Klemensker"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 755,
+    "fields": {
+        "postcode": 3790,
+        "city": "Hasle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 756,
+    "fields": {
+        "postcode": 4000,
+        "city": "Roskilde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 757,
+    "fields": {
+        "postcode": 4030,
+        "city": "Tune"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 758,
+    "fields": {
+        "postcode": 4040,
+        "city": "Jyllinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 759,
+    "fields": {
+        "postcode": 4050,
+        "city": "Skibby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 760,
+    "fields": {
+        "postcode": 4060,
+        "city": "Kirke S\u00e5by"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 761,
+    "fields": {
+        "postcode": 4070,
+        "city": "Kirke Hyllinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 762,
+    "fields": {
+        "postcode": 4100,
+        "city": "Ringsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 763,
+    "fields": {
+        "postcode": 4129,
+        "city": "Ringsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 764,
+    "fields": {
+        "postcode": 4130,
+        "city": "Viby Sj\u00e6lland"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 765,
+    "fields": {
+        "postcode": 4140,
+        "city": "Borup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 766,
+    "fields": {
+        "postcode": 4160,
+        "city": "Herlufmagle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 767,
+    "fields": {
+        "postcode": 4171,
+        "city": "Glums\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 768,
+    "fields": {
+        "postcode": 4173,
+        "city": "Fjenneslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 769,
+    "fields": {
+        "postcode": 4174,
+        "city": "Jystrup Midtsj"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 770,
+    "fields": {
+        "postcode": 4180,
+        "city": "Sor\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 771,
+    "fields": {
+        "postcode": 4190,
+        "city": "Munke Bjergby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 772,
+    "fields": {
+        "postcode": 4200,
+        "city": "Slagelse"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 773,
+    "fields": {
+        "postcode": 4220,
+        "city": "Kors\u00f8r"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 774,
+    "fields": {
+        "postcode": 4230,
+        "city": "Sk\u00e6lsk\u00f8r"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 775,
+    "fields": {
+        "postcode": 4241,
+        "city": "Vemmelev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 776,
+    "fields": {
+        "postcode": 4242,
+        "city": "Boeslunde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 777,
+    "fields": {
+        "postcode": 4243,
+        "city": "Rude"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 778,
+    "fields": {
+        "postcode": 4244,
+        "city": "Agers\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 779,
+    "fields": {
+        "postcode": 4245,
+        "city": "Om\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 780,
+    "fields": {
+        "postcode": 4250,
+        "city": "Fuglebjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 781,
+    "fields": {
+        "postcode": 4261,
+        "city": "Dalmose"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 782,
+    "fields": {
+        "postcode": 4262,
+        "city": "Sandved"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 783,
+    "fields": {
+        "postcode": 4270,
+        "city": "H\u00f8ng"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 784,
+    "fields": {
+        "postcode": 4281,
+        "city": "G\u00f8rlev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 785,
+    "fields": {
+        "postcode": 4291,
+        "city": "Ruds Vedby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 786,
+    "fields": {
+        "postcode": 4293,
+        "city": "Dianalund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 787,
+    "fields": {
+        "postcode": 4295,
+        "city": "Stenlille"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 788,
+    "fields": {
+        "postcode": 4296,
+        "city": "Nyrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 789,
+    "fields": {
+        "postcode": 4300,
+        "city": "Holb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 790,
+    "fields": {
+        "postcode": 4305,
+        "city": "Or\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 791,
+    "fields": {
+        "postcode": 4320,
+        "city": "Lejre"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 792,
+    "fields": {
+        "postcode": 4330,
+        "city": "Hvals\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 793,
+    "fields": {
+        "postcode": 4340,
+        "city": "T\u00f8ll\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 794,
+    "fields": {
+        "postcode": 4350,
+        "city": "Ugerl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 795,
+    "fields": {
+        "postcode": 4360,
+        "city": "Kirke Eskilstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 796,
+    "fields": {
+        "postcode": 4370,
+        "city": "Store Merl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 797,
+    "fields": {
+        "postcode": 4390,
+        "city": "Vipper\u00f8d"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 798,
+    "fields": {
+        "postcode": 4400,
+        "city": "Kalundborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 799,
+    "fields": {
+        "postcode": 4420,
+        "city": "Regstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 800,
+    "fields": {
+        "postcode": 4440,
+        "city": "M\u00f8rk\u00f8v"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 801,
+    "fields": {
+        "postcode": 4450,
+        "city": "Jyderup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 802,
+    "fields": {
+        "postcode": 4460,
+        "city": "Snertinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 803,
+    "fields": {
+        "postcode": 4470,
+        "city": "Sveb\u00f8lle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 804,
+    "fields": {
+        "postcode": 4480,
+        "city": "Store Fuglede"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 805,
+    "fields": {
+        "postcode": 4490,
+        "city": "Jerslev Sj\u00e6lland"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 806,
+    "fields": {
+        "postcode": 4500,
+        "city": "Nyk\u00f8bing Sj"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 807,
+    "fields": {
+        "postcode": 4520,
+        "city": "Svinninge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 808,
+    "fields": {
+        "postcode": 4532,
+        "city": "Gislinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 809,
+    "fields": {
+        "postcode": 4534,
+        "city": "H\u00f8rve"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 810,
+    "fields": {
+        "postcode": 4540,
+        "city": "F\u00e5revejle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 811,
+    "fields": {
+        "postcode": 4550,
+        "city": "Asn\u00e6s"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 812,
+    "fields": {
+        "postcode": 4560,
+        "city": "Vig"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 813,
+    "fields": {
+        "postcode": 4571,
+        "city": "Grevinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 814,
+    "fields": {
+        "postcode": 4572,
+        "city": "N\u00f8rre Asmindrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 815,
+    "fields": {
+        "postcode": 4573,
+        "city": "H\u00f8jby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 816,
+    "fields": {
+        "postcode": 4581,
+        "city": "R\u00f8rvig"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 817,
+    "fields": {
+        "postcode": 4583,
+        "city": "Sj\u00e6llands Odde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 818,
+    "fields": {
+        "postcode": 4591,
+        "city": "F\u00f8llenslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 819,
+    "fields": {
+        "postcode": 4592,
+        "city": "Sejer\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 820,
+    "fields": {
+        "postcode": 4593,
+        "city": "Eskebjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 821,
+    "fields": {
+        "postcode": 4600,
+        "city": "K\u00f8ge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 822,
+    "fields": {
+        "postcode": 4621,
+        "city": "Gadstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 823,
+    "fields": {
+        "postcode": 4622,
+        "city": "Havdrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 824,
+    "fields": {
+        "postcode": 4623,
+        "city": "Lille Skensved"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 825,
+    "fields": {
+        "postcode": 4632,
+        "city": "Bj\u00e6verskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 826,
+    "fields": {
+        "postcode": 4640,
+        "city": "Faxe"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 827,
+    "fields": {
+        "postcode": 4652,
+        "city": "H\u00e5rlev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 828,
+    "fields": {
+        "postcode": 4653,
+        "city": "Karise"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 829,
+    "fields": {
+        "postcode": 4654,
+        "city": "Faxe Ladeplads"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 830,
+    "fields": {
+        "postcode": 4660,
+        "city": "Store Heddinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 831,
+    "fields": {
+        "postcode": 4671,
+        "city": "Str\u00f8by"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 832,
+    "fields": {
+        "postcode": 4672,
+        "city": "Klippinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 833,
+    "fields": {
+        "postcode": 4673,
+        "city": "R\u00f8dvig Stevns"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 834,
+    "fields": {
+        "postcode": 4681,
+        "city": "Herf\u00f8lge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 835,
+    "fields": {
+        "postcode": 4682,
+        "city": "Tureby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 836,
+    "fields": {
+        "postcode": 4683,
+        "city": "R\u00f8nnede"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 837,
+    "fields": {
+        "postcode": 4684,
+        "city": "Holmegaard"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 838,
+    "fields": {
+        "postcode": 4690,
+        "city": "Haslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 839,
+    "fields": {
+        "postcode": 4700,
+        "city": "N\u00e6stved"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 840,
+    "fields": {
+        "postcode": 4720,
+        "city": "Pr\u00e6st\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 841,
+    "fields": {
+        "postcode": 4733,
+        "city": "Tappern\u00f8je"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 842,
+    "fields": {
+        "postcode": 4735,
+        "city": "Mern"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 843,
+    "fields": {
+        "postcode": 4736,
+        "city": "Karreb\u00e6ksminde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 844,
+    "fields": {
+        "postcode": 4750,
+        "city": "Lundby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 845,
+    "fields": {
+        "postcode": 4760,
+        "city": "Vordingborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 846,
+    "fields": {
+        "postcode": 4771,
+        "city": "Kalvehave"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 847,
+    "fields": {
+        "postcode": 4772,
+        "city": "Langeb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 848,
+    "fields": {
+        "postcode": 4773,
+        "city": "Stensved"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 849,
+    "fields": {
+        "postcode": 4780,
+        "city": "Stege"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 850,
+    "fields": {
+        "postcode": 4791,
+        "city": "Borre"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 851,
+    "fields": {
+        "postcode": 4792,
+        "city": "Askeby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 852,
+    "fields": {
+        "postcode": 4793,
+        "city": "Bog\u00f8 By"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 853,
+    "fields": {
+        "postcode": 4800,
+        "city": "Nyk\u00f8bing F"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 854,
+    "fields": {
+        "postcode": 4840,
+        "city": "N\u00f8rre Alslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 855,
+    "fields": {
+        "postcode": 4850,
+        "city": "Stubbek\u00f8bing"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 856,
+    "fields": {
+        "postcode": 4862,
+        "city": "Guldborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 857,
+    "fields": {
+        "postcode": 4863,
+        "city": "Eskilstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 858,
+    "fields": {
+        "postcode": 4871,
+        "city": "Horbelev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 859,
+    "fields": {
+        "postcode": 4872,
+        "city": "Idestrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 860,
+    "fields": {
+        "postcode": 4873,
+        "city": "V\u00e6ggerl\u00f8se"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 861,
+    "fields": {
+        "postcode": 4874,
+        "city": "Gedser"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 862,
+    "fields": {
+        "postcode": 4880,
+        "city": "Nysted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 863,
+    "fields": {
+        "postcode": 4891,
+        "city": "Toreby L"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 864,
+    "fields": {
+        "postcode": 4892,
+        "city": "Kettinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 865,
+    "fields": {
+        "postcode": 4894,
+        "city": "\u00d8ster Ulslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 866,
+    "fields": {
+        "postcode": 4895,
+        "city": "Errindlev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 867,
+    "fields": {
+        "postcode": 4900,
+        "city": "Nakskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 868,
+    "fields": {
+        "postcode": 4912,
+        "city": "Harpelunde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 869,
+    "fields": {
+        "postcode": 4913,
+        "city": "Horslunde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 870,
+    "fields": {
+        "postcode": 4920,
+        "city": "S\u00f8llested"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 871,
+    "fields": {
+        "postcode": 4930,
+        "city": "Maribo"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 872,
+    "fields": {
+        "postcode": 4941,
+        "city": "Bandholm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 873,
+    "fields": {
+        "postcode": 4942,
+        "city": "Ask\u00f8 og Lille\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 874,
+    "fields": {
+        "postcode": 4943,
+        "city": "Torrig L"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 875,
+    "fields": {
+        "postcode": 4944,
+        "city": "Fej\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 876,
+    "fields": {
+        "postcode": 4945,
+        "city": "Fem\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 877,
+    "fields": {
+        "postcode": 4951,
+        "city": "N\u00f8rreballe"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 878,
+    "fields": {
+        "postcode": 4952,
+        "city": "Stokkemarke"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 879,
+    "fields": {
+        "postcode": 4953,
+        "city": "Vesterborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 880,
+    "fields": {
+        "postcode": 4960,
+        "city": "Holeby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 881,
+    "fields": {
+        "postcode": 4970,
+        "city": "R\u00f8dby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 882,
+    "fields": {
+        "postcode": 4983,
+        "city": "Dannemare"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 883,
+    "fields": {
+        "postcode": 4990,
+        "city": "Saksk\u00f8bing"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 884,
+    "fields": {
+        "postcode": 4992,
+        "city": "Midtsj\u00e6lland USF P"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 885,
+    "fields": {
+        "postcode": 5000,
+        "city": "Odense C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 886,
+    "fields": {
+        "postcode": 5029,
+        "city": "Odense C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 887,
+    "fields": {
+        "postcode": 5100,
+        "city": "Odense C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 888,
+    "fields": {
+        "postcode": 5200,
+        "city": "Odense V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 889,
+    "fields": {
+        "postcode": 5210,
+        "city": "Odense NV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 890,
+    "fields": {
+        "postcode": 5220,
+        "city": "Odense S\u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 891,
+    "fields": {
+        "postcode": 5230,
+        "city": "Odense M"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 892,
+    "fields": {
+        "postcode": 5240,
+        "city": "Odense N\u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 893,
+    "fields": {
+        "postcode": 5250,
+        "city": "Odense SV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 894,
+    "fields": {
+        "postcode": 5260,
+        "city": "Odense S"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 895,
+    "fields": {
+        "postcode": 5270,
+        "city": "Odense N"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 896,
+    "fields": {
+        "postcode": 5290,
+        "city": "Marslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 897,
+    "fields": {
+        "postcode": 5300,
+        "city": "Kerteminde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 898,
+    "fields": {
+        "postcode": 5320,
+        "city": "Agedrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 899,
+    "fields": {
+        "postcode": 5330,
+        "city": "Munkebo"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 900,
+    "fields": {
+        "postcode": 5350,
+        "city": "Rynkeby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 901,
+    "fields": {
+        "postcode": 5370,
+        "city": "Mesinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 902,
+    "fields": {
+        "postcode": 5380,
+        "city": "Dalby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 903,
+    "fields": {
+        "postcode": 5390,
+        "city": "Martofte"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 904,
+    "fields": {
+        "postcode": 5400,
+        "city": "Bogense"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 905,
+    "fields": {
+        "postcode": 5450,
+        "city": "Otterup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 906,
+    "fields": {
+        "postcode": 5462,
+        "city": "Morud"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 907,
+    "fields": {
+        "postcode": 5463,
+        "city": "Harndrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 908,
+    "fields": {
+        "postcode": 5464,
+        "city": "Brenderup Fyn"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 909,
+    "fields": {
+        "postcode": 5466,
+        "city": "Asperup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 910,
+    "fields": {
+        "postcode": 5471,
+        "city": "S\u00f8nders\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 911,
+    "fields": {
+        "postcode": 5474,
+        "city": "Veflinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 912,
+    "fields": {
+        "postcode": 5485,
+        "city": "Skamby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 913,
+    "fields": {
+        "postcode": 5491,
+        "city": "Blommenslyst"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 914,
+    "fields": {
+        "postcode": 5492,
+        "city": "Vissenbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 915,
+    "fields": {
+        "postcode": 5500,
+        "city": "Middelfart"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 916,
+    "fields": {
+        "postcode": 5540,
+        "city": "Ullerslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 917,
+    "fields": {
+        "postcode": 5550,
+        "city": "Langeskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 918,
+    "fields": {
+        "postcode": 5560,
+        "city": "Aarup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 919,
+    "fields": {
+        "postcode": 5580,
+        "city": "N\u00f8rre Aaby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 920,
+    "fields": {
+        "postcode": 5591,
+        "city": "Gelsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 921,
+    "fields": {
+        "postcode": 5592,
+        "city": "Ejby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 922,
+    "fields": {
+        "postcode": 5600,
+        "city": "Faaborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 923,
+    "fields": {
+        "postcode": 5601,
+        "city": "Ly\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 924,
+    "fields": {
+        "postcode": 5602,
+        "city": "Avernak\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 925,
+    "fields": {
+        "postcode": 5603,
+        "city": "Bj\u00f8rn\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 926,
+    "fields": {
+        "postcode": 5610,
+        "city": "Assens"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 927,
+    "fields": {
+        "postcode": 5620,
+        "city": "Glamsbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 928,
+    "fields": {
+        "postcode": 5631,
+        "city": "Ebberup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 929,
+    "fields": {
+        "postcode": 5642,
+        "city": "Millinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 930,
+    "fields": {
+        "postcode": 5672,
+        "city": "Broby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 931,
+    "fields": {
+        "postcode": 5683,
+        "city": "Haarby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 932,
+    "fields": {
+        "postcode": 5690,
+        "city": "Tommerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 933,
+    "fields": {
+        "postcode": 5700,
+        "city": "Svendborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 934,
+    "fields": {
+        "postcode": 5750,
+        "city": "Ringe"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 935,
+    "fields": {
+        "postcode": 5762,
+        "city": "Vester Skerninge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 936,
+    "fields": {
+        "postcode": 5771,
+        "city": "Stenstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 937,
+    "fields": {
+        "postcode": 5772,
+        "city": "Kv\u00e6rndrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 938,
+    "fields": {
+        "postcode": 5792,
+        "city": "\u00c5rslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 939,
+    "fields": {
+        "postcode": 5800,
+        "city": "Nyborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 940,
+    "fields": {
+        "postcode": 5853,
+        "city": "\u00d8rb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 941,
+    "fields": {
+        "postcode": 5854,
+        "city": "Gislev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 942,
+    "fields": {
+        "postcode": 5856,
+        "city": "Ryslinge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 943,
+    "fields": {
+        "postcode": 5863,
+        "city": "Ferritslev Fyn"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 944,
+    "fields": {
+        "postcode": 5871,
+        "city": "Fr\u00f8rup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 945,
+    "fields": {
+        "postcode": 5874,
+        "city": "Hesselager"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 946,
+    "fields": {
+        "postcode": 5881,
+        "city": "Sk\u00e5rup Fyn"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 947,
+    "fields": {
+        "postcode": 5882,
+        "city": "Vejstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 948,
+    "fields": {
+        "postcode": 5883,
+        "city": "Oure"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 949,
+    "fields": {
+        "postcode": 5884,
+        "city": "Gudme"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 950,
+    "fields": {
+        "postcode": 5892,
+        "city": "Gudbjerg Sydfyn"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 951,
+    "fields": {
+        "postcode": 5900,
+        "city": "Rudk\u00f8bing"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 952,
+    "fields": {
+        "postcode": 5932,
+        "city": "Humble"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 953,
+    "fields": {
+        "postcode": 5935,
+        "city": "Bagenkop"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 954,
+    "fields": {
+        "postcode": 5943,
+        "city": "Stryn\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 955,
+    "fields": {
+        "postcode": 5953,
+        "city": "Tranek\u00e6r"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 956,
+    "fields": {
+        "postcode": 5960,
+        "city": "Marstal"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 957,
+    "fields": {
+        "postcode": 5965,
+        "city": "Birkholm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 958,
+    "fields": {
+        "postcode": 5970,
+        "city": "\u00c6r\u00f8sk\u00f8bing"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 959,
+    "fields": {
+        "postcode": 5985,
+        "city": "S\u00f8by \u00c6r\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 960,
+    "fields": {
+        "postcode": 6000,
+        "city": "Kolding"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 961,
+    "fields": {
+        "postcode": 6040,
+        "city": "Egtved"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 962,
+    "fields": {
+        "postcode": 6051,
+        "city": "Almind"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 963,
+    "fields": {
+        "postcode": 6052,
+        "city": "Viuf"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 964,
+    "fields": {
+        "postcode": 6064,
+        "city": "Jordrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 965,
+    "fields": {
+        "postcode": 6070,
+        "city": "Christiansfeld"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 966,
+    "fields": {
+        "postcode": 6091,
+        "city": "Bjert"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 967,
+    "fields": {
+        "postcode": 6092,
+        "city": "S\u00f8nder Stenderup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 968,
+    "fields": {
+        "postcode": 6093,
+        "city": "Sj\u00f8lund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 969,
+    "fields": {
+        "postcode": 6094,
+        "city": "Hejls"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 970,
+    "fields": {
+        "postcode": 6100,
+        "city": "Haderslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 971,
+    "fields": {
+        "postcode": 6200,
+        "city": "Aabenraa"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 972,
+    "fields": {
+        "postcode": 6210,
+        "city": "Bars\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 973,
+    "fields": {
+        "postcode": 6230,
+        "city": "R\u00f8dekro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 974,
+    "fields": {
+        "postcode": 6240,
+        "city": "L\u00f8gumkloster"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 975,
+    "fields": {
+        "postcode": 6261,
+        "city": "Bredebro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 976,
+    "fields": {
+        "postcode": 6270,
+        "city": "T\u00f8nder"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 977,
+    "fields": {
+        "postcode": 6280,
+        "city": "H\u00f8jer"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 978,
+    "fields": {
+        "postcode": 6300,
+        "city": "Gr\u00e5sten"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 979,
+    "fields": {
+        "postcode": 6310,
+        "city": "Broager"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 980,
+    "fields": {
+        "postcode": 6320,
+        "city": "Egernsund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 981,
+    "fields": {
+        "postcode": 6330,
+        "city": "Padborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 982,
+    "fields": {
+        "postcode": 6340,
+        "city": "Krus\u00e5"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 983,
+    "fields": {
+        "postcode": 6360,
+        "city": "Tinglev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 984,
+    "fields": {
+        "postcode": 6372,
+        "city": "Bylderup-Bov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 985,
+    "fields": {
+        "postcode": 6392,
+        "city": "Bolderslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 986,
+    "fields": {
+        "postcode": 6400,
+        "city": "S\u00f8nderborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 987,
+    "fields": {
+        "postcode": 6430,
+        "city": "Nordborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 988,
+    "fields": {
+        "postcode": 6440,
+        "city": "Augustenborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 989,
+    "fields": {
+        "postcode": 6470,
+        "city": "Sydals"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 990,
+    "fields": {
+        "postcode": 6500,
+        "city": "Vojens"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 991,
+    "fields": {
+        "postcode": 6510,
+        "city": "Gram"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 992,
+    "fields": {
+        "postcode": 6520,
+        "city": "Toftlund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 993,
+    "fields": {
+        "postcode": 6534,
+        "city": "Agerskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 994,
+    "fields": {
+        "postcode": 6535,
+        "city": "Branderup J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 995,
+    "fields": {
+        "postcode": 6541,
+        "city": "Bevtoft"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 996,
+    "fields": {
+        "postcode": 6560,
+        "city": "Sommersted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 997,
+    "fields": {
+        "postcode": 6580,
+        "city": "Vamdrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 998,
+    "fields": {
+        "postcode": 6600,
+        "city": "Vejen"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 999,
+    "fields": {
+        "postcode": 6621,
+        "city": "Gesten"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1000,
+    "fields": {
+        "postcode": 6622,
+        "city": "B\u00e6kke"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1001,
+    "fields": {
+        "postcode": 6623,
+        "city": "Vorbasse"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1002,
+    "fields": {
+        "postcode": 6630,
+        "city": "R\u00f8dding"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1003,
+    "fields": {
+        "postcode": 6640,
+        "city": "Lunderskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1004,
+    "fields": {
+        "postcode": 6650,
+        "city": "Br\u00f8rup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1005,
+    "fields": {
+        "postcode": 6660,
+        "city": "Lintrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1006,
+    "fields": {
+        "postcode": 6670,
+        "city": "Holsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1007,
+    "fields": {
+        "postcode": 6682,
+        "city": "Hovborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1008,
+    "fields": {
+        "postcode": 6683,
+        "city": "F\u00f8vling"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1009,
+    "fields": {
+        "postcode": 6690,
+        "city": "G\u00f8rding"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1010,
+    "fields": {
+        "postcode": 6700,
+        "city": "Esbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1011,
+    "fields": {
+        "postcode": 6701,
+        "city": "Esbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1012,
+    "fields": {
+        "postcode": 6705,
+        "city": "Esbjerg \u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1013,
+    "fields": {
+        "postcode": 6710,
+        "city": "Esbjerg V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1014,
+    "fields": {
+        "postcode": 6715,
+        "city": "Esbjerg N"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1015,
+    "fields": {
+        "postcode": 6720,
+        "city": "Fan\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1016,
+    "fields": {
+        "postcode": 6731,
+        "city": "Tj\u00e6reborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1017,
+    "fields": {
+        "postcode": 6740,
+        "city": "Bramming"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1018,
+    "fields": {
+        "postcode": 6752,
+        "city": "Glejbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1019,
+    "fields": {
+        "postcode": 6753,
+        "city": "Agerb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1020,
+    "fields": {
+        "postcode": 6760,
+        "city": "Ribe"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1021,
+    "fields": {
+        "postcode": 6771,
+        "city": "Gredstedbro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1022,
+    "fields": {
+        "postcode": 6780,
+        "city": "Sk\u00e6rb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1023,
+    "fields": {
+        "postcode": 6792,
+        "city": "R\u00f8m\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1024,
+    "fields": {
+        "postcode": 6800,
+        "city": "Varde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1025,
+    "fields": {
+        "postcode": 6818,
+        "city": "\u00c5rre"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1026,
+    "fields": {
+        "postcode": 6823,
+        "city": "Ansager"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1027,
+    "fields": {
+        "postcode": 6830,
+        "city": "N\u00f8rre Nebel"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1028,
+    "fields": {
+        "postcode": 6840,
+        "city": "Oksb\u00f8l"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1029,
+    "fields": {
+        "postcode": 6851,
+        "city": "Janderup Vestj"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1030,
+    "fields": {
+        "postcode": 6852,
+        "city": "Billum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1031,
+    "fields": {
+        "postcode": 6853,
+        "city": "Vejers Strand"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1032,
+    "fields": {
+        "postcode": 6854,
+        "city": "Henne"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1033,
+    "fields": {
+        "postcode": 6855,
+        "city": "Outrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1034,
+    "fields": {
+        "postcode": 6857,
+        "city": "Bl\u00e5vand"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1035,
+    "fields": {
+        "postcode": 6862,
+        "city": "Tistrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1036,
+    "fields": {
+        "postcode": 6870,
+        "city": "\u00d8lgod"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1037,
+    "fields": {
+        "postcode": 6880,
+        "city": "Tarm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1038,
+    "fields": {
+        "postcode": 6893,
+        "city": "Hemmet"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1039,
+    "fields": {
+        "postcode": 6900,
+        "city": "Skjern"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1040,
+    "fields": {
+        "postcode": 6920,
+        "city": "Videb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1041,
+    "fields": {
+        "postcode": 6933,
+        "city": "Kib\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1042,
+    "fields": {
+        "postcode": 6940,
+        "city": "Lem St"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1043,
+    "fields": {
+        "postcode": 6950,
+        "city": "Ringk\u00f8bing"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1044,
+    "fields": {
+        "postcode": 6960,
+        "city": "Hvide Sande"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1045,
+    "fields": {
+        "postcode": 6971,
+        "city": "Spjald"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1046,
+    "fields": {
+        "postcode": 6973,
+        "city": "\u00d8rnh\u00f8j"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1047,
+    "fields": {
+        "postcode": 6980,
+        "city": "Tim"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1048,
+    "fields": {
+        "postcode": 6990,
+        "city": "Ulfborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1049,
+    "fields": {
+        "postcode": 7000,
+        "city": "Fredericia"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1050,
+    "fields": {
+        "postcode": 7007,
+        "city": "Fredericia"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1051,
+    "fields": {
+        "postcode": 7017,
+        "city": "Taulov Pakkecenter"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1052,
+    "fields": {
+        "postcode": 7018,
+        "city": "Pakker TLP"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1053,
+    "fields": {
+        "postcode": 7029,
+        "city": "Fredericia"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1054,
+    "fields": {
+        "postcode": 7080,
+        "city": "B\u00f8rkop"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1055,
+    "fields": {
+        "postcode": 7100,
+        "city": "Vejle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1056,
+    "fields": {
+        "postcode": 7120,
+        "city": "Vejle \u00d8st"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1057,
+    "fields": {
+        "postcode": 7130,
+        "city": "Juelsminde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1058,
+    "fields": {
+        "postcode": 7140,
+        "city": "Stouby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1059,
+    "fields": {
+        "postcode": 7150,
+        "city": "Barrit"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1060,
+    "fields": {
+        "postcode": 7160,
+        "city": "T\u00f8rring"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1061,
+    "fields": {
+        "postcode": 7171,
+        "city": "Uldum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1062,
+    "fields": {
+        "postcode": 7173,
+        "city": "Vonge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1063,
+    "fields": {
+        "postcode": 7182,
+        "city": "Bredsten"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1064,
+    "fields": {
+        "postcode": 7183,
+        "city": "Randb\u00f8l"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1065,
+    "fields": {
+        "postcode": 7184,
+        "city": "Vandel"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1066,
+    "fields": {
+        "postcode": 7190,
+        "city": "Billund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1067,
+    "fields": {
+        "postcode": 7200,
+        "city": "Grindsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1068,
+    "fields": {
+        "postcode": 7250,
+        "city": "Hejnsvig"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1069,
+    "fields": {
+        "postcode": 7260,
+        "city": "S\u00f8nder Omme"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1070,
+    "fields": {
+        "postcode": 7270,
+        "city": "Stakroge"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1071,
+    "fields": {
+        "postcode": 7280,
+        "city": "S\u00f8nder Felding"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1072,
+    "fields": {
+        "postcode": 7300,
+        "city": "Jelling"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1073,
+    "fields": {
+        "postcode": 7321,
+        "city": "Gadbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1074,
+    "fields": {
+        "postcode": 7323,
+        "city": "Give"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1075,
+    "fields": {
+        "postcode": 7330,
+        "city": "Brande"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1076,
+    "fields": {
+        "postcode": 7361,
+        "city": "Ejstrupholm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1077,
+    "fields": {
+        "postcode": 7362,
+        "city": "Hampen"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1078,
+    "fields": {
+        "postcode": 7400,
+        "city": "Herning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1079,
+    "fields": {
+        "postcode": 7429,
+        "city": "Herning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1080,
+    "fields": {
+        "postcode": 7430,
+        "city": "Ikast"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1081,
+    "fields": {
+        "postcode": 7441,
+        "city": "Bording"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1082,
+    "fields": {
+        "postcode": 7442,
+        "city": "Engesvang"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1083,
+    "fields": {
+        "postcode": 7451,
+        "city": "Sunds"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1084,
+    "fields": {
+        "postcode": 7470,
+        "city": "Karup J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1085,
+    "fields": {
+        "postcode": 7480,
+        "city": "Vildbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1086,
+    "fields": {
+        "postcode": 7490,
+        "city": "Aulum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1087,
+    "fields": {
+        "postcode": 7500,
+        "city": "Holstebro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1088,
+    "fields": {
+        "postcode": 7540,
+        "city": "Haderup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1089,
+    "fields": {
+        "postcode": 7550,
+        "city": "S\u00f8rvad"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1090,
+    "fields": {
+        "postcode": 7560,
+        "city": "Hjerm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1091,
+    "fields": {
+        "postcode": 7570,
+        "city": "Vemb"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1092,
+    "fields": {
+        "postcode": 7600,
+        "city": "Struer"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1093,
+    "fields": {
+        "postcode": 7620,
+        "city": "Lemvig"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1094,
+    "fields": {
+        "postcode": 7650,
+        "city": "B\u00f8vlingbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1095,
+    "fields": {
+        "postcode": 7660,
+        "city": "B\u00e6kmarksbro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1096,
+    "fields": {
+        "postcode": 7673,
+        "city": "Harbo\u00f8re"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1097,
+    "fields": {
+        "postcode": 7680,
+        "city": "Thybor\u00f8n"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1098,
+    "fields": {
+        "postcode": 7700,
+        "city": "Thisted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1099,
+    "fields": {
+        "postcode": 7730,
+        "city": "Hanstholm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1100,
+    "fields": {
+        "postcode": 7741,
+        "city": "Fr\u00f8strup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1101,
+    "fields": {
+        "postcode": 7742,
+        "city": "Vesl\u00f8s"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1102,
+    "fields": {
+        "postcode": 7752,
+        "city": "Snedsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1103,
+    "fields": {
+        "postcode": 7755,
+        "city": "Bedsted Thy"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1104,
+    "fields": {
+        "postcode": 7760,
+        "city": "Hurup Thy"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1105,
+    "fields": {
+        "postcode": 7770,
+        "city": "Vestervig"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1106,
+    "fields": {
+        "postcode": 7790,
+        "city": "Thyholm"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1107,
+    "fields": {
+        "postcode": 7800,
+        "city": "Skive"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1108,
+    "fields": {
+        "postcode": 7830,
+        "city": "Vinderup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1109,
+    "fields": {
+        "postcode": 7840,
+        "city": "H\u00f8jslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1110,
+    "fields": {
+        "postcode": 7850,
+        "city": "Stoholm Jyll"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1111,
+    "fields": {
+        "postcode": 7860,
+        "city": "Sp\u00f8ttrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1112,
+    "fields": {
+        "postcode": 7870,
+        "city": "Roslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1113,
+    "fields": {
+        "postcode": 7884,
+        "city": "Fur"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1114,
+    "fields": {
+        "postcode": 7900,
+        "city": "Nyk\u00f8bing M"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1115,
+    "fields": {
+        "postcode": 7950,
+        "city": "Erslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1116,
+    "fields": {
+        "postcode": 7960,
+        "city": "Karby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1117,
+    "fields": {
+        "postcode": 7970,
+        "city": "Redsted M"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1118,
+    "fields": {
+        "postcode": 7980,
+        "city": "Vils"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1119,
+    "fields": {
+        "postcode": 7990,
+        "city": "\u00d8ster Assels"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1120,
+    "fields": {
+        "postcode": 7992,
+        "city": "Sydjylland/Fyn USF P"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1121,
+    "fields": {
+        "postcode": 7993,
+        "city": "Sydjylland/Fyn USF B"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1122,
+    "fields": {
+        "postcode": 7996,
+        "city": "Fakturaservice"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1123,
+    "fields": {
+        "postcode": 7997,
+        "city": "Fakturascanning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1124,
+    "fields": {
+        "postcode": 7998,
+        "city": "Statsservice"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1125,
+    "fields": {
+        "postcode": 7999,
+        "city": "Kommunepost"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1126,
+    "fields": {
+        "postcode": 8000,
+        "city": "Aarhus C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1127,
+    "fields": {
+        "postcode": 8100,
+        "city": "Aarhus C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1128,
+    "fields": {
+        "postcode": 8200,
+        "city": "Aarhus N"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1129,
+    "fields": {
+        "postcode": 8210,
+        "city": "Aarhus V"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1130,
+    "fields": {
+        "postcode": 8220,
+        "city": "Brabrand"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1131,
+    "fields": {
+        "postcode": 8229,
+        "city": "Risskov \u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1132,
+    "fields": {
+        "postcode": 8230,
+        "city": "\u00c5byh\u00f8j"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1133,
+    "fields": {
+        "postcode": 8240,
+        "city": "Risskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1134,
+    "fields": {
+        "postcode": 8245,
+        "city": "Risskov \u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1135,
+    "fields": {
+        "postcode": 8250,
+        "city": "Eg\u00e5"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1136,
+    "fields": {
+        "postcode": 8260,
+        "city": "Viby J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1137,
+    "fields": {
+        "postcode": 8270,
+        "city": "H\u00f8jbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1138,
+    "fields": {
+        "postcode": 8300,
+        "city": "Odder"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1139,
+    "fields": {
+        "postcode": 8305,
+        "city": "Sams\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1140,
+    "fields": {
+        "postcode": 8310,
+        "city": "Tranbjerg J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1141,
+    "fields": {
+        "postcode": 8320,
+        "city": "M\u00e5rslet"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1142,
+    "fields": {
+        "postcode": 8330,
+        "city": "Beder"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1143,
+    "fields": {
+        "postcode": 8340,
+        "city": "Malling"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1144,
+    "fields": {
+        "postcode": 8350,
+        "city": "Hundslund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1145,
+    "fields": {
+        "postcode": 8355,
+        "city": "Solbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1146,
+    "fields": {
+        "postcode": 8361,
+        "city": "Hasselager"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1147,
+    "fields": {
+        "postcode": 8362,
+        "city": "H\u00f8rning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1148,
+    "fields": {
+        "postcode": 8370,
+        "city": "Hadsten"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1149,
+    "fields": {
+        "postcode": 8380,
+        "city": "Trige"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1150,
+    "fields": {
+        "postcode": 8381,
+        "city": "Tilst"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1151,
+    "fields": {
+        "postcode": 8382,
+        "city": "Hinnerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1152,
+    "fields": {
+        "postcode": 8400,
+        "city": "Ebeltoft"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1153,
+    "fields": {
+        "postcode": 8410,
+        "city": "R\u00f8nde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1154,
+    "fields": {
+        "postcode": 8420,
+        "city": "Knebel"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1155,
+    "fields": {
+        "postcode": 8444,
+        "city": "Balle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1156,
+    "fields": {
+        "postcode": 8450,
+        "city": "Hammel"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1157,
+    "fields": {
+        "postcode": 8462,
+        "city": "Harlev J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1158,
+    "fields": {
+        "postcode": 8464,
+        "city": "Galten"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1159,
+    "fields": {
+        "postcode": 8471,
+        "city": "Sabro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1160,
+    "fields": {
+        "postcode": 8472,
+        "city": "Sporup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1161,
+    "fields": {
+        "postcode": 8500,
+        "city": "Grenaa"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1162,
+    "fields": {
+        "postcode": 8520,
+        "city": "Lystrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1163,
+    "fields": {
+        "postcode": 8530,
+        "city": "Hjortsh\u00f8j"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1164,
+    "fields": {
+        "postcode": 8541,
+        "city": "Sk\u00f8dstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1165,
+    "fields": {
+        "postcode": 8543,
+        "city": "Hornslet"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1166,
+    "fields": {
+        "postcode": 8544,
+        "city": "M\u00f8rke"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1167,
+    "fields": {
+        "postcode": 8550,
+        "city": "Ryomg\u00e5rd"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1168,
+    "fields": {
+        "postcode": 8560,
+        "city": "Kolind"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1169,
+    "fields": {
+        "postcode": 8570,
+        "city": "Trustrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1170,
+    "fields": {
+        "postcode": 8581,
+        "city": "Nimtofte"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1171,
+    "fields": {
+        "postcode": 8585,
+        "city": "Glesborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1172,
+    "fields": {
+        "postcode": 8586,
+        "city": "\u00d8rum Djurs"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1173,
+    "fields": {
+        "postcode": 8592,
+        "city": "Anholt"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1174,
+    "fields": {
+        "postcode": 8600,
+        "city": "Silkeborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1175,
+    "fields": {
+        "postcode": 8620,
+        "city": "Kjellerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1176,
+    "fields": {
+        "postcode": 8632,
+        "city": "Lemming"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1177,
+    "fields": {
+        "postcode": 8641,
+        "city": "Sorring"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1178,
+    "fields": {
+        "postcode": 8643,
+        "city": "Ans By"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1179,
+    "fields": {
+        "postcode": 8653,
+        "city": "Them"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1180,
+    "fields": {
+        "postcode": 8654,
+        "city": "Bryrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1181,
+    "fields": {
+        "postcode": 8660,
+        "city": "Skanderborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1182,
+    "fields": {
+        "postcode": 8670,
+        "city": "L\u00e5sby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1183,
+    "fields": {
+        "postcode": 8680,
+        "city": "Ry"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1184,
+    "fields": {
+        "postcode": 8700,
+        "city": "Horsens"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1185,
+    "fields": {
+        "postcode": 8721,
+        "city": "Daug\u00e5rd"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1186,
+    "fields": {
+        "postcode": 8722,
+        "city": "Hedensted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1187,
+    "fields": {
+        "postcode": 8723,
+        "city": "L\u00f8sning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1188,
+    "fields": {
+        "postcode": 8732,
+        "city": "Hovedg\u00e5rd"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1189,
+    "fields": {
+        "postcode": 8740,
+        "city": "Br\u00e6dstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1190,
+    "fields": {
+        "postcode": 8751,
+        "city": "Gedved"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1191,
+    "fields": {
+        "postcode": 8752,
+        "city": "\u00d8stbirk"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1192,
+    "fields": {
+        "postcode": 8762,
+        "city": "Flemming"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1193,
+    "fields": {
+        "postcode": 8763,
+        "city": "Rask M\u00f8lle"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1194,
+    "fields": {
+        "postcode": 8765,
+        "city": "Klovborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1195,
+    "fields": {
+        "postcode": 8766,
+        "city": "N\u00f8rre Snede"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1196,
+    "fields": {
+        "postcode": 8781,
+        "city": "Stenderup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1197,
+    "fields": {
+        "postcode": 8783,
+        "city": "Hornsyld"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1198,
+    "fields": {
+        "postcode": 8789,
+        "city": "Endelave"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1199,
+    "fields": {
+        "postcode": 8799,
+        "city": "Tun\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1200,
+    "fields": {
+        "postcode": 8800,
+        "city": "Viborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1201,
+    "fields": {
+        "postcode": 8830,
+        "city": "Tjele"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1202,
+    "fields": {
+        "postcode": 8831,
+        "city": "L\u00f8gstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1203,
+    "fields": {
+        "postcode": 8832,
+        "city": "Skals"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1204,
+    "fields": {
+        "postcode": 8840,
+        "city": "R\u00f8dk\u00e6rsbro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1205,
+    "fields": {
+        "postcode": 8850,
+        "city": "Bjerringbro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1206,
+    "fields": {
+        "postcode": 8860,
+        "city": "Ulstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1207,
+    "fields": {
+        "postcode": 8870,
+        "city": "Lang\u00e5"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1208,
+    "fields": {
+        "postcode": 8881,
+        "city": "Thors\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1209,
+    "fields": {
+        "postcode": 8882,
+        "city": "F\u00e5rvang"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1210,
+    "fields": {
+        "postcode": 8883,
+        "city": "Gjern"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1211,
+    "fields": {
+        "postcode": 8900,
+        "city": "Randers C"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1212,
+    "fields": {
+        "postcode": 8920,
+        "city": "Randers NV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1213,
+    "fields": {
+        "postcode": 8930,
+        "city": "Randers N\u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1214,
+    "fields": {
+        "postcode": 8940,
+        "city": "Randers SV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1215,
+    "fields": {
+        "postcode": 8950,
+        "city": "\u00d8rsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1216,
+    "fields": {
+        "postcode": 8960,
+        "city": "Randers S\u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1217,
+    "fields": {
+        "postcode": 8961,
+        "city": "Alling\u00e5bro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1218,
+    "fields": {
+        "postcode": 8963,
+        "city": "Auning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1219,
+    "fields": {
+        "postcode": 8970,
+        "city": "Havndal"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1220,
+    "fields": {
+        "postcode": 8981,
+        "city": "Spentrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1221,
+    "fields": {
+        "postcode": 8983,
+        "city": "Gjerlev J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1222,
+    "fields": {
+        "postcode": 8990,
+        "city": "F\u00e5rup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1223,
+    "fields": {
+        "postcode": 9000,
+        "city": "Aalborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1224,
+    "fields": {
+        "postcode": 9029,
+        "city": "Aalborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1225,
+    "fields": {
+        "postcode": 9100,
+        "city": "Aalborg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1226,
+    "fields": {
+        "postcode": 9200,
+        "city": "Aalborg SV"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1227,
+    "fields": {
+        "postcode": 9210,
+        "city": "Aalborg S\u00d8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1228,
+    "fields": {
+        "postcode": 9220,
+        "city": "Aalborg \u00d8st"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1229,
+    "fields": {
+        "postcode": 9230,
+        "city": "Svenstrup J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1230,
+    "fields": {
+        "postcode": 9240,
+        "city": "Nibe"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1231,
+    "fields": {
+        "postcode": 9260,
+        "city": "Gistrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1232,
+    "fields": {
+        "postcode": 9270,
+        "city": "Klarup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1233,
+    "fields": {
+        "postcode": 9280,
+        "city": "Storvorde"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1234,
+    "fields": {
+        "postcode": 9293,
+        "city": "Kongerslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1235,
+    "fields": {
+        "postcode": 9300,
+        "city": "S\u00e6by"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1236,
+    "fields": {
+        "postcode": 9310,
+        "city": "Vodskov"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1237,
+    "fields": {
+        "postcode": 9320,
+        "city": "Hjallerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1238,
+    "fields": {
+        "postcode": 9330,
+        "city": "Dronninglund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1239,
+    "fields": {
+        "postcode": 9340,
+        "city": "Asaa"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1240,
+    "fields": {
+        "postcode": 9352,
+        "city": "Dybvad"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1241,
+    "fields": {
+        "postcode": 9362,
+        "city": "Gandrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1242,
+    "fields": {
+        "postcode": 9370,
+        "city": "Hals"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1243,
+    "fields": {
+        "postcode": 9380,
+        "city": "Vestbjerg"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1244,
+    "fields": {
+        "postcode": 9381,
+        "city": "Sulsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1245,
+    "fields": {
+        "postcode": 9382,
+        "city": "Tylstrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1246,
+    "fields": {
+        "postcode": 9400,
+        "city": "N\u00f8rresundby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1247,
+    "fields": {
+        "postcode": 9430,
+        "city": "Vadum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1248,
+    "fields": {
+        "postcode": 9440,
+        "city": "Aabybro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1249,
+    "fields": {
+        "postcode": 9460,
+        "city": "Brovst"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1250,
+    "fields": {
+        "postcode": 9480,
+        "city": "L\u00f8kken"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1251,
+    "fields": {
+        "postcode": 9490,
+        "city": "Pandrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1252,
+    "fields": {
+        "postcode": 9492,
+        "city": "Blokhus"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1253,
+    "fields": {
+        "postcode": 9493,
+        "city": "Saltum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1254,
+    "fields": {
+        "postcode": 9500,
+        "city": "Hobro"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1255,
+    "fields": {
+        "postcode": 9510,
+        "city": "Arden"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1256,
+    "fields": {
+        "postcode": 9520,
+        "city": "Sk\u00f8rping"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1257,
+    "fields": {
+        "postcode": 9530,
+        "city": "St\u00f8vring"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1258,
+    "fields": {
+        "postcode": 9541,
+        "city": "Suldrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1259,
+    "fields": {
+        "postcode": 9550,
+        "city": "Mariager"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1260,
+    "fields": {
+        "postcode": 9560,
+        "city": "Hadsund"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1261,
+    "fields": {
+        "postcode": 9574,
+        "city": "B\u00e6lum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1262,
+    "fields": {
+        "postcode": 9575,
+        "city": "Terndrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1263,
+    "fields": {
+        "postcode": 9600,
+        "city": "Aars"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1264,
+    "fields": {
+        "postcode": 9610,
+        "city": "N\u00f8rager"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1265,
+    "fields": {
+        "postcode": 9620,
+        "city": "Aalestrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1266,
+    "fields": {
+        "postcode": 9631,
+        "city": "Gedsted"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1267,
+    "fields": {
+        "postcode": 9632,
+        "city": "M\u00f8ldrup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1268,
+    "fields": {
+        "postcode": 9640,
+        "city": "Fars\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1269,
+    "fields": {
+        "postcode": 9670,
+        "city": "L\u00f8gst\u00f8r"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1270,
+    "fields": {
+        "postcode": 9681,
+        "city": "Ranum"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1271,
+    "fields": {
+        "postcode": 9690,
+        "city": "Fjerritslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1272,
+    "fields": {
+        "postcode": 9700,
+        "city": "Br\u00f8nderslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1273,
+    "fields": {
+        "postcode": 9740,
+        "city": "Jerslev J"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1274,
+    "fields": {
+        "postcode": 9750,
+        "city": "\u00d8stervr\u00e5"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1275,
+    "fields": {
+        "postcode": 9760,
+        "city": "Vr\u00e5"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1276,
+    "fields": {
+        "postcode": 9800,
+        "city": "Hj\u00f8rring"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1277,
+    "fields": {
+        "postcode": 9830,
+        "city": "T\u00e5rs"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1278,
+    "fields": {
+        "postcode": 9850,
+        "city": "Hirtshals"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1279,
+    "fields": {
+        "postcode": 9870,
+        "city": "Sindal"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1280,
+    "fields": {
+        "postcode": 9881,
+        "city": "Bindslev"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1281,
+    "fields": {
+        "postcode": 9900,
+        "city": "Frederikshavn"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1282,
+    "fields": {
+        "postcode": 9940,
+        "city": "L\u00e6s\u00f8"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1283,
+    "fields": {
+        "postcode": 9970,
+        "city": "Strandby"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1284,
+    "fields": {
+        "postcode": 9981,
+        "city": "Jerup"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1285,
+    "fields": {
+        "postcode": 9982,
+        "city": "\u00c5lb\u00e6k"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1286,
+    "fields": {
+        "postcode": 9990,
+        "city": "Skagen"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1287,
+    "fields": {
+        "postcode": 9992,
+        "city": "Jylland USF P"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1288,
+    "fields": {
+        "postcode": 9993,
+        "city": "Jylland USF B"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1289,
+    "fields": {
+        "postcode": 9996,
+        "city": "Fakturaservice"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1290,
+    "fields": {
+        "postcode": 9997,
+        "city": "Fakturascanning"
+    }
+},
+{
+    "model": "shop.postcode",
+    "pk": 1291,
+    "fields": {
+        "postcode": 9998,
+        "city": "Borgerservice"
+    }
+}
+]

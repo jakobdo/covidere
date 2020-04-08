@@ -22,6 +22,7 @@ from product.views import IndexView
 
 urlpatterns = [
     path('', IndexView.as_view(), name="index"),
+    path('users/', include('base.urls')),
     path('products/', include('product.urls')),
     path('basket/', include('basket.urls')),
     path('order/', include('order.urls')),

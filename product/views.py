@@ -56,12 +56,12 @@ class ProductsNewestView(ListView):
         return queryset
 
 
-class ProductsOnSaleView(ListView):
+class ProductsOfferView(ListView):
     model = Product
-    template_name = 'product/on_sale.html'
+    template_name = 'product/offer.html'
 
     def get_queryset(self):
-        queryset = super(ProductsOnSaleView, self).get_queryset()
+        queryset = super().get_queryset()
         now = timezone.now()
         # Only show active products, from active shops and in "active" timespan!
         queryset = (

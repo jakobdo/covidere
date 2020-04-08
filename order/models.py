@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.translation import gettext_lazy
 
+from shop.models import Postcode
+
 
 class Order(models.Model):
     ORDERED = 1
@@ -16,8 +18,7 @@ class Order(models.Model):
     ]
     name = models.CharField(gettext_lazy('name'), max_length=100)
     address = models.CharField(gettext_lazy('address'), max_length=100)
-    zipcode = models.CharField(gettext_lazy('zipcode'), max_length=10)
-    city = models.CharField(gettext_lazy('city'), max_length=100)
+    postcode = models.ForeignKey(Postcode, on_delete=models.CASCADE, related_name="orders")
     email = models.EmailField(gettext_lazy('email'))
     mobile = models.CharField(gettext_lazy('mobile'), max_length=20)
     status = models.IntegerField(

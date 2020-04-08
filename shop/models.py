@@ -5,19 +5,18 @@ from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
 
 
-class Zipcode(models.Model):
-    zipcode = models.PositiveSmallIntegerField()
-    name = models.CharField(max_length=100)
+class Postcode(models.Model):
+    postcode = models.PositiveSmallIntegerField()
+    city = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"{self.zipcode} - {self.name}"
+        return f"{self.postcode} - {self.city}"
 
 
 class Shop(models.Model):
     name = models.CharField(gettext_lazy("name"), max_length=100)
     address = models.CharField(gettext_lazy("address"), max_length=100)
-    zipcode = models.ForeignKey(Zipcode, on_delete=models.CASCADE, related_name="shops")
-    city = models.CharField(gettext_lazy("city"), max_length=100)
+    postcode = models.ForeignKey(Postcode, on_delete=models.CASCADE, related_name="shops")
     email = models.EmailField(gettext_lazy("email"))
     homepage = models.URLField(gettext_lazy("homepage"))
     phone = models.CharField(gettext_lazy("phone"), max_length=20)
@@ -29,7 +28,7 @@ class Shop(models.Model):
     )
     active = models.BooleanField(gettext_lazy("active"), default=True)
     deliver = models.BooleanField(gettext_lazy("deliver"), default=True)
-    delivery_zipcode = models.ManyToManyField(Zipcode, blank=True)
+    delivery_postcode = models.ManyToManyField(Postcode, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
@@ -41,7 +40,7 @@ class Shop(models.Model):
         Helper to provide the urlencoded information for a shop to google maps
         """
         data = dict(
-            query=f"{self.name} {self.address} {self.zipcode} {self.city}"
+            query=f"{self.name} {self.address} {self.postcode.postcode} {self.postcode.city}"
         )
         return urlencode(data)
     

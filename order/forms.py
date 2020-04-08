@@ -9,4 +9,4 @@ class OrderForm(forms.ModelForm):
 
     class Meta:
         model = Order
-        fields = ['name', 'address', 'zipcode', 'city', 'email', 'mobile', 'terms']
+        fields = ['name', 'address', 'postcode', 'email', 'mobile', 'terms']
