@@ -14,7 +14,6 @@ class ShopContactForm(forms.Form):
 
 
 class ShopRegisterForm(forms.ModelForm):
-
     error_messages = {
         'password_mismatch': gettext_lazy('The two password fields didn’t match.'),
     }
