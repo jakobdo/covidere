@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags i18n %}
+
+{% block content %}
+<h1>{% trans "Select your preferred postcode." %}</h1>
+<form method="post" autocomplete="off">{% csrf_token %}
+    <div class="row">
+        <div class="col-md-6">
+            <label for="id_postcode">{% trans "Postcode" %}</label>
+            <input type="text" id="id_postcode" name="postcode" class="form-control" placeholder="{% trans "Enter postcode" %}" maxlength="4">
+        </div>
+        <div class="col-md-6">
+            <label for="id_city">{% trans "City" %}</label>
+            <input type="text" id="id_city" name="city" class="form-control" placeholder="{% trans "City" %}" readonly>
+        </div>
+    </div>
+    <button id="id_submit" type="submit" class="btn btn-primary mt-2" disabled>{% trans "Submit" %}</button>
+</form>
+{% endblock %}
+
+{% block bodyscript %}
+<script>
+/*
+ * jQuery throttle / debounce - v1.1 - 3/7/2010
+ * http://benalman.com/projects/jquery-throttle-debounce-plugin/
+ * 
+ * Copyright (c) 2010 "Cowboy" Ben Alman
+ * Dual licensed under the MIT and GPL licenses.
+ * http://benalman.com/about/license/
+ */
+ (function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
+
+$(function(){
+    $('#id_postcode').keyup( $.debounce( 250, postcode_lookup ) );
+});
+
+function postcode_lookup( event ) {
+    $.getJSON("{% url "postcode_json" %}", {
+            q: event.target.value
+        },
+        function(data){
+            $("#id_city").val(data.city);
+            $("#id_submit").prop('disabled', false);
+        }
+    ).fail(function(){
+        $("#id_city").val('');
+        $("#id_submit").prop('disabled', true);
+    });
+};
+</script>
+{% endblock %}

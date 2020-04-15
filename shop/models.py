@@ -8,6 +8,7 @@ from django.utils.translation import gettext_lazy
 class Postcode(models.Model):
     postcode = models.PositiveSmallIntegerField()
     city = models.CharField(max_length=100)
+    active = models.BooleanField(default=True)
 
     def __str__(self):
         return f"{self.postcode} - {self.city}"
