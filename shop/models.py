@@ -17,7 +17,7 @@ class Postcode(models.Model):
 class Shop(models.Model):
     name = models.CharField(gettext_lazy("shop name"), max_length=100)
     address = models.CharField(gettext_lazy("address"), max_length=100)
-    postcode = models.ForeignKey(Postcode, on_delete=models.CASCADE, related_name="shops")
+    postcode = models.ForeignKey(Postcode, on_delete=models.CASCADE, related_name="shops", blank=True, null=True)
     homepage = models.URLField(gettext_lazy("homepage"))
     email = models.EmailField(gettext_lazy("contact email"))
     phone = models.CharField(gettext_lazy("phone"), max_length=20)
