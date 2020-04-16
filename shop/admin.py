@@ -7,7 +7,9 @@ class ShopAdmin(admin.ModelAdmin):
 
 
 class PostcodeAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('postcode', 'city', 'active')
+    search_fields = ['postcode']
+    list_filter = ('active', )
 
 admin.site.register(Shop, ShopAdmin)
 admin.site.register(Postcode, PostcodeAdmin)

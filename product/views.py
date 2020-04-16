@@ -11,19 +11,6 @@ class IndexView(ListView):
     model = Product
     template_name = 'product/index.html'
 
-    def get(self, request, *args, **kwargs):
-        response = super(IndexView, self).get(request, *args, **kwargs)
-        # Do we have a postcode from a cookie or session?
-        cookie_postcode = request.COOKIES.get('postcode', False)
-        session_postcode = request.session.get('postcode', False)
-        if cookie_postcode and not session_postcode:
-            try:
-                postcode = Postcode.objects.get(postcode=cookie_postcode)
-                request.session['postcode'] = postcode.postcode
-            except Postcode.DoesNotExist:
-                return redirect('postcode_index')
-        return response
-
     def get_queryset(self):
         queryset = super(IndexView, self).get_queryset()
         now = timezone.now()

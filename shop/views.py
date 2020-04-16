@@ -25,6 +25,8 @@ class ShopsListView(ListView):
     template_name = 'shop/list.html'
 
     def get_queryset(self):
+        # TODO - Query by location!!
+        #url = self.request.build_absolute_uri()
         queryset = self.model.objects.filter(active=True)
         return queryset
 

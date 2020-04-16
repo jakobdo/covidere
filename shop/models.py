@@ -1,6 +1,5 @@
 import requests
 from django.conf import settings
-#from django.db import models
 from django.contrib.gis.db import models
 from django.contrib.gis.geos import Point
 from django.utils.http import urlencode
@@ -9,9 +8,13 @@ from django.utils.translation import gettext_lazy
 
 
 class Postcode(models.Model):
-    postcode = models.PositiveSmallIntegerField()
+    postcode = models.PositiveSmallIntegerField(unique=True)
     city = models.CharField(max_length=100)
+    location = models.PointField(blank=True, null=True)
     active = models.BooleanField(default=True)
+
+    class Meta:
+        ordering = ['postcode']
 
     def __str__(self):
         return f"{self.postcode} - {self.city}"
