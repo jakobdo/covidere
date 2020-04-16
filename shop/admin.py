@@ -1,6 +1,7 @@
 from django.contrib import admin
 from shop.models import Shop, Postcode
 
+
 class ShopAdmin(admin.ModelAdmin):
     list_display = ('name', 'active')
 

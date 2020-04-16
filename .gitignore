@@ -158,3 +158,4 @@ images/*
 
 /.vs/*
 /env-ByPortal/*
+cache/*
