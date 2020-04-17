@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "password": "pbkdf2_sha256$180000$nqIBQ4mt9NnM$6amkTtFGzjlY60agsGZqE/qSEgMR9M3UktxAwvmzx2A=",
-            "last_login": "2020-03-27T19:28:03.414Z",
+            "last_login": "2020-04-16T10:32:52.827Z",
             "is_superuser": true,
             "username": "admin",
             "first_name": "",
@@ -22,15 +22,51 @@
         "pk": 2,
         "fields": {
             "password": "pbkdf2_sha256$180000$PITvV4hMIEtf$aPisKZPkbf2521Y/Pcsfz3/Mlpud0Twpl8AVtfAPCi0=",
-            "last_login": "2020-03-27T18:16:45.266Z",
+            "last_login": "2020-03-27T18:16:45Z",
             "is_superuser": false,
-            "username": "demo",
-            "first_name": "Demo",
+            "username": "demo1",
+            "first_name": "Demo1",
             "last_name": "Bruger",
-            "email": "demo@bruger.dk",
+            "email": "demo1@bruger.dk",
             "is_staff": false,
             "is_active": true,
             "date_joined": "2020-03-27T14:36:02Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "base.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$180000$PITvV4hMIEtf$aPisKZPkbf2521Y/Pcsfz3/Mlpud0Twpl8AVtfAPCi0=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "demo2",
+            "first_name": "Demo2",
+            "last_name": "Bruger",
+            "email": "demo2@bruger.dk",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-04-17T07:50:02Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "base.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$180000$PITvV4hMIEtf$aPisKZPkbf2521Y/Pcsfz3/Mlpud0Twpl8AVtfAPCi0=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "demo3",
+            "first_name": "Demo3",
+            "last_name": "Bruger",
+            "email": "demo3@bruger.dk",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-04-17T07:51:13Z",
             "groups": [],
             "user_permissions": []
         }

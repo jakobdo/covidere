@@ -1,34 +1,57 @@
 [
   {
-    "model": "shop.Shop",
-    "pk": 1,
-    "fields": {
-      "name": "Butik 1",
-      "address": "Bygaden 1",
-      "postcode": "845",
-      "email": "email@butik1.dk",
-      "homepage": "http://www.butik1.dk",
-      "phone": "21212121",
-      "user": "1",
-      "active": true,
-      "created": "2020-03-27T14:45:03.674Z",
-      "updated": "2020-03-27T14:56:23.889Z"
-    }
+      "model": "shop.shop",
+      "pk": 1,
+      "fields": {
+          "name": "Butik K\u00f8ge",
+          "address": "Vestergade 2",
+          "postcode": 821,
+          "homepage": "http://butik.koege.dk",
+          "email": "butik1@koege.dk",
+          "phone": "12345678",
+          "user": 2,
+          "active": true,
+          "created": "2020-04-16T09:18:08.135Z",
+          "updated": "2020-04-17T07:52:08.190Z",
+          "location": "SRID=4326;POINT (12.18102023005485 55.45165672672489)",
+          "delivery_postcode": []
+      }
   },
   {
-    "model": "shop.Shop",
-    "pk": 2,
-    "fields": {
-      "name": "Butik 2",
-      "address": "Bygaden 2",
-      "postcode": "821",
-      "email": "email@butik2.dk",
-      "homepage": "http://www.butik2.dk",
-      "phone": "22222222",
-      "user": "2",
-      "active": true,
-      "created": "2020-03-27T14:45:03.674Z",
-      "updated": "2020-03-27T14:56:23.889Z"
-    }
+      "model": "shop.shop",
+      "pk": 4,
+      "fields": {
+          "name": "Butik Odense",
+          "address": "Klostervej 3",
+          "postcode": 885,
+          "homepage": "http://butik.odense.dk",
+          "email": "butik@odense.dk",
+          "phone": "12345678",
+          "user": 5,
+          "active": true,
+          "created": "2020-04-17T07:54:13.374Z",
+          "updated": "2020-04-17T07:54:38.036Z",
+          "location": "SRID=4326;POINT (10.382867 55.397145)",
+          "delivery_postcode": []
+      }
+  },
+  {
+      "model": "shop.shop",
+      "pk": 5,
+      "fields": {
+          "name": "Butik K\u00f8benhavn",
+          "address": "Amagertorv 13",
+          "postcode": 119,
+          "homepage": "https://butik.koebenhavn.dk/",
+          "email": "butik@koebenhavn.dk",
+          "phone": "321323232",
+          "user": 6,
+          "active": true,
+          "created": "2020-04-17T07:56:07.232Z",
+          "updated": "2020-04-17T07:56:07.232Z",
+          "location": "SRID=4326;POINT (12.578128 55.678643)",
+          "delivery_postcode": []
+      }
   }
-]
+  ]
+  
