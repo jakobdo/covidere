@@ -36,7 +36,6 @@ class ShopProductForm(forms.ModelForm):
             raise ValidationError(gettext("Maximum of %(limit)s products reached!") % {'limit': limit})
 
 
-class PostCodeForm(forms.ModelForm):
-    class Meta:
-        model = Postcode
-        fields = ['postcode']
+class PostCodeForm(forms.Form):
+    postcode = forms.ModelChoiceField(queryset=Postcode.objects.filter(active=True))
+    city = forms.CharField()

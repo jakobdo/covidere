@@ -18,8 +18,7 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from product.views import IndexView
-from base.views import PostCodeView, postcodes
+from base.views import IndexView, PostCodeView, postcodes
 
 urlpatterns = [
     path('', IndexView.as_view(), name="index"),

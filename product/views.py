@@ -9,12 +9,12 @@ from product.models import Product
 from shop.models import Postcode, Shop
 
 
-class IndexView(ListView):
+class ProductsView(ListView):
     model = Product
     template_name = 'product/index.html'
 
     def get_queryset(self):
-        queryset = super(IndexView, self).get_queryset()
+        queryset = super(ProductsView, self).get_queryset()
         now = timezone.now()
         # Only show active products, from active shops and in "active" timespan!
         queryset = (
