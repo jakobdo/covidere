@@ -1,5 +1,4 @@
 from django import forms
-from django.contrib.auth import password_validation
 from django.forms import ValidationError
 from django.utils.translation import gettext, gettext_lazy
 
@@ -8,9 +7,9 @@ from shop.models import Postcode, Shop
 
 
 class ShopContactForm(forms.Form):
-    email = forms.EmailField(required=True)
-    subject = forms.CharField(required=True)
-    message = forms.CharField(widget=forms.Textarea, required=True)
+    email = forms.EmailField(label=gettext_lazy('email'), required=True)
+    subject = forms.CharField(label=gettext_lazy('subject'), required=True)
+    message = forms.CharField(label=gettext_lazy('message'), widget=forms.Textarea, required=True)
 
 
 class ShopRegisterForm(forms.ModelForm):
@@ -37,5 +36,5 @@ class ShopProductForm(forms.ModelForm):
 
 
 class PostCodeForm(forms.Form):
-    postcode = forms.ModelChoiceField(queryset=Postcode.objects.filter(active=True))
-    city = forms.CharField()
+    postcode = forms.ModelChoiceField(label=gettext_lazy('postcode'), queryset=Postcode.objects.filter(active=True))
+    city = forms.CharField(label=gettext_lazy('city'))
