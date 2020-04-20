@@ -19,7 +19,7 @@
   },
   {
       "model": "shop.shop",
-      "pk": 4,
+      "pk": 2,
       "fields": {
           "name": "Butik Odense",
           "address": "Klostervej 3",
@@ -27,7 +27,7 @@
           "homepage": "http://butik.odense.dk",
           "email": "butik@odense.dk",
           "phone": "12345678",
-          "user": 5,
+          "user": 3,
           "active": true,
           "created": "2020-04-17T07:54:13.374Z",
           "updated": "2020-04-17T07:54:38.036Z",
@@ -37,7 +37,7 @@
   },
   {
       "model": "shop.shop",
-      "pk": 5,
+      "pk": 3,
       "fields": {
           "name": "Butik K\u00f8benhavn",
           "address": "Amagertorv 13",
@@ -45,7 +45,7 @@
           "homepage": "https://butik.koebenhavn.dk/",
           "email": "butik@koebenhavn.dk",
           "phone": "321323232",
-          "user": 6,
+          "user": 4,
           "active": true,
           "created": "2020-04-17T07:56:07.232Z",
           "updated": "2020-04-17T07:56:07.232Z",
