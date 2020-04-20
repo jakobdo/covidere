@@ -16,6 +16,7 @@ from shop.models import Postcode
 from shop.tokens import account_activation_token
 
 
+# Landing page, if needed - Not in use right now!
 @method_decorator(postcode_required, name='dispatch')
 class IndexView(TemplateView):
     template_name = 'index.html'

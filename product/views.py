@@ -3,12 +3,15 @@ from django.contrib.gis.db.models.functions import GeometryDistance
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
+from django.utils.decorators import method_decorator
 from django.views.generic import ListView
 
+from base.decorators import postcode_required
 from product.models import Product
 from shop.models import Postcode, Shop
 
 
+@method_decorator(postcode_required, name='dispatch')
 class ProductsView(ListView):
     model = Product
     template_name = 'product/index.html'
