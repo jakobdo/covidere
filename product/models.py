@@ -1,6 +1,8 @@
 from django.db import models
 from django.forms import ValidationError
+from django.utils import timezone
 from django.utils.translation import gettext, gettext_lazy
+from django.db.models import Q
 
 
 class ProductSize(models.Model):
@@ -20,6 +22,27 @@ class ProductColor(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ActiveManager(models.Manager):
+    def get_queryset(self):
+        now = timezone.now()
+        return (
+            super().get_queryset()
+            .filter(
+                active=True, 
+                shop__active=True
+            )         
+            .filter(
+                Q(start_datetime__lte=now, end_datetime__gte=now) | 
+                Q(start_datetime__isnull=True, end_datetime__gte=now) | 
+                Q(start_datetime__lte=now, end_datetime__isnull=True) |
+                Q(start_datetime__isnull=True, end_datetime__isnull=True)
+            )
+            .prefetch_related("size")
+            .prefetch_related("color")
+            .prefetch_related("shop")
+        )
 
 
 class Product(models.Model):
@@ -42,6 +65,8 @@ class Product(models.Model):
 
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    actives = ActiveManager()
 
     def __str__(self):
         return self.name
