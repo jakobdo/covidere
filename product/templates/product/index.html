@@ -6,10 +6,10 @@
 <h1>{% trans "Products overview" %}</h1>
 
 {% if not request.session.postcode %}
-{% url 'postcode_index' as postcode_url %}
-<div class="alert alert-info" role="alert">
-    {% blocktrans %}No postcode selected, please select one here: <a class="btn btn-primary" href="{{ postcode_url }}">click here!</a>{% endblocktrans %}
-</div>
+    {% url 'postcode_index' as postcode_url %}
+    <div class="alert alert-info" role="alert">
+        {% blocktrans %}No postcode selected, please select one here: <a class="btn btn-primary" href="{{ postcode_url }}">click here!</a>{% endblocktrans %}
+    </div>
 {% endif %}
 
 <div class="row row-cols-1 row-cols-md-3 mt-3">
