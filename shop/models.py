@@ -6,18 +6,7 @@ from django.utils.http import urlencode
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
 
-
-class Postcode(models.Model):
-    postcode = models.PositiveSmallIntegerField(unique=True)
-    city = models.CharField(max_length=100)
-    location = models.PointField(blank=True, null=True)
-    active = models.BooleanField(default=True)
-
-    class Meta:
-        ordering = ['postcode']
-
-    def __str__(self):
-        return f"{self.postcode} - {self.city}"
+from postcode.models import Postcode
 
 
 class Shop(models.Model):

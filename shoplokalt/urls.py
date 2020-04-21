@@ -18,16 +18,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
-from base.views import PostCodeView, postcodes
 from product.views import ProductsView
 
 urlpatterns = [
     path('', ProductsView.as_view(), name="index"),
     path('users/', include('base.urls')),
     path('products/', include('product.urls')),
-    # TODO - Should maybe be moved to own app
-    path('postcode/', PostCodeView.as_view(), name="postcode_index"),
-    path('postcode/json/', postcodes, name="postcode_json"),
+    path('postcode/', include('postcode.urls')),
     path('basket/', include('basket.urls')),
     path('order/', include('order.urls')),
     path('shops/', include('shop.urls')),

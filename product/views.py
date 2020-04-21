@@ -1,16 +1,12 @@
-import tldextract
 from django.contrib.gis.db.models.functions import GeometryDistance
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
-from django.utils.decorators import method_decorator
 from django.views.generic import ListView
 
-from base.decorators import postcode_required
 from product.models import Product
 from shop.models import Postcode, Shop
 
 
-@method_decorator(postcode_required, name='dispatch')
 class ProductsView(ListView):
     model = Product
     template_name = 'product/index.html'
@@ -22,12 +18,11 @@ class ProductsView(ListView):
             shop = get_object_or_404(Shop, pk=shop_pk, active=True)
             queryset = queryset.filter(shop=shop)
         else:
-            # Do we have a postcode from the url?
-            url = self.request.build_absolute_uri()
-            ext = tldextract.extract(url)
-            if ext.subdomain:
+            # Do we have a postcode from session?
+            code = self.request.session.get('postcode')
+            if code:
                 try:
-                    postcode = Postcode.objects.get(postcode=ext.subdomain)
+                    postcode = Postcode.objects.get(postcode=code)
                     queryset = queryset.order_by(GeometryDistance("shop__location", postcode.location))
                 except Postcode.DoesNotExist:
                     queryset = queryset.order_by('?')
@@ -40,7 +35,6 @@ class ProductsView(ListView):
         return queryset
 
 
-@method_decorator(postcode_required, name='dispatch')
 class ProductsNewestView(ListView):
     model = Product
     template_name = 'product/newest.html'
@@ -49,7 +43,6 @@ class ProductsNewestView(ListView):
         return self.model.actives.order_by('created')
 
 
-@method_decorator(postcode_required, name='dispatch')
 class ProductsOfferView(ListView):
     model = Product
     template_name = 'product/offer.html'
