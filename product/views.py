@@ -22,7 +22,7 @@ class ProductsView(ListView):
             code = self.request.session.get('postcode')
             if code:
                 try:
-                    postcode = Postcode.objects.get(postcode=code)
+                    postcode = Postcode.objects.get(postcode=code['code'])
                     queryset = queryset.order_by(GeometryDistance("shop__location", postcode.location))
                 except Postcode.DoesNotExist:
                     queryset = queryset.order_by('?')

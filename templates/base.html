@@ -69,15 +69,25 @@
                   </form>
 
                 <ul class="navbar-nav ml-auto">
+                    {% if request.session.postcode %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'postcode_index' %}">{{ request.session.postcode.code }} {{ request.session.postcode.city }}</a>
+                        </li>
+                    {% endif %}
+
                     <li class="nav-item">
                         {% if request.session.basket|length > 0 %}
-                        <a class="nav-link" href="{% url 'basket_index' %}"><i class="fas fa-shopping-cart"></i>
-                            {% trans "Basket" %} <span
-                                class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span></a>
+                            <a class="nav-link" href="{% url 'basket_index' %}">
+                                <i class="fas fa-shopping-cart"></i>
+                                {% trans "Basket" %} 
+                                <span class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span>
+                            </a>
                         {% else %}
-                        <a class="nav-link disabled" href="{% url 'basket_index' %}" tabindex="-1"
-                            aria-disabled="true">{% trans "Basket" %} <span
-                                class="badge badge-pill badge-secondary">{{ request.session.basket|length }}</span></a>
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="fas fa-shopping-cart"></i>
+                                {% trans "Basket" %} 
+                                <span class="badge badge-pill badge-secondary">0</span>
+                            </a>
                         {% endif %}
                     </li>
                 </ul>

@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.http import JsonResponse
 from django.urls import reverse
 from django.utils.translation import gettext
@@ -13,12 +12,15 @@ class PostCodeView(FormView):
     form_class = PostCodeForm
 
     def form_valid(self, form):
-        self.form = form
+        postcode = form.cleaned_data.get('postcode')
+        self.request.session['postcode'] = dict(
+            code=postcode.postcode,
+            city=postcode.city
+        )
         return super().form_valid(form)
 
     def get_success_url(self):
-        url = f"{settings.PROTOCOL}://{self.form.cleaned_data.get('postcode').postcode}.{settings.DOMAIN_NAME}{reverse('index')}"
-        return url
+        return reverse('index')
 
 
 def postcodes(request):
