@@ -4,7 +4,8 @@ from django.shortcuts import get_object_or_404
 from django.views.generic import ListView
 
 from product.models import Product
-from shop.models import Postcode, Shop
+from postcode.models import Postcode
+from shop.models import Shop
 
 
 class ProductsView(ListView):

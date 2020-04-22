@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy
 
-from shop.models import Postcode
+from postcode.models import Postcode
 
 
 class Order(models.Model):

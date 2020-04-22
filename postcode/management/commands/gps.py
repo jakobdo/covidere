@@ -5,7 +5,7 @@ from django.contrib.gis.geos import Point
 from django.core.management.base import BaseCommand, CommandError
 from django.utils.http import urlencode
 
-from shop.models import Postcode
+from postcode.models import Postcode
 
 
 class Command(BaseCommand):

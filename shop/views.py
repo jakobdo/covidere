@@ -1,12 +1,10 @@
-import tldextract
 from django.contrib.gis.db.models.functions import GeometryDistance
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import send_mail
-from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
 from django.template.loader import render_to_string
-from django.urls import reverse, reverse_lazy
+from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.utils.translation import gettext, gettext_lazy
@@ -14,8 +12,9 @@ from django.views.generic import (CreateView, DetailView, FormView, ListView,
                                   TemplateView)
 
 from base.models import User
+from postcode.models import Postcode
 from shop.forms import ShopContactForm, ShopRegisterForm
-from shop.models import Postcode, Shop
+from shop.models import Shop
 from shop.tokens import account_activation_token
 
 
@@ -28,12 +27,10 @@ class ShopsListView(ListView):
 
     def get_queryset(self):
         queryset = self.model.objects.filter(active=True)
-        # Do we have a postcode from the url?
-        url = self.request.build_absolute_uri()
-        ext = tldextract.extract(url)
-        if ext.subdomain:
+        code = self.request.session.get('postcode')
+        if code:
             try:
-                postcode = Postcode.objects.get(postcode=ext.subdomain)
+                postcode = Postcode.objects.get(postcode=code['code'])
                 queryset = queryset.order_by(GeometryDistance("location", postcode.location))
             except Postcode.DoesNotExist:
                 queryset = queryset.order_by('?')

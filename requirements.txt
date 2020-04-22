@@ -9,7 +9,6 @@ django-sendgrid-v5
 
 # Helpers
 requests
-tldextract
 
 # Database
 psycopg2
