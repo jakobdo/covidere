@@ -31,5 +31,9 @@ class ShopProductForm(forms.ModelForm):
     def clean(self):
         # Limitation - A customer can have 3 active products
         limit = 3
-        if self.cleaned_data.get('active', False) and Product.objects.filter(active=True, shop=self.request.user.shop).count() >= limit:
+        if self.instance:
+            active_products = Product.objects.filter(active=True, shop=self.request.user.shop).exclude(pk=self.instance.pk).count()
+        else:
+            active_products = Product.objects.filter(active=True, shop=self.request.user.shop).count()
+        if self.cleaned_data.get('active', False) and active_products >= limit:
             raise ValidationError(gettext("Maximum of %(limit)s products reached!") % {'limit': limit})
