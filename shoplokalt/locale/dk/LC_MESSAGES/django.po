@@ -1,0 +1,575 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-22 11:57+0000\n"
+"PO-Revision-Date: 2020-04-22 14:28+0200\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
+
+#: base/forms.py:8
+msgid "The two password fields didn’t match."
+msgstr "De 2 kodeord matcher ikke."
+
+#: base/forms.py:12
+msgid "Password"
+msgstr "Kodeord"
+
+#: base/forms.py:18
+msgid "Password confirmation"
+msgstr "Bekræft kodeord"
+
+#: base/forms.py:21
+msgid "Enter the same password as before, for verification."
+msgstr "Indtast samme kodeord som før, for verificering."
+
+#: base/templates/base/postcode.html:5
+msgid "Select your preferred postcode."
+msgstr "Vælg fortrukne postnummer."
+
+#: base/templates/base/postcode.html:9
+msgid "Postcode"
+msgstr "Postnummer"
+
+#: base/templates/base/postcode.html:10 base/templates/base/postcode.html:17
+msgid "Enter postcode"
+msgstr "Indtast postnummer"
+
+#: base/templates/base/postcode.html:13 base/templates/base/postcode.html:14
+msgid "City"
+msgstr "By"
+
+#: base/templates/base/postcode.html:18
+msgid "Submit"
+msgstr "Indsend"
+
+#: base/templates/base/set_password.html:5
+msgid "Set password"
+msgstr "Angiv kodeord"
+
+#: base/templates/base/set_password.html:8 shop/templates/shop/update.html:8
+msgid "Save"
+msgstr "Gem"
+
+#: base/views.py:39 base/views.py:45 base/views.py:66
+msgid "Invalid token"
+msgstr "Invalid token"
+
+#: basket/templates/basket/list.html:6 templates/base.html:82
+#: templates/base.html:88
+msgid "Basket"
+msgstr "Indkøbskurv"
+
+#: basket/templates/basket/list.html:11
+msgid "Name"
+msgstr "Navn"
+
+#: basket/templates/basket/list.html:12
+msgid "Color"
+msgstr "Farve"
+
+#: basket/templates/basket/list.html:13
+msgid "Size"
+msgstr "Størrelse"
+
+#: basket/templates/basket/list.html:14
+msgid "Count"
+msgstr "Antal"
+
+#: basket/templates/basket/list.html:15
+msgid "Price"
+msgstr "Pris"
+
+#: basket/templates/basket/list.html:16
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: basket/templates/basket/list.html:17
+msgid "Delete"
+msgstr "Slet"
+
+#: basket/templates/basket/list.html:43
+msgid "Total"
+msgstr "Total"
+
+#: basket/templates/basket/list.html:48 product/templates/product/update.html:8
+msgid "Update"
+msgstr "Opdater"
+
+#: basket/templates/basket/list.html:49
+msgid "Clear basket"
+msgstr "Tøm indkøbskurv"
+
+#: basket/templates/basket/list.html:50 order/templates/order/create.html:7
+msgid "Order"
+msgstr "Bestil"
+
+#: basket/views.py:52
+msgid "Product added to basket"
+msgstr "Produkt tilføjet til indkøbskurven"
+
+#: basket/views.py:141
+msgid "Basket updated"
+msgstr "Indkøbskurv opdateret"
+
+#: basket/views.py:145
+msgid "Basket cleared"
+msgstr "Indkøbskurv tømt"
+
+#: basket/views.py:161
+msgid "Product removed from basket"
+msgstr "Produkt fjernet fra indkøbskurven"
+
+#: order/models.py:14
+msgid "Ordered"
+msgstr "Bestilt"
+
+#: order/models.py:15
+msgid "Accepted"
+msgstr "Accepteret"
+
+#: order/models.py:16
+msgid "Sent"
+msgstr "Afsendt"
+
+#: order/models.py:17
+msgid "Rejected"
+msgstr "Afvist"
+
+#: order/models.py:19 product/models.py:54
+msgid "name"
+msgstr "navn"
+
+#: order/models.py:20 shop/models.py:16
+msgid "address"
+msgstr "adresse"
+
+#: order/models.py:22 shop/forms.py:13
+msgid "email"
+msgstr "e-mail"
+
+#: order/models.py:23
+msgid "mobile"
+msgstr "mobil"
+
+#: order/models.py:25
+msgid "status"
+msgstr "status"
+
+#: order/templates/order/thanks.html:6
+msgid "Thank you for your order."
+msgstr "Tak for din order."
+
+#: order/views.py:68
+msgid "Order confirmation"
+msgstr "Order bekræftelse"
+
+#: postcode/forms.py:8
+msgid "postcode"
+msgstr "postnummer"
+
+#: postcode/forms.py:9
+msgid "city"
+msgstr "by"
+
+#: postcode/views.py:31
+msgid "Postcode not found"
+msgstr "Postnummer findes ikke"
+
+#: product/models.py:55
+msgid "description"
+msgstr "beskrivelse"
+
+#: product/models.py:56
+msgid "price"
+msgstr "pris"
+
+#: product/models.py:57
+msgid "offer price"
+msgstr "tilbudspris"
+
+#: product/models.py:61
+msgid "image"
+msgstr "billede"
+
+#: product/models.py:66 shop/models.py:25
+msgid "active"
+msgstr "aktiv"
+
+#: product/models.py:67
+msgid "delivery days"
+msgstr "leveringstid (i dage)"
+
+#: product/models.py:68
+msgid "start datetime"
+msgstr "start datotid"
+
+#: product/models.py:69
+msgid "end datetime"
+msgstr "slut datotid"
+
+#: product/templates/product/create.html:7
+msgid "Create"
+msgstr "Opret"
+
+#: product/templates/product/index.html:6
+msgid "Products overview"
+msgstr "Produkt oversigt"
+
+#: product/templates/product/index.html:11
+#, python-format
+msgid ""
+"No postcode selected, please select one here: <a class=\"btn btn-primary\" "
+"href=\"%(postcode_url)s\">click here!</a>"
+msgstr ""
+"Intet postnummer valgt. Venligst vælg et postnummer her: <a class=“btn btn-"
+"primary” href=“%(postcode_url)s”>klik her!</a>"
+
+#: product/templates/product/index.html:21
+msgid "Product image"
+msgstr "Produkt billede"
+
+#: product/templates/product/index.html:55
+#: product/templates/product/newest.html:45
+#: product/templates/product/offer.html:45
+msgid "Buy"
+msgstr "Køb"
+
+#: product/templates/product/index.html:61
+#: product/templates/product/newest.html:51
+msgid "No products yet."
+msgstr "Ingen produkt oprettet endnu."
+
+#: product/templates/product/newest.html:6
+msgid "Newest products overview"
+msgstr "Nyeste produkt oversigt"
+
+#: product/templates/product/offer.html:6
+msgid "Products on sale overview"
+msgstr "Produkter på tilbud"
+
+#: product/templates/product/offer.html:51
+msgid "No products on sale yet."
+msgstr "Ingen produkt på tilbud endnu."
+
+#: product/templates/product/update.html:5 shop/templates/shop/update.html:5
+msgid "Information"
+msgstr "Information"
+
+#: product/templates/product/update.html:8
+msgid "Cancel"
+msgstr "Annuller"
+
+#: shop/forms.py:14
+msgid "subject"
+msgstr "emne"
+
+#: shop/forms.py:15
+msgid "message"
+msgstr "besked"
+
+#: shop/forms.py:43
+#, python-format
+msgid "Maximum of %(limit)s products reached!"
+msgstr "Det maksimale antal %(limit)s af aktive produkter nået!"
+
+#: shop/models.py:15
+msgid "shop name"
+msgstr "butiksnavn"
+
+#: shop/models.py:18
+msgid "homepage"
+msgstr "hjemmeside"
+
+#: shop/models.py:19
+msgid "contact email"
+msgstr "kontakt email"
+
+#: shop/models.py:20
+msgid "phone"
+msgstr "telefon"
+
+#: shop/templates/shop/active_product_list.html:6
+#: shop/templates/shop/overview.html:19
+msgid "Active products"
+msgstr "Aktive produkter"
+
+#: shop/templates/shop/active_product_list.html:14
+#: shop/templates/shop/inactive_product_list.html:14
+msgid "No active products."
+msgstr "Ingen aktive produkter."
+
+#: shop/templates/shop/base.html:8
+msgid "FoodBee"
+msgstr "FoodBee"
+
+#: shop/templates/shop/base.html:16 shop/templates/shop/overview.html:6
+#: templates/base.html:51
+msgid "Overview"
+msgstr "Oversigt"
+
+#: shop/templates/shop/base.html:19
+msgid "Shop"
+msgstr "Butik"
+
+#: shop/templates/shop/base.html:22 shop/templates/shop/product_list.html:6
+#: templates/base.html:48
+msgid "Products"
+msgstr "Produkter"
+
+#: shop/templates/shop/base.html:25 shop/templates/shop/order_list.html:6
+msgid "Orders"
+msgstr "Ordrer"
+
+#: shop/templates/shop/base.html:31
+msgid "Change password"
+msgstr "Skift kodeord"
+
+#: shop/templates/shop/base.html:34
+msgid "Logout"
+msgstr "Log ud"
+
+#: shop/templates/shop/contact.html:6
+msgid "Contact shop"
+msgstr "Kontakt butik"
+
+#: shop/templates/shop/contact.html:9 shop/templates/shop/detail.html:12
+msgid "Contact"
+msgstr "Kontakt"
+
+#: shop/templates/shop/detail.html:18
+msgid "Homepage"
+msgstr "Hjemmeside"
+
+#: shop/templates/shop/detail.html:23
+msgid "Show products"
+msgstr "Vis produkter"
+
+#: shop/templates/shop/inactive_product_list.html:6
+#: shop/templates/shop/overview.html:27
+msgid "Inactive products"
+msgstr "Inaktive produkter"
+
+#: shop/templates/shop/list.html:6 templates/base.html:58
+msgid "Shops"
+msgstr "Butikker"
+
+#: shop/templates/shop/list.html:14
+msgid "No shops."
+msgstr "Ingen butikker."
+
+#: shop/templates/shop/login.html:4 shop/templates/shop/login.html:7
+#: shop/templates/shop/login.html:11
+msgid "Login"
+msgstr "Log ind"
+
+#: shop/templates/shop/login.html:14
+msgid "Forgot your username or password?"
+msgstr "Glemt dit brugernavn eller kodeord?"
+
+#: shop/templates/shop/order_list.html:14
+msgid "No orders."
+msgstr "Ingen ordrer."
+
+#: shop/templates/shop/overview.html:10
+msgid "Your shop is not activated yet"
+msgstr "Din butik er endnu ikke aktiveret"
+
+#: shop/templates/shop/overview.html:15
+msgid "New orders"
+msgstr "Ny ordrer"
+
+#: shop/templates/shop/overview.html:23
+msgid "Products that will become inactive within 7 days"
+msgstr "Produkter der bliver inaktive inden for de kommende 7 dage"
+
+#: shop/templates/shop/product_list.html:8
+msgid "Add product"
+msgstr "Tilføj produkt"
+
+#: shop/templates/shop/product_list.html:23
+msgid "No products created or active yet."
+msgstr "Ingen produkter oprettet eller aktive endnu."
+
+#: shop/templates/shop/register.html:5
+msgid "Register your shop today"
+msgstr "Registrer din butik i dag"
+
+#: shop/templates/shop/register.html:8 templates/base.html:62
+msgid "Register"
+msgstr "Registrer"
+
+#: shop/templates/shop/registered.html:5
+msgid "Your registration is received"
+msgstr "Din registrering er modtaget"
+
+#: shop/templates/shop/registered.html:6
+msgid ""
+"\n"
+"    You will get notified, when your registration is approved. Normally "
+"within a few days.\n"
+msgstr ""
+"\n"
+"    Du vil blive notificeret, når din registrering er godkendt. Normalt "
+"inden for et par dage.\n"
+
+#: shop/templates/shop/updated.html:7
+msgid "Information updated!"
+msgstr "Information opdateret!"
+
+#: shop/views.py:60
+msgid "Message sent to shop, they will get in touch."
+msgstr "Besked sendt til butikken, de vil skrive retur hurtigst muligt."
+
+#: shop/views.py:100
+msgid "Activate Your Account"
+msgstr "Aktiver din konto"
+
+#: templates/base.html:14
+msgid "Support your locale stores today!"
+msgstr "Support dine lokale butikker i dag!"
+
+#: templates/base.html:38
+msgid "FOODBEE"
+msgstr "FOODBEE"
+
+#: templates/base.html:52
+msgid "Newest"
+msgstr "Nyeste"
+
+#: templates/base.html:53
+msgid "On Sale"
+msgstr "Tilbud"
+
+#: templates/base.html:67 templates/base.html:68
+msgid "Search"
+msgstr "Søg"
+
+#: templates/emails/account_activation_email.html:5
+msgid "Hi"
+msgstr "Hej"
+
+#: templates/emails/account_activation_email.html:6
+msgid "Please click on the link below to confirm your registration:"
+msgstr ""
+"Venligst klik på nedenstående link, for at verificere din registrering:"
+
+#: templates/emails/account_activation_email.html:7
+msgid "Click to activate"
+msgstr "Klik for at aktiver"
+
+#: templates/registration/password_change_done.html:6
+msgid "Your password was changed."
+msgstr "Dit kodeord er ændret."
+
+#: templates/registration/password_change_form.html:8
+msgid "Please correct the error below."
+msgstr "Venligst ret følgende fejl."
+
+#: templates/registration/password_change_form.html:8
+msgid "Please correct the errors below."
+msgstr "Venligst ret følgende fejl."
+
+#: templates/registration/password_change_form.html:13
+msgid ""
+"Please enter your old password, for security’s sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Venligst indtast dit gamle kodeord og indtast så dit ny kodeord to gange, so "
+"vi kan verificere du har tastet korrekt."
+
+#: templates/registration/password_change_form.html:18
+#: templates/registration/password_reset_confirm.html:12
+msgid "Change my password"
+msgstr "Skift mit kodeord"
+
+#: templates/registration/password_reset_complete.html:5
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr "Dit kodeord er ændret. Du kan logge ind nu."
+
+#: templates/registration/password_reset_complete.html:7
+msgid "Log in"
+msgstr "Log ind"
+
+#: templates/registration/password_reset_confirm.html:7
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Venligst indtast dit ny kodeord to gange, så vi kan sikre du har tastet "
+"korrekt."
+
+#: templates/registration/password_reset_confirm.html:16
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"Nulstil kodeord linket var ikke korrekt, muligvis fordi det allerede har "
+"været anvendt. Venligst bed om at få nulstillet kodeordet igen."
+
+#: templates/registration/password_reset_done.html:5
+msgid ""
+"We’ve emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+"Vi har sendt dine instruktioner for at angive nyt kodeord, hvis en konto med "
+"angivne e-mail findes. Du burde modtage instruktioner snarest."
+
+#: templates/registration/password_reset_done.html:6
+msgid ""
+"If you don’t receive an email, please make sure you’ve entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Hvis du ikke modtager en e-mail, venligst kontroller du har angivet den e-"
+"mail du anvendte ved registrering og kig i din spam-mappe."
+
+#: templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Du modtager denne e-mail, fordi du har bedt om at få nulstillet dit kodeord "
+"for din konto på siden: %(site_name)s."
+
+#: templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Venligst gå til følgende side og angiv et nyt kodeord:"
+
+#: templates/registration/password_reset_email.html:8
+msgid "Your username, in case you’ve forgotten:"
+msgstr "Dit brugernavn, hvis du skulle have glemt det:"
+
+#: templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr "Tak for at anvende vores side!"
+
+#: templates/registration/password_reset_email.html:12
+msgid "The FoodBee team"
+msgstr "FOODBEE-holdet"
+
+#: templates/registration/password_reset_form.html:6
+msgid ""
+"Forgotten your password? Enter your email address below, and we’ll email "
+"instructions for setting a new one."
+msgstr ""
+"Har du glemt dit kodeord? Angiv din e-mail adresse og du vil modtage e-mail "
+"instruktioner for at angive et nyt."
+
+#: templates/registration/password_reset_form.html:10
+msgid "Reset my password"
+msgstr "Nulstil mit kodeord"
+
+#: templates/registration/password_reset_subject.txt:2
+msgid "Password reset on FoodBee"
+msgstr "Kodeord nulstil på FOODBEE"
