@@ -5,6 +5,8 @@ from django.contrib.gis.geos import Point
 from django.utils.http import urlencode
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
+from phonenumber_field.modelfields import PhoneNumberField
+from django.core.validators import RegexValidator
 
 from postcode.models import Postcode
 
@@ -15,7 +17,7 @@ class Shop(models.Model):
     postcode = models.ForeignKey(Postcode, on_delete=models.CASCADE, related_name="shops", blank=True, null=True)
     homepage = models.URLField(gettext_lazy("homepage"))
     email = models.EmailField(gettext_lazy("contact email"))
-    phone = models.CharField(gettext_lazy("phone"), max_length=20)
+    phone = PhoneNumberField(gettext_lazy("phone"), max_length=17)
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,

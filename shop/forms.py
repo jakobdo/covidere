@@ -1,6 +1,9 @@
 from django import forms
 from django.forms import ValidationError
 from django.utils.translation import gettext, gettext_lazy
+from phonenumber_field.widgets import PhoneNumberPrefixWidget, PhoneNumberInternationalFallbackWidget
+from phonenumber_field.formfields import PhoneNumberField
+#from intl_tel_input.widgets import IntlTelInputWidget
 
 from product.models import Product
 from shop.models import Shop
@@ -16,7 +19,8 @@ class ShopRegisterForm(forms.ModelForm):
     class Meta:
         model = Shop
         fields = ['name', 'email', 'phone']
-
+        #widgets = {'phone': PhoneNumberPrefixWidget(initial='DK',attrs={'class': 'form-control'})} # 'initial' not working in package 
+        widgets = {'phone': PhoneNumberInternationalFallbackWidget(attrs={'class': 'form-control'})}
 
 class ShopProductForm(forms.ModelForm):
     class Meta:
