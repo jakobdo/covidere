@@ -159,3 +159,8 @@ images/*
 /.vs/*
 /env-ByPortal/*
 cache/*
+/covidere.sln
+/covidere.pyproj.user
+/covidere.pyproj
+/obj/Any CPU/Debug
+/bin
