@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy
 from django.db.models import Q
 
+from stdimage import JPEGField
+
 
 class ProductSize(models.Model):
     """
@@ -55,7 +57,11 @@ class Product(models.Model):
     offer_price = models.DecimalField(gettext_lazy('offer price'), max_digits=10, decimal_places=2, blank=True, null=True)
     size = models.ManyToManyField(ProductSize, blank=True)
     color = models.ManyToManyField(ProductColor, blank=True)
-    image = models.ImageField(gettext_lazy('image'), upload_to='images/%Y/%m/%d/')
+    image = JPEGField(
+        gettext_lazy('image'),
+        upload_to='images/%Y/%m/%d/',
+        variations={'full': (600, 400, True)},
+    )
 
     active = models.BooleanField(gettext_lazy('active'), default=True)
     delivery_days = models.PositiveIntegerField(gettext_lazy('delivery days'), blank=True, null=True)
@@ -65,6 +71,7 @@ class Product(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
+    objects = models.Manager()
     actives = ActiveManager()
 
     def __str__(self):

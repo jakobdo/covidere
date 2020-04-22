@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>{% trans "Information" %}</h1>
-<form method="post">{% csrf_token %}
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
     {{ form|crispy }}
     <button type="submit" class="btn btn-primary">{% trans "Update" %}</button> <a href="{% url 'shop_products' %}" class="btn btn-danger">{% trans "Cancel" %}</a>
 </form>

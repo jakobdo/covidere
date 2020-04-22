@@ -6,12 +6,13 @@ Django
 pillow
 django-crispy-forms
 django-sendgrid-v5
+django-stdimage
 
 # Helpers
 requests
 
 # Database
-psycopg2
+#psycopg2
 
 # Dev tools
 django-debug-toolbar
