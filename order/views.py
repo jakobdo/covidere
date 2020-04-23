@@ -30,10 +30,6 @@ class OrderCreateView(CreateView):
         products_in_basket = [item.get('product') for item in basket]
         products = Product.objects.filter(pk__in=products_in_basket, active=True, shop__active=True)
         products_dict = {product.pk: product for product in products}
-        for p in products_dict:
-            print(p, products_dict[p])
-        #shop = 
-        #user =
 
         # Create orderItems
         for item in basket:
