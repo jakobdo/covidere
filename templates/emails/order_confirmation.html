@@ -1,1 +1,23 @@
-# TODO - INSERT DATA FOR HANDLING ORDER CONFIRMATION!
+{% load i18n %}
+<html>
+<head></head>
+<body>
+
+    {% trans 'Hi' %} {{ order.name }}
+
+    {% trans 'The shop(s) in the order list will individually have to confirm your order for that shop.' %}
+    {% trans 'In order for the shop to confirm the order, first you must pay the order total by MobilePay to the shop.' %}
+
+    {% trans 'You have ordered:' %}
+    <ul>
+        {% for item in products %}
+            {% ifchanged item.shop %}
+                <li>{% trans 'From: ' %}{{ item.shop }}<li>
+            {% endifchanged %}
+            <li>{{ item.name }} </li>
+        {% endfor %}
+    </ul>
+    {% trans 'To address: ' %}{{ order.address }}
+
+</body>
+</html>

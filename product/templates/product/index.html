@@ -24,7 +24,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ product.name }}</h5>
                         <p class="card-text">{{ product.description }}</p>
-                        {% if product.size %}
+                        {% if product.size.count > 0 %}
                             <div class="form-group">
                                 <select class="form-control" name="size">
                                     {% for size in product.size.all %}
@@ -33,7 +33,7 @@
                                 </select>
                             </div>
                         {% endif %}
-                        {% if product.color %}
+                        {% if product.color.count > 0 %}
                             <div class="form-group">
                                 <select class="form-control" name="color">
                                     {% for color in product.color.all %}

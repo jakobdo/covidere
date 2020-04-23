@@ -64,16 +64,21 @@ class OrderCreateView(CreateView):
             order_item.price = product.price
             order_item.save()
 
+
         #current_site = get_current_site(self.request)
         subject = gettext('FOODBEE - Order confirmation')
         message = render_to_string('emails/order_confirmation.html', {
-            'order': self.object,
+            'order' : self.object, # order.models.Order
+            'products' : products, # list of product.models.Product 
         })
 
+        # TODO: Should be 1 email per shop you have ordered from, because customers may contact shop with the email
         send_mail(
             subject=subject,
             message=message,
             recipient_list=[self.object.email],
+            from_email = settings.DEFAULT_FROM_EMAIL,
+            fail_silently=False,
         )
         # Clear session
         del self.request.session['basket']
