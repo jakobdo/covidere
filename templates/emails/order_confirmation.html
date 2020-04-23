@@ -1,1 +1,17 @@
-# TODO - INSERT DATA FOR HANDLING ORDER CONFIRMATION!
+{% load i18n %}
+<html>
+<head></head>
+<body>
+
+    {% trans 'Hi' %} {{ order.name }}
+    {% trans 'You have ordered:' %}
+    <ul>
+        {% for item in products %}
+            <li>{{ item.name }}{% trans ' from shop: ' %}{{ item.shop }} </li>
+        {% endfor %}
+    </ul>
+    <br>
+    {% trans 'To address: ' %}{{ order.address }}
+
+</body>
+</html>
