@@ -1,6 +1,9 @@
+from django.conf import settings
+from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.template.loader import render_to_string
 from django.urls import reverse_lazy
 from django.utils.translation import gettext
 from django.views.generic import CreateView, TemplateView
@@ -61,16 +64,19 @@ class OrderCreateView(CreateView):
             order_item.price = product.price
             order_item.save()
 
-        # Clear session
-        del self.request.session['basket']
+        #current_site = get_current_site(self.request)
+        subject = gettext('FOODBEE - Order confirmation')
+        message = render_to_string('emails/order_confirmation.html', {
+            'order': self.object,
+        })
 
         send_mail(
-            gettext('Order confirmation'),
-            'Here is the message.',
-            'noreply@byportal.dk',
-            ['jakobdo@gmail.com'],
-            fail_silently=False,
+            subject=subject,
+            message=message,
+            recipient_list=[self.object.email],
         )
+        # Clear session
+        del self.request.session['basket']
         return HttpResponseRedirect(self.get_success_url())
 
 

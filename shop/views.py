@@ -98,13 +98,12 @@ class ShopRegisterView(CreateView):
 
         current_site = get_current_site(self.request)
         subject = gettext('Activate Your Account')
-        message = render_to_string('emails/account_activation_email.html', {
+        message = render_to_string('emails/account_activation.html', {
             'user': user,
             'domain': current_site.domain,
             'uid': urlsafe_base64_encode(force_bytes(user.pk)),
             'token': account_activation_token.make_token(user),
         })
-        # TODO - Should also include readable plain text message
         user.email_user(subject, message='', html_message=message)
         return super().form_valid(form)
 
