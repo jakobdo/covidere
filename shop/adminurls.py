@@ -18,6 +18,4 @@ urlpatterns = [
     path('orders/', ShopOrderListView.as_view(), name="shop_orders"),
     path('orders/new/', ShopNewOrderListView.as_view(), name="shop_new_orders"),
     path('orders/<int:pk>/', ShopOrderDetailView.as_view(), name="show_order_detail"),
-    # Auth
-    path('login/', auth_views.LoginView.as_view(template_name='shop/login.html'), name="login"),
 ]

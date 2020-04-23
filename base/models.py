@@ -2,4 +2,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    pass
+    class Meta:
+        permissions = (
+            ("alten_admin", "Can administrate shops in Alten Admin"),
+        )

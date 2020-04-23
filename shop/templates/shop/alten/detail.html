@@ -1,0 +1,24 @@
+{% extends 'shop/alten/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <address>
+        <strong>{{object.name}}</strong><br>
+        {{object.address}}<br>
+        {{object.postcode.postcode}} {{object.postcode.city}}<br>
+    </address>
+    <div class="mt-2">
+        <a href="{% url 'shop_contact' pk=object.pk %}"><i class="far fa-envelope"></i> {% trans "Contact" %}</a>
+    </div>
+    <div class="mt-2">
+        <a href="tel:{{object.phone}}"><i class="fas fa-phone"></i> {{object.phone}}</a>
+    </div>
+    <div class="mt-2">
+        <a target="_blank" href="{{ object.homepage }}"><i class="fas fa-link"></i> {% trans 'Homepage' %}</a>
+    </div>
+
+    <hr>
+
+    <a class="btn btn-success" href="{% url 'alten_shop_activate' pk=object.pk %}">{% trans "Activate shop" %}</a>
+{% endblock %}

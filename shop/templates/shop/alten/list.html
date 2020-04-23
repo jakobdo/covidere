@@ -1,0 +1,17 @@
+{% extends 'shop/alten/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "Shops" %}</h1>
+
+<div class="list-group">
+    {% for shop in object_list %}
+        <a href="{% url 'alten_shop_detail' pk=shop.pk %}" class="list-group-item list-group-item-action">
+            {{ shop.name }}
+        </a>
+    {% empty %}
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No inactive shops." %}</a>
+    {% endfor %}
+</div>
+{% endblock %}
