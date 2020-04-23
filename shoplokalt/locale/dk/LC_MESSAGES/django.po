@@ -437,7 +437,7 @@ msgstr "Aktiver din konto"
 
 #: templates/base.html:14
 msgid "Support your locale stores today!"
-msgstr "Support dine lokale butikker i dag!"
+msgstr "Supporter dine lokale butikker i dag!"
 
 #: templates/base.html:38
 msgid "FOODBEE"

@@ -9,6 +9,7 @@ django-sendgrid-v5
 django-stdimage
 phonenumbers
 django-phonenumber-field
+django-axes
 
 # Helpers
 requests
