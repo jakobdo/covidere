@@ -140,7 +140,11 @@ cython_debug/
 
 # static files generated from Django application using `collectstatic`
 media
-static
+#static
+/static/admin
+/static/debug_toolbar
+/static/django_extensions
+/static/gis
 
 # Visual Studio Code
 .vscode/*
@@ -164,3 +168,5 @@ cache/*
 /covidere.pyproj
 /obj/Any CPU/Debug
 /bin
+/product/migrations/0003_auto_20200423_0954.py
+

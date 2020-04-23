@@ -1,4 +1,4 @@
-{% load i18n %}
+﻿{% load i18n %}
 <!doctype html>
 <html lang="en">
 
@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>{% block title %}{% trans "Support your locale stores today!" %}{% endblock %}</title>
+    <title>{% block title %}{% trans "Support your local stores today!" %}{% endblock %}</title>
     <script src="https://kit.fontawesome.com/1df090f8a6.js" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
 </head>
 
 <body>
@@ -99,6 +101,8 @@
     <div class="container">
         {% block content %}{% endblock %}
     </div>
+
+    {% include "footer.html" %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
