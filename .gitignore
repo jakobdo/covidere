@@ -170,3 +170,4 @@ cache/*
 /bin
 /product/migrations/0003_auto_20200423_0954.py
 
+.DS_Store
