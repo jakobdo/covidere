@@ -61,7 +61,8 @@ class OrderCreateView(CreateView):
                 order_item.size_id = size
             order_item.order = self.object
             order_item.count = count
-            order_item.price = product.price
+            # Save the offer/on sale price if any, else use normal price
+            order_item.price = product.offer_price if product.offer_price else product.price
             order_item.save()
 
 

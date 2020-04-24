@@ -3,14 +3,17 @@ import datetime
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.db.models import Q
-from django.urls import reverse_lazy
+from django.shortcuts import redirect
+from django.urls import reverse, reverse_lazy
 from django.utils import timezone
+from django.views import View
+from django.utils.translation import gettext_lazy
 from django.views.generic import (CreateView, DetailView, ListView,
                                   TemplateView, UpdateView)
 
 from order.models import Order
 from product.models import Product
-from shop.forms import ShopProductForm
+from shop.forms import OrderStatusForm, ShopProductForm
 from shop.models import Shop
 
 
@@ -115,6 +118,35 @@ class ShopNewOrderListView(LoginRequiredMixin, ListView):
 class ShopOrderDetailView(LoginRequiredMixin, DetailView):
     model = Order
     template_name = 'shop/order_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        items = self.object.items.filter(product__shop=self.request.user.shop).select_related('product').order_by('product__name')
+        total = 0
+        for item in items:
+            total += item.subtotal()
+        context['items'] = items
+        context['total'] = total
+        context['order'] = Order
+        context['form'] = OrderStatusForm(instance=self.object)
+        return context
+    
+    def get_queryset(self):
+        queryset = Order.objects.filter(items__product__shop=self.request.user.shop).distinct()
+        return queryset
+    
+
+class ShopOrderStatusUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    model = Order
+    form_class = OrderStatusForm
+    success_message = gettext_lazy("Status updated")
+
+    def get_queryset(self):
+        queryset = Order.objects.filter(items__product__shop=self.request.user.shop).distinct()
+        return queryset
+
+    def get_success_url(self):
+        return reverse('show_order_detail', kwargs={'pk': self.object.pk})
 
 
 class ShopOverviewView(LoginRequiredMixin, TemplateView):

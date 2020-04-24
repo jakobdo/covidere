@@ -1,11 +1,10 @@
-from django.contrib.auth import views as auth_views
 from django.urls import path
 
 from shop.adminviews import (ShopNewOrderListView, ShopOrderDetailView,
                              ShopOrderListView, ShopOverviewView,
                              ShopProductActiveListView, ShopProductCreateView,
                              ShopProductInactiveListView, ShopProductListView,
-                             ShopProductUpdateView, ShopUpdateView)
+                             ShopProductUpdateView, ShopUpdateView, ShopOrderStatusUpdateView)
 
 urlpatterns = [
     path('', ShopOverviewView.as_view(), name="shop_overview"),
@@ -18,4 +17,5 @@ urlpatterns = [
     path('orders/', ShopOrderListView.as_view(), name="shop_orders"),
     path('orders/new/', ShopNewOrderListView.as_view(), name="shop_new_orders"),
     path('orders/<int:pk>/', ShopOrderDetailView.as_view(), name="show_order_detail"),
+    path('orders/<int:pk>/status/', ShopOrderStatusUpdateView.as_view(), name="show_order_status_update"),
 ]

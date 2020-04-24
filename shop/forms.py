@@ -1,12 +1,16 @@
 from django import forms
 from django.forms import ValidationError
 from django.utils.translation import gettext, gettext_lazy
-from phonenumber_field.widgets import PhoneNumberPrefixWidget, PhoneNumberInternationalFallbackWidget
 from phonenumber_field.formfields import PhoneNumberField
-#from intl_tel_input.widgets import IntlTelInputWidget
+from phonenumber_field.widgets import (PhoneNumberInternationalFallbackWidget,
+                                       PhoneNumberPrefixWidget)
 
+from order.models import Order
 from product.models import Product
 from shop.models import Shop
+
+#from intl_tel_input.widgets import IntlTelInputWidget
+
 
 
 class ShopContactForm(forms.Form):
@@ -41,3 +45,9 @@ class ShopProductForm(forms.ModelForm):
             active_products = Product.objects.filter(active=True, shop=self.request.user.shop).count()
         if self.cleaned_data.get('active', False) and active_products >= limit:
             raise ValidationError(gettext("Maximum of %(limit)s products reached!") % {'limit': limit})
+
+
+class OrderStatusForm(forms.ModelForm):
+    class Meta:
+        model = Order
+        fields = ['status']
