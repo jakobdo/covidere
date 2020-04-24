@@ -1,4 +1,5 @@
 import datetime
+from datetime import timedelta
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -6,8 +7,8 @@ from django.db.models import Q
 from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.utils import timezone
-from django.views import View
 from django.utils.translation import gettext_lazy
+from django.views import View
 from django.views.generic import (CreateView, DetailView, ListView,
                                   TemplateView, UpdateView)
 
@@ -44,9 +45,7 @@ class ShopProductActiveListView(LoginRequiredMixin, ListView):
     template_name = 'shop/active_product_list.html'
 
     def get_queryset(self):
-        now = timezone.now()
-        queryset = Product.objects.filter(shop=self.request.user.shop, active=True, start_datetime__lte=now, end_datetime__gte=now)
-        return queryset
+        return self.model.actives.filter(shop=self.request.user.shop)
 
 
 class ShopProductInactiveListView(LoginRequiredMixin, ListView):
@@ -57,8 +56,7 @@ class ShopProductInactiveListView(LoginRequiredMixin, ListView):
     template_name = 'shop/inactive_product_list.html'
 
     def get_queryset(self):
-        now = timezone.now()
-        queryset = Product.objects.filter(Q(start_datetime__gte=now) | Q(end_datetime__lte=now) | Q(active=False), shop=self.request.user.shop)
+        queryset = Product.inactives.filter(shop=self.request.user.shop)
         return queryset
 
 
@@ -71,7 +69,8 @@ class ShopProductExpiringListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         now = timezone.now()
-        queryset = Product.objects.filter(Q(start_datetime__gte=now) | Q(end_datetime__lte=now) | Q(active=False), shop=self.request.user.shop)
+        one_week_from_now = now + timedelta(days=7)
+        queryset = Product.actives.filter(end_datetime__gte=now, end_datetime__lte=one_week_from_now, shop=self.request.user.shop)
         return queryset
 
 
@@ -162,9 +161,9 @@ class ShopOverviewView(LoginRequiredMixin, TemplateView):
         context['shop'] = shop
         context['counts'] = dict(
             new_orders=Order.objects.filter(items__product__shop=shop, status=Order.ORDERED).distinct().count(),
-            active_products=Product.objects.filter(shop=shop, active=True, start_datetime__lte=now, end_datetime__gte=now).count(),
+            active_products=Product.actives.filter(shop=shop).count(),
             expiring_products=Product.objects.filter(shop=shop, active=True, start_datetime__lte=now, end_datetime__gte=now, end_datetime__lte=in_a_week).count(),
-            inactive_products=Product.objects.filter(Q(start_datetime__gte=now) | Q(end_datetime__lte=now) | Q(active=False), shop=shop).count(),
+            inactive_products=Product.inactives.filter(shop=shop).count(),
         )
         return context
 

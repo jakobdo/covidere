@@ -46,6 +46,25 @@ class ActiveManager(models.Manager):
         )
 
 
+class InactiveManager(models.Manager):
+    def get_queryset(self):
+        now = timezone.now()
+        return (
+            super().get_queryset()
+            .filter(
+                shop__active=True
+            )         
+            .filter(
+                Q(active=False) |
+                Q(start_datetime__gte=now) | 
+                Q(end_datetime__lte=now)
+            )
+            .prefetch_related("size")
+            .prefetch_related("color")
+            .prefetch_related("shop")
+        )
+
+
 class Product(models.Model):
     """
     Product model
@@ -73,6 +92,7 @@ class Product(models.Model):
 
     objects = models.Manager()
     actives = ActiveManager()
+    inactives = InactiveManager()
 
     def __str__(self):
         return self.name

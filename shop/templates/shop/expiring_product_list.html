@@ -1,0 +1,17 @@
+{% extends 'shop/base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "Soon to expire products" %}</h1>
+
+<div class="list-group">
+    {% for product in object_list %}
+        <a href="{% url 'shop_product_update' pk=product.pk %}" class="list-group-item list-group-item-action">
+            {{ product.name }}
+        </a>
+    {% empty %}
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No products soon to expire." %}</a>
+    {% endfor %}
+</div>
+{% endblock %}
