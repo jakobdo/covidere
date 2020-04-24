@@ -1,12 +1,14 @@
 from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMultiAlternatives
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.urls import reverse_lazy
 from django.utils.translation import gettext
 from django.views.generic import CreateView, TemplateView
+from decimal import Decimal
+from django.template import Context
 
 from order.forms import OrderForm
 from order.models import Order, OrderItem
@@ -28,8 +30,15 @@ class OrderCreateView(CreateView):
         # Fetch all products
         basket = self.request.session.get('basket', [])
         products_in_basket = [item.get('product') for item in basket]
-        products = Product.objects.filter(pk__in=products_in_basket, active=True, shop__active=True)
+        products = Product.objects.filter(pk__in=products_in_basket, active=True, shop__active=True).order_by('shop')
         products_dict = {product.pk: product for product in products}
+
+        # Total cost & valid items list per shop
+        shop_items_and_cost = dict.fromkeys({product.shop for product in products})
+        for key in shop_items_and_cost:
+            shop_items_and_cost[key] = {'total_cost' : Decimal(0.00), 
+                                          'order_items' : [],
+                                          'item_count' : 0}
 
         # Create orderItems
         for item in basket:
@@ -65,22 +74,38 @@ class OrderCreateView(CreateView):
             order_item.price = product.offer_price if product.offer_price else product.price
             order_item.save()
 
+            shop_items_and_cost[product.shop]['item_count'] += count
+            shop_items_and_cost[product.shop]['total_cost'] += Decimal(count * product.price)
+            shop_items_and_cost[product.shop]['order_items'].append(order_item) 
 
-        #current_site = get_current_site(self.request)
-        subject = gettext('FOODBEE - Order confirmation')
-        message = render_to_string('emails/order_confirmation.html', {
-            'order' : self.object, # order.models.Order
-            'products' : products, # list of product.models.Product 
-        })
+        c = {'order' : self.object, 
+             'shop_items_and_cost': shop_items_and_cost}    
+        text_content = render_to_string('emails/order_confirmation.txt', c)
+        html_content = render_to_string('emails/order_confirmation.html', c)
+
+        email = EmailMultiAlternatives(gettext('FOODBEE - Order received'), text_content)
+        email.from_email = settings.DEFAULT_FROM_EMAIL
+        email.to = [self.object.email]        
+        #email.attach_alternative(html_content, "text/html")
+        email.send()
+
+        #self.object.status = 
+
+
+        #message = render_to_string('emails/order_confirmation.html', {
+        #    'order' : self.object, # order.models.Order
+        #    'shop_items_and_cost' : shop_items_and_cost, 
+        #})
 
         # TODO: Should be 1 email per shop you have ordered from, because customers may contact shop with the email
-        send_mail(
-            subject=subject,
-            message=message,
-            recipient_list=[self.object.email],
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            fail_silently=False,
-        )
+        #send_mail(
+        #    subject=subject,
+        #    message=message,
+        #    recipient_list=[self.object.email],
+        #    from_email=settings.DEFAULT_FROM_EMAIL,
+        #    fail_silently=False,
+        #)
+
         # Clear session
         del self.request.session['basket']
         return HttpResponseRedirect(self.get_success_url())

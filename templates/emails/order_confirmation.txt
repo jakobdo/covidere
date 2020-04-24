@@ -1,0 +1,16 @@
+{% load i18n %}
+
+{% trans 'Hi' %} {{ order.name }}
+
+{% trans 'The shop(s) in the order list will individually have to confirm your order for that shop.' %}
+{% trans 'In order for the shop to confirm the order, first you must pay the order total by MobilePay to the shop.' %}
+{% trans 'You have ordered:' %}  
+{% for shop, cost_and_items in shop_items_and_cost.items %}
+    {% trans 'From ' %}{{ shop }}
+        {% trans "Name - Color - Size - Count - Price" %}
+    {% for item in cost_and_items.order_items %}{{ item.product.name }} - {{ item.color }} - {{ item.size }} - {{ item.count }} - {{ item.price }}{% endfor %}    
+        {% trans 'TOTAL' %} - {{ cost_and_items.item_count }} - {{ cost_and_items.total_cost}}
+    {% trans 'To your address: ' %}{{ order.address }}
+{% endfor %}
+{% trans 'Best regards,' %}  
+{% trans 'The FoodBee team' %}  
