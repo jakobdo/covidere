@@ -77,7 +77,7 @@ class OrderCreateView(CreateView):
             subject=subject,
             message=message,
             recipient_list=[self.object.email],
-            from_email = settings.DEFAULT_FROM_EMAIL,
+            from_email=settings.DEFAULT_FROM_EMAIL,
             fail_silently=False,
         )
         # Clear session
