@@ -34,7 +34,7 @@ class ActivateUserView(FormView):
             user.is_active = True
             user.set_password(form.cleaned_data["password1"])
             user.save()
-            login(self.request, user)
+            login(self.request, user, backend='axes.backends.AxesBackend')
         else:
             raise Http404(gettext("Invalid token"))
         return super().form_valid(form)
@@ -47,20 +47,3 @@ class ActivateUserView(FormView):
 
     def get_success_url(self):
         return reverse('shop_overview')
-
-def activate(request, uidb64, token):
-    try:
-        uid = force_text(urlsafe_base64_decode(uidb64))
-        user = User.objects.get(pk=uid)
-    except (TypeError, ValueError, OverflowError, User.DoesNotExist):
-        user = None
-
-    if user is not None and account_activation_token.check_token(user, token):
-        #user.is_active = True
-        #user.save()
-        login(request, user)
-        return HttpResponse(f"<html><head><title>Test</title></head><body>{token}</body></html>")
-        #return redirect('set_password')
-        #return redirect('shop_overview')
-    else:
-        raise Http404(gettext("Invalid token"))
