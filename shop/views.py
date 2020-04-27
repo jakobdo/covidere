@@ -91,7 +91,7 @@ class ShopRegisterView(CreateView):
     def form_valid(self, form):
         # Create a user, but remember to set inactive!
         user = User()
-        user.username = form.cleaned_data.get('name') # TODO: Should not refer to 'email'?
+        user.username = form.cleaned_data.get('email')
         user.email = form.cleaned_data.get('email')
         user.is_active = False
         try:
