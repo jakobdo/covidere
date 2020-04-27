@@ -2,7 +2,7 @@ from django.conf import settings
 from django.contrib.gis.db.models.functions import GeometryDistance
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMultiAlternatives
 from django.db import IntegrityError
 from django.shortcuts import get_object_or_404
 from django.template.loader import render_to_string
