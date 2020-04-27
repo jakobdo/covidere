@@ -75,7 +75,7 @@ class OrderCreateView(CreateView):
             order_item.save()
 
             shop_items_and_cost[product.shop]['item_count'] += count
-            shop_items_and_cost[product.shop]['total_cost'] += Decimal(count * product.price)
+            shop_items_and_cost[product.shop]['total_cost'] += Decimal(order_item.subtotal())
             shop_items_and_cost[product.shop]['order_items'].append(order_item) 
 
         c = {'order' : self.object, 
@@ -91,20 +91,6 @@ class OrderCreateView(CreateView):
 
         #self.object.status = 
 
-
-        #message = render_to_string('emails/order_confirmation.html', {
-        #    'order' : self.object, # order.models.Order
-        #    'shop_items_and_cost' : shop_items_and_cost, 
-        #})
-
-        # TODO: Should be 1 email per shop you have ordered from, because customers may contact shop with the email
-        #send_mail(
-        #    subject=subject,
-        #    message=message,
-        #    recipient_list=[self.object.email],
-        #    from_email=settings.DEFAULT_FROM_EMAIL,
-        #    fail_silently=False,
-        #)
 
         # Clear session
         del self.request.session['basket']

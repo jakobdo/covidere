@@ -1,15 +1,18 @@
+from django.conf import settings
 from django.contrib.gis.db.models.functions import GeometryDistance
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMultiAlternatives
 from django.shortcuts import get_object_or_404
 from django.template.loader import render_to_string
+#from django.shortcuts import render
 from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.utils.translation import gettext, gettext_lazy
 from django.views.generic import (CreateView, DetailView, FormView, ListView,
                                   TemplateView)
+from email.mime.image import MIMEImage
 
 from base.models import User
 from postcode.models import Postcode
@@ -88,7 +91,7 @@ class ShopRegisterView(CreateView):
     def form_valid(self, form):
         # Create a user, but remember to set inactive!
         user = User()
-        user.username = form.cleaned_data.get('email') # TODO: Should not refer to 'email'?
+        user.username = form.cleaned_data.get('name') # TODO: Should not refer to 'email'?
         user.email = form.cleaned_data.get('email')
         user.is_active = False
         user.save()
@@ -96,15 +99,29 @@ class ShopRegisterView(CreateView):
         self.object.user = user
         self.object.save()
 
+
         current_site = get_current_site(self.request)
-        subject = gettext('Activate Your Account')
-        message = render_to_string('emails/account_activation.html', {
+        html_content = render_to_string('emails/account_activation.html', {
             'user': user,
             'domain': current_site.domain,
             'uid': urlsafe_base64_encode(force_bytes(user.pk)),
             'token': account_activation_token.make_token(user),
         })
-        user.email_user(subject, message='', html_message=message)
+
+        email = EmailMultiAlternatives(gettext('FOODBEE - Confirm email'), None) # TODO: Plain text version
+        email.from_email = settings.DEFAULT_FROM_EMAIL
+        email.to = [self.object.email]        
+        email.attach_alternative(html_content, "text/html")
+        email.content_subtype = 'html'
+        email.mixed_subtype = 'related'
+
+        with open('base/static/base/img/FoodBee_logo_long.png', mode='rb') as f: # TODO: Dynamic path
+            image = MIMEImage(f.read())
+            image.add_header('Content-ID', "<Foodbee_logo_long.png>")
+            email.attach(image)
+
+        email.send()
+
         return super().form_valid(form)
 
 
