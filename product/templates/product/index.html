@@ -14,13 +14,13 @@
 <div class="row row-cols-1 row-cols-md-3 mt-3">
     {% for product in object_list %}
         <div class="col mb-4">
-            <form method="post" action="{% url 'basket_add' %}">{% csrf_token %}
-                <input type="hidden" name="product" value="{{ product.pk }}">
+            <div class="card h-100">
                 {% if product.image %}
-                    <img src="/{{ product.image.url }}" class="card-img-top" alt="{% trans 'Product image' %}">
+                    <img src="/{{ product.image.full.url }}" class="card-img-top" alt="{% trans 'Product image' %}">
                 {% endif %}
-                <div class="card">
-                    <div class="card-body">
+                <div class="card-body">
+                    <form method="post" action="{% url 'basket_add' %}">{% csrf_token %}
+                        <input type="hidden" name="product" value="{{ product.pk }}">
                         <h5 class="card-title">{{ product.name }}</h5>
                         <p class="card-text">{{ product.description }}</p>
                         {% if product.size.count > 0 %}
@@ -49,12 +49,10 @@
                                 {{ product.shop.zipcode }} {{ product.shop.city }}
                             </div>
                         </address>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <button type="submit" class="btn btn-link"><i class="fas fa-plus-circle"></i> {% trans "Buy" %}</button>
-                    </div>
-                </div>
-            </form>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-plus-circle"></i> {% trans "Buy" %}</button>
+                    </form>
+                </div>            
+            </div>
         </div>
     {% empty %}
         <li>{% trans "No products yet." %}</li>

@@ -1,12 +1,28 @@
+import unicodedata
+
 from django import forms
 from django.contrib.auth import password_validation
 from django.utils.translation import gettext_lazy
 
 
-class SetPasswordForm(forms.Form):
+class UsernameField(forms.CharField):
+    def to_python(self, value):
+        return unicodedata.normalize('NFKC', super().to_python(value))
+
+    def widget_attrs(self, widget):
+        return {
+            **super().widget_attrs(widget),
+            'autocapitalize': 'none',
+            'autocomplete': 'username',
+        }
+
+
+class SetUsernameAndPasswordForm(forms.Form):
     error_messages = {
         'password_mismatch': gettext_lazy('The two password fields didn’t match.'),
     }
+
+    username = UsernameField()
 
     password1 = forms.CharField(
         label=gettext_lazy("Password"),

@@ -36,9 +36,11 @@ class OrderCreateView(CreateView):
         # Total cost & valid items list per shop
         shop_items_and_cost = dict.fromkeys({product.shop for product in products})
         for key in shop_items_and_cost:
-            shop_items_and_cost[key] = {'total_cost' : Decimal(0.00), 
-                                          'order_items' : [],
-                                          'item_count' : 0}
+            shop_items_and_cost[key] = {
+                'total_cost' : Decimal(0.00), 
+                'order_items' : [],
+                'item_count' : 0
+            }
 
         # Create orderItems
         for item in basket:
@@ -78,22 +80,29 @@ class OrderCreateView(CreateView):
             shop_items_and_cost[product.shop]['total_cost'] += Decimal(order_item.subtotal())
             shop_items_and_cost[product.shop]['order_items'].append(order_item) 
 
-        c = {'order' : self.object, 
-             'shop_items_and_cost': shop_items_and_cost}    
-        text_content = render_to_string('emails/order_confirmation.txt', c)
-        html_content = render_to_string('emails/order_confirmation.html', c)
+        context = {
+            'order' : self.object, 
+            'shop_items_and_cost': shop_items_and_cost
+        }
+        message = render_to_string('emails/order_confirmation.txt', context)
+        html_message = render_to_string('emails/order_confirmation.html', context)
+        subject = gettext('Order confirmation')
 
-        email = EmailMultiAlternatives(gettext('FOODBEE - Order received'), text_content)
-        email.from_email = settings.DEFAULT_FROM_EMAIL
-        email.to = [self.object.email]        
-        #email.attach_alternative(html_content, "text/html")
-        email.send()
+        self.object.status = Order.ORDERED
 
-        #self.object.status = 
 
+        # TODO: Should be 1 email per shop you have ordered from, because customers may contact shop with the email
+        send_mail(
+            subject=subject,
+            message=message,
+            recipient_list=[self.object.email],
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            fail_silently=False,
+            html_message=html_message,
+        )
 
         # Clear session
-        del self.request.session['basket']
+        self.request.session.flush()
         return HttpResponseRedirect(self.get_success_url())
 
 

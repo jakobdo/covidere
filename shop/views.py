@@ -2,10 +2,10 @@ from django.conf import settings
 from django.contrib.gis.db.models.functions import GeometryDistance
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail, EmailMultiAlternatives
+from django.core.mail import send_mail
+from django.db import IntegrityError
 from django.shortcuts import get_object_or_404
 from django.template.loader import render_to_string
-#from django.shortcuts import render
 from django.urls import reverse
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
@@ -94,7 +94,12 @@ class ShopRegisterView(CreateView):
         user.username = form.cleaned_data.get('name') # TODO: Should not refer to 'email'?
         user.email = form.cleaned_data.get('email')
         user.is_active = False
-        user.save()
+        try:
+            user.save()
+        except IntegrityError:
+            form.add_error('email', gettext('Shop with this email already exists.'))
+            return super(ShopRegisterView, self).form_invalid(form)
+            
         self.object = form.save(commit=False)
         self.object.user = user
         self.object.save()
