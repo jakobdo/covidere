@@ -16,7 +16,7 @@ class Shop(models.Model):
     postcode = models.ForeignKey(Postcode, on_delete=models.CASCADE, related_name="shops", blank=True, null=True)
     homepage = models.URLField(gettext_lazy("homepage"))
     email = models.EmailField(gettext_lazy("contact email"))
-    phone = PhoneNumberField(gettext_lazy("phone"), max_length=17)
+    phone = PhoneNumberField(gettext_lazy("phone"), max_length=17, unique=True)
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
