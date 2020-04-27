@@ -7,14 +7,14 @@ from django.utils.http import urlsafe_base64_decode
 from django.utils.translation import gettext
 from django.views.generic import FormView
 
-from base.forms import SetPasswordForm
+from base.forms import SetUsernameAndPasswordForm
 from base.models import User
 from shop.tokens import account_activation_token
 
 
 class ActivateUserView(FormView):
     template_name = 'base/set_password.html'
-    form_class = SetPasswordForm
+    form_class = SetUsernameAndPasswordForm
 
     def validate_user(self):
         try:
@@ -32,6 +32,7 @@ class ActivateUserView(FormView):
         if self.validate_token():
             user = self.user
             user.is_active = True
+            user.username = form.cleaned_data["username"]
             user.set_password(form.cleaned_data["password1"])
             user.save()
             login(self.request, user, backend='axes.backends.AxesBackend')
