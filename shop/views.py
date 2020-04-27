@@ -107,6 +107,7 @@ class ShopRegisterView(CreateView):
 
         current_site = get_current_site(self.request)
         html_content = render_to_string('emails/account_activation.html', {
+            'shopname': self.object.name,
             'user': user,
             'domain': current_site.domain,
             'uid': urlsafe_base64_encode(force_bytes(user.pk)),
