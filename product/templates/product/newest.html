@@ -5,32 +5,6 @@
 {% block content %}
 <h1>{% trans "Newest products overview" %}</h1>
 
-<div class="row row-cols-1 row-cols-md-3 mt-3">
-    {% for product in object_list %}
-        <div class="col mb-4">
-            <form method="post" action="{% url 'basket_add' %}">{% csrf_token %}
-                <input type="hidden" name="product" value="{{ product.pk }}">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description }}</p>
-                        <address class="d-flex flex-row align-items-center">
-                            <a target="_blank" href="https://www.google.com/maps/search/?api=1&{{ product.shop.location }}"><i class="fas fa-map-marked-alt"></i></a>
-                            <div class="pl-2">
-                                <strong>{{ product.shop }}</strong><br>
-                                {{ product.shop.address }}<br>
-                                {{ product.shop.zipcode }} {{ product.shop.city }}
-                            </div>
-                        </address>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <button type="submit" class="btn btn-link"><i class="fas fa-plus-circle"></i> {% trans "Buy" %}</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    {% empty %}
-        <li>{% trans "No products yet." %}</li>
-    {% endfor %}
-</div>
+{% include "product/product_list.html" %}
+
 {% endblock %}

@@ -1,0 +1,40 @@
+{% load i18n %}
+<div class="row row-cols-1 row-cols-md-3 mt-3">
+    {% for product in object_list %}
+        <div class="col mb-4">
+            <div class="card h-100">
+                {% if product.image %}
+                    <img src="/{{ product.image.full.url }}" class="card-img-top" alt="{% trans 'Product image' %}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+
+                    <h6 class="card-subtitle mb-2 text-muted">{% trans "Price:" %} {{ product.get_price }} {% if product.offer_price %}<del>{{product.price}}</del>{% endif %}</h6>
+
+                    <p class="card-text">{{ product.description }}</p>
+                </div>  
+                <div class="card-footer text-muted">
+                    <form method="post" action="{% url 'basket_add' %}">{% csrf_token %}
+                        <input type="hidden" name="product" value="{{ product.pk }}">
+                        <div class="input-group mb-3">
+                            <input type="number" name="count" class="form-control" min="1" step="1" value="1" placeholder="Numbers" aria-label="Numbers of products" aria-describedby="button-addon-{{ product.id }}">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary" id="button-addon-{{ product.id }}"><i class="fas fa-plus-circle"></i> {% trans "Buy" %}</button>
+                            </div>
+                        </div>
+                    </form>
+                    <address class="d-flex flex-row align-items-center">
+                        <a target="_blank" href="https://www.google.com/maps/search/?api=1&{{ product.shop.location }}"><i class="fas fa-map-marked-alt"></i></a>
+                        <div class="pl-2">
+                            <strong>{{ product.shop }}</strong><br>
+                            {{ product.shop.address }}<br>
+                            {{ product.shop.zipcode }} {{ product.shop.city }}
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+    {% empty %}
+        <li>{% trans "No products yet." %}</li>
+    {% endfor %}
+</div>
