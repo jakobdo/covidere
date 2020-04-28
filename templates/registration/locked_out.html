@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags i18n %}
+
+{% block title %}{% trans "Locked out" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Account locked!" %}</h1>
+
+    <div class="alert alert-danger" role="alert">
+        {% trans "Too many login attempts. Contact an admin to unlock your account." %}
+    </div>
+{% endblock %}
