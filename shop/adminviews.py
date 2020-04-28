@@ -170,7 +170,6 @@ class ShopOverviewView(LoginRequiredMixin, TemplateView):
 
 class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
-    #fields = ['name', 'description', 'image', 'price', 'offer_price', 'color', 'size', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
     form_class = ShopProductForm
     template_name = 'product/update.html'
     success_url = reverse_lazy('shop_products')

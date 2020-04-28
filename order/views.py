@@ -45,8 +45,6 @@ class OrderCreateView(CreateView):
         # Create orderItems
         for item in basket:
             product = products_dict[item.get('product')]
-            color = item.get('color')
-            size = item.get('size')
             count = item.get('count')
             # If product is not found, skip product
             if product is None:
@@ -55,21 +53,9 @@ class OrderCreateView(CreateView):
             # If count is 0 or below, skip item
             if count < 1:
                 continue
-
-            # if right color in item
-            if color and not product.color.filter(pk=color):
-                continue
         
-            # if right size in item
-            if size and not product.size.filter(pk=size):
-                continue
-
             order_item = OrderItem()
             order_item.product = product
-            if color:
-                order_item.color_id = color
-            if size:
-                order_item.size_id = size
             order_item.order = self.object
             order_item.count = count
             # Save the offer/on sale price if any, else use normal price

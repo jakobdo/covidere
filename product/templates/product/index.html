@@ -23,24 +23,6 @@
                         <input type="hidden" name="product" value="{{ product.pk }}">
                         <h5 class="card-title">{{ product.name }}</h5>
                         <p class="card-text">{{ product.description }}</p>
-                        {% if product.size.count > 0 %}
-                            <div class="form-group">
-                                <select class="form-control" name="size">
-                                    {% for size in product.size.all %}
-                                        <option value={{ size.pk }}>{{ size.name }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                        {% endif %}
-                        {% if product.color.count > 0 %}
-                            <div class="form-group">
-                                <select class="form-control" name="color">
-                                    {% for color in product.color.all %}
-                                        <option value={{ color.pk }}>{{ color.name }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-                        {% endif %}
                         <address class="d-flex flex-row align-items-center">
                             <a target="_blank" href="https://www.google.com/maps/search/?api=1&{{ product.shop.location }}"><i class="fas fa-map-marked-alt"></i></a>
                             <div class="pl-2">

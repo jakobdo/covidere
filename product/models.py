@@ -6,25 +6,6 @@ from django.db.models import Q
 from stdimage import JPEGField
 
 
-class ProductSize(models.Model):
-    """
-    Product Size model
-    """
-    name = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.name
-
-class ProductColor(models.Model):
-    """
-    Product Color model
-    """
-    name = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.name
-
-
 class ActiveManager(models.Manager):
     def get_queryset(self):
         now = timezone.now()
@@ -40,8 +21,6 @@ class ActiveManager(models.Manager):
                 Q(start_datetime__lte=now, end_datetime__isnull=True) |
                 Q(start_datetime__isnull=True, end_datetime__isnull=True)
             )
-            .prefetch_related("size")
-            .prefetch_related("color")
             .prefetch_related("shop")
         )
 
@@ -59,8 +38,6 @@ class InactiveManager(models.Manager):
                 Q(start_datetime__gte=now) | 
                 Q(end_datetime__lte=now)
             )
-            .prefetch_related("size")
-            .prefetch_related("color")
             .prefetch_related("shop")
         )
 
@@ -74,8 +51,6 @@ class Product(models.Model):
     description = models.TextField(gettext_lazy('description'))
     price = models.DecimalField(gettext_lazy('price'), max_digits=10, decimal_places=2)
     offer_price = models.DecimalField(gettext_lazy('offer price'), max_digits=10, decimal_places=2, blank=True, null=True)
-    size = models.ManyToManyField(ProductSize, blank=True)
-    color = models.ManyToManyField(ProductColor, blank=True)
     image = JPEGField(
         gettext_lazy('image'),
         upload_to='images/%Y/%m/%d/',
@@ -96,3 +71,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_price(self):
+        return self.offer_price if self.offer_price else self.price

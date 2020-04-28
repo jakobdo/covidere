@@ -15,8 +15,6 @@
             <thead>
                 <tr>  
                     <th> {% trans "Name" %}</th>
-                    <th> {% trans "Color" %}</th>
-                    <th> {% trans "Size" %}</th>
                     <th> {% trans "Count" %}</th>
                     <th> {% trans "Price" %}</th>
                 </tr>
@@ -25,16 +23,12 @@
                 {% for item in cost_and_items.order_items %}     
                     <tr>
                         <td>{{ item.product.name }}</td>
-                        <td>{{ item.color }}</td>
-                        <td>{{ item.size }}</td>
                         <td>{{ item.count }}</td>
                         <td>{{ item.price }}</td>
                     </tr>
                 {% endfor %}
                 <tr>
                     <td>{% trans 'TOTAL' %}</td>
-                    <td></td>
-                    <td></td>
                     <td>{{ cost_and_items.item_count }}</td>
                     <td>{{ cost_and_items.total_cost}}</td>
                 </tr>
