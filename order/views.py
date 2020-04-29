@@ -9,6 +9,7 @@ from django.utils.translation import gettext
 from django.views.generic import CreateView, TemplateView
 from decimal import Decimal
 from django.template import Context
+from email.mime.image import MIMEImage
 
 from order.forms import OrderForm
 from order.models import Order, OrderItem
@@ -78,14 +79,28 @@ class OrderCreateView(CreateView):
 
 
         # TODO: Should be 1 email per shop you have ordered from, because customers may contact shop with the email
-        send_mail(
-            subject=subject,
-            message=message,
-            recipient_list=[self.object.email],
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            fail_silently=False,
-            html_message=html_message,
-        )
+        #send_mail(
+        #    subject=subject,
+        #    message=message,
+        #    recipient_list=[self.object.email],
+        #    from_email=settings.DEFAULT_FROM_EMAIL,
+        #    fail_silently=False,
+        #    html_message=html_message,
+        #)
+
+        email = EmailMultiAlternatives(gettext('FOODBEE - Order placed'), None) # TODO: Plain text version
+        email.from_email = settings.DEFAULT_FROM_EMAIL
+        email.to = [self.object.email]        
+        email.attach_alternative(html_message, "text/html")
+        email.content_subtype = 'html'
+        email.mixed_subtype = 'related'
+
+        with open('base/static/base/img/fb_logo.png', mode='rb') as f: # TODO: Dynamic path
+            image = MIMEImage(f.read())
+            image.add_header('Content-ID', "<Foodbee_logo_long.png>")
+            email.attach(image)
+
+        email.send()
 
         # Clear session
         self.request.session.flush()

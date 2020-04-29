@@ -121,7 +121,7 @@ class ShopRegisterView(CreateView):
         email.content_subtype = 'html'
         email.mixed_subtype = 'related'
 
-        with open('base/static/base/img/FoodBee_logo_long.png', mode='rb') as f: # TODO: Dynamic path
+        with open('base/static/base/img/fb_logo.png', mode='rb') as f: # TODO: Dynamic path
             image = MIMEImage(f.read())
             image.add_header('Content-ID', "<Foodbee_logo_long.png>")
             email.attach(image)
