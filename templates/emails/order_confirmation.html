@@ -1,43 +1,69 @@
+{% extends 'emails/base_email.html' %}
 {% load i18n %}
-<html>
-<head></head>
-<body>
 
-    {% trans 'Hi' %} {{ order.name }}
-    {% trans 'The shop(s) in the order list will individually have to confirm your order for that shop.' %}
-    {% trans 'In order for the shop to confirm the order, first you must pay the order total by MobilePay to the shop.' %}
-    {% trans 'You have ordered:' %}
-    
+{% block header_content %}
+    <h1>
+        {% trans "Order placed!" %}
+    </h1>
+{% endblock %}
+
+{% block content %}
+
+    <tr style="border-collapse:collapse;">
+        <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:30px;padding-right:30px;">
+            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666;">
+                    {% trans 'The shop(s) will individually confirm your order after receiving payment.' %}<br/>{% trans "You have ordered:" %}
+            </p>
+        </td>
+    </tr>
+
+        
     {% for shop, cost_and_items in shop_items_and_cost.items %}
-        <br>
-        {% trans 'From: ' %}{{ shop }}
-        <table>
-            <thead>
-                <tr>  
-                    <th> {% trans "Name" %}</th>
-                    <th> {% trans "Count" %}</th>
-                    <th> {% trans "Price" %}</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for item in cost_and_items.order_items %}     
-                    <tr>
-                        <td>{{ item.product.name }}</td>
-                        <td>{{ item.count }}</td>
-                        <td>{{ item.price }}</td>
-                    </tr>
-                {% endfor %}
-                <tr>
-                    <td>{% trans 'TOTAL' %}</td>
-                    <td>{{ cost_and_items.item_count }}</td>
-                    <td>{{ cost_and_items.total_cost}}</td>
-                </tr>
-            </tbody>
-        </table>
-        {% trans 'To address: ' %}{{ order.address }}
+        <tr style="border-collapse:collapse;">
+            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-top:10px;padding-bottom:5px;padding-left:30px;padding-right:30px;">
+                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666;">
+                    {% trans 'From ' %}<strong>{{ shop }}</strong>:
+                </p>
+            </td>
+        </tr>
+        <tr style="border-collapse:collapse;">
+            <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-top:5px;padding-bottom:10px;padding-left:50px;padding-right:50px;">
+                <table width="450">
+                    <thead>
+                        <tr>  
+                            <th width="30%"  align="left"> {% trans "Name" %}</th>
+                            <th width="30%" align="left"> {% trans "Count" %}</th>
+                            <th width="30%" align="left"> {% trans "Price" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in cost_and_items.order_items %}     
+                            <tr>
+                                <td width="30%"  align="left">{{ item.product.name }}</td>
+                                <td width="30%" align="left">{{ item.count }}</td>
+                                <td width="30%" align="left">{{ item.price }}</td>
+                            </tr>
+                        {% endfor %}
+                        <tr>
+                            <td width="30%" align="left">{% trans 'TOTAL' %}</td>
+                            <td width="30%" align="left">{{ cost_and_items.item_count }}</td>
+                            <td width="30%" align="left">{{ cost_and_items.total_cost}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>                        
+        </tr>
     {% endfor %}
 
-{% trans 'Best regards,' %}  
-{% trans 'The FoodBee team' %}  
-</body>
-</html>
+    <tr style="border-collapse:collapse;">
+        <td class="es-m-txt-l" align="left" style="Margin:0;padding-top:20px;padding-left:30px;padding-right:30px;padding-bottom:40px;">
+            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666;">{% trans "Cheers," %}<br/>{% trans "The FoodBee Team" %}
+            </p>
+        </td>
+    </tr> 
+
+{% endblock %}
+
+
+{% block footer_content %}
+{% endblock %}
