@@ -73,29 +73,19 @@ class OrderCreateView(CreateView):
         }
         message = render_to_string('emails/order_confirmation.txt', context)
         html_message = render_to_string('emails/order_confirmation.html', context)
+        txt_message = render_to_string('emails/order_confirmation.txt', context)
         subject = gettext('Order confirmation')
 
         self.object.status = Order.ORDERED
 
-
-        # TODO: Should be 1 email per shop you have ordered from, because customers may contact shop with the email
-        #send_mail(
-        #    subject=subject,
-        #    message=message,
-        #    recipient_list=[self.object.email],
-        #    from_email=settings.DEFAULT_FROM_EMAIL,
-        #    fail_silently=False,
-        #    html_message=html_message,
-        #)
-
-        email = EmailMultiAlternatives(gettext('FOODBEE - Order placed'), None) # TODO: Plain text version
+        email = EmailMultiAlternatives(gettext('FOODBEE - Order placed'), txt_message) 
         email.from_email = settings.DEFAULT_FROM_EMAIL
         email.to = [self.object.email]        
         email.attach_alternative(html_message, "text/html")
         email.content_subtype = 'html'
         email.mixed_subtype = 'related'
 
-        with open('base/static/base/img/fb_logo.png', mode='rb') as f: # TODO: Dynamic path
+        with open('base/static/base/img/fb_logo.png', mode='rb') as f:
             image = MIMEImage(f.read())
             image.add_header('Content-ID', "<Foodbee_logo_long.png>")
             email.attach(image)

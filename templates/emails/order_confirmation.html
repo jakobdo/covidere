@@ -1,4 +1,4 @@
-{% extends 'emails/base_email.html' %}
+{% extends "emails/base_email.html" %}
 {% load i18n %}
 
 {% block header_content %}
@@ -12,7 +12,7 @@
     <tr style="border-collapse:collapse;">
         <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:30px;padding-right:30px;">
             <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666;">
-                    {% trans 'The shop(s) will individually confirm your order after receiving payment.' %}<br/>{% trans "You have ordered:" %}
+                    {% trans "The shop(s) will individually confirm your order after receiving payment." %}<br/>{% trans "You have ordered:" %}
             </p>
         </td>
     </tr>
@@ -22,7 +22,7 @@
         <tr style="border-collapse:collapse;">
             <td class="es-m-txt-l" bgcolor="#ffffff" align="left" style="Margin:0;padding-top:10px;padding-bottom:5px;padding-left:30px;padding-right:30px;">
                 <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:lato, 'helvetica neue', helvetica, arial, sans-serif;line-height:27px;color:#666666;">
-                    {% trans 'From ' %}<strong>{{ shop }}</strong>:
+                    {% trans "From " %}<strong>{{ shop }}</strong>:
                 </p>
             </td>
         </tr>
@@ -45,7 +45,7 @@
                             </tr>
                         {% endfor %}
                         <tr>
-                            <td width="30%" align="left">{% trans 'TOTAL' %}</td>
+                            <td width="30%" align="left">{% trans "TOTAL" %}</td>
                             <td width="30%" align="left">{{ cost_and_items.item_count }}</td>
                             <td width="30%" align="left">{{ cost_and_items.total_cost}}</td>
                         </tr>

@@ -1,0 +1,3 @@
+﻿{% load i18n %}
+{% block content %}{% endblock %}                    
+{% trans "Alten - Christians Brygge 28 - Copenhagen, DK" %}

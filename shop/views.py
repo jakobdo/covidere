@@ -106,22 +106,26 @@ class ShopRegisterView(CreateView):
 
 
         current_site = get_current_site(self.request)
-        html_content = render_to_string('emails/account_activation.html', {
+        context = {
             'shopname': self.object.name,
             'user': user,
             'domain': current_site.domain,
             'uid': urlsafe_base64_encode(force_bytes(user.pk)),
             'token': account_activation_token.make_token(user),
-        })
+        }
 
-        email = EmailMultiAlternatives(gettext('FOODBEE - Confirm email'), None) # TODO: Plain text version
+        html_message = render_to_string('emails/account_activation.html', context)
+        txt_message = render_to_string('emails/account_activation.txt', context)
+
+
+        email = EmailMultiAlternatives(gettext('FOODBEE - Confirm email'), txt_message)
         email.from_email = settings.DEFAULT_FROM_EMAIL
         email.to = [self.object.email]        
-        email.attach_alternative(html_content, "text/html")
+        email.attach_alternative(html_message, "text/html")
         email.content_subtype = 'html'
         email.mixed_subtype = 'related'
 
-        with open('base/static/base/img/fb_logo.png', mode='rb') as f: # TODO: Dynamic path
+        with open('base/static/base/img/fb_logo.png', mode='rb') as f:
             image = MIMEImage(f.read())
             image.add_header('Content-ID', "<Foodbee_logo_long.png>")
             email.attach(image)
