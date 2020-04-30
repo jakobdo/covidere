@@ -10,6 +10,11 @@
       {% trans "Your shop is not activated yet" %}
     </div>
   {% endif %}
+
+  <a href="{% url 'shop_product_create' %}" class="btn btn-success">{% trans "Add product" %}</a>
+
+  <hr>
+
   <div class="list-group">
     <a href="{% url 'shop_new_orders' %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
       {% trans "New orders" %}
