@@ -17,9 +17,11 @@ from django.conf import settings
 from django.urls import include, path
 
 from product.views import ProductsView
+from base.views import AboutPageView
 
 urlpatterns = [
     path('', ProductsView.as_view(), name="index"),
+    path('about/', AboutPageView.as_view(), name='about'),
     path('users/', include('base.urls')),
     path('products/', include('product.urls')),
     path('postcode/', include('postcode.urls')),

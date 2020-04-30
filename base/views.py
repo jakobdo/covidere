@@ -5,11 +5,14 @@ from django.urls import reverse
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
 from django.utils.translation import gettext
-from django.views.generic import FormView
+from django.views.generic import FormView,TemplateView
 
 from base.forms import SetUsernameAndPasswordForm
 from base.models import User
 from shop.tokens import account_activation_token
+
+class AboutPageView(TemplateView):
+    template_name = 'about.html'
 
 
 class ActivateUserView(FormView):
