@@ -1,5 +1,9 @@
 {% extends 'shop/base.html' %}
-{% load crispy_forms_tags i18n %}
+{% load crispy_forms_tags i18n static %}
+
+{% block headscript %}
+<link rel="stylesheet" href="{% static 'product/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" />
+{% endblock %}
 
 {% block content %}
 <h1>{% trans "Information" %}</h1>
@@ -7,4 +11,41 @@
     {{ form|crispy }}
     <button type="submit" class="btn btn-primary">{% trans "Update" %}</button> <a href="{% url 'shop_products' %}" class="btn btn-danger">{% trans "Cancel" %}</a>
 </form>
+{% endblock %}
+
+{% block bodyscript %}
+<script src="{% static 'product/moment/js/moment.min.js' %}"></script>
+<script src="{% static 'product/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+<script>
+    $.fn.datetimepicker.Constructor.Default = $.extend({}, $.fn.datetimepicker.Constructor.Default, {
+        icons: {
+            time: 'fas fa-clock',
+            date: 'fas fa-calendar-alt',
+            up: 'fas fa-arrow-up',
+            down: 'fas fa-arrow-down',
+            previous: 'fas fa-chevron-left',
+            next: 'fas fa-chevron-right',
+            today: 'fas fa-calendar-check',
+            clear: 'fas fa-trash-alt',
+            close: 'fas fa-times'
+        } 
+    });
+</script>
+<script>
+    $(function () {
+        $('#datetimepicker_start_datetime').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm'
+        });
+        $('#datetimepicker_end_datetime').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm',
+            useCurrent: false
+        });
+        $("#datetimepicker_start_datetime").on("change.datetimepicker", function (e) {
+            $('#datetimepicker_end_datetime').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker_end_datetime").on("change.datetimepicker", function (e) {
+            $('#datetimepicker_start_datetime').datetimepicker('maxDate', e.date);
+        });
+    });
+</script>
 {% endblock %}

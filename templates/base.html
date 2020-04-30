@@ -6,11 +6,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link href="{% static 'base/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Fontawesome CSS -->
     <link href="{% static 'base/fontawesome/css/all.css' %}" rel="stylesheet">
+    
+    {% block headscript %}{% endblock %}
+
     <!-- Custom CSS -->
     <link href="{% static 'base/css/style.css' %}" rel="stylesheet">
 
@@ -112,8 +114,6 @@
         {% include "footer.html" %}
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{% static 'base/jquery/js/jquery.min.js' %}"></script>
     <script src="{% static 'base/bootstrap/js/bootstrap.bundle.js' %}"></script>
     <script>

@@ -5,6 +5,7 @@ from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import (PhoneNumberInternationalFallbackWidget,
                                        PhoneNumberPrefixWidget)
 
+from base.widgets import BootstrapDateTimePickerInput
 from order.models import Order
 from product.models import Product
 from shop.models import Shop
@@ -23,10 +24,18 @@ class ShopRegisterForm(forms.ModelForm):
     class Meta:
         model = Shop
         fields = ['name', 'email', 'phone']
-        #widgets = {'phone': PhoneNumberPrefixWidget(initial='DK',attrs={'class': 'form-control'})} # 'initial' not working in package 
         widgets = {'phone': PhoneNumberInternationalFallbackWidget(attrs={'class': 'form-control'})}
 
 class ShopProductForm(forms.ModelForm):
+    start_datetime = forms.DateTimeField(
+        input_formats=['%Y-%m-%d %H:%M'], 
+        widget=BootstrapDateTimePickerInput()
+    )
+    end_datetime = forms.DateTimeField(
+        input_formats=['%Y-%m-%d %H:%M'], 
+        widget=BootstrapDateTimePickerInput()
+    )
+
     class Meta:
         model = Product
         fields = ['name', 'description', 'image', 'price', 'offer_price', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
