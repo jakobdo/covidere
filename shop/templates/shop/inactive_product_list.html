@@ -5,6 +5,10 @@
 {% block content %}
 <h1>{% trans "Inactive products" %}</h1>
 
+<a href="{% url 'shop_product_create' %}" class="btn btn-success">{% trans "Add product" %}</a>
+
+<hr>
+
 <div class="list-group">
     {% for product in object_list %}
         <a href="{% url 'shop_product_update' pk=product.pk %}" class="list-group-item list-group-item-action">
