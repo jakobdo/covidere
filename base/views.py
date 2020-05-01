@@ -1,4 +1,5 @@
 from django.contrib.auth import login
+from django.db import IntegrityError
 from django.http import HttpResponse
 from django.shortcuts import Http404
 from django.urls import reverse
@@ -34,7 +35,12 @@ class ActivateUserView(FormView):
             user.is_active = True
             user.username = form.cleaned_data["username"]
             user.set_password(form.cleaned_data["password1"])
-            user.save()
+            try:
+                user.save()
+            except IntegrityError:
+                form.add_error('username', gettext('Shop with this username already exists.'))
+                return super(ActivateUserView, self).form_invalid(form)
+
             login(self.request, user, backend='axes.backends.AxesBackend')
         else:
             raise Http404(gettext("Invalid token"))
