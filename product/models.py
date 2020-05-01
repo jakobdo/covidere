@@ -58,7 +58,6 @@ class Product(models.Model):
     )
 
     active = models.BooleanField(gettext_lazy('active'), default=True)
-    delivery_days = models.PositiveIntegerField(gettext_lazy('delivery days'), blank=True, null=True)
     start_datetime = models.DateTimeField(gettext_lazy('start datetime'), blank=True, null=True)
     end_datetime = models.DateTimeField(gettext_lazy('end datetime'), blank=True, null=True)
 
