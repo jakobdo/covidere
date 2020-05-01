@@ -5,6 +5,7 @@ from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import (PhoneNumberInternationalFallbackWidget,
                                        PhoneNumberPrefixWidget)
 
+from base.widgets import BootstrapDateTimePickerInput
 from order.models import Order
 from product.models import Product
 from shop.models import Shop
@@ -23,13 +24,21 @@ class ShopRegisterForm(forms.ModelForm):
     class Meta:
         model = Shop
         fields = ['name', 'email', 'phone']
-        #widgets = {'phone': PhoneNumberPrefixWidget(initial='DK',attrs={'class': 'form-control'})} # 'initial' not working in package 
         widgets = {'phone': PhoneNumberInternationalFallbackWidget(attrs={'class': 'form-control'})}
 
 class ShopProductForm(forms.ModelForm):
+    start_datetime = forms.DateTimeField(
+        input_formats=['%Y-%m-%d %H:%M'], 
+        widget=BootstrapDateTimePickerInput()
+    )
+    end_datetime = forms.DateTimeField(
+        input_formats=['%Y-%m-%d %H:%M'], 
+        widget=BootstrapDateTimePickerInput()
+    )
+
     class Meta:
         model = Product
-        fields = ['name', 'description', 'image', 'price', 'offer_price', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+        fields = ['name', 'description', 'image', 'price', 'offer_price', 'active', 'start_datetime', 'end_datetime']
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
@@ -37,14 +46,20 @@ class ShopProductForm(forms.ModelForm):
     
 
     def clean(self):
+        cleaned_data = super().clean()
         # Limitation - A customer can have 3 active products
         limit = 3
         if self.instance:
             active_products = Product.objects.filter(active=True, shop=self.request.user.shop).exclude(pk=self.instance.pk).count()
         else:
             active_products = Product.objects.filter(active=True, shop=self.request.user.shop).count()
-        if self.cleaned_data.get('active', False) and active_products >= limit:
+        if cleaned_data.get('active', False) and active_products >= limit:
             raise ValidationError(gettext("Maximum of %(limit)s products reached!") % {'limit': limit})
+    
+        start_datetime = cleaned_data.get('start_datetime')
+        end_datetime = cleaned_data.get('end_datetime')
+        if start_datetime and end_datetime and end_datetime < start_datetime:
+            raise ValidationError(gettext("A start datetime can't start after end datetime and vice versa"))
 
 
 class OrderStatusForm(forms.ModelForm):
