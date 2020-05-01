@@ -6,7 +6,7 @@ from django.utils.http import urlencode
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
 from phonenumber_field.modelfields import PhoneNumberField
-
+from django.core.validators import MaxLengthValidator,MinLengthValidator
 from postcode.models import Postcode
 
 
@@ -21,6 +21,7 @@ class Shop(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
+    cvr_number = models.CharField(gettext_lazy("CVR number"), unique=True, validators=[MaxLengthValidator(8),MinLengthValidator(8)], max_length=8, null=True)
     active = models.BooleanField(gettext_lazy("active"), default=False)
     delivery_postcode = models.ManyToManyField(Postcode, blank=True)
 
