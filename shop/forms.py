@@ -29,7 +29,7 @@ class ShopRegisterForm(forms.ModelForm):
 class ShopProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = ['name', 'description', 'image', 'price', 'offer_price', 'active', 'delivery_days', 'start_datetime', 'end_datetime']
+        fields = ['name', 'description', 'image', 'price', 'offer_price', 'active', 'start_datetime', 'end_datetime']
 
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
