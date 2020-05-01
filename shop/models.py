@@ -25,6 +25,9 @@ class Shop(models.Model):
     active = models.BooleanField(gettext_lazy("active"), default=False)
     delivery_postcode = models.ManyToManyField(Postcode, blank=True)
 
+    order_pickup = models.BooleanField(gettext_lazy("offer customer pickup"), default=True)
+    order_delivery = models.BooleanField(gettext_lazy("offer customer delivery"), default=False)
+
     # Internal used fields
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
