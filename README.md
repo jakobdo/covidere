@@ -7,5 +7,5 @@ DB_NAME = Database name
 DB_USER = Database username  
 DB_PASS = Database password  
 DB_HOST = Database Hostname / IP  
-DB_PORT = Database Port - will defailt to 5432  
+DB_PORT = Database Port - will default to 5432  
 SENDGRID_API = SENDGRID Api Key for now!
