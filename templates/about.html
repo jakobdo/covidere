@@ -3,37 +3,23 @@
 {% load i18n %}
 
 {% block content %}
+    <h1>{% trans "About FoodBee" %}</h1>
+                        
+    <h3>{% trans "MayBee the best food platform in the world" %}</h3>
+    <p>
+        {% trans "These days, everyone relies on everyday products from local shops, and many shop-owners are fighting to keep their business intact in a world where everyone makes their purchases from home." %}
+    </p>
+    <p>
+        {% trans "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, like cheese shops, butchers, wine shops etc. display and sell their products online." %}
+    </p>
 
-<div class="about-section paddingTB60 gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 col-sm-6">
-                <div class="about-title clearfix">
-                    <h1>{% trans "About" %} <span>FoodBee</span></h1>
-                    <h3> MayBee the best food platform in the world</h3>
-                    <p class="about-paddingB">
-                        {% trans "These days, everyone relies on everyday products from local shops, and many shop-owners are fighting to keep their business intact in a world where everyone makes their purchases from home." %}
-                    </p>
-                    <p>
-                        {% trans "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, like cheese shops, butchers, wine shops etc. display and sell their products online." %}
-                    </p>
-                    <div style="margin:30px 0px 30px 0px ;">
-                        <ul>
-                            <li style="margin:5px;padding:0;display:inline-block;">
-                                <a href="https://www.facebook.com/"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
-                            </li>
-                            <li style="margin:5px;padding:0;display:inline-block;">
-                                <a href="https://www.linkedin.com/company/alten-danmark/"><i id="social-li" class="fab fa-linkedin fa-3x social"></i></a>
-                            </li>
-                            <li style="margin:5px;padding:0;display:inline-block;">
-                                <a href="mailto:ourcontanctaddress@alten.dk"><i id="social-em" class="fas fa-envelope-square fa-3x social"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    <a class="btn btn-primary" href="https://www.facebook.com/">
+        <i id="social-fb" class="fab fa-fw fa-facebook-square social"></i>
+    </a>
+    <a class="btn btn-primary" href="https://www.linkedin.com/company/alten-danmark/">
+        <i id="social-li" class="fab fa-fw fa-linkedin social"></i>
+    </a>
+    <a class="btn btn-primary" href="mailto:ourcontanctaddress@alten.dk">
+        <i id="social-em" class="fas fa-fw fa-envelope-square social"></i>
+    </a>
 {% endblock %}
