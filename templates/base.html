@@ -39,11 +39,10 @@
             </div>
         {% endif %}
 
-        {% block navbar %}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static "base/img/fb_logo.png" %}" width="200" height="30" alt="FoodBee">
+                    <img src="{% static "base/img/fb_logo.png" %}" width="200" height="30" alt="{% trans "FoodBee" %}">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +50,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    {% block navbar %}
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="{% url 'index' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -100,10 +100,10 @@
                             {% endif %}
                         </li>
                     </ul>
+                    {% endblock %}
                 </div>
             </div>
         </nav>
-        {% endblock %}
 
         <div class="container">
             {% block content %}{% endblock %}
