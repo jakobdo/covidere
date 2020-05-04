@@ -132,6 +132,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'dk'
 LANGUAGES = [
     ('dk', gettext_lazy('Danish')),
+    ('en', gettext_lazy('English')),
 ]
 
 TIME_ZONE = 'UTC'

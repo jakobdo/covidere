@@ -25,8 +25,17 @@ class Shop(models.Model):
     cvr_number = models.CharField(gettext_lazy("CVR number"), unique=True, validators=[MaxLengthValidator(8),MinLengthValidator(8)], max_length=8, null=True)
     active = models.BooleanField(gettext_lazy("active"), default=False)
     
-    order_pickup = models.BooleanField(gettext_lazy("offers order pickup"), default=True)
-    order_delivery = models.BooleanField(gettext_lazy("offers order delivery"), default=False)
+    order_pickup = models.BooleanField(gettext_lazy("offer order pick-up at shop"), default=True)
+    DELIVERY_RANGE_CHOICES = [
+        (-1, gettext_lazy('Do Not offer delivery')),
+        (5, gettext_lazy('5KM from shop')),
+        (10, gettext_lazy('10KM from shop')),
+    ]
+    delivery_range = models.IntegerField(
+        gettext_lazy('Delivery range'), 
+        choices=DELIVERY_RANGE_CHOICES, 
+        default=-1,
+    )
     delivery_postcode = models.ManyToManyField(Postcode, blank=True)
 
     shop_image = JPEGField(        
