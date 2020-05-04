@@ -100,7 +100,6 @@ class ShopRegisterView(CreateView):
             form.add_error('email', gettext('Shop with this email already exists.'))
             return super(ShopRegisterView, self).form_invalid(form)
 
-        self.object.cvr_number = form.cleaned_data.get('cvr_number')            
         self.object = form.save(commit=False)
         self.object.user = user
         self.object.save()

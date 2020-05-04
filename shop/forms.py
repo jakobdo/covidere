@@ -21,13 +21,6 @@ class ShopContactForm(forms.Form):
 
 
 class ShopRegisterForm(forms.ModelForm):
-            #    self.cvr_number = form.cleaned_data["cvr_number"]
-            #self.cvr_number.save()
-    #    cvr_number = forms.CharField(
-    #    label=gettext_lazy("CVR number"), 
-    #    widget=forms.TextInput(attrs={'type':'number'}),
-    #)
-
     class Meta:
         model = Shop
         fields = ['name', 'email', 'phone', 'cvr_number']
