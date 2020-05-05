@@ -3,14 +3,26 @@
 {% load i18n %}
 
 {% block content %}
-<h1>{% trans "Products overview" %}</h1>
 
-{% if not request.session.postcode %}
-    <div class="alert alert-info" role="alert">
-        {% trans "No postcode selected, please select one here" %}: <a href="{% url 'postcode_index' %}">{% trans "select postcode" %}!</a>
+<div class="container-fluid px-4">
+    <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Something</span>
+            <h2 class="mb-4">{% trans "Products overview" %}</h2>
+        </div>
     </div>
-{% endif %}
-
-{% include "product/product_list.html" %}
+    {% if not request.session.postcode %}
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-info" role="alert">
+                    {% trans "No postcode selected, please select one here" %}: <a href="{% url 'postcode_index' %}">{% trans "select postcode" %}!</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="row">
+        {% include "product/product_list.html" %}
+    </div>
+</div>
 
 {% endblock %}
