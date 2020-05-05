@@ -1,25 +1,14 @@
 {% extends 'base.html' %}
 {% load i18n %}
 
-{% block navbar %}
-	<ul class="navbar-nav ml-auto">
-		<li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
-		<li class="nav-item active"><a href="{% url 'about' %}" class="nav-link">About</a></li>
-		<li class="nav-item"><a href="{% url 'shops' %}" class="nav-link">Shops</a></li>
-		<li class="nav-item"><a href="{% url 'shop_register' %}" class="nav-link">Register</a></li>
-		<li class="nav-item cta"><a href="{% url 'postcode_index' %}" class="nav-link">Pick a postcode</a></li>
-	</ul>
-{% endblock %}
-
-
 {% block section-1 %}
     <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/base/colorlib/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                <h1 class="mb-2 bread">About</h1>
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About <i class="ion-ios-arrow-forward"></i></span></p>
+                <h1 class="mb-2 bread">{% trans "About FoodBee" %}</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">{% trans "Home" %} <i class="ion-ios-arrow-forward"></i></a></span> <span>{% trans "About" %} <i class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
             </div>
@@ -32,11 +21,13 @@
 			<div class="row justify-content-center">
 				<div class="col-sm-10 wrap-about ftco-animate text-center">
 	        <div class="heading-section mb-4 text-center">
-	        <span class="subheading">About</span>
-	        <h2 class="mb-4">Appetizer Restaurant</h2>
+	        <!--span class="subheading">About</span-->
+	        <h2 class="mb-4">{% trans "MayBee the best food platform in the world" %}</h2>
 	        </div>
-					<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
+					<p>{% trans "These days, everyone relies on everyday products from local shops, and many shop-owners are fighting to keep their business intact in a world where everyone makes their purchases from home." %}</p>
+					<p>
+						{% trans "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, like cheese shops, butchers, wine shops etc. display and sell their products online." %}
+					</p>
 					<div class="video justify-content-center">
 						<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
   						<span class="ion-ios-play"></span>
@@ -97,28 +88,3 @@
 {% block section-5 %}{% endblock %}
 {% block section-6 %}{% endblock %}
 {% block section-7 %}{% endblock %}
-
-
-
-{% block content %}
-
-    <h1>{% trans "About FoodBee" %}</h1>
-                        
-    <h3>{% trans "MayBee the best food platform in the world" %}</h3>
-    <p>
-        {% trans "These days, everyone relies on everyday products from local shops, and many shop-owners are fighting to keep their business intact in a world where everyone makes their purchases from home." %}
-    </p>
-    <p>
-        {% trans "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, like cheese shops, butchers, wine shops etc. display and sell their products online." %}
-    </p>
-
-    <a class="btn btn-primary" href="https://www.facebook.com/">
-        <i id="social-fb" class="fab fa-fw fa-facebook-square social"></i>
-    </a>
-    <a class="btn btn-primary" href="https://www.linkedin.com/company/alten-danmark/">
-        <i id="social-li" class="fab fa-fw fa-linkedin social"></i>
-    </a>
-    <a class="btn btn-primary" href="mailto:ourcontanctaddress@alten.dk">
-        <i id="social-em" class="fas fa-fw fa-envelope-square social"></i>
-    </a>
-{% endblock %}

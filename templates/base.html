@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- Colorlib styles -->
+    <!-- Colorlib CSS -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
@@ -42,18 +42,18 @@
 </head>
 
 <body>
-    <div class="py-1 bg-black top">
+    <!--div class="py-1 bg-black top">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
 	    		<div class="col-lg-12 d-block">
 		    		<div class="row d-flex">
 		    			<div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+ 1235 2355 98</span>
+						    <span class="text">+45 12345678</span>
 					    </div>
 					    <div class="col-md pr-4 d-flex topper align-items-center">
 					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">youremail@email.com</span>
+						    <span class="text">info@shopbee.dk</span>
 					    </div>
 					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
 						    <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>8:00AM - 9:00PM</span></p>
@@ -62,23 +62,26 @@
 			    </div>
 		    </div>
 		</div>
-    </div>
+    </div-->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-	    <a class="navbar-brand" href="index.html">FoodBee</a>
+	    <a class="navbar-brand" href="{% url 'index' %}">FoodBee</a>
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="oi oi-menu"></span> Menu
 	    </button>
 	    <div class="collapse navbar-collapse" id="ftco-nav">
-            {% block navbar %}
+            <form class="form-inline my-4 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" name="q" placeholder="{% trans "Search" %}" aria-label="{% trans "Search" %}">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> {% trans "Search" %}</button>
+            </form>
 	        <ul class="navbar-nav ml-auto">
-	            <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
-	            <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
-	            <li class="nav-item"><a href="{% url 'shops' %}" class="nav-link">Shops</a></li>
-	            <li class="nav-item"><a href="{% url 'shop_register' %}" class="nav-link">Register</a></li>
-	            <li class="nav-item cta"><a href="{% url 'postcode_index' %}" class="nav-link">Pick a postcode</a></li>
+	            <li class="nav-item {% if request.resolver_match.url_name == "index" %}active{% endif %}"><a href="{% url 'index' %}" class="nav-link">{% trans "Home" %}</a></li>
+	            <li class="nav-item {% if request.resolver_match.url_name == "about" %}active{% endif %}"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
+	            <li class="nav-item {% if request.resolver_match.url_name == "shops" %}active{% endif %}"><a href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
+	            <li class="nav-item {% if request.resolver_match.url_name == "shop_register" %}active{% endif %}"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+	            <li class="nav-item cta"><a href="{% url 'postcode_index' %}" class="nav-link">{% trans "Shops near you" %}</a></li>
 	        </ul>
-            {% endblock %}
+            
 	    </div>
     </div>
     </nav>
@@ -92,8 +95,8 @@
                     <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <h1 class="mb-4 mt-5">Our Delicious Specialties</h1>
-                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                        <h1 class="mb-4 mt-5">{% trans "Bringing local businesses to you" %}</h1>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">{% trans "Local offers" %}</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "Newest products" %}</a></p>
                     </div>
 
                     </div>
@@ -106,8 +109,8 @@
                     <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <h1 class="mb-4 mt-5">The Best Place to Kick of Your Day</h1>
-                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                        <h1 class="mb-4 mt-5">{% trans "Paving the way for entrepreneurs" %}</h1>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">{% trans "Local offers" %}</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "Newest products" %}</a></p>
                     </div>
 
                     </div>
@@ -120,8 +123,8 @@
                     <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
                     <div class="col-md-12 col-sm-12 text-center ftco-animate">
-                        <h1 class="mb-4 mt-5">Creamy Hot and Ready to Serve</h1>
-                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+                        <h1 class="mb-4 mt-5">{% trans "Quality products on public display" %}</h1>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">{% trans "Local offers" %}</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "Newest products" %}</a></p>
                     </div>
 
                     </div>
@@ -131,13 +134,13 @@
     {% endblock %}
 
     {% block section-2 %}
-        <section class="ftco-section ftco-wrap-about ftco-no-pb">
+        <!--section class="ftco-section ftco-wrap-about ftco-no-pb">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-10 wrap-about ftco-animate text-center">
               <div class="heading-section mb-4 text-center">
-                <span class="subheading">About</span>
-                <h2 class="mb-4">Appetizer Restaurant</h2>
+                <span class="subheading">FoodBee</span>
+                <h2 class="mb-4">Support local businesses!</h2>
               </div>
                         <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 
@@ -149,29 +152,28 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section-->
     {% endblock %}
 
     {% block section-3 %}
         <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/static/base/colorlib/images/bg_4.jpg);" data-stellar-background-ratio="0.5">
-		    <!-- <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter"> -->
     	    <div class="container">
     		    <div class="row d-md-flex align-items-center justify-content-center">
     			    <div class="col-lg-10">
     				    <div class="row d-md-flex align-items-center">
-		                  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+		                  <!--div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		                    <div class="block-18">
 		                      <div class="text">
 		                        <strong class="number" data-number="18">0</strong>
 		                        <span>Years of Experienced</span>
 		                      </div>
 		                    </div>
-		                  </div>
+		                  </div--->
 		                  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 		                    <div class="block-18">
 		                      <div class="text">
 		                        <strong class="number" data-number="15000">0</strong>
-		                        <span>Happy Customers</span>
+		                        <span>{% trans "Happy Customers" %}</span>
 		                      </div>
 		                    </div>
 		                  </div>
@@ -179,7 +181,7 @@
 		                    <div class="block-18">
 		                      <div class="text">
 		                        <strong class="number" data-number="100">0</strong>
-		                        <span>Menus</span>
+		                        <span>{% trans "Products" %}</span>
 		                      </div>
 		                    </div>
 		                  </div>
@@ -187,7 +189,7 @@
 		                    <div class="block-18">
 		                      <div class="text">
 		                        <strong class="number" data-number="20">0</strong>
-		                        <span>Staffs</span>
+		                        <span>{% trans "Local businesses onboard" %}</span>
 		                      </div>
 		                    </div>
 		                  </div>
@@ -199,7 +201,7 @@
     {% endblock %}
 
     {% block section-4 %}
-        <section class="ftco-section bg-light">
+        <!--section class="ftco-section bg-light">
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-2">
                     <div class="col-md-7 text-center heading-section ftco-animate">
@@ -243,7 +245,7 @@
                     </div>
                 </div>
 			</div>
-		</section>
+		</section-->
     {% endblock %}
 
     {% block section-5 %}
@@ -251,8 +253,8 @@
     	    <div class="container-fluid px-4">
     		    <div class="row justify-content-center mb-5 pb-2">
               <div class="col-md-7 text-center heading-section ftco-animate">
-          	    <span class="subheading">Specialties</span>
-                <h2 class="mb-4">Our Menu</h2>
+          	    <span class="subheading">{% trans "Specialties" %}</span>
+                <h2 class="mb-4">{% trans "Our Menu" %}</h2>
               </div>
             </div>
             <div class="row">
