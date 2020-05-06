@@ -5,11 +5,12 @@
             <div class="col-md-12 col-lg-4">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">FoodBee</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p>{% trans "In a time of restricted public access, it is difficult to compete with the online presence of chain stores." %}</p>
+                    <p>{% trans "FoodBee guides local businesses in their digital migration to display their craft to a wider audience." %}</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-envelope"></span></a></li>
                     <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -24,15 +25,11 @@
             </div>   
             <div class="col-md-12 col-lg-4">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Open Hours</h2>
-                    <ul class="list-unstyled open-hours">
-                    <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-                    <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-                    <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-                    <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-                    <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-                    <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-                    <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+                    <h2 class="ftco-heading-2">Pages</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
+                         <li class="d-flex"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                        <li class="d-flex"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
                     </ul>
                 </div>
             </div>             
