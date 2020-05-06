@@ -1,50 +1,46 @@
-﻿{% load i18n %}
-{% load static %}
-<footer class="page-footer font-small purple pt-4">
-    <div class="container-fluid text-center text-md-center">
-        <div class="row justify-content-md-center mb-3">
-
-            <!-- Grid column -->
-            <div class="col-sm">
-            <!--
-                <h5 class="text-uppercase">{% trans "For shoppers" %}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">{% trans "Register here" %}</a></li>
-                    <li><a href="#!">{% trans "How it works" %}</a></li>                    
-                </ul>
-            -->
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-sm">
-                <div class="view overlay z-depth-1-half" >
-                    <a class="navbar-brand" href="{% url 'about' %}">
-                        <img src="{% static "base/img/Alten_Logo_Complete_grey.gif" %}" class="img-fluid" alt="Alten" style="max-height: 200px;">
-                    </a>
+﻿{% load i18n static %}
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container-fluid px-md-5 px-3">
+        <div class="row mb-5">
+            <div class="col-md-12 col-lg-4">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">FoodBee</h2>
+                    <p>{% trans "In a time of restricted public access, it is difficult to compete with the online presence of chain stores." %}</p>
+                    <p>{% trans "FoodBee guides local businesses in their digital migration to display their craft to a wider audience." %}</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                    <li class="ftco-animate"><a href="#"><span class="icon-envelope"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+                    </ul>
                 </div>
             </div>
-            <!-- Grid column -->
+            <div class="col-md-12 col-lg-4 text-center text-md-center" >
+                <div class="ftco-footer-widget mb-4">
+                    <div class="view overlay z-depth-1-half" >
+                        <a class="navbar-brand" href="{% url 'about' %}">
+                            <img src="{% static "base/img/Alten_Logo_Complete_white.gif" %}" class="img-fluid" alt="Alten" style="max-height: 220px;">
+                        </a>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-md-12 col-lg-4">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Pages</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
+                         <li class="d-flex"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                        <li class="d-flex"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
+                    </ul>
+                </div>
+            </div>             
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
 
-            <!-- Grid column -->
-            <div class="col-sm">
-            <!--
-                <h5 class="text-uppercase">{% trans "For shops" %}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">{% trans "Register here" %}</a></li>
-                    <li><a href="#!">{% trans "Benefits" %}</a></li>
-                    <li><a href="#!">{% trans "Business model" %}</a></li>
-                </ul>
-            -->
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
-            <!-- Grid column -->
         </div>
     </div>
-    <!-- Copyright -->
-    <!--
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        a href="https://mdbootstrap.com/"> MDBootstrap.com</!--a>
-    </div>
-    -->
-    <!-- Copyright -->
 </footer>

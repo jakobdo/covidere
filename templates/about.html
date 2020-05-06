@@ -1,25 +1,75 @@
 {% extends 'base.html' %}
-
 {% load i18n %}
 
-{% block content %}
-    <h1>{% trans "About FoodBee" %}</h1>
-                        
-    <h3>{% trans "MayBee the best food platform in the world" %}</h3>
-    <p>
-        {% trans "These days, everyone relies on everyday products from local shops, and many shop-owners are fighting to keep their business intact in a world where everyone makes their purchases from home." %}
-    </p>
-    <p>
-        {% trans "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, like cheese shops, butchers, wine shops etc. display and sell their products online." %}
-    </p>
+{% block carousel %}
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/base/colorlib/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-2 bread">{% trans "About FoodBee" %}</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">{% trans "Home" %} <i class="ion-ios-arrow-forward"></i></a></span> <span>{% trans "About" %} <i class="ion-ios-arrow-forward"></i></span></p>
+                </div>
+            </div>
+            </div>
+    </section>
+{% endblock %}
 
-    <a class="btn btn-primary" href="https://www.facebook.com/">
-        <i id="social-fb" class="fab fa-fw fa-facebook-square social"></i>
-    </a>
-    <a class="btn btn-primary" href="https://www.linkedin.com/company/alten-danmark/">
-        <i id="social-li" class="fab fa-fw fa-linkedin social"></i>
-    </a>
-    <a class="btn btn-primary" href="mailto:ourcontanctaddress@alten.dk">
-        <i id="social-em" class="fas fa-fw fa-envelope-square social"></i>
-    </a>
+{% block content %}
+    <section class="ftco-section ftco-wrap-about ftco-no-pb">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-10 wrap-about ftco-animate text-center">
+	        <div class="heading-section mb-4 text-center">
+	        <!--span class="subheading">About</span-->
+	        <h2 class="mb-4">{% trans "MayBee the best food platform in the world" %}</h2>
+	        </div>
+					<p>{% trans "These days, everyone relies on everyday products from local shops, and many shop-owners are fighting to keep their business intact in a world where everyone makes their purchases from home." %}</p>
+					<p>
+						{% trans "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, like cheese shops, butchers, wine shops etc. display and sell their products online." %}
+					</p>
+					<div class="video justify-content-center">
+						<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+  						<span class="ion-ios-play"></span>
+	  				</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/static/base/colorlib/images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+    	<div class="container">
+    		<div class="row d-md-flex align-items-center justify-content-center">
+    			<div class="col-lg-10">
+    				<div class="row d-md-flex align-items-center">
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+								<strong class="number" data-number="15000">0</strong>
+								<span>Happy Customers</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+								<strong class="number" data-number="100">0</strong>
+								<span>Menus</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18">
+								<div class="text">
+								<strong class="number" data-number="20">0</strong>
+								<span>Staffs</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section>
 {% endblock %}
