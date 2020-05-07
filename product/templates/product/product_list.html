@@ -6,7 +6,7 @@
             <div class="flex-grow-1">
                 <div class="d-flex">
                     {% if product.image %}
-                        <div class="menu-img img" style="background-image: url(/{{ product.image.full.url }});"></div>
+                        <div class="menu-img img" style="background-image: url({{ product.image.full.url }});"></div>
                     {% endif %}
                     <div class="text">
                         <div class="d-flex">
@@ -14,7 +14,7 @@
                                 <h3>{{ product.name }}</h3>
                             </div>
                             <div class="one-forth">
-                                <span class="price">{{ product.get_price }} {% if product.offer_price %}<del>{{product.price}}</del>{% endif %}</span>
+                                <span class="price">{{ product.get_price }}</span>
                             </div>
                         </div>
                     </div>
