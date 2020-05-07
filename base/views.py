@@ -1,16 +1,22 @@
+from urllib.parse import unquote
+
+from django.conf import settings
 from django.contrib.auth import login
 from django.db import IntegrityError
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import Http404
-from django.urls import reverse
+from django.urls import reverse, translate_url
 from django.utils.encoding import force_text
-from django.utils.http import urlsafe_base64_decode
-from django.utils.translation import gettext
-from django.views.generic import FormView,TemplateView
+from django.utils.http import (url_has_allowed_host_and_scheme,
+                               urlsafe_base64_decode)
+from django.utils.translation import (LANGUAGE_SESSION_KEY, check_for_language,
+                                      gettext)
+from django.views.generic import FormView, TemplateView
 
 from base.forms import SetUsernameAndPasswordForm
 from base.models import User
 from shop.tokens import account_activation_token
+
 
 class AboutPageView(TemplateView):
     template_name = 'about.html'
@@ -54,3 +60,41 @@ class ActivateUserView(FormView):
 
     def get_success_url(self):
         return reverse('shop_overview')
+
+
+LANGUAGE_QUERY_PARAMETER = 'language'
+
+
+def set_language(request):
+    """
+    Redirect to a given URL while setting the chosen language in the session
+    (if enabled) and in a cookie. The URL and the language code need to be
+    specified in the request parameters.
+    Since this view changes how the user will see the rest of the site, it must
+    only be accessed as a POST request. If called as a GET request, it will
+    redirect to the page in the request (the 'next' parameter) without changing
+    any state.
+    """
+    next_url = '/'
+    response = HttpResponseRedirect(next_url)
+    if request.method == 'GET':
+        lang_code = request.GET.get(LANGUAGE_QUERY_PARAMETER)
+        if lang_code and check_for_language(lang_code):
+            if next_url:
+                next_trans = translate_url(next_url, lang_code)
+                if next_trans != next_url:
+                    response = HttpResponseRedirect(next_trans)
+            if hasattr(request, 'session'):
+                # Storing the language in the session is deprecated.
+                # (RemovedInDjango40Warning)
+                request.session[LANGUAGE_SESSION_KEY] = lang_code
+            response.set_cookie(
+                settings.LANGUAGE_COOKIE_NAME, lang_code,
+                max_age=settings.LANGUAGE_COOKIE_AGE,
+                path=settings.LANGUAGE_COOKIE_PATH,
+                domain=settings.LANGUAGE_COOKIE_DOMAIN,
+                secure=settings.LANGUAGE_COOKIE_SECURE,
+                httponly=settings.LANGUAGE_COOKIE_HTTPONLY,
+                samesite=settings.LANGUAGE_COOKIE_SAMESITE,
+            )
+    return response
