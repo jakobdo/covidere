@@ -186,6 +186,7 @@ AXES_COOLOFF_TIME = datetime.timedelta(minutes=5)
 AXES_LOCKOUT_URL = '/users/locked_out/'
 AXES_LOCKOUT_TEMPLATE = 'registration/locked_out.html'
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 try:
     from shoplokalt.settings_local import *
