@@ -5,5 +5,8 @@ from postcode.models import Postcode
 
 
 class PostCodeForm(forms.Form):
-    postcode = forms.ModelChoiceField(label=gettext_lazy('postcode'), queryset=Postcode.objects.filter(active=True))
-    city = forms.CharField(label=gettext_lazy('city'))
+    postcode = forms.ModelChoiceField(
+        label=gettext_lazy('postcode'), 
+        queryset=Postcode.objects.filter(active=True),
+        to_field_name="postcode"
+    )

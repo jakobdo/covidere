@@ -51,3 +51,15 @@ class ProductsOfferView(ListView):
     def get_queryset(self):
         queryset = self.model.actives.order_by('?')
         return queryset.filter(offer_price__isnull=False)
+
+
+class ProductsPostcodeView(ListView):
+    model = Product
+    template_name = 'product/postcode.html'
+
+    def get_queryset(self):
+        queryset = self.model.actives.order_by('?')
+        postcode = self.kwargs.get('postcode')
+        postcode = get_object_or_404(Postcode, postcode=postcode, active=True)
+        queryset = queryset.order_by(GeometryDistance("shop__location", postcode.location))
+        return queryset

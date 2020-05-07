@@ -1,26 +1,19 @@
 from django.http import JsonResponse
-from django.urls import reverse
+from django.shortcuts import redirect
 from django.utils.translation import gettext
-from django.views.generic import FormView
+from django.views import View
 
 from postcode.forms import PostCodeForm
 from postcode.models import Postcode
 
 
-class PostCodeView(FormView):
-    template_name = 'base/postcode.html'
-    form_class = PostCodeForm
-
-    def form_valid(self, form):
-        postcode = form.cleaned_data.get('postcode')
-        self.request.session['postcode'] = dict(
-            code=postcode.postcode,
-            city=postcode.city
-        )
-        return super().form_valid(form)
-
-    def get_success_url(self):
-        return reverse('index')
+class PostCodeView(View):
+    def post(self, request, *args, **kwargs):
+        form = PostCodeForm(request.POST)
+        if form.is_valid():
+            postcode = form.cleaned_data.get('postcode')
+            return redirect('products_postcode', postcode=postcode.postcode)
+        return redirect('index')
 
 
 def postcodes(request):
