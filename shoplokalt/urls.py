@@ -17,7 +17,7 @@ from django.conf import settings
 from django.urls import include, path
 
 from product.views import ProductsView
-from base.views import AboutPageView
+from base.views import AboutPageView, set_language
 
 urlpatterns = [
     path('', ProductsView.as_view(), name="index"),
@@ -30,6 +30,7 @@ urlpatterns = [
     path('shops/', include('shop.urls')),
     path('shopadmin/', include('shop.adminurls')),
     path('altenadmin/', include('shop.altenurls')),
+    path('language/', set_language, name="set_language"),
 ]
 
 if settings.DEBUG:

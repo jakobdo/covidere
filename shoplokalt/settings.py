@@ -61,12 +61,13 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'base.middleware.PostcodeMiddleware',
+    #'base.middleware.PostcodeMiddleware',
     'axes.middleware.AxesMiddleware',
 ]
 
@@ -129,9 +130,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'dk'
+LANGUAGE_CODE = 'da-DK'
 LANGUAGES = [
-    ('dk', gettext_lazy('Danish')),
+    ('da', gettext_lazy('Danish')),
     ('en', gettext_lazy('English')),
 ]
 
@@ -185,6 +186,7 @@ AXES_COOLOFF_TIME = datetime.timedelta(minutes=5)
 AXES_LOCKOUT_URL = '/users/locked_out/'
 AXES_LOCKOUT_TEMPLATE = 'registration/locked_out.html'
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 try:
     from shoplokalt.settings_local import *

@@ -6,10 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            
+
     <!-- FontAwesome -->
     <link href="{% static 'base/fontawesome/css/all.css' %}" rel="stylesheet">
-    
+
     <!-- Colorlib CSS -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="{% static 'base/colorlib/css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'base/colorlib/css/animate.css' %}">
-    
+
     <link rel="stylesheet" href="{% static 'base/colorlib/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'base/colorlib/css/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="{% static 'base/colorlib/css/magnific-popup.css' %}">
@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="{% static 'base/colorlib/css/bootstrap-datepicker.css' %}">
     <link rel="stylesheet" href="{% static 'base/colorlib/css/jquery.timepicker.css' %}">
-    
+
     <link rel="stylesheet" href="{% static 'base/colorlib/css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'base/colorlib/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'base/colorlib/css/style.css' %}">
@@ -40,7 +40,7 @@
     <link href="{% static 'base/css/style.css' %}" rel="stylesheet">
 
     <title>{% block title %}{% trans "Support your local stores today!" %}{% endblock %}</title>
-    <link rel="shortcut icon" type="image/png" href="{% static 'base/img/favicon.ico' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'base/img/favicon.ico' %}" />
 
 </head>
 
@@ -72,20 +72,35 @@
                     {% if request.session.basket|length > 0 %}
                         <a class="nav-link" href="{% url 'basket_index' %}">
                             <i class="fas fa-shopping-cart"></i>
-                            {% trans "Basket" %} 
+                            {% trans "Basket" %}
                             <span class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span>
                         </a>
-                    {% else %}
+                        {% else %}
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
                             <i class="fas fa-shopping-cart"></i>
-                            {% trans "Basket" %} 
+                            {% trans "Basket" %}
                             <span class="badge badge-pill badge-secondary">0</span>
                         </a>
-                    {% endif %}
-                </li>
-            </ul>
-	    </div>
-    </div>
+                        {% endif %}
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-flag"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                            <a class="dropdown-item{% if language.code == LANGUAGE_CODE %} disabled{% endif %}"
+                                href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local }}</a>
+                            {% endfor %}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!-- END nav -->
 
@@ -121,18 +136,55 @@
                             <h1 class="mb-4 mt-5">{% trans "Quality products on public display" %}</h1> 
                             <p><a href="#" class="btn btn-orange p-3 px-xl-4 py-xl-3">{% trans "Start browsing" %}</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "Register here" %}</a></p>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    {% endblock %}
+
+    {% block postcode %}
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10 wrap-about ftco-animate text-center fadeInUp ftco-animated">
+                    <div class="heading-section mb-4 text-center">
+                        <span class="subheading">{% trans "Postcode" %}</span>
+                        <h2 class="mb-4">{% trans "Enter your postcode" %}</h2>
+                    </div>
+                    <form method="post" action="{% url 'postcode_set' %}">{% csrf_token %}
+                        <div class="input-group mb-3">
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="{% trans "Enter postcode" %}" 
+                                id="id_postcode" 
+                                name="postcode" 
+                                maxlength="4" 
+                                aria-label="{% trans 'Postcode' %}" 
+                                aria-describedby="button-postcode">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit" id="button-postcode">{% trans "Submit" %}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     {% endblock %}
 
     {% block content %}{% endblock %}
-    
+
     {% include "footer.html" %}
 
-    <!-- Colorlib loader -->    
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- Colorlib loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+        </svg>
+    </div>
 
     <script src="{% static 'base/jquery/js/jquery.min.js' %}"></script>
     <script src="{% static 'base/jquery/js/jquery-migrate-3.3.0.min.js' %}"></script>
@@ -148,7 +200,8 @@
     <script src="{% static 'base/jquery/js/bootstrap-datepicker.js' %}"></script>
     <script src="{% static 'base/jquery/js/jquery.timepicker.min.js' %}"></script>
     <script src="{% static 'base/jquery/js/scrollax.min.js' %}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="{% static 'base/jquery/js/google-map.js' %}"></script>
     <script src="{% static 'base/jquery/js/main.js' %}"></script>
 
