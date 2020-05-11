@@ -22,7 +22,7 @@
                 <div>{{ product.description }}</div>
             </div>
             <div>
-                <form method="post" action="{% url 'basket_add' %}">{% csrf_token %}
+                <form method="post" action="{% url 'basket_add' %}" class="ajax-form-submit">{% csrf_token %}
                     <input type="hidden" name="product" value="{{ product.pk }}">
                     <div class="input-group mb-3">
                         <input type="number" name="count" class="form-control" min="1" step="1" value="1" placeholder="Numbers" aria-label="Numbers of products" aria-describedby="button-addon-{{ product.id }}">
