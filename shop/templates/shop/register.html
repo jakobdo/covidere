@@ -1,32 +1,14 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags i18n %}
 
-{% block carousel %}
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/base/colorlib/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text align-items-end justify-content-center">
-                <div class="col-md-9 ftco-animate text-center">
-                <h1 class="mb-2 bread">{% trans "Register" %}</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-{% endblock %}
-
 {% block content %}
-    <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
-	    <div class="container">
-		    <div class="row d-flex align-items-stretch no-gutters">
-			    <div class="col-md-12 p-5 order-md-last">
-                    
-                    <form method="post" enctype="multipart/form-data">{% csrf_token %}
-                        {{ form|crispy }}
-                        <button type="submit" class="btn btn-primary">{% trans "Register" %}</button>
-                    </form>
-
-			    </div>
-		    </div>
-	    </div>
-    </section>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Register your shop today" %}</h1>
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">{% trans "Register" %}</button>
+        </form>
+    </div>
+</section>
 {% endblock %}
