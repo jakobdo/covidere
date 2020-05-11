@@ -2,20 +2,101 @@
 
 {% load i18n %}
 
-{% block content %}
-<section class="ftco-section">
-    <div class="container-fluid px-4">
-        <div class="row justify-content-center mb-5 pb-2">
-            <div class="text-center heading-section ftco-animate">
-                <span class="subheading">Something</span>
-                <h2 class="mb-4">{% trans "Products overview" %}</h2>
+{% block carousel %}
+    <section class="home-slider owl-carousel js-fullheight">
+        <div class="slider-item js-fullheight" style="background-image: url(/static/base/colorlib/images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <h1 class="mb-4 mt-5">{% trans "Bringing local businesses to you" %}</h1>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">{% trans "Browse offers" %}</a> <a
+                                href="#"
+                                class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "Newest products" %}</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            {% include "product/product_list.html" %}
+        <div class="slider-item js-fullheight" style="background-image: url(/static/base/colorlib/images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <h1 class="mb-4 mt-5">{% trans "Paving the way for entrepreneurs" %}</h1>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">{% trans "Register here" %}</a> <a
+                                href="#"
+                                class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "Our mission" %}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+        <div class="slider-item js-fullheight" style="background-image: url(/static/base/colorlib/images/bg_3.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                    data-scrollax-parent="true">
+                    <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                        <h1 class="mb-4 mt-5">{% trans "Quality products on public display" %}</h1>
+                        <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">{% trans "Browse offers" %}</a> <a
+                                href="#"
+                                class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">{% trans "View shops" %}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block postcode %}
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10 wrap-about ftco-animate text-center fadeInUp ftco-animated">
+                    <div class="heading-section mb-4 text-center">
+                        <span class="subheading">{% trans "Postcode" %}</span>
+                        <h2 class="mb-4">{% trans "Enter your postcode" %}</h2>
+                    </div>
+                    <form method="post" action="{% url 'postcode_set' %}">{% csrf_token %}
+                        <div class="input-group mb-3">
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="{% trans "Enter postcode" %}" 
+                                id="id_postcode" 
+                                name="postcode" 
+                                maxlength="4" 
+                                aria-label="{% trans 'Postcode' %}" 
+                                aria-describedby="button-postcode">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit" id="button-postcode">{% trans "Submit" %}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block content %}
+    <section class="ftco-section">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5 pb-2">
+                <div class="text-center heading-section ftco-animate">
+                    <span class="subheading">Something</span>
+                    <h2 class="mb-4">{% trans "Products overview" %}</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% include "product/product_list.html" %}
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
 {% block bodyscript %}{% endblock %}
