@@ -13,3 +13,10 @@ class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ['name', 'address', 'postcode', 'email', 'mobile', 'terms']
+
+    def __init__(self, *args, **kwargs):
+        super(OrderForm, self).__init__(*args, **kwargs)
+        for f in self.fields:
+            if not isinstance(self.fields[f].widget, forms.CheckboxInput):
+                self.fields[f].widget.attrs['placeholder'] = self.fields[f].label
+                self.fields[f].label = ''

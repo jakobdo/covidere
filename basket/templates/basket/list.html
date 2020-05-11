@@ -4,49 +4,53 @@
 
 {% block content %}
 <h1>{% trans "Basket" %}</h1>
-<form method="post" action="{% url 'basket_update' %}">{% csrf_token %}
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">{% trans "Name" %}</th>
-        <th scope="col">{% trans "Count" %}</th>
-        <th scope="col">{% trans "Price" %}</th>
-        <th scope="col">{% trans "Subtotal" %}</th>
-        <th scope="col">{% trans "Delete" %}</th>
-      </tr>
-    </thead>
-    <tbody>
-        {% for item in basket %}
-            {% ifchanged %}
-                <tr>
-                    <th>{{ item.shop }}</th>
-                    <td colspan="6">&nbsp;</td>
-                </tr>
-            {% endifchanged %}
-            <tr>
-                <th>&middot;&nbsp;{{ item.product }}</th>
-                <td><input type="number" name="count_{{item.product_id}}" class="form-control update-count" value="{{ item.count }}"></td>
-                <td>{{ item.price }}</td>
-                <td>{{ item.subtotal }}</td>
-                <td>
-                    <button type="submit" class="btn btn-link" name="action" value="remove_{{item.product_id}}"><i class="far fa-trash-alt"></i></button>
-                </td>
+<section class="ftco-section">
+    <div class="container">
+        <form method="post" action="{% url 'basket_update' %}">{% csrf_token %}
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">{% trans "Name" %}</th>
+                <th scope="col">{% trans "Count" %}</th>
+                <th scope="col">{% trans "Price" %}</th>
+                <th scope="col">{% trans "Subtotal" %}</th>
+                <th scope="col">{% trans "Delete" %}</th>
               </tr>
-        {% empty %}
-            <tr>
-                <th colspan="3">{% trans "Basket is empty" %}</th>
-            </tr>
-        {% endfor %}
-    </tbody>
-    <tfoot>
-        <tr>
-            <th colspan="3">{% trans "Total" %}</th><td>{{ total }}</td><td>&nbsp;</td>
-        </tr>
+            </thead>
+            <tbody>
+                {% for item in basket %}
+                    {% ifchanged %}
+                        <tr>
+                            <th>{{ item.shop }}</th>
+                            <td colspan="6">&nbsp;</td>
+                        </tr>
+                    {% endifchanged %}
+                    <tr>
+                        <th>&middot;&nbsp;{{ item.product }}</th>
+                        <td><input type="number" name="count_{{item.product_id}}" class="form-control update-count" value="{{ item.count }}"></td>
+                        <td>{{ item.price }}</td>
+                        <td>{{ item.subtotal }}</td>
+                        <td>
+                            <button type="submit" class="btn btn-link" name="action" value="remove_{{item.product_id}}"><i class="far fa-trash-alt"></i></button>
+                        </td>
+                      </tr>
+                {% empty %}
+                    <tr>
+                        <th colspan="3">{% trans "Basket is empty" %}</th>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">{% trans "Total" %}</th><td>{{ total }}</td><td>&nbsp;</td>
+                </tr>
         
-    </tfoot>
-</table>
-<button type="submit" class="btn btn-secondary" name="action" value="update"><i class="fas fa-sync"></i> {% trans "Update" %}</button>
-<button type="submit" class="btn btn-danger" name="action" value="clear"><i class="far fa-trash-alt"></i> {% trans "Clear basket" %}</button>
-<button type="submit" class="btn btn-primary" name="action" value="order"><i class="fas fa-shopping-cart"></i> {% trans "Order" %}</button>
-</form>
+            </tfoot>
+        </table>
+        <button type="submit" class="btn btn-secondary" name="action" value="update"><i class="fas fa-sync"></i> {% trans "Update" %}</button>
+        <button type="submit" class="btn btn-danger" name="action" value="clear"><i class="far fa-trash-alt"></i> {% trans "Clear basket" %}</button>
+        <button type="submit" class="btn btn-primary" name="action" value="order"><i class="fas fa-shopping-cart"></i> {% trans "Order" %}</button>
+        </form>
+    </div>
+</section>
 {% endblock %}
