@@ -98,7 +98,7 @@
                                 {% get_language_info_list for LANGUAGES as languages %}
                                 {% for language in languages %}
                                 <a class="dropdown-item{% if language.code == LANGUAGE_CODE %} disabled{% endif %}"
-                                    href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local }}</a>
+                                    href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local.title }}</a>
                                 {% endfor %}
                             </div>
                         </li>
