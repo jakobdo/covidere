@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load i18n %}
+{% load i18n static %}
 
 {% block navbar %}
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -12,35 +12,37 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item {% if request.resolver_match.url_name == "shops" %}active{% endif %}"><a
-                            href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
-                    <li class="nav-item {% if request.resolver_match.url_name == "shop_register" %}active{% endif %}"><a
-                            href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                    <li class="nav-item {% if request.resolver_match.url_name == "shops" %}active{% endif %}">
+                        <a href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a>
+                    </li>
+                    <li class="nav-item {% if request.resolver_match.url_name == "shop_register" %}active{% endif %}">
+                        <a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a>
+                    </li>
                 </ul>
                 <form class="form-inline my-4 my-lg-0 ml-2 ml-auto">
                     <div class="input-group sm-2">
                         <input type="search" class="form-control" placeholder="{% trans "Search" %}"
                             aria-label="{% trans "Search" %}" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-
-                            <button class="btn btn-outline-secondary" type="button"><i
-                                    class="fas fa-search"></i></button>
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
                         </div>
                     </div>
                 </form>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        {% if request.session.basket|length > 0 %}
+                        {% if basket_counter > 0 %}
                         <a class="nav-link" href="{% url 'basket_index' %}">
                             <i class="fas fa-shopping-cart"></i>
                             {% trans "Basket" %}
-                            <span class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span>
+                            <span class="badge badge-pill badge-primary" id="basket-counter">{{ basket_counter }}</span>
                         </a>
                         {% else %}
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
                             <i class="fas fa-shopping-cart"></i>
                             {% trans "Basket" %}
-                            <span class="badge badge-pill badge-secondary">0</span>
+                            <span class="badge badge-pill badge-secondary" id="basket-counter">0</span>
                         </a>
                         {% endif %}
                     </li>
@@ -162,4 +164,6 @@
     </section>
 {% endblock %}
 
-{% block bodyscript %}{% endblock %}
+{% block bodyscript %}
+<script src="{% static 'base/js/basket.js' %}"></script>
+{% endblock %}
