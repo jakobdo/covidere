@@ -3,66 +3,70 @@
 {% load crispy_forms_tags i18n %}
 
 {% block content %}
-<h1>{% trans "Ordre details" %}</h1>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Ordre details" %}</h1>
 
-<table class="table table-striped">
-    <tbody>
-        <tr>
-            <th>{% trans "Name" %}</th>
-            <td>{{ object.name }}</td>
-        </tr>
-        <tr>
-            <th>{% trans "Address" %}</th>
-            <td>{{ object.address }}</td>
-        </tr>
-        <tr>
-            <th>{% trans "Postcode & City" %}</th>
-            <td>{{ object.postcode.postcode }} {{ object.postcode.city }}</td>
-        </tr>
-        <tr>
-            <th>{% trans "Email" %}</th>
-            <td>{{ object.email }}</td>
-        </tr>
-        <tr>
-            <th>{% trans "Mobile" %}</th>
-            <td>{{ object.mobile }}</td>
-        </tr>
-        <tr>
-            <th>{% trans "Status" %}</th>
-            <td>{{ object.get_status_display }}</td>
-        </tr>
-    </tbody>
-</table>
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <th>{% trans "Name" %}</th>
+                    <td>{{ object.name }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans "Address" %}</th>
+                    <td>{{ object.address }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans "Postcode & City" %}</th>
+                    <td>{{ object.postcode.postcode }} {{ object.postcode.city }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans "Email" %}</th>
+                    <td>{{ object.email }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans "Mobile" %}</th>
+                    <td>{{ object.mobile }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans "Status" %}</th>
+                    <td>{{ object.get_status_display }}</td>
+                </tr>
+            </tbody>
+        </table>
 
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th scope="col">{% trans "Name" %}</th>
-            <th class="text-right" scope="col">{% trans "Price" %}</th>
-            <th class="text-right" scope="col">{% trans "Amount" %}</th>
-            <th class="text-right" scope="col">{% trans "Subtotal" %}</th>
-          </tr>
-    </thead>
-    <tbody>
-        {% for item in items %}
-            <tr>
-                <th scope="row">{{ item.product.name }}</th>
-                <td class="text-right">{{ item.price }}</td>
-                <td class="text-right">{{ item.count }}</td>
-                <td class="text-right">{{ item.subtotal }}</td>
-            </tr>
-        {% endfor %}
-        <tr>
-            <th scope="row" colspan="3">{% trans "Total" %}</th>
-            <td class="text-right"><strong>{{ total }}</strong></td>
-        </tr>
-    </tbody>
-</table>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">{% trans "Name" %}</th>
+                    <th class="text-right" scope="col">{% trans "Price" %}</th>
+                    <th class="text-right" scope="col">{% trans "Amount" %}</th>
+                    <th class="text-right" scope="col">{% trans "Subtotal" %}</th>
+                  </tr>
+            </thead>
+            <tbody>
+                {% for item in items %}
+                    <tr>
+                        <th scope="row">{{ item.product.name }}</th>
+                        <td class="text-right">{{ item.price }}</td>
+                        <td class="text-right">{{ item.count }}</td>
+                        <td class="text-right">{{ item.subtotal }}</td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <th scope="row" colspan="3">{% trans "Total" %}</th>
+                    <td class="text-right"><strong>{{ total }}</strong></td>
+                </tr>
+            </tbody>
+        </table>
 
-<hr>
+        <hr>
 
-<form action="{% url 'show_order_status_update' pk=object.pk %}" method="post">{% csrf_token %}
-    {{ form|crispy }}
-    <button type="submit" class="btn btn-primary">{% trans "Update status" %}</button>
-</form>
+        <form action="{% url 'show_order_status_update' pk=object.pk %}" method="post">{% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">{% trans "Update status" %}</button>
+        </form>
+    </div>
+</section>
 {% endblock %}
