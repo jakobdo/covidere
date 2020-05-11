@@ -4,7 +4,6 @@ from django.utils.translation import gettext, gettext_lazy
 from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import (PhoneNumberInternationalFallbackWidget,
                                        PhoneNumberPrefixWidget)
-
 from base.widgets import BootstrapDateTimePickerInput
 from order.models import Order
 from product.models import Product
@@ -28,8 +27,14 @@ class ShopRegisterForm(forms.ModelForm):
         widgets = {
             'phone': PhoneNumberInternationalFallbackWidget(attrs={'class': 'form-control'}),
             'cvr_number': forms.TextInput(attrs={'class':'form-control' , 'autocomplete': 'off','pattern':'[0-9]{8}', 'title':'Enter numbers Only '}),
-            #'delivery_range': forms.ChoiceField(attrs = {'onchange' : "myFunction();"}))
         }
+        
+    def __init__(self, *args, **kwargs):
+        super(ShopRegisterForm, self).__init__(*args, **kwargs)
+        for f in self.fields:
+            if not isinstance(self.fields[f].widget, forms.CheckboxInput):
+                self.fields[f].widget.attrs['placeholder'] = self.fields[f].label
+                self.fields[f].label = ''
 
 class ShopProductForm(forms.ModelForm):
     start_datetime = forms.DateTimeField(
