@@ -2,6 +2,69 @@
 
 {% load i18n %}
 
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">FoodBee</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item {% if request.resolver_match.url_name == "shops" %}active{% endif %}"><a
+                            href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
+                    <li class="nav-item {% if request.resolver_match.url_name == "shop_register" %}active{% endif %}"><a
+                            href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                </ul>
+                <form class="form-inline my-4 my-lg-0 ml-2 ml-auto">
+                    <div class="input-group sm-2">
+                        <input type="search" class="form-control" placeholder="{% trans "Search" %}"
+                            aria-label="{% trans "Search" %}" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+
+                            <button class="btn btn-outline-secondary" type="button"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        {% if request.session.basket|length > 0 %}
+                        <a class="nav-link" href="{% url 'basket_index' %}">
+                            <i class="fas fa-shopping-cart"></i>
+                            {% trans "Basket" %}
+                            <span class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span>
+                        </a>
+                        {% else %}
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                            <i class="fas fa-shopping-cart"></i>
+                            {% trans "Basket" %}
+                            <span class="badge badge-pill badge-secondary">0</span>
+                        </a>
+                        {% endif %}
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-flag"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                            <a class="dropdown-item{% if language.code == LANGUAGE_CODE %} disabled{% endif %}"
+                                href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local }}</a>
+                            {% endfor %}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+
 {% block carousel %}
     <section class="home-slider owl-carousel js-fullheight">
         <div class="slider-item js-fullheight" style="background-image: url(/static/base/colorlib/images/bg_1.jpg);">
