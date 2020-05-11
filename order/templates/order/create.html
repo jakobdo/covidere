@@ -2,20 +2,25 @@
 {% load crispy_forms_tags i18n %}
 
 {% block content %}
-<form method="post">{% csrf_token %}
-    {{ form|crispy }}
-    <div class="row">
-        <div class="col-md-6">
-            <label for="id_postcode_text">{% trans "Postcode" %}</label>
-            <input type="text" id="id_postcode_text" name="postcode_text" class="form-control" placeholder="{% trans "Enter postcode" %}" maxlength="4">
-        </div>
-        <div class="col-md-6">
-            <label for="id_city">{% trans "City" %}</label>
-            <input type="text" id="id_city" name="city" class="form-control" placeholder="{% trans "City" %}" readonly>
-        </div>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Confirm details" %}</h1>
+        <form method="post">{% csrf_token %}
+            {{ form|crispy }}
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="id_postcode_text">{% trans "Postcode" %}</label>
+                    <input type="text" id="id_postcode_text" name="postcode_text" class="form-control" placeholder="{% trans "Enter postcode" %}" maxlength="4">
+                </div>
+                <div class="col-md-6">
+                    <label for="id_city">{% trans "City" %}</label>
+                    <input type="text" id="id_city" name="city" class="form-control" placeholder="{% trans "City" %}" readonly>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">{% trans "Order" %}</button>
+        </form>
     </div>
-    <button type="submit" class="btn btn-primary">{% trans "Order" %}</button>
-</form>
+</section>
 {% endblock %}
 
 {% block bodyscript %}
