@@ -36,7 +36,7 @@
                         <a class="nav-link" href="{% url 'basket_index' %}">
                             <i class="fas fa-shopping-cart"></i>
                             {% trans "Basket" %}
-                            <span class="badge badge-pill badge-primary" id="basket-counter">{{ basket_counter }}</span>
+                            <span class="badge badge-pill badge-secondary" id="basket-counter">{{ basket_counter }}</span>
                         </a>
                         {% else %}
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
@@ -57,7 +57,7 @@
                             {% get_language_info_list for LANGUAGES as languages %}
                             {% for language in languages %}
                             <a class="dropdown-item{% if language.code == LANGUAGE_CODE %} disabled{% endif %}"
-                                href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local }}</a>
+                                href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local.title }}</a>
                             {% endfor %}
                         </div>
                     </li>
@@ -153,7 +153,7 @@
         <div class="container-fluid px-4">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="text-center heading-section ftco-animate">
-                    <span class="subheading">Something</span>
+                    <span class="subheading">{% trans "Something tasty" %}</span>
                     <h2 class="mb-4">{% trans "Products overview" %}</h2>
                 </div>
             </div>

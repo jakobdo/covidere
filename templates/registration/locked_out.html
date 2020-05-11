@@ -4,9 +4,13 @@
 {% block title %}{% trans "Locked out" %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans "Account locked!" %}</h1>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Account locked!" %}</h1>
 
-    <div class="alert alert-danger" role="alert">
-        {% trans "Too many login attempts. Contact an admin to unlock your account." %}
+        <div class="alert alert-danger" role="alert">
+            {% trans "Too many login attempts. Contact an admin to unlock your account." %}
+        </div>
     </div>
+</section>
 {% endblock %}
