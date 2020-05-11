@@ -25,21 +25,12 @@ class ShopsListView(ListView):
     """
     Shop List View. Will list all active shops for enduser
     """
-    model = Shop
+    model = Postcode
     template_name = 'shop/list.html'
 
     def get_queryset(self):
-        queryset = self.model.objects.filter(active=True)
-        code = self.request.session.get('postcode')
-        if code:
-            try:
-                postcode = Postcode.objects.get(postcode=code['code'])
-                queryset = queryset.order_by(GeometryDistance("location", postcode.location))
-            except Postcode.DoesNotExist:
-                queryset = queryset.order_by('?')
-        else:
-            queryset = queryset.order_by('?')
-        return queryset
+        queryset = self.model.objects.filter(active=True, shops__isnull=False).prefetch_related('shops')
+        return queryset.order_by('postcode')
 
 
 class ShopsDetailView(DetailView):
