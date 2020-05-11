@@ -7,30 +7,8 @@ from django.views import View
 from django.views.generic import FormView, TemplateView
 
 from basket.forms import BasketAddForm
+from basket.utils import Basket
 from product.models import Product
-
-
-class Basket:
-    """
-    Small basket helper to add item to basket
-    """
-    def __init__(self, session):
-        self.session = session
-
-    def add(self, product, count):
-        # Add or update item
-        basket = self.session.setdefault('basket', [])
-        item = next((item for item in basket if (
-            item['product'] == product
-        )), None)
-        if item:
-            item['count'] += count
-        else:
-            basket.append(dict(
-                product=product,
-                count=count
-            ))
-        return basket
 
 
 class BasketAddView(View):
@@ -44,7 +22,10 @@ class BasketAddView(View):
             )
             self.request.session.modified = True
             #messages.add_message(self.request, messages.INFO, gettext('Product added to basket'))
-            return JsonResponse({'msg': gettext('Product added to basket')})
+            return JsonResponse({
+                'msg': gettext('Product added to basket'), 
+                'count': basket.count(),
+            })
         else:
             return JsonResponse({'msg': gettext('Product not added to basket')}, status=400)
 

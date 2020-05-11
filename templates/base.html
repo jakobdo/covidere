@@ -73,18 +73,18 @@
                     </form>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            {% if request.session.basket|length > 0 %}
-                            <a class="nav-link" href="{% url 'basket_index' %}">
-                                <i class="fas fa-shopping-cart"></i>
-                                {% trans "Basket" %}
-                                <span class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span>
-                            </a>
+                            {% if basket_counter > 0 %}
+                                <a class="nav-link" href="{% url 'basket_index' %}">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    {% trans "Basket" %}
+                                    <span class="badge badge-pill badge-primary" id="basket-counter">{{ basket_counter }}</span>
+                                </a>
                             {% else %}
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-                                <i class="fas fa-shopping-cart"></i>
-                                {% trans "Basket" %}
-                                <span class="badge badge-pill badge-secondary">0</span>
-                            </a>
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    {% trans "Basket" %}
+                                    <span class="badge badge-pill badge-secondary" id="basket-counter">0</span>
+                                </a>
                             {% endif %}
                         </li>
                         <li class="nav-item dropdown">
@@ -138,12 +138,9 @@
     <script src="{% static 'base/jquery/js/bootstrap-datepicker.js' %}"></script>
     <script src="{% static 'base/jquery/js/jquery.timepicker.min.js' %}"></script>
     <script src="{% static 'base/jquery/js/scrollax.min.js' %}"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="{% static 'base/jquery/js/google-map.js' %}"></script>
     <script src="{% static 'base/jquery/js/main.js' %}"></script>
-
-
     {% block bodyscript %}{% endblock %}
 </body>
 
