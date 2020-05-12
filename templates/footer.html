@@ -1,11 +1,11 @@
 ﻿{% load i18n static %}
 <footer class="ftco-footer ftco-bg-dark ftco-section">
-    <div class="container-fluid px-md-5 px-3">
+    <div class="container-fluid px-md-5 px-3 text-center">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12">
                 <div class="view overlay z-depth-1-half" >
                     <a class="navbar-brand" href="{% url 'about' %}">
-                        <img src="{% static "base/img/Alten_Logo_Complete_white.gif" %}" class="img-fluid" alt="Alten" style="max-height: 120px;">
+                        <img src="{% static "base/img/Alten_text_triangles_white.png" %}" class="img-fluid" alt="Alten" style="max-height: 120px;">
                     </a>
                 </div>
             </div>
@@ -16,8 +16,8 @@
                         <div class="ftco-footer-widget mb-4">
                             <h2 class="ftco-heading-2">Sitemap</h2>
                             <ul class="list-unstyled">
-                                <li class="d-flex"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
-                                <li class="d-flex"><a href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -25,10 +25,10 @@
                         <div class="ftco-footer-widget mb-4">
                             <h2 class="ftco-heading-2">{% trans "Where are you" %}</h2>
                             <ul class="list-unstyled">
-                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Copenhagen" %}</a></li>
-                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Aarhus" %}</a></li>
-                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Aalborg" %}</a></li>
-                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Odense" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Copenhagen" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Aarhus" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Aalborg" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Odense" %}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -36,12 +36,12 @@
                         <div class="ftco-footer-widget mb-4">
                             <h2 class="ftco-heading-2">Menu</h2>
                             <ul class="list-unstyled">
-                                <li class="d-flex"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
                                 {% if user.is_authenticated %}
-                                    <li class="d-flex"><a href="{% url 'password_change' %}" class="nav-link">{% trans "Change password" %}</a></li>
-                                    <li class="d-flex"><a href="{% url 'logout' %}" class="nav-link">{% trans "Logout" %}</a></li>
+                                    <li class="d-flex justify-content-center"><a href="{% url 'password_change' %}" class="nav-link">{% trans "Change password" %}</a></li>
+                                    <li class="d-flex justify-content-center"><a href="{% url 'logout' %}" class="nav-link">{% trans "Logout" %}</a></li>
                                 {% else %}
-                                    <li class="d-flex"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
+                                    <li class="d-flex justify-content-center"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
                                 {% endif %}
                             </ul>
                         </div>
