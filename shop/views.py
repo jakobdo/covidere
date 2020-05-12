@@ -30,7 +30,7 @@ class ShopsListView(ListView):
 
     def get_queryset(self):
         queryset = self.model.objects.filter(active=True, shops__isnull=False).prefetch_related('shops')
-        return queryset.order_by('postcode')
+        return queryset.order_by('postcode').distinct()
 
 
 class ShopsDetailView(DetailView):

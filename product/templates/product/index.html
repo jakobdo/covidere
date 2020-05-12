@@ -46,21 +46,19 @@
                         </a>
                         {% endif %}
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-flag"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                            {% get_current_language as LANGUAGE_CODE %}
-                            {% get_available_languages as LANGUAGES %}
-                            {% get_language_info_list for LANGUAGES as languages %}
-                            {% for language in languages %}
-                            <a class="dropdown-item{% if language.code == LANGUAGE_CODE %} disabled{% endif %}"
-                                href="{% url 'set_language' %}?language={{ language.code }}">{{ language.name_local.title }}</a>
-                            {% endfor %}
-                        </div>
-                    </li>
+
+                    <form class="form-inline my-4 my-lg-0 ml-2 ml-auto" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            {% if language.code != LANGUAGE_CODE %}
+                                <input name="language" type="hidden" value="{{ language.code }}">
+                                <button class="btn btn-link" type="submit">{{ language.code.upper }}</button>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
                 </ul>
             </div>
         </div>
