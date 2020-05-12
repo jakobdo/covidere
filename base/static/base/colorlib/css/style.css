@@ -8388,7 +8388,7 @@ h1, h2, h3, h4, h5,
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 40px;
+      bottom: 10px;
       width: 100%;
       text-align: center; }
       @media (max-width: 767.98px) {
