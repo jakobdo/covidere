@@ -275,7 +275,7 @@ msgstr "Søg"
 
 #: product/templates/product/index.html:76
 msgid "Bringing local businesses to you"
-msgstr "Bringer lokale butikker til dig"
+msgstr "Lokale lækkerier"
 
 #: product/templates/product/index.html:77
 #: product/templates/product/index.html:107
@@ -290,7 +290,7 @@ msgstr "Nyeste produkter"
 
 #: product/templates/product/index.html:91
 msgid "Paving the way for online local shopping"
-msgstr "Online lokal handel"
+msgstr "Vi gør Online lokal handel mulig"
 
 #: product/templates/product/index.html:92
 msgid "Register here"
