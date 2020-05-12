@@ -55,7 +55,7 @@
                         {% for language in languages %}
                             {% if language.code != LANGUAGE_CODE %}
                                 <input name="language" type="hidden" value="{{ language.code }}">
-                                <button class="btn btn-link" type="submit">{{ language.code.upper }}</button>
+                                <button class="btn btn-outline-secondary" type="submit">{{ language.code.upper }}</button>
                             {% endif %}
                         {% endfor %}
                     </form>
