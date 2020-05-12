@@ -37,11 +37,11 @@ msgstr "Indtast samme kodeord som før, for verificering."
 #, fuzzy
 #| msgid "address"
 msgid "email address"
-msgstr "adresse"
+msgstr "email adresse"
 
 #: base/templates/base/postcode.html:5
 msgid "Select your preferred postcode."
-msgstr "Vælg fortrukne postnummer."
+msgstr "Vælg dit fortrukne postnummer."
 
 #: base/templates/base/postcode.html:9 order/templates/order/create.html:12
 #: product/templates/product/index.html:124
@@ -76,11 +76,11 @@ msgstr "Gem"
 
 #: base/views.py:45
 msgid "Shop with this username already exists."
-msgstr ""
+msgstr "Butik med dette brugernavn eksisterer allerede."
 
 #: base/views.py:57 base/views.py:59
 msgid "Invalid token"
-msgstr "Invalid token"
+msgstr "Ugyldig token"
 
 #: basket/templates/basket/list.html:6 product/templates/product/index.html:38
 #: product/templates/product/index.html:44 templates/base.html:79
@@ -117,10 +117,8 @@ msgid "Delete"
 msgstr "Slet"
 
 #: basket/templates/basket/list.html:39
-#, fuzzy
-#| msgid "Basket updated"
 msgid "Basket is empty"
-msgstr "Indkøbskurv opdateret"
+msgstr "Indkøbskurv er tom"
 
 #: basket/templates/basket/list.html:45
 #: shop/templates/shop/order_detail.html:58
@@ -145,10 +143,8 @@ msgid "Product added to basket"
 msgstr "Produkt tilføjet til indkøbskurven"
 
 #: basket/views.py:30
-#, fuzzy
-#| msgid "Product added to basket"
 msgid "Product not added to basket"
-msgstr "Produkt tilføjet til indkøbskurven"
+msgstr "Produkt ikke tilføjet til indkøbskurven"
 
 #: basket/views.py:97
 msgid "Basket updated"
@@ -250,11 +246,11 @@ msgstr "aktiv"
 
 #: product/models.py:61
 msgid "start datetime"
-msgstr "start datotid"
+msgstr "startdato"
 
 #: product/models.py:62
 msgid "end datetime"
-msgstr "slut datotid"
+msgstr "slutdato"
 
 #: product/templates/product/create.html:13
 msgid "Create"
@@ -279,22 +275,22 @@ msgstr "Søg"
 
 #: product/templates/product/index.html:76
 msgid "Bringing local businesses to you"
-msgstr ""
+msgstr "Bringer lokale butikker til dig"
 
 #: product/templates/product/index.html:77
 #: product/templates/product/index.html:107
 msgid "Browse offers"
-msgstr ""
+msgstr "Produkter"
 
 #: product/templates/product/index.html:79
 #, fuzzy
 #| msgid "Newest products overview"
 msgid "Newest products"
-msgstr "Nyeste produkt oversigt"
+msgstr "Nyeste produkter"
 
 #: product/templates/product/index.html:91
-msgid "Paving the way for entrepreneurs"
-msgstr ""
+msgid "Paving the way for online local shopping"
+msgstr "Online lokal handel"
 
 #: product/templates/product/index.html:92
 msgid "Register here"
@@ -302,28 +298,24 @@ msgstr "Registrer her"
 
 #: product/templates/product/index.html:94
 msgid "Our mission"
-msgstr ""
+msgstr "Vores mission"
 
 #: product/templates/product/index.html:106
 msgid "Quality products on public display"
-msgstr ""
+msgstr "Kvalitetsprodukter"
 
 #: product/templates/product/index.html:109
-#, fuzzy
-#| msgid "No shops."
 msgid "View shops"
-msgstr "Ingen butikker."
+msgstr "Se butikker"
 
 #: product/templates/product/index.html:125
-#, fuzzy
-#| msgid "Enter postcode"
 msgid "Enter your postcode"
 msgstr "Indtast postnummer"
 
 #: product/templates/product/index.html:154
 #: product/templates/product/postcode.html:14
 msgid "Something tasty"
-msgstr ""
+msgstr "Gourmet Lækkerier"
 
 #: product/templates/product/index.html:155
 #: product/templates/product/postcode.html:15
@@ -332,19 +324,19 @@ msgstr "Produkt oversigt"
 
 #: product/templates/product/newest.html:6
 msgid "Newest products overview"
-msgstr "Nyeste produkt oversigt"
+msgstr "Nyeste produkter"
 
 #: product/templates/product/offer.html:6
 msgid "Products on sale overview"
-msgstr "Produkter på tilbud"
+msgstr "Produkter til en formidabel pris"
 
 #: product/templates/product/product_list.html:30
 msgid "Buy"
 msgstr "Køb"
 
 #: product/templates/product/product_list.html:38
-msgid "No products yet."
-msgstr "Ingen produkt oprettet endnu."
+msgid "No products yet"
+msgstr "Ingen produkter oprettet endnu"
 
 #: product/templates/product/update.html:9 shop/templates/shop/update.html:7
 msgid "Information"
@@ -355,10 +347,8 @@ msgid "Cancel"
 msgstr "Annuller"
 
 #: shop/adminviews.py:141
-#, fuzzy
-#| msgid "Basket updated"
 msgid "Status updated"
-msgstr "Indkøbskurv opdateret"
+msgstr "Status opdateret"
 
 #: shop/forms.py:18
 msgid "subject"
@@ -375,7 +365,7 @@ msgstr "Det maksimale antal %(limit)s af aktive produkter nået!"
 
 #: shop/forms.py:76
 msgid "A start datetime can't start after end datetime and vice versa"
-msgstr ""
+msgstr "En startdato kan ikke starte efter en slutdato"
 
 #: shop/models.py:15
 msgid "shop name"
@@ -395,35 +385,31 @@ msgstr "telefon"
 
 #: shop/models.py:25
 msgid "CVR number"
-msgstr ""
+msgstr "CVR number"
 
 #: shop/models.py:28
 msgid "offer order pick-up at shop"
-msgstr ""
+msgstr "Tilbyd ordre afhentning i butikken"
 
 #: shop/models.py:30
 msgid "Do Not offer delivery"
-msgstr ""
+msgstr "Tilbyder ikke ordre levering"
 
 #: shop/models.py:31
 msgid "5KM from shop"
-msgstr ""
+msgstr "radius af 5km fra butikken"
 
 #: shop/models.py:32
 msgid "10KM from shop"
-msgstr ""
+msgstr "radius af 10km fra butikken"
 
 #: shop/models.py:35
-#, fuzzy
-#| msgid "delivery days"
 msgid "Delivery range"
-msgstr "leveringstid (i dage)"
+msgstr "Begrænsning af levering"
 
 #: shop/models.py:42
-#, fuzzy
-#| msgid "image"
 msgid "shop_image"
-msgstr "billede"
+msgstr "Butik billede"
 
 #: shop/templates/shop/active_product_list.html:8
 #: shop/templates/shop/overview.html:26
@@ -466,7 +452,7 @@ msgstr "Aktiver butik"
 
 #: shop/templates/shop/alten/list.html:14
 msgid "No inactive shops."
-msgstr "Ingen aktive butikker."
+msgstr "Ingen inaktive butikker."
 
 #: shop/templates/shop/base.html:16 shop/templates/shop/overview.html:8
 msgid "Overview"
@@ -493,16 +479,12 @@ msgid "Show products"
 msgstr "Vis produkter"
 
 #: shop/templates/shop/expiring_product_list.html:8
-#, fuzzy
-#| msgid "No active products."
 msgid "Soon to expire products"
-msgstr "Ingen aktive produkter."
+msgstr "Produkter der snart udløber"
 
 #: shop/templates/shop/expiring_product_list.html:20
-#, fuzzy
-#| msgid "No products on sale yet."
 msgid "No products soon to expire."
-msgstr "Ingen produkt på tilbud endnu."
+msgstr "Ingen produkter der udløber snart."
 
 #: shop/templates/shop/inactive_product_list.html:8
 #: shop/templates/shop/overview.html:34
@@ -514,50 +496,38 @@ msgid "No shops."
 msgstr "Ingen butikker."
 
 #: shop/templates/shop/order_detail.html:8
-msgid "Ordre details"
-msgstr ""
+msgid "Order details"
+msgstr "Ordre detaljer"
 
 #: shop/templates/shop/order_detail.html:17
 #, fuzzy
 #| msgid "address"
 msgid "Address"
-msgstr "adresse"
+msgstr "Adresse"
 
 #: shop/templates/shop/order_detail.html:21
-#, fuzzy
-#| msgid "Postcode"
 msgid "Postcode & City"
-msgstr "Postnummer"
+msgstr "Postnummer & by"
 
 #: shop/templates/shop/order_detail.html:25
-#, fuzzy
-#| msgid "email"
 msgid "Email"
 msgstr "e-mail"
 
 #: shop/templates/shop/order_detail.html:29
-#, fuzzy
-#| msgid "mobile"
 msgid "Mobile"
-msgstr "mobil"
+msgstr "Mobil"
 
 #: shop/templates/shop/order_detail.html:33
-#, fuzzy
-#| msgid "status"
 msgid "Status"
-msgstr "status"
+msgstr "Status"
 
 #: shop/templates/shop/order_detail.html:44
-#, fuzzy
-#| msgid "Count"
 msgid "Amount"
 msgstr "Antal"
 
 #: shop/templates/shop/order_detail.html:68
-#, fuzzy
-#| msgid "Update"
 msgid "Update status"
-msgstr "Opdater"
+msgstr "Opdater status"
 
 #: shop/templates/shop/order_list.html:31
 msgid "No orders."
@@ -569,7 +539,7 @@ msgstr "Din butik er endnu ikke aktiveret"
 
 #: shop/templates/shop/overview.html:22
 msgid "New orders"
-msgstr "Ny ordrer"
+msgstr "Nye ordrer"
 
 #: shop/templates/shop/overview.html:30
 msgid "Products that will become inactive within 7 days"
@@ -608,18 +578,16 @@ msgid "Information updated!"
 msgstr "Information opdateret!"
 
 #: shop/views.py:54
-msgid "Message sent to shop, they will get in touch."
-msgstr "Besked sendt til butikken, de vil skrive retur hurtigst muligt."
+msgid "Message sent to shop. The shop will be in touch."
+msgstr "Besked sendt til butikken.Butikken vil skrive retur hurtigst muligt."
 
 #: shop/views.py:91
 msgid "Shop with this email already exists."
-msgstr ""
+msgstr "Butik med denne email eksisterer allerede"
 
 #: shop/views.py:112
-#, fuzzy
-#| msgid "FOODBEE - Order confirmation"
 msgid "FOODBEE - Confirm email"
-msgstr "FOODBEE - Ordrebekræftelse"
+msgstr "FOODBEE - Bekræft email"
 
 #: shoplokalt/settings.py:136
 msgid "Danish"
@@ -627,7 +595,7 @@ msgstr "Dansk"
 
 #: shoplokalt/settings.py:137
 msgid "English"
-msgstr ""
+msgstr "Engelsk"
 
 #: templates/400.html:6
 msgid "Bad request!"
@@ -661,75 +629,68 @@ msgid ""
 "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, "
 "like cheese shops, butchers, wine shops etc. display and sell their products "
 "online."
-msgstr ""
+msgstr "ALTEN Danmark har udviklet FoodBee, en online platform til at hjælpe de små lokale forretninger, "
+"såsom din lokale ostebutik, slagter forretning, vinbar m.fl. FoodBee repræsentere de lokale produkter på en indbydende "
+"og forfriskende måde online."
 
 #: templates/base.html:42
 msgid "Support your local stores today!"
-msgstr "Supporter dine lokale butikker i dag!"
+msgstr "Støt dine lokale butikker i dag!"
 
 #: templates/emails/account_activation.html:6
 msgid "Welcome!"
-msgstr ""
+msgstr "Velkommen!"
 
 #: templates/emails/account_activation.html:14
 msgid ""
 "You know the drill. We need to confirm that this is indeed your email "
 "address. just press the button below."
-msgstr ""
+msgstr "Du kender det. FoodBee har brug for at du bekræfter din email adresse så vi ved hvor vi kan kontakte dig. "
+"Tryk blot på knappen for at bekræfte din tilmelding."
 
 #: templates/emails/account_activation.html:22
 msgid "Confirm Email"
-msgstr ""
+msgstr "Bekræft email"
 
 #: templates/emails/account_activation.html:30
 #: templates/emails/account_activation.txt:8
 #: templates/emails/order_confirmation.html:60
 #: templates/emails/order_confirmation.txt:11
 msgid "Cheers,"
-msgstr ""
+msgstr "På forhånd Tak, "
 
 #: templates/emails/account_activation.html:30
 #: templates/emails/account_activation.txt:9
 #: templates/emails/order_confirmation.html:60
 #: templates/emails/order_confirmation.txt:12
-#, fuzzy
-#| msgid "The FoodBee team"
 msgid "The FoodBee Team"
-msgstr "FOODBEE-holdet"
+msgstr "Holdet bag FoodBee"
 
 #: templates/emails/account_activation.html:41
 msgid ""
 "If the button didn't work, copy and paste the following link in your browser:"
-msgstr ""
+msgstr "Hvis knappen ikke virker, bedes du venligst kopiere linket nedenfor ind i din browser:"
 
 #: templates/emails/account_activation.txt:2
-#, fuzzy
-#| msgid "Register your shop today"
 msgid "You have registered your shop with FoodBee."
-msgstr "Registrer din butik i dag"
+msgstr "Du har netop registreret din butik hos FoodBee"
 
 #: templates/emails/account_activation.txt:4
 msgid ""
 "In order to validate that this is indeed your email adress, please copy the "
 "link below into your browser."
-msgstr ""
+msgstr "Vi har brug for at verificere din email adresse, venligst kopier linket herunder til din browser"
 
 #: templates/emails/base_email.html:335 templates/emails/base_email.txt:3
-msgid "Alten - Christians Brygge 28 - Copenhagen, DK"
-msgstr ""
+msgid "Alten Danmark - Christians Brygge 28 - Copenhagen, DK"
+msgstr "Alten Danmark - Christians Brygge 28 - København, DK"
 
 #: templates/emails/order_confirmation.html:6
-#, fuzzy
-#| msgid "Ordered"
 msgid "Order placed!"
-msgstr "Bestilt"
+msgstr "Din ordre er bestilt"
 
 #: templates/emails/order_confirmation.html:15
 #: templates/emails/order_confirmation.txt:4
-#, fuzzy
-#| msgid ""
-#| "The shop(s) in the order list will individually have to confirm your "
-#| "order for that shop."
 msgid ""
 "The shop(s) will individually confirm your order after receiving payment."
 msgstr "Butikkerne i din bestilling, vil hver især skulle bekræfte dit køb."
@@ -737,42 +698,40 @@ msgstr "Butikkerne i din bestilling, vil hver især skulle bekræfte dit køb."
 #: templates/emails/order_confirmation.html:15
 #: templates/emails/order_confirmation.txt:5
 msgid "You have ordered:"
-msgstr "Du har bestilt:"
+msgstr "Din bestilling:"
 
 #: templates/emails/order_confirmation.html:25
 #: templates/emails/order_confirmation.txt:7
-#, fuzzy
-#| msgid "From: "
 msgid "From "
 msgstr "Fra: "
 
 #: templates/emails/order_confirmation.html:48
 msgid "TOTAL"
-msgstr ""
+msgstr "Total"
 
 #: templates/emails/order_confirmation.txt:2
 msgid "You have placed an order through FoodBee."
-msgstr ""
+msgstr "Du har fuldført en order hos FoodBee"
 
 #: templates/emails/order_confirmation.txt:9
 msgid "For a total cost of "
-msgstr ""
+msgstr "Den totale sum af "
 
 #: templates/footer.html:8
 msgid ""
 "In a time of restricted public access, it is difficult to compete with the "
 "online presence of chain stores."
-msgstr ""
+msgstr "I denne COVID-19 tid er det svært at konkurrere med de store supermarkeder der allerede har et online aftryk."
 
 #: templates/footer.html:9
 msgid ""
 "FoodBee guides local businesses in their digital migration to display their "
 "craft to a wider audience."
-msgstr ""
+msgstr "FoodBee ønsker at hjælpe de små lokale butikker med at bryde igennem på den digitale scene og derved få en større eksponering af deres lækre produkter."
 
 #: templates/footer.html:30
 msgid "About"
-msgstr ""
+msgstr "Om Os"
 
 #: templates/footer.html:36
 #: templates/registration/password_reset_complete.html:9
@@ -781,15 +740,15 @@ msgstr "Log ind"
 
 #: templates/registration/locked_out.html:4
 msgid "Locked out"
-msgstr ""
+msgstr "Log ud"
 
 #: templates/registration/locked_out.html:9
 msgid "Account locked!"
-msgstr ""
+msgstr "Din konto er låst!"
 
 #: templates/registration/locked_out.html:12
 msgid "Too many login attempts. Contact an admin to unlock your account."
-msgstr ""
+msgstr "Desværre, du har prøvet lidt for mange gange. Kontakt venligst vores kontor for at få din konto låst op igen."
 
 #: templates/registration/login.html:4 templates/registration/login.html:9
 #: templates/registration/login.html:14
@@ -798,26 +757,26 @@ msgstr "Log ind"
 
 #: templates/registration/login.html:17
 msgid "Forgot your username or password?"
-msgstr "Glemt dit brugernavn eller kodeord?"
+msgstr "Har du glemt dit brugernavn eller kodeord?"
 
 #: templates/registration/password_change_done.html:8
 msgid "Your password was changed."
 msgstr "Dit kodeord er ændret."
 
 #: templates/registration/password_change_form.html:10
-msgid "Please correct the error below."
-msgstr "Venligst ret følgende fejl."
+msgid "Please correct the error below:"
+msgstr "Venligst ret følgende fejl:"
 
 #: templates/registration/password_change_form.html:10
-msgid "Please correct the errors below."
-msgstr "Venligst ret følgende fejl."
+msgid "Please correct the errors below:"
+msgstr "Venligst ret følgende fejl:"
 
 #: templates/registration/password_change_form.html:15
 msgid ""
-"Please enter your old password, for security’s sake, and then enter your new "
+"Please enter your old password, for security reasons, and then enter your new "
 "password twice so we can verify you typed it in correctly."
 msgstr ""
-"Venligst indtast dit gamle kodeord og indtast så dit ny kodeord to gange, so "
+"Venligst indtast dit gamle kodeord og indtast så dit ny kodeord to gange, så "
 "vi kan verificere du har tastet korrekt."
 
 #: templates/registration/password_change_form.html:20
@@ -842,7 +801,7 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
-"Nulstil kodeord linket var ikke korrekt, muligvis fordi det allerede har "
+"Kodeord linket var ikke korrekt, muligvis fordi det allerede har "
 "været anvendt. Venligst bed om at få nulstillet kodeordet igen."
 
 #: templates/registration/password_reset_done.html:7
@@ -859,7 +818,7 @@ msgid ""
 "you registered with, and check your spam folder."
 msgstr ""
 "Hvis du ikke modtager en e-mail, venligst kontroller du har angivet den e-"
-"mail du anvendte ved registrering og kig i din spam-mappe."
+"mail du anvendte ved registrering og check din spam mappe."
 
 #: templates/registration/password_reset_email.html:2
 #, python-format
@@ -880,19 +839,19 @@ msgstr "Dit brugernavn, hvis du skulle have glemt det:"
 
 #: templates/registration/password_reset_email.html:10
 msgid "Thanks for using our site!"
-msgstr "Tak for at anvende vores side!"
+msgstr "Tak fordi du har valgt at anvende vores side!"
 
 #: templates/registration/password_reset_email.html:12
 msgid "The FoodBee team"
-msgstr "FOODBEE-holdet"
+msgstr "FoddBee-holdet"
 
 #: templates/registration/password_reset_form.html:7
 msgid ""
 "Forgotten your password? Enter your email address below, and we’ll email "
 "instructions for setting a new one."
 msgstr ""
-"Har du glemt dit kodeord? Angiv din e-mail adresse og du vil modtage e-mail "
-"instruktioner for at angive et nyt."
+"Har du glemt dit kodeord? Angiv din e-mail adresse og du vil modtage en e-mail "
+"med instruktioner for at oprette et nyt."
 
 #: templates/registration/password_reset_form.html:11
 msgid "Reset my password"
@@ -900,26 +859,20 @@ msgstr "Nulstil mit kodeord"
 
 #: templates/registration/password_reset_subject.txt:2
 msgid "Password reset on FoodBee"
-msgstr "Kodeord nulstil på FOODBEE"
+msgstr "Nulstil kodeord på FoodBee"
 
 #~ msgid "city"
 #~ msgstr "by"
 
 #~ msgid "No postcode selected, please select one here"
-#~ msgstr "Ingen postkode valgt, venligst vælg en her"
+#~ msgstr "Ingen postkode er valgt, venligst vælg én her"
 
 #~ msgid "select postcode"
 #~ msgstr "vælg postnummer"
-
-#, fuzzy
-#~| msgid "FoodBee"
 #~ msgid "About FoodBee"
-#~ msgstr "FoodBee"
-
-#, fuzzy
-#~| msgid "Homepage"
+#~ msgstr "Om FoodBee"
 #~ msgid "Home"
-#~ msgstr "Hjemmeside"
+#~ msgstr "Hjem"
 
 #~ msgid "Color"
 #~ msgstr "Farve"
@@ -950,14 +903,14 @@ msgstr "Kodeord nulstil på FOODBEE"
 
 #~ msgid "Please click on the link below to confirm your registration:"
 #~ msgstr ""
-#~ "Venligst klik på nedenstående link, for at verificere din registrering:"
+#~ "Venligst klik på nedenstående link, for at bekræfte din registrering:"
 
 #~ msgid "Click to activate"
 #~ msgstr "Klik for at aktiver"
 
 #~ msgid ""
-#~ "In order for the shop to confirm the order, first you must pay the order "
-#~ "total by MobilePay to the shop."
+#~ "In order for the shop to confirm the order, you must first pay the order "
+#~ "total via MobilePay directly to the shop."
 #~ msgstr ""
 #~ "For at butikken kan bekræfte din bestilling, skal du først betale direkte "
 #~ "til butikken via MobilePay."
@@ -983,10 +936,6 @@ msgstr "Kodeord nulstil på FOODBEE"
 #~ msgid "click here"
 #~ msgstr "klik her"
 
-#, fuzzy, python-format
-#~| msgid ""
-#~| "No postcode selected, please select one here: <a class=\"btn btn-primary"
-#~| "\" href=\"%(postcode_url)s\">click here!</a>"
 #~ msgid ""
 #~ "No postcode selected, please select one here: <a class=\"btn btn-primary"
 #~ "\" href=\"%(postcode_url)s\">click here!</a>"
