@@ -159,7 +159,7 @@ AUTH_USER_MODEL = 'base.User'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/shopadmin/'
 
 LOGIN_URL = '/users/login/'
 
