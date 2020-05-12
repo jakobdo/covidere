@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-07 08:52+0000\n"
+"POT-Creation-Date: 2020-05-12 08:31+0000\n"
 "PO-Revision-Date: 2020-04-24 09:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -43,22 +43,26 @@ msgstr "adresse"
 msgid "Select your preferred postcode."
 msgstr "Vælg fortrukne postnummer."
 
-#: base/templates/base/postcode.html:9 order/templates/order/create.html:9
+#: base/templates/base/postcode.html:9 order/templates/order/create.html:12
+#: product/templates/product/index.html:124
+#: product/templates/product/index.html:136
 msgid "Postcode"
 msgstr "Postnummer"
 
 #: base/templates/base/postcode.html:10 base/templates/base/postcode.html:17
-#: order/templates/order/create.html:10
+#: order/templates/order/create.html:13
+#: product/templates/product/index.html:132
 msgid "Enter postcode"
 msgstr "Indtast postnummer"
 
 #: base/templates/base/postcode.html:13 base/templates/base/postcode.html:14
-#: order/templates/order/create.html:13 order/templates/order/create.html:14
-#: shop/templates/shop/order_list.html:13
+#: order/templates/order/create.html:16 order/templates/order/create.html:17
+#: shop/templates/shop/order_list.html:15
 msgid "City"
 msgstr "By"
 
 #: base/templates/base/postcode.html:18
+#: product/templates/product/index.html:139
 msgid "Submit"
 msgstr "Indsend"
 
@@ -66,88 +70,95 @@ msgstr "Indsend"
 msgid "Set password"
 msgstr "Angiv kodeord"
 
-#: base/templates/base/set_password.html:8 shop/templates/shop/update.html:8
+#: base/templates/base/set_password.html:8 shop/templates/shop/update.html:10
 msgid "Save"
 msgstr "Gem"
 
-#: base/views.py:39
+#: base/views.py:45
 msgid "Shop with this username already exists."
 msgstr ""
 
-#: base/views.py:51 base/views.py:53
+#: base/views.py:57 base/views.py:59
 msgid "Invalid token"
 msgstr "Invalid token"
 
-#: basket/templates/basket/list.html:6 templates/base.html:77
-#: templates/base.html:83
+#: basket/templates/basket/list.html:6 product/templates/product/index.html:38
+#: product/templates/product/index.html:44 templates/base.html:79
+#: templates/base.html:85
 msgid "Basket"
 msgstr "Indkøbskurv"
 
-#: basket/templates/basket/list.html:11
-#: shop/templates/shop/order_detail.html:11
-#: shop/templates/shop/order_detail.html:40
-#: shop/templates/shop/order_list.html:12
+#: basket/templates/basket/list.html:13
+#: shop/templates/shop/order_detail.html:13
+#: shop/templates/shop/order_detail.html:42
+#: shop/templates/shop/order_list.html:14
 #: templates/emails/order_confirmation.html:34
 msgid "Name"
 msgstr "Navn"
 
-#: basket/templates/basket/list.html:12
+#: basket/templates/basket/list.html:14
 #: templates/emails/order_confirmation.html:35
 msgid "Count"
 msgstr "Antal"
 
-#: basket/templates/basket/list.html:13
-#: shop/templates/shop/order_detail.html:41
+#: basket/templates/basket/list.html:15
+#: shop/templates/shop/order_detail.html:43
 #: templates/emails/order_confirmation.html:36
 msgid "Price"
 msgstr "Pris"
 
-#: basket/templates/basket/list.html:14
-#: shop/templates/shop/order_detail.html:43
+#: basket/templates/basket/list.html:16
+#: shop/templates/shop/order_detail.html:45
 msgid "Subtotal"
 msgstr "Subtotal"
 
-#: basket/templates/basket/list.html:15
+#: basket/templates/basket/list.html:17
 msgid "Delete"
 msgstr "Slet"
 
-#: basket/templates/basket/list.html:37
+#: basket/templates/basket/list.html:39
 #, fuzzy
 #| msgid "Basket updated"
 msgid "Basket is empty"
 msgstr "Indkøbskurv opdateret"
 
-#: basket/templates/basket/list.html:43
-#: shop/templates/shop/order_detail.html:56
+#: basket/templates/basket/list.html:45
+#: shop/templates/shop/order_detail.html:58
 msgid "Total"
 msgstr "Total"
 
-#: basket/templates/basket/list.html:48
+#: basket/templates/basket/list.html:50
 #: product/templates/product/update.html:12
 msgid "Update"
 msgstr "Opdater"
 
-#: basket/templates/basket/list.html:49
+#: basket/templates/basket/list.html:51
 msgid "Clear basket"
 msgstr "Tøm indkøbskurv"
 
-#: basket/templates/basket/list.html:50 order/templates/order/create.html:17
+#: basket/templates/basket/list.html:52 order/templates/order/create.html:20
 msgid "Order"
 msgstr "Bestil"
 
-#: basket/views.py:47
+#: basket/views.py:26
 msgid "Product added to basket"
 msgstr "Produkt tilføjet til indkøbskurven"
 
-#: basket/views.py:115
+#: basket/views.py:30
+#, fuzzy
+#| msgid "Product added to basket"
+msgid "Product not added to basket"
+msgstr "Produkt tilføjet til indkøbskurven"
+
+#: basket/views.py:97
 msgid "Basket updated"
 msgstr "Indkøbskurv opdateret"
 
-#: basket/views.py:119
+#: basket/views.py:101
 msgid "Basket cleared"
 msgstr "Indkøbskurv tømt"
 
-#: basket/views.py:127
+#: basket/views.py:109
 msgid "Product removed from basket"
 msgstr "Produkt fjernet fra indkøbskurven"
 
@@ -175,7 +186,7 @@ msgstr "navn"
 msgid "address"
 msgstr "adresse"
 
-#: order/models.py:22 shop/forms.py:18
+#: order/models.py:22 shop/forms.py:17
 msgid "email"
 msgstr "e-mail"
 
@@ -187,7 +198,13 @@ msgstr "mobil"
 msgid "status"
 msgstr "status"
 
-#: order/templates/order/thanks.html:6
+#: order/templates/order/create.html:7
+#, fuzzy
+#| msgid "FOODBEE - Order confirmation"
+msgid "Confirm details"
+msgstr "FOODBEE - Ordrebekræftelse"
+
+#: order/templates/order/thanks.html:8
 msgid "Thank you for your order."
 msgstr "Tak for din order."
 
@@ -203,15 +220,11 @@ msgstr "FOODBEE - Ordrebekræftelse"
 msgid "FOODBEE - Order placed"
 msgstr "FOODBEE - Ordrebekræftelse"
 
-#: postcode/forms.py:8
+#: postcode/forms.py:9
 msgid "postcode"
 msgstr "postnummer"
 
-#: postcode/forms.py:9
-msgid "city"
-msgstr "by"
-
-#: postcode/views.py:31
+#: postcode/views.py:24
 msgid "Postcode not found"
 msgstr "Postnummer findes ikke"
 
@@ -243,21 +256,79 @@ msgstr "start datotid"
 msgid "end datetime"
 msgstr "slut datotid"
 
-#: product/templates/product/create.html:11
+#: product/templates/product/create.html:13
 msgid "Create"
 msgstr "Opret"
 
-#: product/templates/product/index.html:10
+#: product/templates/product/index.html:16
+#: shop/templates/shop/alten/base.html:8 shop/templates/shop/alten/list.html:6
+#: shop/templates/shop/list.html:7 templates/base.html:59
+msgid "Shops"
+msgstr "Butikker"
+
+#: product/templates/product/index.html:19 shop/templates/shop/register.html:10
+#: templates/base.html:61 templates/footer.html:31
+msgid "Register"
+msgstr "Registrer"
+
+#: product/templates/product/index.html:24
+#: product/templates/product/index.html:25 templates/base.html:65
+#: templates/base.html:66
+msgid "Search"
+msgstr "Søg"
+
+#: product/templates/product/index.html:76
+msgid "Bringing local businesses to you"
+msgstr ""
+
+#: product/templates/product/index.html:77
+#: product/templates/product/index.html:107
+msgid "Browse offers"
+msgstr ""
+
+#: product/templates/product/index.html:79
+#, fuzzy
+#| msgid "Newest products overview"
+msgid "Newest products"
+msgstr "Nyeste produkt oversigt"
+
+#: product/templates/product/index.html:91
+msgid "Paving the way for entrepreneurs"
+msgstr ""
+
+#: product/templates/product/index.html:92
+msgid "Register here"
+msgstr "Registrer her"
+
+#: product/templates/product/index.html:94
+msgid "Our mission"
+msgstr ""
+
+#: product/templates/product/index.html:106
+msgid "Quality products on public display"
+msgstr ""
+
+#: product/templates/product/index.html:109
+#, fuzzy
+#| msgid "No shops."
+msgid "View shops"
+msgstr "Ingen butikker."
+
+#: product/templates/product/index.html:125
+#, fuzzy
+#| msgid "Enter postcode"
+msgid "Enter your postcode"
+msgstr "Indtast postnummer"
+
+#: product/templates/product/index.html:154
+#: product/templates/product/postcode.html:14
+msgid "Something tasty"
+msgstr ""
+
+#: product/templates/product/index.html:155
+#: product/templates/product/postcode.html:15
 msgid "Products overview"
 msgstr "Produkt oversigt"
-
-#: product/templates/product/index.html:17
-msgid "No postcode selected, please select one here"
-msgstr "Ingen postkode valgt, venligst vælg en her"
-
-#: product/templates/product/index.html:17
-msgid "select postcode"
-msgstr "vælg postnummer"
 
 #: product/templates/product/newest.html:6
 msgid "Newest products overview"
@@ -275,7 +346,7 @@ msgstr "Køb"
 msgid "No products yet."
 msgstr "Ingen produkt oprettet endnu."
 
-#: product/templates/product/update.html:9 shop/templates/shop/update.html:5
+#: product/templates/product/update.html:9 shop/templates/shop/update.html:7
 msgid "Information"
 msgstr "Information"
 
@@ -289,20 +360,20 @@ msgstr "Annuller"
 msgid "Status updated"
 msgstr "Indkøbskurv opdateret"
 
-#: shop/forms.py:19
+#: shop/forms.py:18
 msgid "subject"
 msgstr "emne"
 
-#: shop/forms.py:20
+#: shop/forms.py:19
 msgid "message"
 msgstr "besked"
 
-#: shop/forms.py:62
+#: shop/forms.py:71
 #, python-format
 msgid "Maximum of %(limit)s products reached!"
 msgstr "Det maksimale antal %(limit)s af aktive produkter nået!"
 
-#: shop/forms.py:67
+#: shop/forms.py:76
 msgid "A start datetime can't start after end datetime and vice versa"
 msgstr ""
 
@@ -354,42 +425,38 @@ msgstr "leveringstid (i dage)"
 msgid "shop_image"
 msgstr "billede"
 
-#: shop/templates/shop/active_product_list.html:6
-#: shop/templates/shop/overview.html:24
+#: shop/templates/shop/active_product_list.html:8
+#: shop/templates/shop/overview.html:26
 msgid "Active products"
 msgstr "Aktive produkter"
 
-#: shop/templates/shop/active_product_list.html:8
-#: shop/templates/shop/expiring_product_list.html:8
-#: shop/templates/shop/inactive_product_list.html:8
-#: shop/templates/shop/overview.html:14 shop/templates/shop/product_list.html:8
+#: shop/templates/shop/active_product_list.html:10
+#: shop/templates/shop/expiring_product_list.html:10
+#: shop/templates/shop/inactive_product_list.html:10
+#: shop/templates/shop/overview.html:16
+#: shop/templates/shop/product_list.html:10
 msgid "Add product"
 msgstr "Tilføj produkt"
 
-#: shop/templates/shop/active_product_list.html:18
-#: shop/templates/shop/inactive_product_list.html:18
+#: shop/templates/shop/active_product_list.html:20
+#: shop/templates/shop/inactive_product_list.html:20
 msgid "No active products."
 msgstr "Ingen aktive produkter."
 
-#: shop/templates/shop/alten/base.html:8 shop/templates/shop/alten/list.html:6
-#: shop/templates/shop/list.html:6 templates/base.html:59
-msgid "Shops"
-msgstr "Butikker"
-
-#: shop/templates/shop/alten/base.html:14 shop/templates/shop/base.html:23
+#: shop/templates/shop/alten/base.html:14 templates/footer.html:33
 msgid "Change password"
 msgstr "Skift kodeord"
 
-#: shop/templates/shop/alten/base.html:17 shop/templates/shop/base.html:26
+#: shop/templates/shop/alten/base.html:17 templates/footer.html:34
 msgid "Logout"
 msgstr "Log ud"
 
-#: shop/templates/shop/alten/detail.html:12 shop/templates/shop/contact.html:9
-#: shop/templates/shop/detail.html:12
+#: shop/templates/shop/alten/detail.html:12 shop/templates/shop/contact.html:11
+#: shop/templates/shop/detail.html:14
 msgid "Contact"
 msgstr "Kontakt"
 
-#: shop/templates/shop/alten/detail.html:18 shop/templates/shop/detail.html:18
+#: shop/templates/shop/alten/detail.html:18 shop/templates/shop/detail.html:20
 msgid "Homepage"
 msgstr "Hjemmeside"
 
@@ -401,163 +468,164 @@ msgstr "Aktiver butik"
 msgid "No inactive shops."
 msgstr "Ingen aktive butikker."
 
-#: shop/templates/shop/base.html:8 shop/templates/shop/overview.html:6
+#: shop/templates/shop/base.html:16 shop/templates/shop/overview.html:8
 msgid "Overview"
 msgstr "Oversigt"
 
-#: shop/templates/shop/base.html:11
+#: shop/templates/shop/base.html:19
 msgid "Shop"
 msgstr "Butik"
 
-#: shop/templates/shop/base.html:14 shop/templates/shop/product_list.html:6
+#: shop/templates/shop/base.html:22 shop/templates/shop/product_list.html:8
 msgid "Products"
 msgstr "Produkter"
 
-#: shop/templates/shop/base.html:17 shop/templates/shop/order_list.html:6
+#: shop/templates/shop/base.html:25 shop/templates/shop/order_list.html:8
 msgid "Orders"
 msgstr "Ordrer"
 
-#: shop/templates/shop/contact.html:6
+#: shop/templates/shop/contact.html:8
 msgid "Contact shop"
 msgstr "Kontakt butik"
 
-#: shop/templates/shop/detail.html:23
+#: shop/templates/shop/detail.html:25
 msgid "Show products"
 msgstr "Vis produkter"
 
-#: shop/templates/shop/expiring_product_list.html:6
+#: shop/templates/shop/expiring_product_list.html:8
 #, fuzzy
 #| msgid "No active products."
 msgid "Soon to expire products"
 msgstr "Ingen aktive produkter."
 
-#: shop/templates/shop/expiring_product_list.html:18
+#: shop/templates/shop/expiring_product_list.html:20
 #, fuzzy
 #| msgid "No products on sale yet."
 msgid "No products soon to expire."
 msgstr "Ingen produkt på tilbud endnu."
 
-#: shop/templates/shop/inactive_product_list.html:6
-#: shop/templates/shop/overview.html:32
+#: shop/templates/shop/inactive_product_list.html:8
+#: shop/templates/shop/overview.html:34
 msgid "Inactive products"
 msgstr "Inaktive produkter"
 
-#: shop/templates/shop/list.html:14
+#: shop/templates/shop/list.html:22
 msgid "No shops."
 msgstr "Ingen butikker."
 
-#: shop/templates/shop/order_detail.html:6
+#: shop/templates/shop/order_detail.html:8
 msgid "Ordre details"
 msgstr ""
 
-#: shop/templates/shop/order_detail.html:15
+#: shop/templates/shop/order_detail.html:17
 #, fuzzy
 #| msgid "address"
 msgid "Address"
 msgstr "adresse"
 
-#: shop/templates/shop/order_detail.html:19
+#: shop/templates/shop/order_detail.html:21
 #, fuzzy
 #| msgid "Postcode"
 msgid "Postcode & City"
 msgstr "Postnummer"
 
-#: shop/templates/shop/order_detail.html:23
+#: shop/templates/shop/order_detail.html:25
 #, fuzzy
 #| msgid "email"
 msgid "Email"
 msgstr "e-mail"
 
-#: shop/templates/shop/order_detail.html:27
+#: shop/templates/shop/order_detail.html:29
 #, fuzzy
 #| msgid "mobile"
 msgid "Mobile"
 msgstr "mobil"
 
-#: shop/templates/shop/order_detail.html:31
+#: shop/templates/shop/order_detail.html:33
 #, fuzzy
 #| msgid "status"
 msgid "Status"
 msgstr "status"
 
-#: shop/templates/shop/order_detail.html:42
+#: shop/templates/shop/order_detail.html:44
 #, fuzzy
 #| msgid "Count"
 msgid "Amount"
 msgstr "Antal"
 
-#: shop/templates/shop/order_detail.html:66
+#: shop/templates/shop/order_detail.html:68
 #, fuzzy
 #| msgid "Update"
 msgid "Update status"
 msgstr "Opdater"
 
-#: shop/templates/shop/order_list.html:29
+#: shop/templates/shop/order_list.html:31
 msgid "No orders."
 msgstr "Ingen ordrer."
 
-#: shop/templates/shop/overview.html:10
+#: shop/templates/shop/overview.html:12
 msgid "Your shop is not activated yet"
 msgstr "Din butik er endnu ikke aktiveret"
 
-#: shop/templates/shop/overview.html:20
+#: shop/templates/shop/overview.html:22
 msgid "New orders"
 msgstr "Ny ordrer"
 
-#: shop/templates/shop/overview.html:28
+#: shop/templates/shop/overview.html:30
 msgid "Products that will become inactive within 7 days"
 msgstr "Produkter der bliver inaktive inden for de kommende 7 dage"
 
-#: shop/templates/shop/product_list.html:23
+#: shop/templates/shop/product_list.html:25
 msgid "No products created or active yet."
 msgstr "Ingen produkter oprettet eller aktive endnu."
 
-#: shop/templates/shop/register.html:5
+#: shop/templates/shop/register.html:7
 msgid "Register your shop today"
 msgstr "Registrer din butik i dag"
 
-#: shop/templates/shop/register.html:8 templates/base.html:60
-#: templates/footer.html:31
-msgid "Register"
-msgstr "Registrer"
-
-#: shop/templates/shop/registered.html:5
+#: shop/templates/shop/registered.html:7
 msgid "Your registration is received"
 msgstr "Din registrering er modtaget"
 
-#: shop/templates/shop/registered.html:6
+#: shop/templates/shop/registered.html:8
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "    You will get notified, when your registration is approved. Normally "
+#| "within a few days.\n"
 msgid ""
 "\n"
-"    You will get notified, when your registration is approved. Normally "
-"within a few days.\n"
+"            You will get notified, when your registration is approved. "
+"Normally within a few days.\n"
+"        "
 msgstr ""
 "\n"
 "    Du vil blive notificeret, når din registrering er godkendt. Normalt "
 "inden for et par dage.\n"
 
-#: shop/templates/shop/updated.html:7
+#: shop/templates/shop/updated.html:9
 msgid "Information updated!"
 msgstr "Information opdateret!"
 
-#: shop/views.py:63
+#: shop/views.py:54
 msgid "Message sent to shop, they will get in touch."
 msgstr "Besked sendt til butikken, de vil skrive retur hurtigst muligt."
 
-#: shop/views.py:100
+#: shop/views.py:91
 msgid "Shop with this email already exists."
 msgstr ""
 
-#: shop/views.py:121
+#: shop/views.py:112
 #, fuzzy
 #| msgid "FOODBEE - Order confirmation"
 msgid "FOODBEE - Confirm email"
 msgstr "FOODBEE - Ordrebekræftelse"
 
-#: shoplokalt/settings.py:135
+#: shoplokalt/settings.py:136
 msgid "Danish"
 msgstr "Dansk"
 
-#: shoplokalt/settings.py:136
+#: shoplokalt/settings.py:137
 msgid "English"
 msgstr ""
 
@@ -577,34 +645,18 @@ msgstr "Du har ikke rettigheder til at se denne side"
 msgid "Requested page not found."
 msgstr "Siden blev ikke fundet."
 
-#: templates/about.html:10
-#, fuzzy
-#| msgid "FoodBee"
-msgid "About FoodBee"
-msgstr "FoodBee"
-
-#: templates/about.html:11 templates/base.html:57
-#, fuzzy
-#| msgid "Homepage"
-msgid "Home"
-msgstr "Hjemmeside"
-
-#: templates/about.html:11 templates/base.html:58 templates/footer.html:30
-msgid "About"
-msgstr ""
-
-#: templates/about.html:25
+#: templates/about.html:24
 msgid "MayBee the best food platform in the world"
 msgstr ""
 
-#: templates/about.html:27
+#: templates/about.html:26
 msgid ""
 "These days, everyone relies on everyday products from local shops, and many "
 "shop-owners are fighting to keep their business intact in a world where "
 "everyone makes their purchases from home."
 msgstr ""
 
-#: templates/about.html:29
+#: templates/about.html:28
 msgid ""
 "ALTEN Danmark has developed FoodBee, a platform to help smaller businesses, "
 "like cheese shops, butchers, wine shops etc. display and sell their products "
@@ -614,50 +666,6 @@ msgstr ""
 #: templates/base.html:42
 msgid "Support your local stores today!"
 msgstr "Supporter dine lokale butikker i dag!"
-
-#: templates/base.html:61
-msgid "Shops near you"
-msgstr ""
-
-#: templates/base.html:65
-msgid "Search"
-msgstr "Søg"
-
-#: templates/base.html:116
-msgid "Bringing local businesses to you"
-msgstr ""
-
-#: templates/base.html:117 templates/base.html:139
-msgid "Browse offers"
-msgstr ""
-
-#: templates/base.html:117
-#, fuzzy
-#| msgid "Newest products overview"
-msgid "Newest products"
-msgstr "Nyeste produkt oversigt"
-
-#: templates/base.html:127
-msgid "Paving the way for entrepreneurs"
-msgstr ""
-
-#: templates/base.html:128
-msgid "Register here"
-msgstr "Registrer her"
-
-#: templates/base.html:128
-msgid "Our mission"
-msgstr ""
-
-#: templates/base.html:138
-msgid "Quality products on public display"
-msgstr ""
-
-#: templates/base.html:139
-#, fuzzy
-#| msgid "No shops."
-msgid "View shops"
-msgstr "Ingen butikker."
 
 #: templates/emails/account_activation.html:6
 msgid "Welcome!"
@@ -762,8 +770,12 @@ msgid ""
 "craft to a wider audience."
 msgstr ""
 
-#: templates/footer.html:32
-#: templates/registration/password_reset_complete.html:7
+#: templates/footer.html:30
+msgid "About"
+msgstr ""
+
+#: templates/footer.html:36
+#: templates/registration/password_reset_complete.html:9
 msgid "Log in"
 msgstr "Log ind"
 
@@ -771,36 +783,36 @@ msgstr "Log ind"
 msgid "Locked out"
 msgstr ""
 
-#: templates/registration/locked_out.html:7
+#: templates/registration/locked_out.html:9
 msgid "Account locked!"
 msgstr ""
 
-#: templates/registration/locked_out.html:10
+#: templates/registration/locked_out.html:12
 msgid "Too many login attempts. Contact an admin to unlock your account."
 msgstr ""
 
-#: templates/registration/login.html:4 templates/registration/login.html:7
-#: templates/registration/login.html:12
+#: templates/registration/login.html:4 templates/registration/login.html:9
+#: templates/registration/login.html:14
 msgid "Login"
 msgstr "Log ind"
 
-#: templates/registration/login.html:15
+#: templates/registration/login.html:17
 msgid "Forgot your username or password?"
 msgstr "Glemt dit brugernavn eller kodeord?"
 
-#: templates/registration/password_change_done.html:6
+#: templates/registration/password_change_done.html:8
 msgid "Your password was changed."
 msgstr "Dit kodeord er ændret."
 
-#: templates/registration/password_change_form.html:8
+#: templates/registration/password_change_form.html:10
 msgid "Please correct the error below."
 msgstr "Venligst ret følgende fejl."
 
-#: templates/registration/password_change_form.html:8
+#: templates/registration/password_change_form.html:10
 msgid "Please correct the errors below."
 msgstr "Venligst ret følgende fejl."
 
-#: templates/registration/password_change_form.html:13
+#: templates/registration/password_change_form.html:15
 msgid ""
 "Please enter your old password, for security’s sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
@@ -808,16 +820,16 @@ msgstr ""
 "Venligst indtast dit gamle kodeord og indtast så dit ny kodeord to gange, so "
 "vi kan verificere du har tastet korrekt."
 
-#: templates/registration/password_change_form.html:18
-#: templates/registration/password_reset_confirm.html:12
+#: templates/registration/password_change_form.html:20
+#: templates/registration/password_reset_confirm.html:14
 msgid "Change my password"
 msgstr "Skift mit kodeord"
 
-#: templates/registration/password_reset_complete.html:5
+#: templates/registration/password_reset_complete.html:7
 msgid "Your password has been set.  You may go ahead and log in now."
 msgstr "Dit kodeord er ændret. Du kan logge ind nu."
 
-#: templates/registration/password_reset_confirm.html:7
+#: templates/registration/password_reset_confirm.html:9
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
@@ -825,7 +837,7 @@ msgstr ""
 "Venligst indtast dit ny kodeord to gange, så vi kan sikre du har tastet "
 "korrekt."
 
-#: templates/registration/password_reset_confirm.html:16
+#: templates/registration/password_reset_confirm.html:18
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
@@ -833,7 +845,7 @@ msgstr ""
 "Nulstil kodeord linket var ikke korrekt, muligvis fordi det allerede har "
 "været anvendt. Venligst bed om at få nulstillet kodeordet igen."
 
-#: templates/registration/password_reset_done.html:5
+#: templates/registration/password_reset_done.html:7
 msgid ""
 "We’ve emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
@@ -841,7 +853,7 @@ msgstr ""
 "Vi har sendt dine instruktioner for at angive nyt kodeord, hvis en konto med "
 "angivne e-mail findes. Du burde modtage instruktioner snarest."
 
-#: templates/registration/password_reset_done.html:6
+#: templates/registration/password_reset_done.html:8
 msgid ""
 "If you don’t receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
@@ -874,7 +886,7 @@ msgstr "Tak for at anvende vores side!"
 msgid "The FoodBee team"
 msgstr "FOODBEE-holdet"
 
-#: templates/registration/password_reset_form.html:6
+#: templates/registration/password_reset_form.html:7
 msgid ""
 "Forgotten your password? Enter your email address below, and we’ll email "
 "instructions for setting a new one."
@@ -882,13 +894,32 @@ msgstr ""
 "Har du glemt dit kodeord? Angiv din e-mail adresse og du vil modtage e-mail "
 "instruktioner for at angive et nyt."
 
-#: templates/registration/password_reset_form.html:10
+#: templates/registration/password_reset_form.html:11
 msgid "Reset my password"
 msgstr "Nulstil mit kodeord"
 
 #: templates/registration/password_reset_subject.txt:2
 msgid "Password reset on FoodBee"
 msgstr "Kodeord nulstil på FOODBEE"
+
+#~ msgid "city"
+#~ msgstr "by"
+
+#~ msgid "No postcode selected, please select one here"
+#~ msgstr "Ingen postkode valgt, venligst vælg en her"
+
+#~ msgid "select postcode"
+#~ msgstr "vælg postnummer"
+
+#, fuzzy
+#~| msgid "FoodBee"
+#~ msgid "About FoodBee"
+#~ msgstr "FoodBee"
+
+#, fuzzy
+#~| msgid "Homepage"
+#~ msgid "Home"
+#~ msgstr "Hjemmeside"
 
 #~ msgid "Color"
 #~ msgstr "Farve"
