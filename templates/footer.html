@@ -1,50 +1,58 @@
 ﻿{% load i18n static %}
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container-fluid px-md-5 px-3">
-        <div class="row mb-5">
-            <div class="col-md-12 col-lg-4">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2"><span>Food</span><span style="color: #ffa323;">Bee</span></h2>
-                    <p>{% trans "In a time of restricted public access, it is difficult to compete with the online presence of chain stores." %}</p>
-                    <p>{% trans "FoodBee guides local businesses in their digital migration to display their craft to a wider audience." %}</p>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                    <li class="ftco-animate"><a href="mailto:info@foodbee.dk"><span class="icon-envelope"></span></a></li>
-                    <li class="ftco-animate"><a href="tel:+4512312312"><span class="icon-phone"></span></a></li>
-                    <li class="ftco-animate"><a href="https://www.linkedin.com/company/alten-danmark/"><span class="icon-linkedin"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4 text-center text-md-center" >
-                <div class="ftco-footer-widget mb-4">
-                    <div class="view overlay z-depth-1-half" >
-                        <a class="navbar-brand" href="{% url 'about' %}">
-                            <img src="{% static "base/img/Alten_Logo_Complete_white.gif" %}" class="img-fluid" alt="Alten" style="max-height: 220px;">
-                        </a>
-                    </div>
-                </div>
-            </div>   
-            <div class="col-md-12 col-lg-4">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Pages</h2>
-                    <ul class="list-unstyled">
-                        <li class="d-flex"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
-                        <li class="d-flex"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
-                        {% if user.is_authenticated %}
-                            <li class="d-flex"><a href="{% url 'password_change' %}" class="nav-link">{% trans "Change password" %}</a></li>
-                            <li class="d-flex"><a href="{% url 'logout' %}" class="nav-link">{% trans "Logout" %}</a></li>
-                        {% else %}
-                            <li class="d-flex"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
-                        {% endif %}
-                    </ul>
-                </div>
-            </div>             
-        </div>
         <div class="row">
             <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <div class="view overlay z-depth-1-half" >
+                    <a class="navbar-brand" href="{% url 'about' %}">
+                        <img src="{% static "base/img/Alten_Logo_Complete_white.gif" %}" class="img-fluid" alt="Alten" style="max-height: 120px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="container px-md-5 px-3">
+                <div class="row mb-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Sitemap</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
+                                <li class="d-flex"><a href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">{% trans "Where are you" %}</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Copenhagen" %}</a></li>
+                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Aarhus" %}</a></li>
+                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Aalborg" %}</a></li>
+                                <li class="d-flex"><a href="#" class="nav-link">{% trans "Odense" %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Menu</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                                {% if user.is_authenticated %}
+                                    <li class="d-flex"><a href="{% url 'password_change' %}" class="nav-link">{% trans "Change password" %}</a></li>
+                                    <li class="d-flex"><a href="{% url 'logout' %}" class="nav-link">{% trans "Logout" %}</a></li>
+                                {% else %}
+                                    <li class="d-flex"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
         </div>
     </div>
