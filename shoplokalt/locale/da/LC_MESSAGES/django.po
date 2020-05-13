@@ -282,7 +282,7 @@ msgstr "Søg"
 
 #: product/templates/product/index.html:76
 msgid "Bringing local businesses to you"
-msgstr "Bringer lokale butikker til dig"
+msgstr "Lokale lækkerier"
 
 #: product/templates/product/index.html:77
 #: product/templates/product/index.html:92
@@ -297,10 +297,8 @@ msgid "View shops"
 msgstr "Se butikker"
 
 #: product/templates/product/index.html:91
-#, fuzzy
-#| msgid "Paving the way for online local shopping"
-msgid "Paving the way for entrepreneurs"
-msgstr "Online lokal handel"
+msgid "Paving the way for online local shopping"
+msgstr "Vi gør Online lokal handel mulig"
 
 #: product/templates/product/index.html:106
 msgid "Quality products on public display"
@@ -558,11 +556,6 @@ msgid "Your registration is received"
 msgstr "Din registrering er modtaget"
 
 #: shop/templates/shop/registered.html:8
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "    You will get notified, when your registration is approved. Normally "
-#| "within a few days.\n"
 msgid ""
 "\n"
 "            You will get notified, when your registration is approved. "
@@ -578,10 +571,8 @@ msgid "Information updated!"
 msgstr "Information opdateret!"
 
 #: shop/views.py:54
-#, fuzzy
-#| msgid "Message sent to shop. The shop will be in touch."
 msgid "Message sent to shop, they will get in touch."
-msgstr "Besked sendt til butikken.Butikken vil skrive retur hurtigst muligt."
+msgstr "Besked sendt til butikken. Butikken vil skrive retur hurtigst muligt."
 
 #: shop/views.py:91
 msgid "Shop with this email already exists."
@@ -692,8 +683,6 @@ msgstr ""
 "herunder til din browser"
 
 #: templates/emails/base_email.html:335 templates/emails/base_email.txt:3
-#, fuzzy
-#| msgid "Alten Danmark - Christians Brygge 28 - Copenhagen, DK"
 msgid "Alten - Christians Brygge 28 - Copenhagen, DK"
 msgstr "Alten Danmark - Christians Brygge 28 - København, DK"
 
@@ -786,22 +775,14 @@ msgid "Your password was changed."
 msgstr "Dit kodeord er ændret."
 
 #: templates/registration/password_change_form.html:10
-#, fuzzy
-#| msgid "Please correct the error below:"
 msgid "Please correct the error below."
-msgstr "Venligst ret følgende fejl:"
+msgstr "Venligst ret fejlen herunder."
 
 #: templates/registration/password_change_form.html:10
-#, fuzzy
-#| msgid "Please correct the errors below:"
 msgid "Please correct the errors below."
-msgstr "Venligst ret følgende fejl:"
+msgstr "Venligst ret fejlene herunder."
 
 #: templates/registration/password_change_form.html:15
-#, fuzzy
-#| msgid ""
-#| "Please enter your old password, for security reasons, and then enter your "
-#| "new password twice so we can verify you typed it in correctly."
 msgid ""
 "Please enter your old password, for security’s sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
@@ -890,113 +871,3 @@ msgstr "Nulstil mit kodeord"
 #: templates/registration/password_reset_subject.txt:2
 msgid "Password reset on FoodBee"
 msgstr "Nulstil kodeord på FoodBee"
-
-#, fuzzy
-#~| msgid "Newest products overview"
-#~ msgid "Newest products"
-#~ msgstr "Nyeste produkter"
-
-#~ msgid "Register here"
-#~ msgstr "Registrer her"
-
-#~ msgid "Our mission"
-#~ msgstr "Vores mission"
-
-#~ msgid ""
-#~ "In a time of restricted public access, it is difficult to compete with "
-#~ "the online presence of chain stores."
-#~ msgstr ""
-#~ "I denne COVID-19 tid er det svært at konkurrere med de store "
-#~ "supermarkeder der allerede har et online aftryk."
-
-#~ msgid ""
-#~ "FoodBee guides local businesses in their digital migration to display "
-#~ "their craft to a wider audience."
-#~ msgstr ""
-#~ "FoodBee ønsker at hjælpe de små lokale butikker med at bryde igennem på "
-#~ "den digitale scene og derved få en større eksponering af deres lækre "
-#~ "produkter."
-
-#~ msgid "city"
-#~ msgstr "by"
-
-#~ msgid "No postcode selected, please select one here"
-#~ msgstr "Ingen postkode er valgt, venligst vælg én her"
-
-#~ msgid "select postcode"
-#~ msgstr "vælg postnummer"
-
-#~ msgid "About FoodBee"
-#~ msgstr "Om FoodBee"
-
-#~ msgid "Home"
-#~ msgstr "Hjem"
-
-#~ msgid "Color"
-#~ msgstr "Farve"
-
-#~ msgid "Size"
-#~ msgstr "Størrelse"
-
-#~ msgid "Product image"
-#~ msgstr "Produkt billede"
-
-#~ msgid "FoodBee - Alten"
-#~ msgstr "FoodBee - Alten"
-
-#~ msgid "Activate Your Account"
-#~ msgstr "Aktiver din konto"
-
-#~ msgid "FOODBEE"
-#~ msgstr "FOODBEE"
-
-#~ msgid "Newest"
-#~ msgstr "Nyeste"
-
-#~ msgid "On Sale"
-#~ msgstr "Tilbud"
-
-#~ msgid "Hi"
-#~ msgstr "Hej"
-
-#~ msgid "Please click on the link below to confirm your registration:"
-#~ msgstr ""
-#~ "Venligst klik på nedenstående link, for at bekræfte din registrering:"
-
-#~ msgid "Click to activate"
-#~ msgstr "Klik for at aktiver"
-
-#~ msgid ""
-#~ "In order for the shop to confirm the order, you must first pay the order "
-#~ "total via MobilePay directly to the shop."
-#~ msgstr ""
-#~ "For at butikken kan bekræfte din bestilling, skal du først betale direkte "
-#~ "til butikken via MobilePay."
-
-#~ msgid "To address: "
-#~ msgstr "Til adresse: "
-
-#~ msgid "For shoppers"
-#~ msgstr "For handlende"
-
-#~ msgid "How it works"
-#~ msgstr "Hvordan det virker"
-
-#~ msgid "For shops"
-#~ msgstr "For butikker"
-
-#~ msgid "Benefits"
-#~ msgstr "Fordele"
-
-#~ msgid "Business model"
-#~ msgstr "Forretningsmodel"
-
-#~ msgid "click here"
-#~ msgstr "klik her"
-
-#~ msgid ""
-#~ "No postcode selected, please select one here: <a class=\"btn btn-primary"
-#~ "\" href=\"%(postcode_url)s\">click here!</a>"
-#~ msgstr ""
-#~ "Intet postnummer valgt. Venligst vælg et postnummer her: <a class=“btn "
-#~ "btn-primary” href=“%(postcode_url)s”>klik her!</a>"

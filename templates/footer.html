@@ -36,11 +36,11 @@
                         <div class="ftco-footer-widget mb-4">
                             <h2 class="ftco-heading-2">Menu</h2>
                             <ul class="list-unstyled">
-                                <li class="d-flex justify-content-center"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
                                 {% if user.is_authenticated %}
                                     <li class="d-flex justify-content-center"><a href="{% url 'password_change' %}" class="nav-link">{% trans "Change password" %}</a></li>
                                     <li class="d-flex justify-content-center"><a href="{% url 'logout' %}" class="nav-link">{% trans "Logout" %}</a></li>
                                 {% else %}
+                                    <li class="d-flex justify-content-center"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
                                     <li class="d-flex justify-content-center"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
                                 {% endif %}
                             </ul>

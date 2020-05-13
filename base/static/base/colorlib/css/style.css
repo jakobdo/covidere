@@ -8337,7 +8337,7 @@ h1, h2, h3, h4, h5,
           letter-spacing: 3px; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
           text-transform: uppercase;
-          font-size: 5vw;
+          font-size: 4vw;
           color: #fff;
           line-height: 1.5;
           font-weight: normal;
@@ -8388,7 +8388,7 @@ h1, h2, h3, h4, h5,
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 40px;
+      bottom: 10px;
       width: 100%;
       text-align: center; }
       @media (max-width: 767.98px) {
