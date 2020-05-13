@@ -585,7 +585,7 @@ if (typeof jQuery === 'undefined') {
               if (dir) {
                   this.currentViewMode = Math.max(this.MinViewModeNumber, Math.min(3, this.currentViewMode + dir));
               }
-              this.widget.find('.datepicker > div').hide().filter('.datepicker-' + DatePickerModes[this.currentViewMode].CLASS_NAME).show();
+              this.widget.find('.datepicker > div').hide().filter('.datepicker-' + DatePickerModes[this.currentViewMode].CLASS_NAME).css('display', 'block');
           };
   
           DateTimePicker.prototype._isInDisabledDates = function _isInDisabledDates(testDate) {
@@ -1866,9 +1866,9 @@ if (typeof jQuery === 'undefined') {
               }
   
               if (vertical === 'top') {
-                  self.widget.addClass('top').removeClass('bottom');
+                  self.widget.addClass('vertical-top').removeClass('vertical-bottom');
               } else {
-                  self.widget.addClass('bottom').removeClass('top');
+                  self.widget.addClass('vertical-bottom').removeClass('vertical-top');
               }
   
               if (horizontal === 'right') {
@@ -2553,18 +2553,17 @@ if (typeof jQuery === 'undefined') {
   
               this._fillDow();
               this._fillMonths();
-  
+
               this.widget.find('.timepicker-hours').hide();
               this.widget.find('.timepicker-minutes').hide();
               this.widget.find('.timepicker-seconds').hide();
-  
+
               this._update();
               this._showMode();
-  
+
               $(window).on('resize', { picker: this }, this._place);
               this.widget.on('click', '[data-action]', $.proxy(this._doAction, this)); // this handles clicks on the widget
               this.widget.on('mousedown', false);
-  
               if (this.component && this.component.hasClass('btn')) {
                   this.component.toggleClass('active');
               }
@@ -2573,10 +2572,10 @@ if (typeof jQuery === 'undefined') {
               if (this.input !== undefined && this._options.focusOnShow && !this.input.is(':focus')) {
                   this.input.focus();
               }
-  
               this._notifyEvent({
                   type: DateTimePicker.Event.SHOW
               });
+              console.log("log");
           };
   
           TempusDominusBootstrap4.prototype.destroy = function destroy() {

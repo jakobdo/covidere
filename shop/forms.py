@@ -1,18 +1,12 @@
-from crispy_forms.helper import FormHelper
 from django import forms
 from django.forms import ValidationError
 from django.utils.translation import gettext, gettext_lazy
-from phonenumber_field.formfields import PhoneNumberField
-from phonenumber_field.widgets import (PhoneNumberInternationalFallbackWidget,
-                                       PhoneNumberPrefixWidget)
+from phonenumber_field.widgets import PhoneNumberInternationalFallbackWidget
 
 from base.widgets import BootstrapDateTimePickerInput
 from order.models import Order
 from product.models import Product
 from shop.models import Shop
-
-#from intl_tel_input.widgets import IntlTelInputWidget
-
 
 
 class ShopContactForm(forms.Form):
@@ -40,12 +34,16 @@ class ShopRegisterForm(forms.ModelForm):
 
 class ShopProductForm(forms.ModelForm):
     start_datetime = forms.DateTimeField(
+        label=gettext('Start datetime'),
         input_formats=['%Y-%m-%d %H:%M'], 
-        widget=BootstrapDateTimePickerInput()
+        widget=BootstrapDateTimePickerInput(),
+        required=False,
     )
     end_datetime = forms.DateTimeField(
-        input_formats=['%Y-%m-%d %H:%M'], 
-        widget=BootstrapDateTimePickerInput()
+        label=gettext('End datetime'),
+        input_formats=['%Y-%m-%d %H:%M'],
+        widget=BootstrapDateTimePickerInput(),
+        required=False,
     )
 
     class Meta:

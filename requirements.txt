@@ -27,3 +27,9 @@ django-extensions
 
 # Hosting
 gunicorn
+
+# Tests
+pytest
+pytest-django
+pytest-cov
+factory_boy
