@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-12 13:56+0000\n"
-"PO-Revision-Date: 2020-04-24 09:53+0200\n"
+"PO-Revision-Date: 2020-05-13 08:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: base/forms.py:22
 msgid "The two password fields didn’t match."
@@ -34,10 +34,8 @@ msgid "Enter the same password as before, for verification."
 msgstr "Indtast samme kodeord som før, for verificering."
 
 #: base/models.py:7
-#, fuzzy
-#| msgid "address"
 msgid "email address"
-msgstr "email adresse"
+msgstr "e-mail adresse"
 
 #: base/templates/base/postcode.html:5
 msgid "Select your preferred postcode."
@@ -195,26 +193,20 @@ msgid "status"
 msgstr "status"
 
 #: order/templates/order/create.html:7
-#, fuzzy
-#| msgid "FOODBEE - Order confirmation"
 msgid "Confirm details"
-msgstr "FOODBEE - Ordrebekræftelse"
+msgstr "Bekræft detaljer"
 
 #: order/templates/order/thanks.html:8
 msgid "Thank you for your order."
 msgstr "Tak for din order."
 
 #: order/views.py:77
-#, fuzzy
-#| msgid "FOODBEE - Order confirmation"
 msgid "Order confirmation"
-msgstr "FOODBEE - Ordrebekræftelse"
+msgstr "Ordrebekræftelse"
 
 #: order/views.py:81
-#, fuzzy
-#| msgid "FOODBEE - Order confirmation"
 msgid "FOODBEE - Order placed"
-msgstr "FOODBEE - Ordrebekræftelse"
+msgstr "FOODBEE - Ordre afgivet"
 
 #: postcode/forms.py:9
 msgid "postcode"
@@ -253,10 +245,8 @@ msgid "end datetime"
 msgstr "slutdato"
 
 #: product/templates/product/create.html:11
-#, fuzzy
-#| msgid "Inactive products"
 msgid "Create product"
-msgstr "Inaktive produkter"
+msgstr "Opret produkt"
 
 #: product/templates/product/create.html:14
 msgid "Create"
@@ -331,10 +321,8 @@ msgid "Buy"
 msgstr "Køb"
 
 #: product/templates/product/product_list.html:38
-#, fuzzy
-#| msgid "No products yet"
 msgid "No products yet."
-msgstr "Ingen produkter oprettet endnu"
+msgstr "Ingen produkter oprettet endnu."
 
 #: product/templates/product/update.html:9 shop/templates/shop/update.html:7
 msgid "Information"
@@ -387,7 +375,7 @@ msgstr "CVR number"
 
 #: shop/models.py:28
 msgid "offer order pick-up at shop"
-msgstr "Tilbyd ordre afhentning i butikken"
+msgstr "tilbyd ordre afhentning i butikken"
 
 #: shop/models.py:30
 msgid "Do Not offer delivery"
@@ -407,7 +395,7 @@ msgstr "Begrænsning af levering"
 
 #: shop/models.py:42
 msgid "shop_image"
-msgstr "Butik billede"
+msgstr "butik_billede"
 
 #: shop/templates/shop/active_product_list.html:8
 #: shop/templates/shop/overview.html:26
@@ -498,8 +486,6 @@ msgid "Order details"
 msgstr "Ordre detaljer"
 
 #: shop/templates/shop/order_detail.html:17
-#, fuzzy
-#| msgid "address"
 msgid "Address"
 msgstr "Adresse"
 
@@ -509,7 +495,7 @@ msgstr "Postnummer & by"
 
 #: shop/templates/shop/order_detail.html:25
 msgid "Email"
-msgstr "e-mail"
+msgstr "E-mail"
 
 #: shop/templates/shop/order_detail.html:29
 msgid "Mobile"
@@ -563,8 +549,9 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"    Du vil blive notificeret, når din registrering er godkendt. Normalt "
-"inden for et par dage.\n"
+"            Du vil blive notificeret, når din registrering er godkendt. "
+"Normalt inden for et par dage.\n"
+"        "
 
 #: shop/templates/shop/updated.html:9
 msgid "Information updated!"
@@ -576,7 +563,7 @@ msgstr "Besked sendt til butikken. Butikken vil skrive retur hurtigst muligt."
 
 #: shop/views.py:91
 msgid "Shop with this email already exists."
-msgstr "Butik med denne email eksisterer allerede"
+msgstr "Butik med denne email eksisterer allerede."
 
 #: shop/views.py:112
 msgid "FOODBEE - Confirm email"
@@ -608,7 +595,7 @@ msgstr "Siden blev ikke fundet."
 
 #: templates/about.html:12
 msgid "MayBee the best food platform in the world"
-msgstr ""
+msgstr "Måske den bedste mad platform i verdenen"
 
 #: templates/about.html:14
 msgid ""
@@ -616,6 +603,9 @@ msgid ""
 "shop-owners are fighting to keep their business intact in a world where "
 "everyone makes their purchases from home."
 msgstr ""
+"I disse tider er vi alle afhængige af hverdagsprodukter fra lokale butikker "
+"og mange butiksejere kæmper med at holde deres forretning kørende i en tid "
+"hvor mange laver deres indkøbs hjemmefra."
 
 #: templates/about.html:16
 msgid ""
@@ -654,7 +644,7 @@ msgstr "Bekræft email"
 #: templates/emails/order_confirmation.html:60
 #: templates/emails/order_confirmation.txt:11
 msgid "Cheers,"
-msgstr "På forhånd Tak, "
+msgstr "På forhånd Tak,"
 
 #: templates/emails/account_activation.html:30
 #: templates/emails/account_activation.txt:9
@@ -672,7 +662,7 @@ msgstr ""
 
 #: templates/emails/account_activation.txt:2
 msgid "You have registered your shop with FoodBee."
-msgstr "Du har netop registreret din butik hos FoodBee"
+msgstr "Du har netop registreret din butik hos FoodBee."
 
 #: templates/emails/account_activation.txt:4
 msgid ""
@@ -680,7 +670,7 @@ msgid ""
 "link below into your browser."
 msgstr ""
 "Vi har brug for at verificere din email adresse, venligst kopier linket "
-"herunder til din browser"
+"herunder til din browser."
 
 #: templates/emails/base_email.html:335 templates/emails/base_email.txt:3
 msgid "Alten - Christians Brygge 28 - Copenhagen, DK"
@@ -688,7 +678,7 @@ msgstr "Alten Danmark - Christians Brygge 28 - København, DK"
 
 #: templates/emails/order_confirmation.html:6
 msgid "Order placed!"
-msgstr "Din ordre er bestilt"
+msgstr "Din ordre er bestilt!"
 
 #: templates/emails/order_confirmation.html:15
 #: templates/emails/order_confirmation.txt:4
@@ -712,7 +702,7 @@ msgstr "Total"
 
 #: templates/emails/order_confirmation.txt:2
 msgid "You have placed an order through FoodBee."
-msgstr "Du har fuldført en order hos FoodBee"
+msgstr "Du har fuldført en order hos FoodBee."
 
 #: templates/emails/order_confirmation.txt:9
 msgid "For a total cost of "
@@ -724,23 +714,23 @@ msgstr "Om Os"
 
 #: templates/footer.html:26
 msgid "Where are you"
-msgstr ""
+msgstr "Hvor er du"
 
 #: templates/footer.html:28
 msgid "Copenhagen"
-msgstr ""
+msgstr "København"
 
 #: templates/footer.html:29
 msgid "Aarhus"
-msgstr ""
+msgstr "Aarhus"
 
 #: templates/footer.html:30
 msgid "Aalborg"
-msgstr ""
+msgstr "Aalborg"
 
 #: templates/footer.html:31
 msgid "Odense"
-msgstr ""
+msgstr "Odense"
 
 #: templates/footer.html:44
 #: templates/registration/password_reset_complete.html:9
