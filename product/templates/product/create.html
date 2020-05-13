@@ -8,6 +8,7 @@
 {% block content %}
 <section class="ftco-section">
     <div class="container">
+        <h1>{% trans "Create product" %}</h1>
         <form method="post" enctype="multipart/form-data" autocomplete="off">{% csrf_token %}
             {{ form|crispy }}
             <button type="submit" class="btn btn-primary">{% trans "Create" %}</button>
@@ -18,7 +19,7 @@
 
 {% block bodyscript %}
 <script src="{% static 'product/moment/js/moment.min.js' %}"></script>
-<script src="{% static 'product/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+<script src="{% static 'product/tempusdominus/js/tempusdominus-bootstrap-4.js' %}"></script>
 <script>
     $.fn.datetimepicker.Constructor.Default = $.extend({}, $.fn.datetimepicker.Constructor.Default, {
         icons: {
@@ -33,8 +34,7 @@
             close: 'fas fa-times'
         } 
     });
-</script>
-<script>
+
     $(function () {
         $('#datetimepicker_start_datetime').datetimepicker({
             format: 'YYYY-MM-DD HH:mm'

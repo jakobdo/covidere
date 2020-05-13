@@ -1,9 +1,11 @@
+from crispy_forms.helper import FormHelper
 from django import forms
 from django.forms import ValidationError
 from django.utils.translation import gettext, gettext_lazy
 from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import (PhoneNumberInternationalFallbackWidget,
                                        PhoneNumberPrefixWidget)
+
 from base.widgets import BootstrapDateTimePickerInput
 from order.models import Order
 from product.models import Product
@@ -53,11 +55,6 @@ class ShopProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
         super(ShopProductForm, self).__init__(*args, **kwargs)
-        for f in self.fields:
-            if not isinstance(self.fields[f].widget, forms.CheckboxInput):
-                self.fields[f].widget.attrs['placeholder'] = self.fields[f].label
-                self.fields[f].label = ''
-    
 
     def clean(self):
         cleaned_data = super().clean()
