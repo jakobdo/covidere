@@ -1866,9 +1866,9 @@ if (typeof jQuery === 'undefined') {
               }
   
               if (vertical === 'top') {
-                  self.widget.addClass('top').removeClass('bottom');
+                  self.widget.addClass('vertical-top').removeClass('vertical-bottom');
               } else {
-                  self.widget.addClass('bottom').removeClass('top');
+                  self.widget.addClass('vertical-bottom').removeClass('vertical-top');
               }
   
               if (horizontal === 'right') {
