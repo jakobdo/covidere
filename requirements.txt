@@ -11,6 +11,9 @@ phonenumbers
 django-phonenumber-field
 django-axes
 
+# Unit test
+pytest-django
+
 # Helpers
 requests
 
