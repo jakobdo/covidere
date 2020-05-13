@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-12 13:56+0000\n"
-"PO-Revision-Date: 2020-05-13 08:09+0200\n"
+"POT-Creation-Date: 2020-05-13 06:18+0000\n"
+"PO-Revision-Date: 2020-05-13 08:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da\n"
@@ -260,7 +260,7 @@ msgid "Shops"
 msgstr "Butikker"
 
 #: product/templates/product/index.html:19 shop/templates/shop/register.html:10
-#: templates/base.html:61 templates/footer.html:39
+#: templates/base.html:61 templates/footer.html:43
 msgid "Register"
 msgstr "Registrer"
 
@@ -287,8 +287,8 @@ msgid "View shops"
 msgstr "Se butikker"
 
 #: product/templates/product/index.html:91
-msgid "Paving the way for online local shopping"
-msgstr "Vi gør Online lokal handel mulig"
+msgid "Paving the way for entrepreneurs"
+msgstr "Baner vejen for iværksættere"
 
 #: product/templates/product/index.html:106
 msgid "Quality products on public display"
@@ -415,11 +415,11 @@ msgstr "Tilføj produkt"
 msgid "No active products."
 msgstr "Ingen aktive produkter."
 
-#: shop/templates/shop/alten/base.html:14 templates/footer.html:41
+#: shop/templates/shop/alten/base.html:14 templates/footer.html:40
 msgid "Change password"
 msgstr "Skift kodeord"
 
-#: shop/templates/shop/alten/base.html:17 templates/footer.html:42
+#: shop/templates/shop/alten/base.html:17 templates/footer.html:41
 msgid "Logout"
 msgstr "Log ud"
 
