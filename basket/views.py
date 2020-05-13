@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.http.response import JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
 from django.utils.translation import gettext
@@ -6,46 +7,27 @@ from django.views import View
 from django.views.generic import FormView, TemplateView
 
 from basket.forms import BasketAddForm
+from basket.utils import Basket
 from product.models import Product
 
 
-class Basket:
-    """
-    Small basket helper to add item to basket
-    """
-    def __init__(self, session):
-        self.session = session
-
-    def add(self, product, count):
-        # Add or update item
-        basket = self.session.setdefault('basket', [])
-        item = next((item for item in basket if (
-            item['product'] == product
-        )), None)
-        if item:
-            item['count'] += count
+class BasketAddView(View):
+    def post(self, request, *args, **kwargs):
+        form = BasketAddForm(request.POST)
+        if form.is_valid():
+            basket = Basket(self.request.session)
+            self.request.session['basket'] = basket.add(
+                form.cleaned_data.get('product'),
+                form.cleaned_data.get('count'),
+            )
+            self.request.session.modified = True
+            #messages.add_message(self.request, messages.INFO, gettext('Product added to basket'))
+            return JsonResponse({
+                'msg': gettext('Product added to basket'), 
+                'count': basket.count(),
+            })
         else:
-            basket.append(dict(
-                product=product,
-                count=count
-            ))
-        return basket
-
-
-class BasketAddView(FormView):
-    template_name = 'basket/add.html'
-    form_class = BasketAddForm
-    success_url = reverse_lazy('index')
-
-    def form_valid(self, form):
-        basket = Basket(self.request.session)
-        self.request.session['basket'] = basket.add(
-            form.cleaned_data.get('product'),
-            form.cleaned_data.get('count'),
-        )
-        self.request.session.modified = True
-        messages.add_message(self.request, messages.INFO, gettext('Product added to basket'))
-        return super().form_valid(form)
+            return JsonResponse({'msg': gettext('Product not added to basket')}, status=400)
 
 
 class BasketIndexView(TemplateView):

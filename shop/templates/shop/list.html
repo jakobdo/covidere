@@ -1,17 +1,27 @@
 {% extends 'base.html' %}
-
 {% load i18n %}
 
 {% block content %}
-<h1>{% trans "Shops" %}</h1>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Shops" %}</h1>
 
-<div class="list-group">
-    {% for shop in object_list %}
-        <a href="{% url 'shop_detail' pk=shop.pk %}" class="list-group-item list-group-item-action">
-            {{ shop.name }}
-        </a>
-    {% empty %}
-        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No shops." %}</a>
-    {% endfor %}
-</div>
+        <div class="card">
+            {% for postcode in object_list %}
+                <div class="card-header">
+                    {{ postcode.postcode }} {{ postcode.city }}
+                </div>
+                <div class="list-group list-group-flush">
+                    {% for shop in postcode.shops.all %}
+                        <a href="{% url 'shop_detail' pk=shop.pk %}" class="list-group-item list-group-item-action">
+                            {{ shop.name }}
+                        </a>
+                    {% endfor %}
+                    </div>
+            {% empty %}
+                <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No shops." %}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 {% endblock %}

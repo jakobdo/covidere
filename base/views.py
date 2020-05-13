@@ -1,50 +1,62 @@
+from urllib.parse import unquote
+
+from django.conf import settings
 from django.contrib.auth import login
-from django.http import HttpResponse
+from django.db import IntegrityError
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import Http404
-from django.urls import reverse
+from django.urls import reverse, translate_url
 from django.utils.encoding import force_text
-from django.utils.http import urlsafe_base64_decode
-from django.utils.translation import gettext
-from django.views.generic import FormView
+from django.utils.http import (url_has_allowed_host_and_scheme,
+                               urlsafe_base64_decode)
+from django.utils.translation import (LANGUAGE_SESSION_KEY, check_for_language,
+                                      gettext)
+from django.views.generic import FormView, TemplateView
 
 from base.forms import SetUsernameAndPasswordForm
 from base.models import User
 from shop.tokens import account_activation_token
 
 
+class AboutPageView(TemplateView):
+    template_name = 'about.html'
+
+
 class ActivateUserView(FormView):
     template_name = 'base/set_password.html'
     form_class = SetUsernameAndPasswordForm
 
-    def validate_user(self):
-        try:
-            uid = force_text(urlsafe_base64_decode(self.kwargs.get('uidb64')))
-            self.user = User.objects.get(pk=uid)
-        except (TypeError, ValueError, OverflowError, User.DoesNotExist):
-            self.user = None
-    
     def validate_token(self):
-        return self.user is not None and self.user.is_active is False and account_activation_token.check_token(self.user, self.kwargs.get('token'))
+        return self.user.is_active is False and account_activation_token.check_token(self.user, self.kwargs.get('token'))
+
+    def get_form_kwargs(self):
+        kwargs = super(ActivateUserView, self).get_form_kwargs()
+        kwargs['user'] = self.user
+        return kwargs
 
     def form_valid(self, form):
-        self.validate_user()
-
-        if self.validate_token():
-            user = self.user
-            user.is_active = True
-            user.username = form.cleaned_data["username"]
-            user.set_password(form.cleaned_data["password1"])
+        user = self.user
+        user.is_active = True
+        user.username = form.cleaned_data["username"]
+        user.set_password(form.cleaned_data["password1"])
+        try:
             user.save()
-            login(self.request, user, backend='axes.backends.AxesBackend')
-        else:
-            raise Http404(gettext("Invalid token"))
+        except IntegrityError:
+            form.add_error('username', gettext('Shop with this username already exists.'))
+            return super(ActivateUserView, self).form_invalid(form)
+
+        login(self.request, user, backend='axes.backends.AxesBackend')
         return super().form_valid(form)
 
-    def get(self, request, *args, **kwargs):
-        self.validate_user()
+    def setup(self, request, *args, **kwargs):
+        super(ActivateUserView, self).setup(request, *args, **kwargs)
+        try:
+            uid = force_text(urlsafe_base64_decode(kwargs.get('uidb64')))
+            self.user = User.objects.get(pk=uid)
+        except (TypeError, ValueError, OverflowError, User.DoesNotExist):
+            raise Http404(gettext("Invalid token"))
         if not self.validate_token():
             raise Http404(gettext("Invalid token"))
-        return super().get(request, *args, **kwargs)
 
     def get_success_url(self):
         return reverse('shop_overview')

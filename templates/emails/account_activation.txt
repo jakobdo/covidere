@@ -1,0 +1,10 @@
+﻿{% extends "emails/base_email.txt" %}{% load i18n %}{% block content %}
+{% trans "You have registered your shop with FoodBee." %}
+
+{% trans "In order to validate that this is indeed your email adress, please copy the link below into your browser." %}
+
+http://{{ domain }}{% url 'user_activate' uidb64=uid token=token %}
+
+{% trans "Cheers," %}
+{% trans "The FoodBee Team" %}
+{% endblock %}

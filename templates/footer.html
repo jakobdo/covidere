@@ -1,46 +1,59 @@
-﻿{% load i18n %}
-{% load static %}
-<footer class="page-footer font-small purple pt-4">
-    <div class="container-fluid text-center text-md-left">
+﻿{% load i18n static %}
+<footer class="ftco-footer ftco-bg-dark ftco-section pb-1">
+    <div class="container-fluid px-md-5 px-3 text-center">
         <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-4 mt-md-0 mt-3">
-                <div class="view overlay z-depth-1-half">
-                    <img src="{% static "base/img/ALTEN_logo.svg.png" %}" class="img-fluid" alt="Alten">
+            <div class="col-md-12">
+                <div class="view overlay z-depth-1-half" >
+                    <a class="navbar-brand" href="{% url 'about' %}#About_Alten">
+                        <img src="{% static "base/img/Alten_text_triangles_white.png" %}" class="img-fluid" alt="Alten" style="max-height: 120px;">
+                    </a>
                 </div>
             </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-                <h5 class="text-uppercase">{% trans "For shoppers" %}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">{% trans "Register here" %}</a></li>
-                    <li><a href="#!">{% trans "How it works" %}</a></li>                    
-                </ul>
+        </div>
+            <div class="container px-md-5 px-3">
+                <div class="row mb-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Sitemap</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-center"><a href="{% url 'about' %}" class="nav-link">{% trans "About" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">{% trans "Where are you" %}</h2>
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Copenhagen" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Aarhus" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Aalborg" %}</a></li>
+                                <li class="d-flex justify-content-center"><a href="#" class="nav-link">{% trans "Odense" %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Menu</h2>
+                            <ul class="list-unstyled">
+                                {% if user.is_authenticated %}
+                                    <li class="d-flex justify-content-center"><a href="{% url 'password_change' %}" class="nav-link">{% trans "Change password" %}</a></li>
+                                    <li class="d-flex justify-content-center"><a href="{% url 'logout' %}" class="nav-link">{% trans "Logout" %}</a></li>
+                                {% else %}
+                                    <li class="d-flex justify-content-center"><a href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                                    <li class="d-flex justify-content-center"><a href="{% url 'login' %}" class="nav-link">{% trans "Log in" %}</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>    
+                </div>    
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-                <h5 class="text-uppercase">{% trans "For shops" %}</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">{% trans "Register here" %}</a></li>
-                    <li><a href="#!">{% trans "Benefits" %}</a></li>
-                    <li><a href="#!">{% trans "Business model" %}</a></li>
-                </ul>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
-            <!-- Grid column -->
         </div>
     </div>
-    <!-- Copyright -->
-    <!--
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        a href="https://mdbootstrap.com/"> MDBootstrap.com</!--a>
-    </div>
-    -->
-    <!-- Copyright -->
 </footer>

@@ -4,16 +4,19 @@
 {% block title %}{% trans "Login" %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans "Login" %}</h1>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Login" %}</h1>
 
-    <form method="post" action="{% url 'login' %}">{% csrf_token %}
-        {{ form|crispy }}
-        <input type="hidden" name="next" value="{{ next }}" />
-        <button type="submit" class="btn btn-primary">{% trans "Login" %}</button>
-        {% url 'password_reset' as password_reset_url %}
-        {% if password_reset_url %}
-            <a class="btn btn-danger" href="{{ password_reset_url }}">{% trans "Forgot your username or password?" %}</a>
-        {% endif %}
-    </form>
-</div>
+        <form method="post" action="{% url 'login' %}">{% csrf_token %}
+            {{ form|crispy }}
+            <input type="hidden" name="next" value="{{ next }}" />
+            <button type="submit" class="btn btn-primary">{% trans "Login" %}</button>
+            {% url 'password_reset' as password_reset_url %}
+            {% if password_reset_url %}
+                <a class="btn btn-danger" href="{{ password_reset_url }}">{% trans "Forgot your username or password?" %}</a>
+            {% endif %}
+        </form>
+    </div>
+</section>
 {% endblock %}

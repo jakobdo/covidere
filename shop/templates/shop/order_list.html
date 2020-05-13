@@ -3,32 +3,36 @@
 {% load i18n %}
 
 {% block content %}
-<h1>{% trans "Orders" %}</h1>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Orders" %}</h1>
 
-<table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">{% trans "Name" %}</th>
-        <th scope="col">{% trans "City" %}</th>
-      </tr>
-    </thead>
-    <tbody>
-        {% for order in object_list %}
-            <tr>
-                <th scope="row">
-                    <a href="{% url 'show_order_detail' pk=order.pk %}">
-                        {{ order.pk }}
-                    </a>
-                </th>
-                <td>{{ order.name }}</td>
-                <td>{{ order.postcode.city }}</td>
-            </tr>
-        {% empty %}
-            <tr>
-                <td colspan="4">{% trans "No orders." %}</td>
-            </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">{% trans "Name" %}</th>
+                <th scope="col">{% trans "City" %}</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for order in object_list %}
+                    <tr>
+                        <th scope="row">
+                            <a href="{% url 'show_order_detail' pk=order.pk %}">
+                                {{ order.pk }}
+                            </a>
+                        </th>
+                        <td>{{ order.name }}</td>
+                        <td>{{ order.postcode.city }}</td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="4">{% trans "No orders." %}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
 {% endblock %}

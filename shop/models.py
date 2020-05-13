@@ -6,9 +6,10 @@ from django.utils.http import urlencode
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
 from phonenumber_field.modelfields import PhoneNumberField
-
+from django.core.validators import MaxLengthValidator,MinLengthValidator
 from postcode.models import Postcode
 
+from stdimage import JPEGField
 
 class Shop(models.Model):
     name = models.CharField(gettext_lazy("shop name"), max_length=100)
@@ -21,8 +22,28 @@ class Shop(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
+    cvr_number = models.CharField(gettext_lazy("CVR number"), unique=True, validators=[MaxLengthValidator(8),MinLengthValidator(8)], max_length=8, null=True)
     active = models.BooleanField(gettext_lazy("active"), default=False)
+    
+    order_pickup = models.BooleanField(gettext_lazy("offer order pick-up at shop"), default=True)
+    DELIVERY_RANGE_CHOICES = [
+        (-1, gettext_lazy('Do Not offer delivery')),
+        (5, gettext_lazy('5KM from shop')),
+        (10, gettext_lazy('10KM from shop')),
+    ]
+    delivery_range = models.IntegerField(
+        gettext_lazy('Delivery range'), 
+        choices=DELIVERY_RANGE_CHOICES, 
+        default=-1,
+    )
     delivery_postcode = models.ManyToManyField(Postcode, blank=True)
+
+    shop_image = JPEGField(        
+        gettext_lazy('shop_image'),
+        upload_to='images/shop/%Y/%m/%d/',
+        variations={'full': (600, 400, True)},
+        default="images/2020/04/16/image.png",
+    )
 
     # Internal used fields
     created = models.DateTimeField(auto_now_add=True)

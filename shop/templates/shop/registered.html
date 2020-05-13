@@ -2,8 +2,12 @@
 {% load crispy_forms_tags i18n %}
 
 {% block content %}
-<h1>{% trans "Your registration is received" %}</h1>
-{% blocktrans %}
-    You will get notified, when your registration is approved. Normally within a few days.
-{% endblocktrans %}
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Your registration is received" %}</h1>
+        {% blocktrans %}
+            You will get notified, when your registration is approved. Normally within a few days.
+        {% endblocktrans %}
+    </div>
+</section>
 {% endblock %}

@@ -1,16 +1,13 @@
-{% load i18n %}
+﻿{% extends "emails/base_email.txt" %}{% load i18n %}{% block content %}
+{% trans "You have placed an order through FoodBee." %}
 
-{% trans 'Hi' %} {{ order.name }}
-
-{% trans 'The shop(s) in the order list will individually have to confirm your order for that shop.' %}
-{% trans 'In order for the shop to confirm the order, first you must pay the order total by MobilePay to the shop.' %}
-{% trans 'You have ordered:' %}  
+{% trans "The shop(s) will individually confirm your order after receiving payment." %}
+{% trans "You have ordered:" %}
 {% for shop, cost_and_items in shop_items_and_cost.items %}
-    {% trans 'From ' %}{{ shop }}
-        {% trans "Name - Count - Price" %}
-    {% for item in cost_and_items.order_items %}{{ item.product.name }} - {{ item.count }} - {{ item.price }}{% endfor %}    
-        {% trans 'TOTAL' %} - {{ cost_and_items.item_count }} - {{ cost_and_items.total_cost}}
-    {% trans 'To your address: ' %}{{ order.address }}
+{% trans "From " %}{{ shop }}:{% for item in cost_and_items.order_items %}
+    {{ item.count }} {{ item.product.name }}{% endfor %}
+    {% trans "For a total cost of " %}{{ cost_and_items.total_cost }}
 {% endfor %}
-{% trans 'Best regards,' %}  
-{% trans 'The FoodBee team' %}  
+{% trans "Cheers," %}
+{% trans "The FoodBee Team" %}
+{% endblock %}

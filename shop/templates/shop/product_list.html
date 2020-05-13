@@ -3,24 +3,28 @@
 {% load i18n %}
 
 {% block content %}
-<h1>{% trans "Products" %}</h1>
+<section class="ftco-section">
+    <div class="container">
+        <h1>{% trans "Products" %}</h1>
 
-<a href="{% url 'shop_product_create' %}" class="btn btn-success">{% trans "Add product" %}</a>
+        <a href="{% url 'shop_product_create' %}" class="btn btn-success">{% trans "Add product" %}</a>
 
-<hr>
+        <hr>
 
-<div class="list-group">
-    {% for product in object_list %}
-        <a href="{% url 'shop_product_update' pk=product.pk %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-            {{ product.name }}
-            {% if product.active %}
-                <span class="badge badge-success badge-pill"><i class="fas fa-fw fa-check"></i></span>
-            {% else %}
-                <span class="badge badge-danger badge-pill"><i class="fas fa-fw fa-times"></i></span>
-            {% endif %}
-        </a>
-    {% empty %}
-        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No products created or active yet." %}</a>
-    {% endfor %}
-</div>
+        <div class="list-group">
+            {% for product in object_list %}
+                <a href="{% url 'shop_product_update' pk=product.pk %}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                    {{ product.name }}
+                    {% if product.active %}
+                        <span class="badge badge-success badge-pill"><i class="fas fa-fw fa-check"></i></span>
+                    {% else %}
+                        <span class="badge badge-danger badge-pill"><i class="fas fa-fw fa-times"></i></span>
+                    {% endif %}
+                </a>
+            {% empty %}
+                <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">{% trans "No products created or active yet." %}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
 {% endblock %}

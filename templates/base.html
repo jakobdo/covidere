@@ -7,120 +7,154 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link href="{% static 'base/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <!-- Fontawesome CSS -->
+    <!-- FontAwesome -->
     <link href="{% static 'base/fontawesome/css/all.css' %}" rel="stylesheet">
+
+    <!-- Colorlib CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miss+Fajardose&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/jquery.timepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'base/colorlib/css/style.css' %}">
+
+
+    {% block headscript %}{% endblock %}
+
     <!-- Custom CSS -->
     <link href="{% static 'base/css/style.css' %}" rel="stylesheet">
 
     <title>{% block title %}{% trans "Support your local stores today!" %}{% endblock %}</title>
-    <link rel="shortcut icon" type="image/png" href="{% static 'base/img/favicon.ico' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'base/img/favicon.ico' %}" />
+
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <div class="wrapper flex-grow-1">
-
-        {% if messages %}
-            <div aria-live="polite" aria-atomic="true">
-                {% for message in messages %}
-                    <div class="toast" style="position: absolute; top: 1em; right: 1em; z-index: 1;" data-delay="3000">
-                        <div class="toast-header">
-                            <strong class="mr-auto">Information</strong>
-                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="toast-body">{{ message }}</div>
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
-
-        {% block navbar %}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+    {% block navbar %}
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-custom" id="ftco-navbar">
             <div class="container">
-                <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static "base/img/fb_logo.png" %}" width="200" height="30" alt="FoodBee">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="{% url 'index' %}"><span>Food</span><span style="color: #ffa323;">Bee</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span> Menu
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="{% url 'index' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {% trans "Products" %}
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{% url 'products_list' %}">{% trans "Overview" %}</a>
-                                <a class="dropdown-item" href="{% url 'products_newest' %}">{% trans "Newest" %}</a>
-                                <a class="dropdown-item" href="{% url 'products_offer' %}">{% trans "On Sale" %}</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'shops' %}">{% trans "Shops" %}</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'shop_register' %}">{% trans "Register" %}</a>
-                        </li>
-                    </ul>
-
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" name="q" placeholder="{% trans "Search" %}" aria-label="{% trans "Search" %}">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> {% trans "Search" %}</button>
-                      </form>
-
-                    <ul class="navbar-nav ml-auto">
-                        {% if request.session.postcode %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{% url 'postcode_index' %}">{{ request.session.postcode.code }} {{ request.session.postcode.city }}</a>
-                            </li>
+                        <li class="nav-item {% if request.resolver_match.url_name == "shops" %}active{% endif %}"><a
+                                href="{% url 'shops' %}" class="nav-link">{% trans "Shops" %}</a></li>
+                        {% if not user.is_authenticated %}
+                            <li class="nav-item {% if request.resolver_match.url_name == "shop_register" %}active{% endif %}"><a
+                                href="{% url 'shop_register' %}" class="nav-link">{% trans "Register" %}</a></li>
+                        {% else %}
+                            <li class="nav-item {% if request.resolver_match.url_name == "shop_overview" %}active{% endif %}"><a
+                                href="{% url 'shop_overview' %}" class="nav-link">{% trans "Admin" %}</a></li>
                         {% endif %}
-
+                    </ul>
+                    <form class="form-inline my-4 my-lg-0 ml-2 ml-auto">
+                        <div class="input-group sm-2">
+                            <input type="search" class="form-control" placeholder="{% trans "Search" %}"
+                                aria-label="{% trans "Search" %}" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            {% if request.session.basket|length > 0 %}
+                            {% if basket_counter > 0 %}
                                 <a class="nav-link" href="{% url 'basket_index' %}">
                                     <i class="fas fa-shopping-cart"></i>
-                                    {% trans "Basket" %} 
-                                    <span class="badge badge-pill badge-primary">{{ request.session.basket|length }}</span>
+                                    {% trans "Basket" %}
+                                    <span class="badge badge-pill badge-secondary" id="basket-counter">{{ basket_counter }}</span>
                                 </a>
                             {% else %}
                                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
                                     <i class="fas fa-shopping-cart"></i>
-                                    {% trans "Basket" %} 
-                                    <span class="badge badge-pill badge-secondary">0</span>
+                                    {% trans "Basket" %}
+                                    <span class="badge badge-pill badge-secondary" id="basket-counter">0</span>
                                 </a>
                             {% endif %}
                         </li>
+
+                        <form class="form-inline my-4 my-lg-0 ml-2 ml-auto" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                            <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                {% if language.code != LANGUAGE_CODE %}
+                                    <input name="language" type="hidden" value="{{ language.code }}">
+                                    <button class="btn btn-outline-secondary" type="submit">{{ language.code.upper }}</button>
+                                {% endif %}
+                            {% endfor %}
+                        </form>
                     </ul>
                 </div>
             </div>
         </nav>
-        {% endblock %}
+    {% endblock %}
 
-        <div class="container">
-            {% block content %}{% endblock %}
-        </div>
+    {% block carousel %}
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('/static/base/colorlib/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-2 bread"><span>Food</span><span style="color: #ffa323;">Bee</span></h1>
+                </div>
+            </div>
+            </div>
+    </section>
+    {% endblock %}
+
+    {% block postcode %}{% endblock %}
+
+    {% block content %}{% endblock %}
+
+    {% include "footer.html" %}
+
+    <!-- Colorlib loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+        </svg>
     </div>
 
-    <div class="container">
-        {% include "footer.html" %}
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{% static 'base/jquery/js/jquery.min.js' %}"></script>
-    <script src="{% static 'base/bootstrap/js/bootstrap.bundle.js' %}"></script>
-    <script>
-        $(function () {
-            $('.toast').toast('show');
-        });
-    </script>
+    <script src="{% static 'base/jquery/js/jquery-migrate-3.3.0.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/popper.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'base/jquery/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/aos.js' %}"></script>
+    <script src="{% static 'base/jquery/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'base/jquery/js/jquery.timepicker.min.js' %}"></script>
+    <script src="{% static 'base/jquery/js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'base/jquery/js/google-map.js' %}"></script>
+    <script src="{% static 'base/jquery/js/main.js' %}"></script>
     {% block bodyscript %}{% endblock %}
 </body>
 
