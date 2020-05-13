@@ -15,7 +15,7 @@ django-axes
 requests
 
 # Database
-#psycopg2
+psycopg2
 
 # Dev tools
 django-debug-toolbar
