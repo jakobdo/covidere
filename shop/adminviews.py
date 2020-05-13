@@ -23,7 +23,7 @@ class ShopUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     Shop Update View, handle view and update shop objects. Will only allow update of users own shop for now
     """
     model = Shop
-    fields = ['name', 'address', 'postcode', 'email', 'homepage', 'phone']
+    fields = ['name', 'address', 'postcode', 'email', 'homepage', 'phone', 'order_pickup', 'delivery_range',]
     template_name = 'shop/update.html'
     success_url = reverse_lazy('shop_update')
     success_message = "Information updated!"

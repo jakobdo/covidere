@@ -23,7 +23,7 @@ class ShopRegisterForm(forms.ModelForm):
 
     class Meta:
         model = Shop
-        fields = ['name', 'email', 'phone', 'cvr_number', 'order_pickup', 'delivery_range',]
+        fields = ['name', 'email', 'phone', 'cvr_number']
         widgets = {
             'phone': PhoneNumberInternationalFallbackWidget(attrs={'class': 'form-control'}),
             'cvr_number': forms.TextInput(attrs={'class':'form-control' , 'autocomplete': 'off','pattern':'[0-9]{8}', 'title':'Enter numbers Only '}),
