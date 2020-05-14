@@ -23,7 +23,7 @@ class TestForms():
             ('valid@email.com', 'validMessage', 'validMessage', True),
         ]
     )
-    def test_contact_form_input_validity(self, email, subject, message, validity):
+    def test_contact_form_validity(self, email, subject, message, validity):
         form = ShopContactForm(data={
             'email': email,
             'subject': subject,
@@ -54,7 +54,7 @@ class TestForms():
             ('validName', 'valid@email.com', '43215678', '43215678', True),
         ]
     )
-    def test_shop_register_form_input_validity(self, name, email, phone, cvr_number, validity, db):
+    def test_shop_register_form_validity(self, name, email, phone, cvr_number, validity, db):
         form = ShopRegisterForm(data={
             'name': name,
             'email': email,

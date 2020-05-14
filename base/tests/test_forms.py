@@ -15,7 +15,7 @@ class TestSetUsernameAndPasswordForm:
             ('username', 'Abcd!2345', 'Abcd!5432', False),
         ]
     )
-    def test_password1_required(self, user, username, password1, password2, validity):
+    def test_set_username_password_form(self, user, username, password1, password2, validity):
         form = self.form(user=user, data={
             'username': username,
             'password1': password1,
