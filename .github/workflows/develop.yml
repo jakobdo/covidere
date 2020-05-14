@@ -11,6 +11,11 @@ on:
 
 jobs:
   build:
+    env:
+      DB_NAME: github_actions
+      DB_USER: postgres
+      DB_PASS: postgres
+      Last_Name: Octocat
 
     runs-on: ubuntu-latest
     strategy:
