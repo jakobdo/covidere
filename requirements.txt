@@ -18,7 +18,7 @@ pytest-django
 requests
 
 # Database
-#psycopg2
+psycopg2
 
 # Dev tools
 django-debug-toolbar
@@ -33,3 +33,6 @@ pytest
 pytest-django
 pytest-cov
 factory_boy
+
+# Misc
+wheel
