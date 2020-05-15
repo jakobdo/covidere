@@ -1,14 +1,11 @@
 from django.conf import settings
-from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail, EmailMultiAlternatives
+from django.core.mail import EmailMultiAlternatives
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.urls import reverse_lazy
 from django.utils.translation import gettext
 from django.views.generic import CreateView, TemplateView
 from decimal import Decimal
-from django.template import Context
 from email.mime.image import MIMEImage
 
 from order.forms import OrderForm
@@ -38,9 +35,9 @@ class OrderCreateView(CreateView):
         shop_items_and_cost = dict.fromkeys({product.shop for product in products})
         for key in shop_items_and_cost:
             shop_items_and_cost[key] = {
-                'total_cost' : Decimal(0.00), 
-                'order_items' : [],
-                'item_count' : 0
+                'total_cost': Decimal(0.00),
+                'order_items': [],
+                'item_count': 0
             }
 
         # Create orderItems
@@ -54,7 +51,7 @@ class OrderCreateView(CreateView):
             # If count is 0 or below, skip item
             if count < 1:
                 continue
-        
+
             order_item = OrderItem()
             order_item.product = product
             order_item.order = self.object
@@ -65,22 +62,21 @@ class OrderCreateView(CreateView):
 
             shop_items_and_cost[product.shop]['item_count'] += count
             shop_items_and_cost[product.shop]['total_cost'] += Decimal(order_item.subtotal())
-            shop_items_and_cost[product.shop]['order_items'].append(order_item) 
+            shop_items_and_cost[product.shop]['order_items'].append(order_item)
 
         context = {
-            'order' : self.object, 
+            'order': self.object,
             'shop_items_and_cost': shop_items_and_cost
         }
-        message = render_to_string('emails/order_confirmation.txt', context)
         html_message = render_to_string('emails/order_confirmation.html', context)
         txt_message = render_to_string('emails/order_confirmation.txt', context)
         subject = gettext('Order confirmation')
 
         self.object.status = Order.ORDERED
 
-        email = EmailMultiAlternatives(gettext('FOODBEE - Order placed'), txt_message) 
+        email = EmailMultiAlternatives(subject, txt_message)
         email.from_email = settings.DEFAULT_FROM_EMAIL
-        email.to = [self.object.email]        
+        email.to = [self.object.email]
         email.attach_alternative(html_message, "text/html")
         email.content_subtype = 'html'
         email.mixed_subtype = 'related'

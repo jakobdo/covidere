@@ -22,8 +22,8 @@ class Order(models.Model):
     email = models.EmailField(gettext_lazy('email'))
     mobile = models.CharField(gettext_lazy('mobile'), max_length=20)
     status = models.IntegerField(
-        gettext_lazy('status'), 
-        choices=ORDER_STATUS_CHOICES, 
+        gettext_lazy('status'),
+        choices=ORDER_STATUS_CHOICES,
         default=ORDERED
     )
     created = models.DateTimeField(auto_now_add=True)
