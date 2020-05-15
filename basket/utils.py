@@ -19,7 +19,7 @@ class Basket:
                 count=count
             ))
         return basket
-    
+
     def count(self):
         basket = self.session.setdefault('basket', [])
         count = 0
