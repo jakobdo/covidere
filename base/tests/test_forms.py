@@ -1,5 +1,5 @@
 import pytest
-
+from tests.conftest import user
 from base.forms import SetUsernameAndPasswordForm
 
 
