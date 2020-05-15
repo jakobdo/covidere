@@ -13,6 +13,7 @@ django-axes
 
 # Unit test
 pytest-django
+mixer
 
 # Helpers
 requests
