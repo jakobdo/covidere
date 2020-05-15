@@ -2,6 +2,8 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy
 from django.db.models import Q
+from django.core.exceptions import ValidationError
+from django.core.validators import MinValueValidator
 
 from stdimage import JPEGField
 
@@ -52,14 +54,16 @@ class Product(models.Model):
     price = models.DecimalField(
         gettext_lazy('price'),
         max_digits=10,
-        decimal_places=2
+        decimal_places=2,
+        validators=[MinValueValidator(0)]
     )
     offer_price = models.DecimalField(
         gettext_lazy('offer price'),
         max_digits=10,
         decimal_places=2,
         blank=True,
-        null=True
+        null=True,
+        validators=[MinValueValidator(0)]
     )
     image = JPEGField(
         gettext_lazy('image'),
@@ -91,3 +95,12 @@ class Product(models.Model):
 
     def get_price(self):
         return self.offer_price if self.offer_price else self.price
+
+    def clean(self):
+        if self.offer_price and self.offer_price >= self.price:
+            raise ValidationError(gettext_lazy('Product offer price cannot be greater than product price'))
+
+        if self.end_datetime and self.start_datetime: # Should datetime validation happen in form or model clean()??
+            if self.start_datetime > self.end_datetime:
+                raise ValidationError(gettext_lazy('Product start datetime cannot be after end datetime'))
+        
