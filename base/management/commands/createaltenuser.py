@@ -8,11 +8,14 @@ class Command(BaseCommand):
     help = 'Create an alten admin user'
 
     def add_arguments(self, parser):
-        parser.add_argument('alten_mail', help='Specifies the login for the alten admin user.')
+        parser.add_argument(
+            'alten_mail',
+            help='Specifies the login for the alten admin user.'
+        )
 
     def handle(self, *args, **options):
         password = User.objects.make_random_password(length=14)
-        
+
         username = options['alten_mail']
         try:
             user = User.objects.create_user(username, username, password)
