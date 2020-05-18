@@ -10,6 +10,7 @@ django-stdimage
 phonenumbers
 django-phonenumber-field
 django-axes
+django-storages
 
 # Helpers
 requests
@@ -24,6 +25,7 @@ django-extensions
 
 # Hosting
 gunicorn
+boto3
 
 # Tests
 pytest
