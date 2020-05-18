@@ -1,9 +1,13 @@
+from email.mime.image import MIMEImage
+from elasticsearch import Elasticsearch
+from elasticsearch_dsl import Search
+
 from django.conf import settings
-from django.contrib.gis.db.models.functions import GeometryDistance
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail, EmailMultiAlternatives
+from django.core.mail import EmailMultiAlternatives, send_mail
 from django.db import IntegrityError
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.template.loader import render_to_string
 from django.urls import reverse
@@ -12,11 +16,10 @@ from django.utils.http import urlsafe_base64_encode
 from django.utils.translation import gettext, gettext_lazy
 from django.views.generic import (CreateView, DetailView, FormView, ListView,
                                   TemplateView)
-from email.mime.image import MIMEImage
 
 from base.models import User
 from postcode.models import Postcode
-from shop.forms import ShopContactForm, ShopRegisterForm
+from shop.forms import ShopContactForm, ShopCVRForm, ShopRegisterForm
 from shop.models import Shop
 from shop.tokens import account_activation_token
 
@@ -75,15 +78,15 @@ class ShopRegisterView(CreateView):
     model = Shop
     template_name = 'shop/register.html'
     form_class = ShopRegisterForm
-    
+
     def get_success_url(self):
         return reverse('shop_registered')
 
     def form_valid(self, form):
         # Create a user, but remember to set inactive!
         user = User()
-        user.username = form.cleaned_data.get('email')
-        user.email = form.cleaned_data.get('email')
+        user.username = form.cleaned_data['email']
+        user.email = form.cleaned_data['email']
         user.is_active = False
         try:
             user.save()
@@ -92,9 +95,9 @@ class ShopRegisterView(CreateView):
             return super(ShopRegisterView, self).form_invalid(form)
 
         self.object = form.save(commit=False)
+        self.object.postcode = Postcode.objects.get(postcode=form.cleaned_data['postcode_special'])
         self.object.user = user
         self.object.save()
-
 
         current_site = get_current_site(self.request)
         context = {
@@ -108,10 +111,9 @@ class ShopRegisterView(CreateView):
         html_message = render_to_string('emails/account_activation.html', context)
         txt_message = render_to_string('emails/account_activation.txt', context)
 
-
         email = EmailMultiAlternatives(gettext('FOODBEE - Confirm email'), txt_message)
         email.from_email = settings.DEFAULT_FROM_EMAIL
-        email.to = [self.object.email]        
+        email.to = [self.object.email]
         email.attach_alternative(html_message, "text/html")
         email.content_subtype = 'html'
         email.mixed_subtype = 'related'
@@ -128,3 +130,110 @@ class ShopRegisterView(CreateView):
 
 class ShopRegisteredView(TemplateView):
     template_name = 'shop/registered.html'
+
+
+class ShopCVRLookupView(FormView):
+    form_class = ShopCVRForm
+
+    def form_valid(self, form):
+        cvr = form.cleaned_data['cvr_number']
+
+        client = Elasticsearch(
+            host=settings.CVR.get('HOST'),
+            port=settings.CVR.get('PORT'),
+            http_auth=(settings.CVR.get('USER'), settings.CVR.get('PASS')),
+        )
+
+        query = {
+            "query": {
+                "bool": {
+                    "must": {
+                        "nested": {
+                            "path": "Vrvirksomhed.virksomhedsstatus",
+                            "query": {
+                                "bool": {
+                                    "must": [
+                                        {
+                                            "match": {
+                                                "Vrvirksomhed.virksomhedsstatus.status": "NORMAL"
+                                            }
+                                        }
+                                    ],
+                                    "must_not": [
+                                        {
+                                            "exists": {
+                                                "field": "Vrvirksomhed.virksomhedsstatus.periode.gyldigTil"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "filter": {
+                        "term": {
+                            "Vrvirksomhed.cvrNummer": cvr
+                        }
+                    }
+                }
+            }
+        }
+
+        s = Search(using=client, index="cvr-permanent", doc_type="virksomhed")
+        s = s.source(["Vrvirksomhed.virksomhedMetadata"])
+        s.update_from_dict(query)
+
+        response = s.execute()
+
+        if response.hits.total == 1:
+            hit = response.hits[0]
+            info = {}
+            info['name'] = hit.Vrvirksomhed.virksomhedMetadata.nyesteNavn.navn
+            address = "{0} {1}".format(
+                hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.vejnavn,
+                hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.husnummerFra
+            )
+
+            if hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.bogstavFra:
+                address = "{0} {1}".format(
+                    address,
+                    hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.bogstavFra
+                )
+
+            if hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.etage:
+                address = "{0} {1}.".format(
+                    address,
+                    hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.etage
+                )
+
+            if hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.sidedoer:
+                address = "{0} {1}".format(
+                    address,
+                    hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.sidedoer
+                )
+
+            if hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.husnummerTil:
+                address = "{0} - {1}".format(
+                    address,
+                    hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.husnummerTil
+                )
+
+            if hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.bogstavTil:
+                address = "{0} {1}".format(
+                    address,
+                    hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.bogstavTil
+                )
+
+            info['address'] = address
+            info['city'] = hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.postdistrikt
+            info['postcode'] = hit.Vrvirksomhed.virksomhedMetadata.nyesteBeliggenhedsadresse.postnummer
+
+            # Do the api lookup and return data!
+            return JsonResponse(info)
+        else:
+            return JsonResponse({}, status=404)
+
+    def form_invalid(self, form):
+        test = "test"
+        # Something is wrong!
+        return JsonResponse({}, status=400)
