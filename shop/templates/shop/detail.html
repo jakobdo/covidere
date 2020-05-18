@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% load i18n static     %}
+{% load i18n static %}
 
 {% block content %}
 <section class="ftco-section">
@@ -28,11 +28,10 @@
             </div>
             <div class="col-md-6">
                 {% if object.shop_image %}
-                    <img src="{{ object.shop_image.url }}" class="img-fluid" alt="" style="max-height: 300px;max-width: 500px;">
+                    <img src="{{ object.shop_image.url }}" class="img-fluid" alt="">
                 {% else %}
-
+                    <img src="{% static "base/img/default_shop.jpg" %}" class="img-fluid" alt="">
                 {% endif %}
-
             </div>
         </div>        
     </div>
