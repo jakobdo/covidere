@@ -1,28 +1,40 @@
 {% extends 'base.html' %}
 
-{% load i18n %}
+{% load i18n static     %}
 
 {% block content %}
 <section class="ftco-section">
     <div class="container">
-        <address>
-            <strong>{{object.name}}</strong><br>
-            {{object.address}}<br>
-            {{object.zipcode}} {{object.city}}<br>
-        </address>
-        <div class="mt-2">
-            <a href="{% url 'shop_contact' pk=object.pk %}"><i class="far fa-envelope"></i> {% trans "Contact" %}</a>
-        </div>
-        <div class="mt-2">
-            <a href="tel:{{object.phone}}"><i class="fas fa-phone"></i> {{object.phone}}</a>
-        </div>
-        <div class="mt-2">
-            <a target="_blank" href="{{ object.homepage }}"><i class="fas fa-link"></i> {% trans 'Homepage' %}</a>
-        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <address>
+                    <strong>{{object.name}}</strong><br>
+                    {{object.address}}<br>
+                    {{object.zipcode}} {{object.city}}<br>
+                </address>
+                <div class="mt-2">
+                    <a href="{% url 'shop_contact' pk=object.pk %}"><i class="far fa-envelope"></i> {% trans "Contact" %}</a>
+                </div>
+                <div class="mt-2">
+                    <a href="tel:{{object.phone}}"><i class="fas fa-phone"></i> {{object.phone}}</a>
+                </div>
+                <div class="mt-2">
+                    <a target="_blank" href="{{ object.homepage }}"><i class="fas fa-link"></i> {% trans 'Homepage' %}</a>
+                </div>
 
-        <hr>
+                <hr>
 
-        <a href="{% url 'shop_product_list' pk=object.pk %}">{% trans 'Show products' %}</a>
+                <a href="{% url 'shop_product_list' pk=object.pk %}">{% trans 'Show products' %}</a>
+            </div>
+            <div class="col-md-6">
+                {% if object.shop_image %}
+                    <img src="{{ object.shop_image.url }}" class="img-fluid" alt="" style="max-height: 300px;max-width: 500px;">
+                {% else %}
+
+                {% endif %}
+
+            </div>
+        </div>        
     </div>
 </section>
 {% endblock %}
