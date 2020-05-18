@@ -50,7 +50,8 @@ class Shop(models.Model):
         gettext_lazy('shop_image'),
         upload_to='images/shop/%Y/%m/%d/',
         variations={'full': (600, 400, True)},
-        default="images/2020/04/16/image.png",
+        blank=True,
+        null=True,
     )
 
     # Internal used fields
