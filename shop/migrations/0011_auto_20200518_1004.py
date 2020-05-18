@@ -7,7 +7,7 @@ import stdimage.models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('shop', '0010_auto_20200504_1451'),
+        ('shop', '0011_auto_20200518_0715'),
     ]
 
     operations = [
