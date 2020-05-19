@@ -32,7 +32,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 ##If deployment is in ECS
-ALLOWED_HOSTS_ECS=os.environ.get('ALLOWED_HOSTS_ECS',False)
+ALLOWED_HOSTS_ECS = os.environ.get('ALLOWED_HOSTS_ECS', False)
 if ALLOWED_HOSTS_ECS: 
     try:
         metadata = requests.get('http://169.254.170.2/v2/metadata',
