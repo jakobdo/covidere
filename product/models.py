@@ -48,7 +48,7 @@ class Product(models.Model):
     """
     Product model
     """
-    shop = models.ForeignKey('shop.Shop', on_delete=models.CASCADE)
+    shop = models.ForeignKey('shop.Shop', on_delete=models.CASCADE, related_name='products')
     name = models.CharField(gettext_lazy('name'), max_length=100)
     description = models.TextField(gettext_lazy('description'))
     price = models.DecimalField(

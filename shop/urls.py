@@ -2,7 +2,7 @@ from django.urls import path
 
 from product.views import ProductsView
 from shop.views import (ShopContactView, ShopRegisteredView, ShopRegisterView,
-                        ShopsDetailView, ShopsListView)
+                        ShopsDetailView, ShopsListView, ShopCVRLookupView)
 
 urlpatterns = [
     path('', ShopsListView.as_view(), name="shops"),
@@ -11,4 +11,5 @@ urlpatterns = [
     path('<int:pk>/contact/', ShopContactView.as_view(), name="shop_contact"),
     path('register/', ShopRegisterView.as_view(), name="shop_register"),
     path('registered/', ShopRegisteredView.as_view(), name="shop_registered"),
+    path('cvr/', ShopCVRLookupView.as_view(), name="shop_cvr_lookup"),
 ]

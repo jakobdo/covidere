@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import datetime
 import os
+import requests
 
 from django.utils.translation import gettext_lazy
 
@@ -30,6 +31,16 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
+##If deployment is in ECS
+ALLOWED_HOSTS_ECS = os.environ.get('ALLOWED_HOSTS_ECS', False)
+if ALLOWED_HOSTS_ECS: 
+    try:
+        metadata = requests.get('http://169.254.170.2/v2/metadata',
+                                timeout=0.1).json()
+        ip = metadata['Containers'][0]['Networks'][0]['IPv4Addresses'][0]
+        ALLOWED_HOSTS = ['.elb.amazonaws.com', ip]
+    except requests.exceptions.ConnectionError:
+        pass
 # Application definition
 
 INSTALLED_APPS = [
@@ -102,8 +113,8 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASS'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', 5432),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
         'ATOMIC_REQUESTS': True,
     }
 }
@@ -111,6 +122,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -148,12 +160,26 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
-STATICFILES_DIRS = []
+S3 = os.getenv('USE_S3') == 'TRUE'
+if S3:
+    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME','shoplokalt')
+    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_FILE_OVERWRITE = False
+    AWS_S3_CUSTOM_DOMAIN = '%s.s3.eu-north-1.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+    STATICFILES_LOCATION = 'static'
+    MEDIAFILES_LOCATION = 'media'
+    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
+    MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+else:
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+    STATICFILES_DIRS = []
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+    MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = '/media/'
 
 AUTH_USER_MODEL = 'base.User'
 
@@ -165,7 +191,7 @@ LOGIN_URL = '/users/login/'
 
 EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 DEFAULT_FROM_EMAIL = 'no-reply@foodbee.dk'
-SENDGRID_API_KEY = os.environ.get('SENDGRID_API')
+SENDGRID_API_KEY = os.environ.get('SENDGRID_API', 'anything')
 
 LOGOUT_REDIRECT_URL = '/'
 

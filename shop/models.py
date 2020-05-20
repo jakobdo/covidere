@@ -2,14 +2,16 @@ import requests
 from django.conf import settings
 from django.contrib.gis.db import models
 from django.contrib.gis.geos import Point
+from django.core.validators import (MaxLengthValidator, MaxValueValidator,
+                                    MinLengthValidator, MinValueValidator)
 from django.utils.http import urlencode
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy
 from phonenumber_field.modelfields import PhoneNumberField
-from django.core.validators import MaxLengthValidator,MinLengthValidator
+from stdimage import JPEGField
+
 from postcode.models import Postcode
 
-from stdimage import JPEGField
 
 class Shop(models.Model):
     name = models.CharField(gettext_lazy("shop name"), max_length=100)
@@ -22,9 +24,15 @@ class Shop(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
-    cvr_number = models.CharField(gettext_lazy("CVR number"), unique=True, validators=[MaxLengthValidator(8),MinLengthValidator(8)], max_length=8, null=True)
+    cvr_number = models.PositiveIntegerField(
+        gettext_lazy("CVR number"),
+        unique=True,
+        validators=[
+            MaxValueValidator(99999999),
+            MinValueValidator(10000000)
+        ]
+    )
     active = models.BooleanField(gettext_lazy("active"), default=False)
-    
     order_pickup = models.BooleanField(gettext_lazy("offer order pick-up at shop"), default=True)
     DELIVERY_RANGE_CHOICES = [
         (-1, gettext_lazy('Do Not offer delivery')),
@@ -32,13 +40,13 @@ class Shop(models.Model):
         (10, gettext_lazy('10KM from shop')),
     ]
     delivery_range = models.IntegerField(
-        gettext_lazy('Delivery range'), 
-        choices=DELIVERY_RANGE_CHOICES, 
+        gettext_lazy('Delivery range'),
+        choices=DELIVERY_RANGE_CHOICES,
         default=-1,
     )
     delivery_postcode = models.ManyToManyField(Postcode, blank=True)
 
-    shop_image = JPEGField(        
+    shop_image = JPEGField(
         gettext_lazy('shop_image'),
         upload_to='images/shop/%Y/%m/%d/',
         variations={'full': (600, 400, True)},
@@ -62,13 +70,13 @@ class Shop(models.Model):
             query=f"{self.name} {self.address} {self.postcode.postcode} {self.postcode.city}"
         )
         return urlencode(data)
-    
+
     def slug(self):
         """
         Will convert shop.name to a slug
         """
         return slugify(f"{self.name} {self.pk}")
-    
+
     def save(self, *args, **kwargs):
         if self.active and not self.location:
             # Fetch location from api!

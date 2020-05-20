@@ -19,7 +19,9 @@ class UsernameField(forms.CharField):
 
 class SetUsernameAndPasswordForm(forms.Form):
     error_messages = {
-        'password_mismatch': gettext_lazy('The two password fields didn’t match.'),
+        'password_mismatch': gettext_lazy(
+            'The two password fields didn’t match.'
+        ),
     }
 
     username = UsernameField()
@@ -34,7 +36,9 @@ class SetUsernameAndPasswordForm(forms.Form):
         label=gettext_lazy("Password confirmation"),
         widget=forms.PasswordInput(attrs={'autocomplete': 'new-password'}),
         strip=False,
-        help_text=gettext_lazy("Enter the same password as before, for verification."),
+        help_text=gettext_lazy(
+            "Enter the same password as before, for verification."
+        ),
     )
 
     def __init__(self, user, *args, **kwargs):
@@ -52,4 +56,3 @@ class SetUsernameAndPasswordForm(forms.Form):
                 )
         password_validation.validate_password(password2, self.user)
         return password2
-

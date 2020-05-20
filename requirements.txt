@@ -10,6 +10,7 @@ django-stdimage
 phonenumbers
 django-phonenumber-field
 django-axes
+django-storages
 
 # Unit test
 pytest-django
@@ -28,6 +29,7 @@ django-extensions
 
 # Hosting
 gunicorn
+boto3
 
 # Tests
 pytest
@@ -37,3 +39,7 @@ factory_boy
 
 # Misc
 wheel
+
+# CVR integration
+elasticsearch>=6.0.0,<7.0.0
+elasticsearch-dsl>=6.0.0,<7.0.0

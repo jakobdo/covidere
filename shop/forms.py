@@ -5,6 +5,7 @@ from phonenumber_field.widgets import PhoneNumberInternationalFallbackWidget
 
 from base.widgets import BootstrapDateTimePickerInput
 from order.models import Order
+from postcode.models import Postcode
 from product.models import Product
 from shop.models import Shop
 
@@ -16,22 +17,25 @@ class ShopContactForm(forms.Form):
 
 
 class ShopRegisterForm(forms.ModelForm):
+    postcode_special = forms.IntegerField(label=gettext_lazy("Postcode"))
+    city_special = forms.CharField(label=gettext_lazy("City"))
+
     class Meta:
         model = Shop
-        fields = ['name', 'email', 'phone', 'cvr_number']
+        fields = ['cvr_number', 'name', 'address', 'postcode_special', 'city_special', 'email', 'phone']
         widgets = {
             'phone': PhoneNumberInternationalFallbackWidget(
                 attrs={'class': 'form-control'}
-            ),
-            'cvr_number': forms.TextInput(
-                attrs={
-                    'class': 'form-control',
-                    'autocomplete': 'off',
-                    'pattern': '[0-9]{8}',
-                    'title': 'Enter numbers Only '
-                }
-            ),
+            )
         }
+
+    def clean_postcode_special(self):
+        data = self.cleaned_data['postcode_special']
+        try:
+            Postcode.objects.get(postcode=data)
+        except Postcode.DoesNotExists:
+            raise forms.ValidationError(gettext("Invalid postcode"))
+        return data
 
     def __init__(self, *args, **kwargs):
         super(ShopRegisterForm, self).__init__(*args, **kwargs)
@@ -71,6 +75,10 @@ class ShopProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request')
         super(ShopProductForm, self).__init__(*args, **kwargs)
+        for f in self.fields:
+            if not isinstance(self.fields[f].widget, forms.CheckboxInput):
+                self.fields[f].widget.attrs['placeholder'] = self.fields[f].label
+                self.fields[f].label = ''
 
     def clean(self):
         cleaned_data = super().clean()
@@ -108,3 +116,9 @@ class OrderStatusForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ['status']
+
+
+class ShopCVRForm(forms.ModelForm):
+    class Meta:
+        model = Shop
+        fields = ['cvr_number']

@@ -1,10 +1,10 @@
 from django.contrib import messages
 from django.http.response import JsonResponse
 from django.shortcuts import redirect
-from django.urls import reverse, reverse_lazy
+from django.urls import reverse
 from django.utils.translation import gettext
 from django.views import View
-from django.views.generic import FormView, TemplateView
+from django.views.generic import TemplateView
 
 from basket.forms import BasketAddForm
 from basket.utils import Basket
@@ -21,9 +21,8 @@ class BasketAddView(View):
                 form.cleaned_data.get('count'),
             )
             self.request.session.modified = True
-            #messages.add_message(self.request, messages.INFO, gettext('Product added to basket'))
             return JsonResponse({
-                'msg': gettext('Product added to basket'), 
+                'msg': gettext('Product added to basket'),
                 'count': basket.count(),
             })
         else:
@@ -86,7 +85,7 @@ class BasketUpdateView(View):
                             if count > 0:
                                 basket[i]['count'] = count
                             else:
-                                del basket[i] 
+                                del basket[i]
                             break
             request.session['basket'] = basket
             request.session.modified = True
