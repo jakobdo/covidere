@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
 # C extensions
 *.so
 
@@ -166,3 +165,7 @@ cache/*
 
 .DS_Store
 shoplokalt/settings_local.py
+
+
+#intellij code
+.idea
