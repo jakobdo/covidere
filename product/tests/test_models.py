@@ -5,6 +5,11 @@ from django.core.exceptions import ValidationError
 
 from product.models import Product
 
+# Tests not yet implemented:
+#   price=10, offer_price=9, updating price to 8 (test in shop:ShopProductUpdateView?)
+#   inactive-manager & active-manager query returns correct counts
+
+# Keep tests to form (non-functional) + model-class methods
 
 @pytest.fixture
 def product(db):
