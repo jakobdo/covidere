@@ -8,12 +8,6 @@ from tests.conftest import product, django_db_setup_1
 
 from product.models import Product
 
-# Tests not yet implemented:
-#   inactive-manager & active-manager query returns correct counts
-
-# Keep tests to form (non-functional) + model-class methods
-
-
 
 def test_product_str_repr(product):
     assert str(product) == product.name
