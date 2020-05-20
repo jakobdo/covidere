@@ -96,11 +96,4 @@ class Product(models.Model):
     def get_price(self):
         return self.offer_price if self.offer_price else self.price
 
-    def clean(self):
-        if self.offer_price and self.offer_price >= self.price:
-            raise ValidationError(gettext_lazy('Product offer price cannot be greater than product price'))
-
-        if self.end_datetime and self.start_datetime: # Should datetime validation happen in form or model clean()??
-            if self.start_datetime > self.end_datetime:
-                raise ValidationError(gettext_lazy('Product start datetime cannot be after end datetime'))
         
