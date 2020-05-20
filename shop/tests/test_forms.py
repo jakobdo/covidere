@@ -1,6 +1,7 @@
 import pytest
+from tests.conftest import product
 
-from shop.forms import ShopContactForm, ShopRegisterForm
+from shop.forms import ShopContactForm, ShopRegisterForm, ShopProductForm
 
 
 @pytest.mark.parametrize(
@@ -63,3 +64,21 @@ def test_shop_register_form_validity(name, email, phone, cvr_number, validity, d
     result = form.is_valid()
     assert result is validity
 
+
+## Test "offer_price !> price" & "end_datetime !< start_datetime"
+## Not implemented yet due to complexity of task
+#@pytest.mark.parametrize( 
+#    'price, offer_price, start_datetime, end_datetime, validity',
+#    [
+#        (10, 11, None, None, False),
+#        (None, None, None, None, False),
+#        (10, -11, None, None, False),
+#        (-1, None, None, None, False),
+#        (1, -1, None, None, False),
+#        (10, None, Datetime(2020,1,2), datetime(2020,1,1), False),
+#    ]
+#)
+#def test_shop_product_form_validity(product, price, offer_price, start_datetime, end_datetime, validity, db):
+#    form = ShopProductForm()
+#    result = form.is_valid()
+#    assert result is validity
