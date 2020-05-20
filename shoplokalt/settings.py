@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import datetime
 import os
+import requests
 
 from django.utils.translation import gettext_lazy
 
@@ -30,6 +31,16 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
+##If deployment is in ECS
+ALLOWED_HOSTS_ECS = os.environ.get('ALLOWED_HOSTS_ECS', False)
+if ALLOWED_HOSTS_ECS: 
+    try:
+        metadata = requests.get('http://169.254.170.2/v2/metadata',
+                                timeout=0.1).json()
+        ip = metadata['Containers'][0]['Networks'][0]['IPv4Addresses'][0]
+        ALLOWED_HOSTS = ['.elb.amazonaws.com', ip]
+    except requests.exceptions.ConnectionError:
+        pass
 # Application definition
 
 INSTALLED_APPS = [
@@ -166,9 +177,9 @@ else:
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, "static")
     STATICFILES_DIRS = []
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+    MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = '/media/'
 
 AUTH_USER_MODEL = 'base.User'
 
