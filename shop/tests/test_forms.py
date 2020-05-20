@@ -33,26 +33,7 @@ def test_contact_form_validity(email, subject, message, validity):
     assert result is validity
 
 
-#@pytest.mark.parametrize(
-#    'name, email, phone, cvr_number, validity',
-#    [
-#        #(None, 'valid@email.com', '43215678', '43215678', False),
-#        #('', 'valid@email.com', '43215678', '43215678', False),
-#        #('x' * 101, 'valid@email.com', '43215678', '43215678', False),
 
-#        #('validName', None, '43215678', '43215678', False),
-#        #('validName', '', '43215678', '43215678', False),
-
-#        #('validName', 'valid@email.com', 'a3215678', '43215678', False),
-#        #('validName', 'valid@email.com', '', '43215678', False),
-#        #('validName', 'valid@email.com', None, '43215678', False),
-
-#        #('validName', 'valid@email.com', '43215678', '3215678', False),
-#        #('validName', 'valid@email.com', '43215678', '432156789', False),
-
-#        ('validName', 'valid@email.com', '43215678', '43215678', True),
-#    ]
-#)
 @pytest.mark.parametrize(
     'cvr_number, name, address, postcode_special, city_special, email, phone, validity',
     [
@@ -61,10 +42,9 @@ def test_contact_form_validity(email, subject, message, validity):
         ('43215678', None       , 'validAddress 1', '2000', 'Frederiksberg',  'valid@email.com', '43215678', False),
         ('43215678', 'validName', None            , '2000', 'Frederiksberg',  'valid@email.com', '43215678', False),
         ('43215678', 'validName', 'validAddress 1', 'abcd', 'Frederiksberg',  'valid@email.com', '43215678', False),
-        ('43215678', 'validName', 'validAddress 1', '2000', None          ,  'valid@email.com', '43215678', False),
+        ('43215678', 'validName', 'validAddress 1', '2000', None           ,  'valid@email.com', '43215678', False),
         ('43215678', 'validName', 'validAddress 1', '2000', 'Frederiksberg',  'invalid.com'    , '43215678', False),
         ('43215678', 'validName', 'validAddress 1', '2000', 'Frederiksberg',  'valid@email.com', 'x'*99    , False),
-        #('43215678', 'validName', 'validAddress 1', '2000', 'Frederiksberg',  'valid@email.com', '43215678', False),
     ]
 )
 def test_shop_register_form_validity(cvr_number, name, address, postcode_special, city_special, email, phone, validity, db):
