@@ -2,17 +2,20 @@ import pytest
 from datetime import datetime
 from mixer.backend.django import mixer
 from django.core.exceptions import ValidationError
-from tests.conftest import product
+from django.core.management import call_command
+
+from tests.conftest import product, django_db_setup_1
+
+from product.models import Product
 
 # Tests not yet implemented:
-#   price=10, offer_price=9, updating price to 8 (test in shop:ShopProductUpdateView?)
 #   inactive-manager & active-manager query returns correct counts
 
 # Keep tests to form (non-functional) + model-class methods
 
 
 
-def test_product_price(product):
+def test_product_str_repr(product):
     assert str(product) == product.name
 
 
@@ -29,13 +32,10 @@ def test_product_get_price(product, price, offer_price, result):
     assert product.get_price() == result
 
 
-#@pytest.mark.parametrize(
-#    'start_datetime, end_datetime',
-#    [
-#        (datetime(2020,1,2), datetime(2020,1,1)),
-#     ])
-#def test_product_valid_datetimes(product, start_datetime, end_datetime):
-#    product.start_datetime = start_datetime
-#    product.end_datetime = end_datetime
-#    with pytest.raises(ValidationError):
-#        product.clean()
+def test_product_custom_managers(db, django_db_setup_1):
+    assert Product.actives.count() == 2
+    assert Product.inactives.count() == 3
+    assert Product.objects.count() == 5
+
+
+
