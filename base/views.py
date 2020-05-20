@@ -1,16 +1,10 @@
-from urllib.parse import unquote
-
-from django.conf import settings
 from django.contrib.auth import login
 from django.db import IntegrityError
-from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import Http404
-from django.urls import reverse, translate_url
+from django.urls import reverse
 from django.utils.encoding import force_text
-from django.utils.http import (url_has_allowed_host_and_scheme,
-                               urlsafe_base64_decode)
-from django.utils.translation import (LANGUAGE_SESSION_KEY, check_for_language,
-                                      gettext)
+from django.utils.http import urlsafe_base64_decode
+from django.utils.translation import gettext
 from django.views.generic import FormView, TemplateView
 
 from base.forms import SetUsernameAndPasswordForm
@@ -27,7 +21,13 @@ class ActivateUserView(FormView):
     form_class = SetUsernameAndPasswordForm
 
     def validate_token(self):
-        return self.user.is_active is False and account_activation_token.check_token(self.user, self.kwargs.get('token'))
+        return (
+            self.user.is_active is False and
+            account_activation_token.check_token(
+                self.user,
+                self.kwargs.get('token')
+            )
+        )
 
     def get_form_kwargs(self):
         kwargs = super(ActivateUserView, self).get_form_kwargs()
@@ -42,7 +42,10 @@ class ActivateUserView(FormView):
         try:
             user.save()
         except IntegrityError:
-            form.add_error('username', gettext('Shop with this username already exists.'))
+            form.add_error(
+                'username',
+                gettext('Shop with this username already exists.')
+            )
             return super(ActivateUserView, self).form_invalid(form)
 
         login(self.request, user, backend='axes.backends.AxesBackend')

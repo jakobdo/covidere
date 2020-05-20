@@ -13,26 +13,20 @@ class ProductsView(ListView):
     template_name = 'product/index.html'
 
     def get_queryset(self):
+        limitation = True
         queryset = self.model.actives.order_by('?')
         shop_pk = self.kwargs.get('pk')
         if shop_pk:
+            limitation = False
             shop = get_object_or_404(Shop, pk=shop_pk, active=True)
             queryset = queryset.filter(shop=shop)
-        else:
-            # Do we have a postcode from session?
-            code = self.request.session.get('postcode')
-            if code:
-                try:
-                    postcode = Postcode.objects.get(postcode=code['code'])
-                    queryset = queryset.order_by(GeometryDistance("shop__location", postcode.location))
-                except Postcode.DoesNotExist:
-                    queryset = queryset.order_by('?')
-            else:
-                queryset = queryset.order_by('?')
 
         query = self.request.GET.get('q')
         if query:
+            limitation = False
             queryset = queryset.filter(Q(name__icontains=query) | Q(description__icontains=query))
+        if limitation:
+            queryset = queryset[:12]
         return queryset
 
 
@@ -58,8 +52,6 @@ class ProductsPostcodeView(ListView):
     template_name = 'product/postcode.html'
 
     def get_queryset(self):
-        queryset = self.model.actives.order_by('?')
         postcode = self.kwargs.get('postcode')
         postcode = get_object_or_404(Postcode, postcode=postcode, active=True)
-        queryset = queryset.order_by(GeometryDistance("shop__location", postcode.location))
-        return queryset
+        return self.model.actives.order_by(GeometryDistance("shop__location", postcode.location))

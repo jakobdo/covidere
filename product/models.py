@@ -12,12 +12,12 @@ class ActiveManager(models.Manager):
         return (
             super().get_queryset()
             .filter(
-                active=True, 
+                active=True,
                 shop__active=True
-            )         
+            )
             .filter(
-                Q(start_datetime__lte=now, end_datetime__gte=now) | 
-                Q(start_datetime__isnull=True, end_datetime__gte=now) | 
+                Q(start_datetime__lte=now, end_datetime__gte=now) |
+                Q(start_datetime__isnull=True, end_datetime__gte=now) |
                 Q(start_datetime__lte=now, end_datetime__isnull=True) |
                 Q(start_datetime__isnull=True, end_datetime__isnull=True)
             )
@@ -32,10 +32,10 @@ class InactiveManager(models.Manager):
             super().get_queryset()
             .filter(
                 shop__active=True
-            )         
+            )
             .filter(
                 Q(active=False) |
-                Q(start_datetime__gte=now) | 
+                Q(start_datetime__gte=now) |
                 Q(end_datetime__lte=now)
             )
             .prefetch_related("shop")
@@ -46,11 +46,21 @@ class Product(models.Model):
     """
     Product model
     """
-    shop = models.ForeignKey('shop.Shop', on_delete=models.CASCADE)
+    shop = models.ForeignKey('shop.Shop', on_delete=models.CASCADE, related_name='products')
     name = models.CharField(gettext_lazy('name'), max_length=100)
     description = models.TextField(gettext_lazy('description'))
-    price = models.DecimalField(gettext_lazy('price'), max_digits=10, decimal_places=2)
-    offer_price = models.DecimalField(gettext_lazy('offer price'), max_digits=10, decimal_places=2, blank=True, null=True)
+    price = models.DecimalField(
+        gettext_lazy('price'),
+        max_digits=10,
+        decimal_places=2
+    )
+    offer_price = models.DecimalField(
+        gettext_lazy('offer price'),
+        max_digits=10,
+        decimal_places=2,
+        blank=True,
+        null=True
+    )
     image = JPEGField(
         gettext_lazy('image'),
         upload_to='images/%Y/%m/%d/',
@@ -58,8 +68,16 @@ class Product(models.Model):
     )
 
     active = models.BooleanField(gettext_lazy('active'), default=True)
-    start_datetime = models.DateTimeField(gettext_lazy('start datetime'), blank=True, null=True)
-    end_datetime = models.DateTimeField(gettext_lazy('end datetime'), blank=True, null=True)
+    start_datetime = models.DateTimeField(
+        gettext_lazy('start datetime'),
+        blank=True,
+        null=True
+    )
+    end_datetime = models.DateTimeField(
+        gettext_lazy('end datetime'),
+        blank=True,
+        null=True
+    )
 
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

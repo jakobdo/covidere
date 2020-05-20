@@ -32,3 +32,10 @@ pytest
 pytest-django
 pytest-cov
 factory_boy
+
+# Misc
+wheel
+
+# CVR integration
+elasticsearch>=6.0.0,<7.0.0
+elasticsearch-dsl>=6.0.0,<7.0.0
