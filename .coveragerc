@@ -1,2 +1,4 @@
 [run]
-omit = venv/*
+omit = 
+	venv/* 
+	*/migrations/*
