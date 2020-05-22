@@ -1,6 +1,6 @@
 import factory
 from datetime import date, timedelta
-
+from tests import factoryutils
 
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
@@ -16,6 +16,7 @@ class PostcodeFactory(factory.django.DjangoModelFactory):
         django_get_or_create = ('postcode',)
     
     postcode = 2000
+    city = 'Frederiksberg'
 
 
 class ShopFactory(factory.django.DjangoModelFactory):
@@ -34,6 +35,7 @@ class ShopFactory(factory.django.DjangoModelFactory):
     order_pickup = True
     delivery_range = -1
     shop_image = None
+    location = factoryutils.FuzzyPoint()
 
 
 class ProductFactory(factory.django.DjangoModelFactory):
