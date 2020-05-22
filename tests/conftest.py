@@ -21,9 +21,9 @@ def orderItem(db):
     return mixer.blend(OrderItem, Order = mixer.blend(Order), product = mixer.blend(Product, image=None))
 
 
-#@pytest.fixture
-#def order(db):
-#    return mixer.blend(Order, product)
+@pytest.fixture
+def order(db):
+    return mixer.blend(Order)
 
 
 @pytest.fixture(scope='session')

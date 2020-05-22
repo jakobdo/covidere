@@ -1,5 +1,5 @@
 import pytest
-from tests.conftest import orderItem
+from tests.conftest import orderItem#, order
 
 
 @pytest.mark.parametrize(
@@ -12,6 +12,8 @@ def test_orderItem_subtotal(orderItem, price, count, result):
     orderItem.count = count
     orderItem.price = price
     assert orderItem.subtotal() == result
+
+
 
 
 
