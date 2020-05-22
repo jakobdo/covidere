@@ -36,21 +36,35 @@ class ShopFactory(factory.django.DjangoModelFactory):
     shop_image = None
 
 
-#class ProductFactory(factory.django.DjangoModelFactory):
-#    class Meta:
-#        model = 'product.Product'
+class ProductFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'product.Product'
 
-#    shop = factory.SubFactory(ShopFactory)
-#    name = factory.Sequence(lambda n: 'Name {0}'.format(n))
-#    description = factory.Sequence(lambda n: 'Description {0}'.format(n))
-#    price = 99.95
-#    offer_price = None
-#    image = None
-#    active = True
-#    start_datetime = date.today() - timedelta(days=1)
-#    end_datetime = start_datetime + timedelta(months=1)
+    shop = factory.SubFactory(ShopFactory)
+    name = factory.Sequence(lambda n: 'Product Name {0}'.format(n))
+    description = factory.Sequence(lambda n: 'Product Description {0}'.format(n))
+    price = factory.Sequence(lambda n: 99.95 + 10*n)
+    offer_price = None
+    image = None
+    active = True
+    start_datetime = date.today() - timedelta(days=1)
+    end_datetime = start_datetime + timedelta(days=10)
 
 
-#class InactiveProduct(ProductFactory):
-#    name = "Inactive product %s" . subsequence(...)
-#    active = False
+class OrderFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'order.Order'
+
+    name = factory.Sequence(lambda n: 'Order no. {0}'.format(n))
+    postcode = factory.SubFactory(PostcodeFactory)
+
+
+class OrderItemFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = 'order.OrderItem'
+
+    order = factory.SubFactory(OrderFactory)
+    product = factory.SubFactory(ProductFactory)
+    count = factory.Sequence(lambda n: n)
+    price = factory.Sequence(lambda n: 99.95 + 10*n)
+

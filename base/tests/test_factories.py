@@ -1,19 +1,21 @@
-from tests import factories
+#from tests import factories
 
+## Visualizes the factories chained create() commands
 #def test_factories_example(db):
 
-#    shops = factories.ShopFactory.build_batch(3)
+#    listOfObjects = factories.OrderItemFactory.build_batch(3)
 
-#    for shop in shops:
+#    for obj in listOfObjects:
 #        print('---------------------')
-#        print(shop.postcode)
-#        print(shop.user)
-#        print(shop.cvr_number)
-#        print(shop.homepage)
-#        print(shop.active)
+#        print(obj.order.name)
+#        print(obj.product.name)
+#        print(obj.product.shop.name)
+#        print(obj.product.shop.user)
+#        print(obj.count)
+#        print(obj.price)
 #        print('---------------------')
 
-#    assert 1 == 1
+#    assert 1 == 2
 
 
 
