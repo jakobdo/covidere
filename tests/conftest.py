@@ -1,14 +1,20 @@
 import pytest
 from tests import factories
 from product.models import Product
+from postcode.models import Postcode
 from order.models import Order,OrderItem
 from mixer.backend.django import mixer
 from django.core.management import call_command
 
-
+# Factory fixtures
 @pytest.fixture
 def user(db):
     return factories.UserFactory()
+
+# Mixer fixtures
+@pytest.fixture
+def postcode(db):
+    return mixer.blend(Postcode)
 
 
 @pytest.fixture

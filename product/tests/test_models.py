@@ -1,8 +1,4 @@
 import pytest
-from datetime import datetime
-from mixer.backend.django import mixer
-from django.core.exceptions import ValidationError
-from django.core.management import call_command
 
 from tests.conftest import product, django_db_setup_1
 
