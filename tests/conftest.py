@@ -1,6 +1,7 @@
 import pytest
 from tests import factories
 from product.models import Product
+from order.models import Order,OrderItem
 from mixer.backend.django import mixer
 from django.core.management import call_command
 
@@ -13,6 +14,16 @@ def user(db):
 @pytest.fixture
 def product(db):
     return mixer.blend(Product, image=None)
+
+
+@pytest.fixture
+def orderItem(db):
+    return mixer.blend(OrderItem, Order = mixer.blend(Order), product = mixer.blend(Product, image=None))
+
+
+#@pytest.fixture
+#def order(db):
+#    return mixer.blend(Order, product)
 
 
 @pytest.fixture(scope='session')
