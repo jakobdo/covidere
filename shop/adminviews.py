@@ -176,7 +176,7 @@ class ShopProductUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_form_kwargs(self):
         kw = super(ShopProductUpdateView, self).get_form_kwargs()
-        kw['request'] = self.request
+        kw['user'] = self.request.user
         return kw
 
     def get_queryset(self):
@@ -192,7 +192,7 @@ class ShopProductCreateView(LoginRequiredMixin, CreateView):
 
     def get_form_kwargs(self):
         kw = super(ShopProductCreateView, self).get_form_kwargs()
-        kw['request'] = self.request
+        kw['user'] = self.request.user
         return kw
 
     def form_valid(self, form):
