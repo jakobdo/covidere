@@ -15,7 +15,7 @@ jobs:
       DB_NAME: github_actions
       DB_USER: postgres
       DB_PASS: postgres
-      Last_Name: Octocat
+      DB_HOST: 127.0.0.1
 
     runs-on: ubuntu-latest
     strategy:
