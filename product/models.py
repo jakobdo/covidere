@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy
 from django.db.models import Q
+from django.core.validators import MinValueValidator
 
 from stdimage import JPEGField
 
@@ -52,14 +53,16 @@ class Product(models.Model):
     price = models.DecimalField(
         gettext_lazy('price'),
         max_digits=10,
-        decimal_places=2
+        decimal_places=2,
+        validators=[MinValueValidator(0)]
     )
     offer_price = models.DecimalField(
         gettext_lazy('offer price'),
         max_digits=10,
         decimal_places=2,
         blank=True,
-        null=True
+        null=True,
+        validators=[MinValueValidator(0)]
     )
     image = JPEGField(
         gettext_lazy('image'),
