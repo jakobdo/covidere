@@ -1,57 +1,59 @@
 [
-  {
-      "model": "shop.shop",
-      "pk": 1,
-      "fields": {
-          "name": "Butik K\u00f8ge",
-          "address": "Vestergade 2",
-          "postcode": 821,
-          "homepage": "http://butik.koege.dk",
-          "email": "butik1@koege.dk",
-          "phone": "41256345",
-          "user": 2,
-          "active": true,
-          "created": "2020-04-16T09:18:08.135Z",
-          "updated": "2020-04-17T07:52:08.190Z",
-          "location": "SRID=4326;POINT (12.18102023005485 55.45165672672489)",
-          "delivery_postcode": []
-      }
-  },
-  {
-      "model": "shop.shop",
-      "pk": 2,
-      "fields": {
-          "name": "Butik Odense",
-          "address": "Klostervej 3",
-          "postcode": 885,
-          "homepage": "http://butik.odense.dk",
-          "email": "butik@odense.dk",
-          "phone": "72635234",
-          "user": 3,
-          "active": true,
-          "created": "2020-04-17T07:54:13.374Z",
-          "updated": "2020-04-17T07:54:38.036Z",
-          "location": "SRID=4326;POINT (10.382867 55.397145)",
-          "delivery_postcode": []
-      }
-  },
-  {
-      "model": "shop.shop",
-      "pk": 3,
-      "fields": {
-          "name": "Butik K\u00f8benhavn",
-          "address": "Amagertorv 13",
-          "postcode": 119,
-          "homepage": "https://butik.koebenhavn.dk/",
-          "email": "butik@koebenhavn.dk",
-          "phone": "321323232",
-          "user": 4,
-          "active": true,
-          "created": "2020-04-17T07:56:07.232Z",
-          "updated": "2020-04-17T07:56:07.232Z",
-          "location": "SRID=4326;POINT (12.578128 55.678643)",
-          "delivery_postcode": []
-      }
-  }
-  ]
-  
+    {
+        "model": "shop.shop",
+        "pk": 1,
+        "fields": {
+            "name": "Butik K\u00f8ge",
+            "address": "Vestergade 2",
+            "postcode": 821,
+            "homepage": "http://butik.koege.dk",
+            "email": "butik1@koege.dk",
+            "phone": "41256345",
+            "user": 2,
+            "active": true,
+            "created": "2020-04-16T09:18:08.135Z",
+            "updated": "2020-04-17T07:52:08.190Z",
+            "location": "SRID=4326;POINT (12.18102023005485 55.45165672672489)",
+            "delivery_postcode": [],
+            "cvr_number": "21324354"
+        }
+    },
+    {
+        "model": "shop.shop",
+        "pk": 2,
+        "fields": {
+            "name": "Butik Odense",
+            "address": "Klostervej 3",
+            "postcode": 885,
+            "homepage": "http://butik.odense.dk",
+            "email": "butik@odense.dk",
+            "phone": "72635234",
+            "user": 3,
+            "active": true,
+            "created": "2020-04-17T07:54:13.374Z",
+            "updated": "2020-04-17T07:54:38.036Z",
+            "location": "SRID=4326;POINT (10.382867 55.397145)",
+            "delivery_postcode": [],
+            "cvr_number": "21324355"
+        }
+    },
+    {
+        "model": "shop.shop",
+        "pk": 3,
+        "fields": {
+            "name": "Butik K\u00f8benhavn",
+            "address": "Amagertorv 13",
+            "postcode": 119,
+            "homepage": "https://butik.koebenhavn.dk/",
+            "email": "butik@koebenhavn.dk",
+            "phone": "321323232",
+            "user": 4,
+            "active": true,
+            "created": "2020-04-17T07:56:07.232Z",
+            "updated": "2020-04-17T07:56:07.232Z",
+            "location": "SRID=4326;POINT (12.578128 55.678643)",
+            "delivery_postcode": [],
+            "cvr_number": "21324356"
+        }
+    }
+]
