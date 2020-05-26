@@ -1,7 +1,6 @@
 from email.mime.image import MIMEImage
-from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Search
 
+import requests
 from django.conf import settings
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.sites.shortcuts import get_current_site
@@ -16,6 +15,8 @@ from django.utils.http import urlsafe_base64_encode
 from django.utils.translation import gettext, gettext_lazy
 from django.views.generic import (CreateView, DetailView, FormView, ListView,
                                   TemplateView)
+from elasticsearch import Elasticsearch
+from elasticsearch_dsl import Search
 
 from base.models import User
 from postcode.models import Postcode
@@ -82,7 +83,27 @@ class ShopRegisterView(CreateView):
     def get_success_url(self):
         return reverse('shop_registered')
 
+    def get_context_data(self, **kwargs):
+        kwargs['sitekey'] = settings.GOOGLE_RECAPTCHA_SITE_KEY
+        return super().get_context_data(**kwargs)
+
     def form_valid(self, form):
+        # TODO - Move to own implementation
+        # Validate Google Recaptcha V3
+        response = form.data.get('g-recaptcha-response')
+        data = {
+            'response': response,
+            'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY
+        }
+        resp = requests.post(
+            'https://www.google.com/recaptcha/api/siteverify',
+            data=data
+        )
+        result = resp.json()
+        if not result['success'] or not result['action'] == 'register':
+            form.add_error(None, gettext("Invalid recaptcha response, please try again."))
+            return super().form_invalid(form)
+
         # Create a user, but remember to set inactive!
         user = User()
         user.username = form.cleaned_data['email']
