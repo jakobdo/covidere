@@ -9,7 +9,7 @@ from shop.models import Shop
 
 class ShopListView(PermissionRequiredMixin, LoginRequiredMixin, ListView):
     """
-    Shop List View. Will list all shops. 
+    Shop List View. Will list all shops.
     """
     permission_required = 'base.alten_admin'
     model = Shop

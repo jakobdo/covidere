@@ -255,6 +255,4 @@ class ShopCVRLookupView(FormView):
             return JsonResponse({}, status=404)
 
     def form_invalid(self, form):
-        test = "test"
-        # Something is wrong!
         return JsonResponse({}, status=400)

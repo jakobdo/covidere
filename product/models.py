@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy
 from django.db.models import Q
-from django.core.exceptions import ValidationError
 from django.core.validators import MinValueValidator
 
 from stdimage import JPEGField
@@ -95,5 +94,3 @@ class Product(models.Model):
 
     def get_price(self):
         return self.offer_price if self.offer_price else self.price
-
-        
