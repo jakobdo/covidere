@@ -12,6 +12,10 @@ django-phonenumber-field
 django-axes
 django-storages
 
+# Unit test
+pytest-django
+mixer
+
 # Helpers
 requests
 

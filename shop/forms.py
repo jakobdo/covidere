@@ -11,12 +11,9 @@ from shop.models import Shop
 
 
 class ShopContactForm(forms.Form):
-    email = forms.EmailField(label=gettext_lazy('email'))
-    subject = forms.CharField(label=gettext_lazy('subject'))
-    message = forms.CharField(
-        label=gettext_lazy('message'),
-        widget=forms.Textarea
-    )
+    email = forms.EmailField(label=gettext_lazy('email'), required=True)
+    subject = forms.CharField(label=gettext_lazy('subject'), required=True, max_length=199)
+    message = forms.CharField(label=gettext_lazy('message'), widget=forms.Textarea, required=True, max_length=9999)
 
 
 class ShopRegisterForm(forms.ModelForm):
@@ -76,7 +73,7 @@ class ShopProductForm(forms.ModelForm):
         ]
 
     def __init__(self, *args, **kwargs):
-        self.user = kwargs.pop('user')
+        self.request = kwargs.pop('request')
         super(ShopProductForm, self).__init__(*args, **kwargs)
         for f in self.fields:
             if not isinstance(self.fields[f].widget, forms.CheckboxInput):
@@ -90,12 +87,12 @@ class ShopProductForm(forms.ModelForm):
         if self.instance:
             active_products = Product.objects.filter(
                 active=True,
-                shop=self.user.shop
+                shop=self.request.user.shop
             ).exclude(pk=self.instance.pk).count()
         else:
             active_products = Product.objects.filter(
                 active=True,
-                shop=self.user.shop
+                shop=self.request.user.shop
             ).count()
         if cleaned_data.get('active', False) and active_products >= limit:
             raise ValidationError(
