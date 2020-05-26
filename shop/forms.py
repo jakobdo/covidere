@@ -33,7 +33,7 @@ class ShopRegisterForm(forms.ModelForm):
         data = self.cleaned_data['postcode_special']
         try:
             Postcode.objects.get(postcode=data)
-        except Postcode.DoesNotExists:
+        except Postcode.DoesNotExist:
             raise forms.ValidationError(gettext("Invalid postcode"))
         return data
 
