@@ -1,6 +1,4 @@
 import pytest
-from tests.conftest import orderItem#, order
-
 
 @pytest.mark.parametrize(
     'price, count, result',

@@ -1,13 +1,16 @@
 import factory
-from datetime import date, timedelta
+from datetime import timedelta
 from tests import factoryutils
+
+from django.utils import timezone
+
 
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = 'base.User'
-        django_get_or_create = ('username',)
 
-    username = 'john'
+    username = factory.Sequence(lambda number: f"user{number}")
+    email = factory.Sequence(lambda number: f"user{number}@domain.tld")
 
 
 class PostcodeFactory(factory.django.DjangoModelFactory):
@@ -49,8 +52,12 @@ class ProductFactory(factory.django.DjangoModelFactory):
     offer_price = None
     image = None
     active = True
-    start_datetime = date.today() - timedelta(days=1)
+    start_datetime = timezone.now() - timedelta(days=1)
     end_datetime = start_datetime + timedelta(days=10)
+
+
+class InactiveProduct(ProductFactory):
+    active = False
 
 
 class OrderFactory(factory.django.DjangoModelFactory):
