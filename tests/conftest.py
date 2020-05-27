@@ -29,7 +29,7 @@ def order(db):
 
 
 # Populate test db with existing fixture .json files
-@pytest.fixture(scope='session')
+@pytest.fixture
 def django_db_setup_1(django_db_setup, django_db_blocker):
     with django_db_blocker.unblock():
         call_command('loaddata', 'postcodes.json')
