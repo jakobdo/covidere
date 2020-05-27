@@ -38,7 +38,7 @@ if ALLOWED_HOSTS_ECS:
         metadata = requests.get('http://169.254.170.2/v2/metadata',
                                 timeout=0.1).json()
         ip = metadata['Containers'][0]['Networks'][0]['IPv4Addresses'][0]
-        ALLOWED_HOSTS = ['.elb.amazonaws.com', ip]
+        ALLOWED_HOSTS = ['.elb.amazonaws.com', ip,'foodbee.dk']
     except requests.exceptions.ConnectionError:
         pass
 # Application definition
