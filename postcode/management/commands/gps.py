@@ -2,7 +2,7 @@ import time
 
 import requests
 from django.contrib.gis.geos import Point
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from django.utils.http import urlencode
 
 from postcode.models import Postcode

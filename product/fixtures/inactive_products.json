@@ -1,0 +1,47 @@
+[
+    {
+        "model": "product.product",
+        "pk": 3,
+        "fields": {
+            "shop": 3,
+            "name": "Produkt 1",
+            "description": "En kort beskrivelse",
+            "price": "99.95",
+            "active": true,
+            "start_datetime": "2020-03-27T14:45:00Z",
+            "end_datetime": "2020-03-27T14:45:01Z",
+            "created": "2020-03-27T14:45:03.674Z",
+            "updated": "2020-03-27T14:56:23.889Z"
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 4,
+        "fields": {
+            "shop": 3,
+            "name": "Produkt 2",
+            "description": "En kort beskrivelse",
+            "price": "199.95",
+            "active": true,
+            "start_datetime": "2020-03-27T14:45:00Z",
+            "end_datetime": "2020-03-29T14:45:01Z",
+            "created": "2020-03-27T14:45:03.674Z",
+            "updated": "2020-03-27T14:56:23.889Z"
+        }
+    },
+    {
+        "model": "product.product",
+        "pk": 5,
+        "fields": {
+            "shop": 3,
+            "name": "Produkt 11",
+            "description": "En kort beskrivelse",
+            "price": "199.95",
+            "active": true,
+            "start_datetime": "2020-03-27T14:45:00Z",
+            "end_datetime": "2020-03-30T14:45:00Z",
+            "created": "2020-03-27T14:45:03.674Z",
+            "updated": "2020-03-27T14:56:23.889Z"
+        }
+    }
+]

@@ -12,12 +12,8 @@ from shop.models import Shop
 
 class ShopContactForm(forms.Form):
     email = forms.EmailField(label=gettext_lazy('email'), required=True)
-    subject = forms.CharField(label=gettext_lazy('subject'), required=True)
-    message = forms.CharField(
-        label=gettext_lazy('message'),
-        widget=forms.Textarea,
-        required=True
-    )
+    subject = forms.CharField(label=gettext_lazy('subject'), required=True, max_length=199)
+    message = forms.CharField(label=gettext_lazy('message'), widget=forms.Textarea, required=True, max_length=9999)
 
 
 class ShopRegisterForm(forms.ModelForm):
@@ -37,7 +33,7 @@ class ShopRegisterForm(forms.ModelForm):
         data = self.cleaned_data['postcode_special']
         try:
             Postcode.objects.get(postcode=data)
-        except Postcode.DoesNotExists:
+        except Postcode.DoesNotExist:
             raise forms.ValidationError(gettext("Invalid postcode"))
         return data
 
