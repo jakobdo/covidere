@@ -1,10 +1,12 @@
 from django.contrib.auth import login
 from django.db import IntegrityError
+from django.http import JsonResponse
 from django.shortcuts import Http404
 from django.urls import reverse
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
-from django.utils.translation import gettext
+from django.utils.translation import gettext, ugettext
+from django.views import View
 from django.views.generic import FormView, TemplateView
 
 from base.forms import SetUsernameAndPasswordForm
@@ -14,6 +16,11 @@ from shop.tokens import account_activation_token
 
 class AboutPageView(TemplateView):
     template_name = 'about.html'
+
+
+class HealthCheckView(View):
+    def get(self, request, *args, **kwargs):
+        return JsonResponse({'message': ugettext('Health-check: OK')})
 
 
 class ActivateUserView(FormView):

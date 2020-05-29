@@ -17,7 +17,7 @@ from django.conf import settings
 from django.urls import include, path
 
 from product.views import ProductsView
-from base.views import AboutPageView
+from base.views import AboutPageView, HealthCheckView
 
 urlpatterns = [
     path('', ProductsView.as_view(), name="index"),
@@ -28,6 +28,7 @@ urlpatterns = [
     path('basket/', include('basket.urls')),
     path('order/', include('order.urls')),
     path('shops/', include('shop.urls')),
+    path('health-check/', HealthCheckView.as_view(), name="health-check"),
     path('shopadmin/', include('shop.adminurls')),
     path('altenadmin/', include('shop.altenurls')),
     path('i18n/', include('django.conf.urls.i18n')),
