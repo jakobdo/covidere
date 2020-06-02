@@ -8623,7 +8623,6 @@ h1, h2, h3, h4, h5,
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .menus .text {
-    width: calc(100% - 100px);
     padding-left: 20px; }
     .menus .text .one-half {
       width: calc(100% - 80px); }

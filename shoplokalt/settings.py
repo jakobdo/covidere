@@ -213,6 +213,19 @@ AXES_LOCKOUT_TEMPLATE = 'registration/locked_out.html'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
+# Credentials for virk CVR API
+CVR = {
+    'HOST': os.environ.get('CVR_HOST', 'distribution.virk.dk'),
+    'PORT': os.environ.get('CVR_PORT', 80),
+    'USER': os.environ.get('CVR_USER', 'user'),
+    'PASS': os.environ.get('CVR_PASS', 'password')
+}
+
+# GOOGLE reCAPTCHA V3
+GOOGLE_RECAPTCHA_SITE_KEY = os.environ.get('RECAPTCHA_SITE_KEY', 'RECAPTCHA_SITE_KEY')
+GOOGLE_RECAPTCHA_SECRET_KEY = os.environ.get('RECAPTCHA_SECRET_KEY', 'RECAPTCHA_SECRET_KEY')
+
+
 try:
     from shoplokalt.settings_local import *  # noqa: F401,F403
 except ModuleNotFoundError:
