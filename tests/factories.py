@@ -1,7 +1,7 @@
 import factory
 from datetime import timedelta
 from tests import factoryutils
-
+from django.contrib.gis.geos import Point
 from django.utils import timezone
 
 
@@ -20,6 +20,8 @@ class PostcodeFactory(factory.django.DjangoModelFactory):
     
     postcode = 2000
     city = 'Frederiksberg'
+    location = Point(12, 34)
+    active = True
 
 
 class ShopFactory(factory.django.DjangoModelFactory):
