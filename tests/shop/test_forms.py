@@ -1,6 +1,11 @@
 import pytest
+from datetime import datetime, timedelta
+from django.utils import timezone
+from django.core.files.uploadedfile import SimpleUploadedFile
+import tempfile
 
-from shop.forms import ShopContactForm, ShopRegisterForm
+from shop.forms import ShopContactForm, ShopRegisterForm, ShopProductForm
+from tests import factories
 
 
 class TestShopContactForm:
@@ -73,3 +78,46 @@ class TestShopRegisterForm:
         }
         form = self.form(data=data)
         assert form.is_valid() == validity
+
+
+class TestShopProductForm:
+    form = ShopProductForm
+
+    @pytest.mark.parametrize(
+        'name, description, price, offer_price, active, start_datetime, end_datetime, validity',
+        [
+            ('ProductName', 'Description', 100, 90, True, timezone.now() - timedelta(days=1), timezone.now() + timedelta(days=10), True),
+            ('',            'Description', 100, 90, True, timezone.now() - timedelta(days=1), timezone.now() + timedelta(days=10), False),
+            ('ProductName', '',            100, 90, True, timezone.now() - timedelta(days=1), timezone.now() + timedelta(days=10), False),
+            ('ProductName', 'Description', -1,  90, True, timezone.now() - timedelta(days=1), timezone.now() + timedelta(days=10), False),
+            ('ProductName', 'Description', 100, -1, True, timezone.now() - timedelta(days=1), timezone.now() + timedelta(days=10), False),
+            ('ProductName', 'Description', 100, 90, True, timezone.now() + timedelta(days=5), timezone.now() + timedelta(days=1),  False),
+        ]
+    )
+    def test_shop_product_form_validity(
+        self,
+        db,
+        name,
+        description,
+        price,
+        offer_price,
+        active,
+        start_datetime,
+        end_datetime,
+        validity
+    ):
+        testshop = factories.ShopFactory()
+        data = {
+            'name': name,
+            'description': description,
+            'price': price,
+            'image' : SimpleUploadedFile(name='test_image.jpg', content=open('static/base/img/default_shop.jpg', 'rb').read(), content_type='image/jpeg'),
+            'offer_price': offer_price,
+            'active': active,
+            'start_datetime': start_datetime,
+
+            'end_datetime': end_datetime
+        }
+        form = self.form(data=data, user = testshop.user, files=data)
+        result = form.is_valid()
+        assert result == validity
