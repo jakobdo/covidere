@@ -5,12 +5,14 @@
 <section class="ftco-section">
     <div class="container">
         <h1>{% trans "Confirm details" %}</h1>
-        <form method="post">{% csrf_token %}
+        <form method="post" id="order-form">{% csrf_token %}
             {{ form|crispy }}
+            <script src="https://www.google.com/recaptcha/api.js?render={{ sitekey }}"></script>
+            <input type="hidden" name="g-recaptcha-response" id='recaptcha'>
             <div class="row">
                 <div class="col-md-6">
                     <label for="id_postcode_text">{% trans "Postcode" %}</label>
-                    <input type="text" id="id_postcode_text" name="postcode_text" class="form-control" placeholder="{% trans "Enter postcode" %}" maxlength="4">
+                    <input type="text" id="id_postcode_text" name="postcode_text" class="form-control" placeholder="{% trans "Enter postcode" %}" maxlength="4" required>
                 </div>
                 <div class="col-md-6">
                     <label for="id_city">{% trans "City" %}</label>
@@ -40,19 +42,33 @@ $(function(){
 });
 
 function postcode_lookup( event ) {
-    $.getJSON("{% url 'postcode_json' %}", {
-            q: event.target.value
-        },
-        function(data){
-            $("#id_city").val(data.city);
-            $("#id_postcode").val(data.id);
-            $("#id_submit").prop('disabled', false);
-        }
-    ).fail(function(){
-        $("#id_city").val('');
-        $("#id_postcode").val(0);
-        $("#id_submit").prop('disabled', true);
-    });
+    var value = event.target.value;
+    if(value.length == 4){
+        $.getJSON("{% url 'postcode_json' %}", {
+                q: event.target.value
+            },
+            function(data){
+                $("#id_city").val(data.city);
+                $("#id_postcode").val(data.id);
+                $("#id_submit").prop('disabled', false);
+            }
+        ).fail(function(){
+            $("#id_city").val('');
+            $("#id_postcode").val(0);
+            $("#id_submit").prop('disabled', true);
+        });
+    }
 };
+
+grecaptcha.ready(function() {
+    $('#order-form').submit(function(event){
+        var form = this;
+        event.preventDefault();
+        grecaptcha.execute('{{ sitekey }}', {action: 'order'}).then(function(token) {
+            $('#recaptcha').val(token);
+            form.submit();
+        });
+    });
+});
 </script>
 {% endblock %}
