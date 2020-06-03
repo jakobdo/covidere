@@ -46,7 +46,7 @@
 
 <body>
     {% block navbar %}
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-custom" id="ftco-navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light{% block navbar-class %} ftco-navbar-custom{% endblock %}" id="ftco-navbar">
             <div class="container">
                 <a class="navbar-brand" href="{% url 'index' %}"><span>Food</span><span style="color: #ffa323;">Bee</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -67,10 +67,10 @@
                     </ul>
                     <form class="form-inline my-4 my-lg-0 ml-2 ml-auto">
                         <div class="input-group sm-2">
-                            <input type="search" class="form-control" placeholder="{% trans "Search" %}"
+                            <input type="search" class="form-control" name="q" placeholder="{% trans "Search" %}"
                                 aria-label="{% trans "Search" %}" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">
+                                <button class="btn btn-outline-secondary" type="submit">
                                     <i class="fas fa-search"></i>
                                 </button>
                             </div>
@@ -152,8 +152,8 @@
     <script src="{% static 'base/jquery/js/bootstrap-datepicker.js' %}"></script>
     <script src="{% static 'base/jquery/js/jquery.timepicker.min.js' %}"></script>
     <script src="{% static 'base/jquery/js/scrollax.min.js' %}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="{% static 'base/jquery/js/google-map.js' %}"></script>
+    {% comment %}<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'base/jquery/js/google-map.js' %}"></script>{% endcomment %}
     <script src="{% static 'base/jquery/js/main.js' %}"></script>
     {% block bodyscript %}{% endblock %}
 </body>

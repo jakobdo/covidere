@@ -31,9 +31,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
-##If deployment is in ECS
+# If deployment is in ECS
 ALLOWED_HOSTS_ECS = os.environ.get('ALLOWED_HOSTS_ECS', False)
-if ALLOWED_HOSTS_ECS: 
+if ALLOWED_HOSTS_ECS:
     try:
         metadata = requests.get('http://169.254.170.2/v2/metadata',
                                 timeout=0.1).json()
@@ -78,7 +78,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'base.middleware.PostcodeMiddleware',
     'axes.middleware.AxesMiddleware',
 ]
 
@@ -87,7 +86,7 @@ ROOT_URLCONF = 'shoplokalt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,11 +113,10 @@ DATABASES = {
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASS'),
         'HOST': os.environ.get('DB_HOST'),
-        'PORT': os.environ.get('DB_PORT'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
         'ATOMIC_REQUESTS': True,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -162,7 +160,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 S3 = os.getenv('USE_S3') == 'TRUE'
 if S3:
-    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME','shoplokalt')
+    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME', 'shoplokalt')
     AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
     AWS_S3_FILE_OVERWRITE = False
@@ -215,7 +213,20 @@ AXES_LOCKOUT_TEMPLATE = 'registration/locked_out.html'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
+# Credentials for virk CVR API
+CVR = {
+    'HOST': os.environ.get('CVR_HOST', 'distribution.virk.dk'),
+    'PORT': os.environ.get('CVR_PORT', 80),
+    'USER': os.environ.get('CVR_USER', 'user'),
+    'PASS': os.environ.get('CVR_PASS', 'password')
+}
+
+# GOOGLE reCAPTCHA V3
+GOOGLE_RECAPTCHA_SITE_KEY = os.environ.get('RECAPTCHA_SITE_KEY', 'RECAPTCHA_SITE_KEY')
+GOOGLE_RECAPTCHA_SECRET_KEY = os.environ.get('RECAPTCHA_SECRET_KEY', 'RECAPTCHA_SECRET_KEY')
+
+
 try:
-    from shoplokalt.settings_local import *
+    from shoplokalt.settings_local import *  # noqa: F401,F403
 except ModuleNotFoundError:
     pass

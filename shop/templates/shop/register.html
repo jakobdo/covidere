@@ -10,9 +10,14 @@
             {% trans "CVR not found!" %}
         </div>
 
-        <form method="post" enctype="multipart/form-data" autocomplete="off">{% csrf_token %}
+        <form id="register-form" method="post" enctype="multipart/form-data" autocomplete="off">{% csrf_token %}
             {{ form|crispy }}
-            <button type="submit" class="btn btn-primary">{% trans "Register" %}</button>
+            <script src="https://www.google.com/recaptcha/api.js?render={{ sitekey }}"></script>
+            <input type="hidden" name="g-recaptcha-response" id='recaptcha'>
+            <button 
+                type="submit" 
+                class="btn btn-primary"
+            >{% trans "Register" %}</button>
         </form>
     </div>
 </section>
@@ -40,6 +45,17 @@ $(function(){
                 $("#cvr_error").removeClass("d-none");
             }); 
         }
+    });
+});
+
+grecaptcha.ready(function() {
+    $('#register-form').submit(function(event){
+        var form = this;
+        event.preventDefault();
+        grecaptcha.execute('{{ sitekey }}', {action: 'register'}).then(function(token) {
+            $('#recaptcha').val(token);
+            form.submit();
+        });
     });
 });
 </script>
