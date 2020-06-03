@@ -1,9 +1,22 @@
 {% extends "base.html" %}
-{% load i18n %}
+{{% load i18n static %}
+
+{% block carousel %}{% endblock %}
 
 {% block content %}
-<h1>403</h1>
-<h2>{% trans "You are not authorized to view this page" %}</h2>
-<hr>
-<a class="btn btn-primary" href="{% url 'index' %}">{% trans "Return to the main page" %}</a>
+  <section class="hero-wrap hero-wrap-2" style="background-image: url({% static "base/colorlib/images/ErrorBackground.jpg" %});"data-stellar-background-ratio="1"> 
+      <br>
+      <br> 
+      <br> 
+      <br>
+      <div>
+         <h1 style=" font-size: 60px; text-align:center; color: #ffa323; "><b>403</b></h1>
+      </div>
+      <div> 
+      <h4 style="color:#FFFFFF; text-align:center; padding-bottom = 50px"><b><span>Oops!</span></b></h4>
+      <h4 style="color:#FFFFFF; text-align:center; padding-bottom = 50px"><b><span>YOU ARE </span><span style="color: #ffa323;">NOT ALLOWED </span><span>TO BE HERE</span></b></h4>
+      <br>
+      <a class="btn btn-primary" href="{% url 'index' %}">{% trans "Return to the main page" %}</a>
+      </div>
+   </section>
 {% endblock %}
