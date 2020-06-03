@@ -1,3 +1,7 @@
+from decimal import Decimal
+from email.mime.image import MIMEImage
+
+import requests
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
 from django.http import HttpResponseRedirect
@@ -5,8 +9,6 @@ from django.template.loader import render_to_string
 from django.urls import reverse_lazy
 from django.utils.translation import gettext
 from django.views.generic import CreateView, TemplateView
-from decimal import Decimal
-from email.mime.image import MIMEImage
 
 from order.forms import OrderForm
 from order.models import Order, OrderItem
@@ -22,7 +24,27 @@ class OrderCreateView(CreateView):
     form_class = OrderForm
     success_url = reverse_lazy('order_thanks')
 
+    def get_context_data(self, **kwargs):
+        kwargs['sitekey'] = settings.GOOGLE_RECAPTCHA_SITE_KEY
+        return super().get_context_data(**kwargs)
+
     def form_valid(self, form):
+        # TODO - Move to own implementation
+        # Validate Google Recaptcha V3
+        response = form.data.get('g-recaptcha-response')
+        data = {
+            'response': response,
+            'secret': settings.GOOGLE_RECAPTCHA_SECRET_KEY
+        }
+        resp = requests.post(
+            'https://www.google.com/recaptcha/api/siteverify',
+            data=data
+        )
+        result = resp.json()
+        if not result['success'] or not result['action'] == 'order':
+            form.add_error(None, gettext("Invalid recaptcha response, please try again."))
+            return super().form_invalid(form)
+
         self.object = form.save()
 
         # Fetch all products
